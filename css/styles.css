@@ -1,0 +1,687 @@
+
+  :root{
+    --bg-deep:#0F2E2B;
+    --bg-deep2:#154440;
+    --sand:#FFC857;
+    --sand-dark:#F0A93F;
+    --coral:#FF7B54;
+    --sky:#8ECAE6;
+    --cream:#FBF3E7;
+    --glass:rgba(255,255,255,0.10);
+    --ink:#0B2320;
+  }
+  body.theme-bedtime{
+    --bg-deep:#241B3A;
+    --bg-deep2:#34275A;
+    --sand:#C9A9E9;
+    --sand-dark:#A87FD1;
+    --coral:#9B7EDE;
+    --sky:#B8D8F0;
+    --cream:#F3EEFB;
+    --ink:#231539;
+  }
+  body.theme-screen{
+    --bg-deep:#0D2A3D;
+    --bg-deep2:#123A54;
+    --sand:#6FD3E8;
+    --sand-dark:#3FAFC8;
+    --coral:#4FB8E0;
+    --sky:#A8E6F0;
+    --cream:#EAF8FC;
+    --ink:#0A2233;
+  }
+  *{box-sizing:border-box;}
+  html,body{height:100%;}
+  body{
+    margin:0;
+    min-height:100vh;
+    background:
+      radial-gradient(circle at 20% 15%, rgba(255,255,255,0.05), transparent 40%),
+      radial-gradient(circle at 85% 80%, rgba(255,255,255,0.05), transparent 45%),
+      linear-gradient(180deg, var(--bg-deep) 0%, var(--bg-deep2) 100%);
+    font-family:'Quicksand', sans-serif;
+    color:var(--cream);
+    display:flex;
+    align-items:flex-start;
+    justify-content:center;
+    padding:24px;
+    overflow-x:hidden;
+  }
+  .display{font-family:'Baloo 2', sans-serif;}
+  .app{
+    width:100%;
+    max-width:460px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:18px;
+  }
+  .card{
+    width:100%;
+    background:var(--glass);
+    border:1px solid rgba(255,255,255,0.14);
+    border-radius:28px;
+    padding:28px 22px;
+    backdrop-filter:blur(6px);
+    text-align:center;
+  }
+  h1.title{
+    font-size:clamp(28px,7vw,36px);
+    margin:0 0 6px;
+    letter-spacing:0.5px;
+  }
+  p.sub{
+    margin:0 0 22px;
+    opacity:0.8;
+    font-weight:600;
+    font-size:18px;
+    line-height:1.5;
+  }
+  .field{margin-bottom:20px; text-align:left;}
+  .field label{
+    display:block;
+    font-family:'Baloo 2',sans-serif;
+    font-size:17px;
+    letter-spacing:0.4px;
+    text-transform:uppercase;
+    opacity:0.75;
+    margin-bottom:8px;
+  }
+  .seg{
+    display:flex;
+    gap:8px;
+    flex-wrap:wrap;
+  }
+  .seg button{
+    flex:1 1 auto;
+    min-width:90px;
+    border:2px solid rgba(255,255,255,0.18);
+    background:rgba(255,255,255,0.04);
+    color:var(--cream);
+    font-family:'Baloo 2',sans-serif;
+    font-weight:700;
+    font-size:18px;
+    padding:14px 10px;
+    border-radius:16px;
+    cursor:pointer;
+    transition:all .15s ease;
+  }
+  .seg button.active{
+    background:var(--sand);
+    border-color:var(--sand);
+    color:var(--ink);
+  }
+  .seg button:focus-visible{outline:3px solid var(--sky); outline-offset:2px;}
+  .seg-group{
+    min-width:0;
+    font-size:14.5px !important;
+    padding:9px 8px !important;
+  }
+  .premiumOption{
+    flex-basis:100% !important;
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:2px;
+  }
+  .premiumSub{
+    display:block;
+    font-family:'Quicksand',sans-serif;
+    font-size:11px;
+    font-weight:600;
+    opacity:0.78;
+    line-height:1.2;
+  }
+  .flavorLine{
+    font-family:'Baloo 2',sans-serif;
+    font-size:17px;
+    opacity:0.75;
+    margin-bottom:18px;
+  }
+  .bigBtn{
+    width:100%;
+    border:none;
+    border-radius:20px;
+    padding:18px 20px;
+    font-family:'Baloo 2',sans-serif;
+    font-weight:800;
+    font-size:23px;
+    cursor:pointer;
+    background:var(--coral);
+    color:#2A0F08;
+    box-shadow:0 6px 0 #C7502F;
+    transition:transform .08s ease;
+  }
+  .bigBtn:active{transform:translateY(4px); box-shadow:0 2px 0 #C7502F;}
+  .bigBtn:focus-visible{outline:3px solid var(--sky); outline-offset:3px;}
+  .ghostBtn{
+    background:transparent;
+    border:2px solid rgba(255,255,255,0.25);
+    color:var(--cream);
+    font-family:'Baloo 2',sans-serif;
+    font-weight:700;
+    padding:14px 18px;
+    border-radius:16px;
+    cursor:pointer;
+    font-size:18px;
+  }
+
+  /* ---- Kid screens ---- */
+  .kidScreen{
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+    gap:8px;
+  }
+  .modeTag{
+    font-family:'Baloo 2',sans-serif;
+    font-size:13px;
+    letter-spacing:1px;
+    text-transform:uppercase;
+    background:rgba(255,255,255,0.1);
+    padding:6px 14px;
+    border-radius:999px;
+    margin-bottom:6px;
+  }
+  .hourglassWrap{
+    position:relative;
+    width:220px;
+    margin:8px auto 6px;
+  }
+  .timerThemeImg{
+    width:220px;
+    height:220px;
+    object-fit:contain;
+    border-radius:20px;
+    background:rgba(255,255,255,0.06);
+    padding:6px;
+    transition:opacity .25s ease;
+  }
+  .timerThemeChips{
+    display:flex;
+    gap:10px;
+    flex-wrap:wrap;
+  }
+  .seg-timerstyle{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:4px;
+    border:2px solid rgba(255,255,255,0.18);
+    background:rgba(255,255,255,0.04);
+    color:var(--cream);
+    padding:8px;
+    border-radius:16px;
+    cursor:pointer;
+    font-family:'Baloo 2',sans-serif;
+    font-weight:700;
+    font-size:12px;
+  }
+  .seg-timerstyle img{
+    width:52px;
+    height:52px;
+    object-fit:cover;
+    border-radius:10px;
+  }
+  .seg-timerstyle.active{
+    background:var(--sand);
+    border-color:var(--sand);
+    color:var(--ink);
+  }
+  .clockFace{
+    width:220px;height:220px;
+    border-radius:50%;
+    border:6px solid rgba(255,255,255,0.35);
+    position:relative;
+    margin:0 auto;
+    box-shadow:inset 0 0 0 2px rgba(0,0,0,0.08);
+  }
+  .clockCenter{
+    width:16px;height:16px;
+    border-radius:50%;
+    background:var(--sand-dark);
+    position:absolute;
+    top:50%;left:50%;
+    transform:translate(-50%,-50%);
+    box-shadow:0 0 0 5px var(--bg-deep2);
+  }
+  .clockTick{
+    position:absolute;
+    background:rgba(255,255,255,0.4);
+    border-radius:2px;
+  }
+  .tick-12{ width:4px; height:12px; top:6px; left:50%; transform:translateX(-50%); }
+  .tick-3{ width:12px; height:4px; top:50%; right:6px; transform:translateY(-50%); }
+  .tick-6{ width:4px; height:12px; bottom:6px; left:50%; transform:translateX(-50%); }
+  .tick-9{ width:12px; height:4px; top:50%; left:6px; transform:translateY(-50%); }
+  .timeLeft{
+    font-family:'Baloo 2',sans-serif;
+    font-size:19px;
+    opacity:0.8;
+    min-height:20px;
+  }
+  .kidMsg{
+    font-family:'Baloo 2',sans-serif;
+    font-size:clamp(24px,7vw,30px);
+    font-weight:700;
+    margin:6px 0 4px;
+    min-height:34px;
+  }
+
+  /* ---- Magic image reveal ---- */
+  .magicWrap{
+    position:relative;
+    width:180px;
+    height:180px;
+    margin:10px auto 6px;
+    border-radius:24px;
+    overflow:hidden;
+    background:rgba(255,255,255,0.06);
+    border:2px solid rgba(255,255,255,0.18);
+  }
+  .magicImage{
+    position:absolute;
+    inset:0;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:96px;
+    filter:blur(16px);
+    transition:filter .8s ease;
+  }
+  .magicImage.sharp{
+    filter:blur(0);
+  }
+  .magicTile{
+    position:absolute;
+    width:50%;
+    height:50%;
+    background:var(--bg-deep2);
+    border:1px solid rgba(255,255,255,0.12);
+    transition:opacity .5s ease, transform .5s ease;
+  }
+  .magicTile.gone{ opacity:0; transform:scale(1.15); pointer-events:none; }
+  .t-tl{ top:0; left:0; }
+  .t-tr{ top:0; right:0; }
+  .t-bl{ bottom:0; left:0; }
+  .t-br{ bottom:0; right:0; }
+  .magicCaption{
+    font-family:'Baloo 2',sans-serif;
+    font-size:19px;
+    opacity:0.85;
+    min-height:20px;
+    margin-top:2px;
+  }
+
+  .confettiLayer{
+    position:fixed; inset:0; pointer-events:none; overflow:hidden;
+  }
+  .confetti{
+    position:absolute; top:-20px;
+    font-size:20px;
+    animation:drop linear forwards;
+  }
+  .sleepBear{
+    position:absolute;
+    top:-80px;
+    font-size:clamp(34px,9vw,58px);
+    animation:bearFloatDown linear forwards;
+    filter:drop-shadow(0 4px 3px rgba(0,0,0,0.18));
+  }
+  .sleepZzz{
+    position:absolute;
+    left:50%;
+    top:42%;
+    transform:translate(-50%,-50%);
+    font-family:'Baloo 2',sans-serif;
+    font-size:clamp(24px,7vw,42px);
+    font-weight:800;
+    letter-spacing:5px;
+    color:var(--cream);
+    text-shadow:0 3px 8px rgba(0,0,0,0.25);
+    animation:zzzFloat 2.8s ease-in-out infinite;
+  }
+  .sleepSoundPanel{
+    width:100%;
+    margin:12px 0 4px;
+    padding:14px;
+    border:1px solid rgba(255,255,255,0.18);
+    border-radius:18px;
+    background:rgba(255,255,255,0.08);
+  }
+  .sleepSoundTitle{
+    font-family:'Baloo 2',sans-serif;
+    font-size:18px;
+    font-weight:700;
+    margin-bottom:8px;
+  }
+  .sleepSoundControls{
+    display:flex;
+    align-items:center;
+    gap:10px;
+  }
+  .sleepSoundControls button{
+    border:2px solid rgba(255,255,255,0.25);
+    background:rgba(255,255,255,0.08);
+    color:var(--cream);
+    border-radius:14px;
+    padding:9px 12px;
+    font-family:'Baloo 2',sans-serif;
+    font-weight:700;
+    font-size:15px;
+    cursor:pointer;
+    white-space:nowrap;
+  }
+  .sleepVolume{
+    flex:1;
+    accent-color:var(--sand);
+    cursor:pointer;
+  }
+  .sleepSoundStatus{
+    min-height:18px;
+    margin-top:7px;
+    font-size:13px;
+    opacity:0.72;
+  }
+  @keyframes bearFloatDown{
+    0%{ transform:translateY(-12vh) rotate(-8deg); opacity:0; }
+    12%{ opacity:1; }
+    55%{ transform:translateY(52vh) rotate(7deg); opacity:1; }
+    100%{ transform:translateY(112vh) rotate(-5deg); opacity:0; }
+  }
+  @keyframes zzzFloat{
+    0%,100%{ opacity:0.45; transform:translate(-50%,-50%) translateY(6px) scale(0.96); }
+    50%{ opacity:1; transform:translate(-50%,-50%) translateY(-8px) scale(1.04); }
+  }
+  @keyframes drop{
+    to{ transform:translateY(110vh) rotate(360deg); opacity:0.9;}
+  }
+  @keyframes pop{
+    0%{transform:scale(0.2) rotate(-15deg); opacity:0;}
+    60%{transform:scale(1.25) rotate(6deg); opacity:1;}
+    100%{transform:scale(1) rotate(0deg); opacity:1;}
+  }
+  .doneBadge{
+    font-size:64px;
+    margin:6px 0;
+    animation:pop .6s cubic-bezier(.34,1.56,.64,1);
+  }
+  .bedtimeDoneImage{
+    display:block;
+    width:min(360px, 100%);
+    height:auto;
+    max-height:220px;
+    object-fit:contain;
+    object-position:center;
+    margin:10px auto 12px;
+    border-radius:20px;
+    border:2px solid rgba(255,255,255,0.18);
+    box-shadow:0 8px 22px rgba(0,0,0,0.18);
+    animation:pop .6s cubic-bezier(.34,1.56,.64,1);
+  }
+  .leavingPlaceholder{
+    width:220px;
+    height:220px;
+    margin:8px auto 6px;
+    border-radius:24px;
+    border:2px dashed rgba(255,255,255,0.32);
+    background:rgba(255,255,255,0.06);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:20px;
+    font-family:'Baloo 2',sans-serif;
+    font-size:22px;
+    line-height:1.15;
+    color:var(--cream);
+    opacity:0.84;
+  }
+  .leavingIntroNote{
+    font-family:'Baloo 2',sans-serif;
+    font-size:17px;
+    opacity:0.76;
+    margin:2px 0 8px;
+  }
+  .revealName{
+    font-family:'Baloo 2',sans-serif;
+    font-size:22px;
+    font-weight:800;
+    color:var(--sand);
+    animation:pop .5s cubic-bezier(.34,1.56,.64,1);
+  }
+  .ownershipNote{
+    background:rgba(255,255,255,0.08);
+    border:1px solid rgba(255,255,255,0.15);
+    border-radius:16px;
+    padding:14px 16px;
+    font-size:18px;
+    line-height:1.5;
+    margin:10px 0 4px;
+  }
+  .row{display:flex; gap:10px; width:100%; margin-top:8px;}
+  .row .ghostBtn, .row .bigBtn{flex:1;}
+  .footNote{
+    font-size:15px;
+    opacity:0.55;
+    text-align:center;
+    margin-top:2px;
+  }
+  .langToggle{
+    position:absolute;
+    top:14px;
+    right:14px;
+    display:flex;
+    gap:4px;
+    background:rgba(255,255,255,0.08);
+    border-radius:999px;
+    padding:3px;
+  }
+  .langToggle button{
+    border:none;
+    background:transparent;
+    color:var(--cream);
+    font-family:'Baloo 2',sans-serif;
+    font-weight:700;
+    font-size:12px;
+    padding:6px 10px;
+    border-radius:999px;
+    cursor:pointer;
+  }
+  .langToggle button.active{
+    background:var(--sand);
+    color:var(--ink);
+  }
+  .card{position:relative;}
+  .lockBadge{
+    font-size:12px;
+    opacity:0.75;
+    margin-left:4px;
+  }
+  .licenseBox{
+    margin-top:10px;
+    background:rgba(255,255,255,0.06);
+    border:1px solid rgba(255,255,255,0.15);
+    border-radius:14px;
+    padding:12px;
+  }
+  .licenseBox input, .licenseBox textarea{
+    width:100%;
+    padding:10px 12px;
+    border-radius:12px;
+    border:2px solid rgba(255,255,255,0.2);
+    background:rgba(255,255,255,0.06);
+    color:var(--cream);
+    font-family:'Quicksand',sans-serif;
+    font-size:15px;
+    margin-bottom:8px;
+  }
+  .licenseMsg{
+    font-size:13px;
+    margin-top:6px;
+    min-height:16px;
+  }
+  .licenseMsg.ok{ color:#8FD19E; }
+  .licenseMsg.err{ color:#FF9E8A; }
+  .turnBanner{
+    background:rgba(255,200,87,0.15);
+    border:2px solid var(--sand);
+    border-radius:16px;
+    padding:8px 14px;
+    font-family:'Baloo 2',sans-serif;
+    font-weight:700;
+    font-size:16px;
+    margin:4px 0;
+  }
+  .classroomBanner{
+    background:rgba(142,202,230,0.15);
+    border:2px solid var(--sky);
+    border-radius:16px;
+    padding:8px 14px;
+    font-family:'Baloo 2',sans-serif;
+    font-weight:700;
+    font-size:14px;
+    margin:4px 0;
+  }
+  .encourageLine{
+    font-size:14px;
+    opacity:0.8;
+    font-style:italic;
+    margin:2px 0 6px;
+    max-width:340px;
+  }
+  .emergencyChips{
+    display:flex;
+    gap:8px;
+    justify-content:center;
+    margin-top:8px;
+  }
+  .emergencyChips button{
+    border:2px solid rgba(255,120,120,0.5);
+    background:rgba(255,80,80,0.1);
+    color:var(--cream);
+    font-family:'Baloo 2',sans-serif;
+    font-weight:700;
+    font-size:14px;
+    padding:8px 14px;
+    border-radius:14px;
+    cursor:pointer;
+  }
+  .scheduleRow{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:6px;
+    width:100%;
+  }
+  .scheduleStrip{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:10px;
+    margin:10px 0 4px;
+  }
+  .scheduleCard{
+    width:96px;
+    background:rgba(255,255,255,0.07);
+    border:2px solid rgba(255,255,255,0.16);
+    border-radius:16px;
+    padding:10px 6px;
+    text-align:center;
+    position:relative;
+    overflow:visible;
+  }
+  .scheduleOrdinal{
+    font-family:'Baloo 2',sans-serif;
+    font-weight:800;
+    font-size:12px;
+    letter-spacing:0.5px;
+    color:rgba(255,255,255,0.55);
+    margin-bottom:4px;
+    min-height:14px;
+  }
+  .scheduleIcon{
+    font-size:34px;
+    margin:2px 0;
+    display:inline-block;
+  }
+  .scheduleIconImg{
+    width:76px;
+    height:76px;
+    object-fit:cover;
+    border-radius:12px;
+    margin:2px 0;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+  }
+  .scheduleIcon.animated, .scheduleIconImg.animated{
+    animation: bunnyBounce 1.3s ease-in-out infinite;
+  }
+  @keyframes bunnyBounce{
+    0%, 100% { transform: translateY(0) rotate(-4deg); }
+    50% { transform: translateY(-12px) rotate(4deg); }
+  }
+  .scheduleSparkle{
+    position:absolute;
+    font-size:18px;
+    pointer-events:none;
+    animation: sparkleTwinkle 1.5s ease-in-out infinite;
+  }
+  .scheduleSparkle.s1{ top:-2px; right:4px; animation-delay:0s; }
+  .scheduleSparkle.s2{ top:12px; left:0px; font-size:13px; animation-delay:0.5s; }
+  @keyframes sparkleTwinkle{
+    0%, 100% { opacity:0.25; transform:scale(0.7) rotate(0deg); }
+    50% { opacity:1; transform:scale(1.25) rotate(15deg); }
+  }
+  .scheduleLabel{
+    font-size:11.5px;
+    line-height:1.25;
+    opacity:0.9;
+  }
+  .scheduleArrow{
+    font-size:20px;
+    opacity:0.5;
+  }
+  .schedulePlaceholderNote{
+    font-size:11px;
+    opacity:0.5;
+    text-align:center;
+    margin-bottom:4px;
+  }
+  .scheduleStyleToggle{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:6px;
+    margin:10px 0 4px;
+  }
+  .schedStyleRow{
+    display:flex;
+    align-items:center;
+    gap:10px;
+  }
+  .schedRegionLabel{
+    font-size:11px;
+    color:rgba(255,255,255,0.45);
+    text-transform:uppercase;
+    letter-spacing:0.5px;
+    width:26px;
+    text-align:left;
+  }
+  .scheduleStyleToggle button{
+    border:2px solid rgba(255,255,255,0.2);
+    background:rgba(255,255,255,0.04);
+    color:var(--cream);
+    font-family:'Baloo 2',sans-serif;
+    font-weight:700;
+    font-size:13px;
+    padding:8px 14px;
+    border-radius:14px;
+    cursor:pointer;
+  }
+  @media (prefers-reduced-motion: reduce){
+    *{animation-duration:0.01ms !important; transition-duration:0.01ms !important;}
+  }

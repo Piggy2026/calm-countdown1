@@ -1,0 +1,64 @@
+// State additions (in the main state object):
+sleepHeartbeatVolume: 0.6,
+sleepHeartbeatPlaying: false,
+
+// Module-level vars (near timerHandle):
+var syntheticHeartbeatCtx = null;
+var syntheticHeartbeatHandle = null;
+var sleepHeartbeatStopHandle = null;
+
+// Generates one "lub-dub" heartbeat pulse
+function playSyntheticHeartbeat(){
+  try{
+    var AudioCtor = window.AudioContext || window.webkitAudioContext;
+    if(!AudioCtor) return;
+    syntheticHeartbeatCtx = syntheticHeartbeatCtx || new AudioCtor();
+    if(syntheticHeartbeatCtx.state === 'suspended') syntheticHeartbeatCtx.resume();
+    var ctx = syntheticHeartbeatCtx;
+    var now = ctx.currentTime;
+    var master = ctx.createGain();
+    master.gain.value = Math.max(0.02, state.sleepHeartbeatVolume * 0.55);
+    master.connect(ctx.destination);
+    // Two pulses: the "lub" (louder) then the "dub" (softer)
+    [[68,0.14,1.0],[54,0.20,0.72]].forEach(function(pulse, index){
+      var osc = ctx.createOscillator();
+      var gain = ctx.createGain();
+      var start = now + index * 0.18;
+      osc.type = 'sine';
+      osc.frequency.setValueAtTime(pulse[0], start);
+      osc.frequency.exponentialRampToValueAtTime(pulse[0] - 12, start + pulse[1]);
+      gain.gain.setValueAtTime(0.001, start);
+      gain.gain.linearRampToValueAtTime(0.34 * pulse[2], start + 0.025);
+      gain.gain.exponentialRampToValueAtTime(0.001, start + pulse[1]);
+      osc.connect(gain);
+      gain.connect(master);
+      osc.start(start);
+      osc.stop(start + pulse[1] + 0.03);
+    });
+    setTimeout(function(){ master.disconnect(); }, 600);
+  }catch(e){}
+}
+
+// Starts a steady heartbeat loop, auto-stops after 1 hour
+function startSleepHeartbeat(){
+  clearTimeout(sleepHeartbeatStopHandle);
+  clearInterval(syntheticHeartbeatHandle);
+  state.sleepHeartbeatPlaying = true;
+  playSyntheticHeartbeat();
+  syntheticHeartbeatHandle = setInterval(playSyntheticHeartbeat, 1000);
+  sleepHeartbeatStopHandle = setTimeout(function(){
+    stopSleepHeartbeat();
+    var toggle = document.getElementById('heartbeatToggle');
+    var status = document.getElementById('heartbeatStatus');
+    if(toggle) toggle.textContent = T().heartbeatStart;
+    if(status) status.textContent = T().heartbeatStopped;
+  }, 60*60*1000);
+}
+
+function stopSleepHeartbeat(){
+  clearTimeout(sleepHeartbeatStopHandle);
+  clearInterval(syntheticHeartbeatHandle);
+  sleepHeartbeatStopHandle = null;
+  syntheticHeartbeatHandle = null;
+  state.sleepHeartbeatPlaying = false;
+}
