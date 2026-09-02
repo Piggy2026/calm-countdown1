@@ -231,6 +231,54 @@
     border-color:var(--sand);
     color:var(--ink);
   }
+  .seg-timermode{
+    flex:1;
+    padding:10px 12px;
+    border-radius:14px;
+    border:2px solid rgba(255,255,255,0.18);
+    background:rgba(255,255,255,0.04);
+    color:var(--cream);
+    cursor:pointer;
+    font-family:'Baloo 2',sans-serif;
+    font-weight:700;
+    font-size:13.5px;
+    transition:all .15s ease;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+  }
+  .seg-timermode.active{
+    background:var(--sand);
+    border-color:var(--sand);
+    color:var(--ink);
+  }
+  .seg-classicstyle{
+    flex:1;
+    padding:8px 12px;
+    border-radius:12px;
+    border:2px solid rgba(255,255,255,0.18);
+    background:rgba(255,255,255,0.04);
+    color:var(--cream);
+    cursor:pointer;
+    font-family:'Baloo 2',sans-serif;
+    font-weight:700;
+    font-size:13px;
+    transition:all .15s ease;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+  }
+  .seg-classicstyle.active{
+    background:var(--sand);
+    border-color:var(--sand);
+    color:var(--ink);
+  }
+  .hourglassSvg{
+    display:block;
+    margin:0 auto;
+  }
   .clockFace{
     width:220px;height:220px;
     border-radius:50%;
