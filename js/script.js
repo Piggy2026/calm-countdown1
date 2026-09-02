@@ -86,6 +86,8 @@
       countdownStarted: "🚀 Countdown started.",
       bedtimeStart: "Let's begin.",
       encourageLine: "Listening to your grown-up helps you both have more fun days together!",
+      waitingSubParentLeaving: "Parent: when it's almost time to leave, hand the phone back to your child — the timer will be ready for them.",
+      waitingSubParentScreen: "Parent: when it's almost time to finish, hand the phone back to your child — the timer will be ready for them.",
       waitingSubParent: "Parent: when it's almost time to leave, hand the phone back to your child — the timer will be ready for them.",
       msgStyleLabel: "Show progress as:",
       msgStyleFun: "Fun",
@@ -176,6 +178,8 @@
       countdownStarted: "🚀 Cuenta atrás iniciada.",
       bedtimeStart: "Vamos a empezar.",
       encourageLine: "Escuchar a tu adulto ayuda a que los dos tengáis más días divertidos juntos.",
+      waitingSubParentLeaving: "Padres: cuando esté a punto de ser hora de irse, devolvedle el teléfono a vuestro hijo/a — el temporizador estará listo para él o ella.",
+      waitingSubParentScreen: "Padres: cuando esté a punto de terminar, devolvedle el teléfono a vuestro hijo/a — el temporizador estará listo para él o ella.",
       waitingSubParent: "Padres: cuando esté a punto de ser hora de irse, devolvedle el teléfono a vuestro hijo/a — el temporizador estará listo para él o ella.",
       msgStyleLabel: "Mostrar el progreso como:",
       msgStyleFun: "Divertido",
@@ -968,12 +972,18 @@
 
   function renderWaiting(){
     var t = T(); var c = COPY[state.mode][state.lang];
+    var waitingGraphic = state.mode === 'bedtime'
+      ? '<div style="font-size:70px; margin:18px 0;">🐰💤</div>'
+      : '<div style="min-height:70px; margin:18px 0;"></div>';
+    var parentText = state.mode === 'screen'
+      ? t.waitingSubParentScreen
+      : (state.mode === 'leaving' ? t.waitingSubParentLeaving : t.waitingSubParent);
     return ''+
     '<div class="kidScreen">'+
       '<div class="modeTag">'+t.waitingInProgress+'</div>'+
-      '<div style="font-size:70px; margin:18px 0;">🐰💤</div>'+
+      waitingGraphic +
       '<div class="kidMsg display">'+ c.waitingTitle +'</div>'+
-      '<p class="sub" style="margin-bottom:18px;">'+ t.waitingSubParent +'</p>'+
+      '<p class="sub" style="margin-bottom:18px;">'+ parentText +'</p>'+
       '<button class="ghostBtn" id="parentReveal" type="button" style="opacity:0.55; font-size:13px;">'+t.parentRevealBtn+'</button>'+
       (state.mode==='leaving' ? '<button class="ghostBtn" id="waitingBackBtn" type="button" style="margin-top:10px;">'+t.backToSetup+'</button>' : '') +
     '</div>';
