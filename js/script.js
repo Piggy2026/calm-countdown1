@@ -20,10 +20,10 @@
       customBtn: "Custom",
       customMinutesNote: "Minutes (1–120)",
       styleLabel: "Timer style",
-      timerModeLabel: "Timer style & reveal",
+      timerModeLabel: "CHOOSE IMAGE TYPE",
       modeClassic: "Classic (Surprise picture)",
       modeTransform: "Transformation timer",
-      classicStyleLabel: "Plain timer style",
+      classicStyleLabel: "CHOOSE TIMER STYLE",
       transformThemeLabel: "Transformation theme",
       hourglassBtn: "⏳ Hourglass",
       clockBtn: "🕐 Colour clock",
@@ -183,10 +183,10 @@
       customBtn: "Personalizado",
       customMinutesNote: "Minutos (1–120)",
       styleLabel: "Estilo del temporizador",
-      timerModeLabel: "Estilo de temporizador y revelación",
+      timerModeLabel: "ELEGIR TIPO DE IMAGEN",
       modeClassic: "Clásico (Imagen sorpresa)",
       modeTransform: "Temporizador de transformación",
-      classicStyleLabel: "Estilo de temporizador simple",
+      classicStyleLabel: "ELEGIR ESTILO DE TEMPORIZADOR",
       transformThemeLabel: "Tema de transformación",
       hourglassBtn: "⏳ Reloj de arena",
       clockBtn: "🕐 Reloj de colores",
@@ -556,7 +556,7 @@
         {icon:"🎯", img:"assets/schedule/screen-target.jpg", label_en:"Off to the next thing.", label_es:"A la siguiente actividad."}
       ],
       mid: [
-        {icon:"🎮", img:"assets/schedule/4PawPeanutScreentime.png", label_en:"Start screen time.", label_es:"Empieza el tiempo de pantalla."},
+        {icon:"🎮", img:"assets/schedule/age 5 to 7 EnjoyScreentime.png", label_en:"Start screen time.", label_es:"Empieza el tiempo de pantalla."},
         {icon:"✋", img:"assets/schedule/Age5to7EndingScreenLatest.jpg", label_en:"Stop, wait for instructions!", label_es:"¡Para, espera instrucciones!"}
       ],
       big: [
@@ -2532,22 +2532,24 @@ function renderDailyTasksSetup(t){
         (state.durationUnit==='seconds' ? ('<div class="seg">'+ secChips +'</div>' + customSecInput) : ('<div class="seg">'+ durChips +'</div>' + customInput)) +
       '</div>'+
 
-      '<div class="field">'+
-        '<label>'+t.timerModeLabel+'</label>'+
-        '<div class="seg">'+ timerModeChips +'</div>'+
-      '</div>'+
-
       (state.timerMode === 'classic' ? (
         '<div class="field">'+
           '<label>'+t.classicStyleLabel+'</label>'+
           '<div class="seg">'+ classicStyleChips +'</div>'+
         '</div>'
-      ) : (
+      ) : '') +
+
+      '<div class="field">'+
+        '<label>'+t.timerModeLabel+'</label>'+
+        '<div class="seg">'+ timerModeChips +'</div>'+
+      '</div>'+
+
+      (state.timerMode === 'transformation' ? (
         '<div class="field">'+
           '<label>'+t.transformThemeLabel+'</label>'+
           '<div class="timerThemeChips">'+ timerThemeChips +'</div>'+
         '</div>'
-      ))+
+      ) : '') +
 
       '<div class="field">'+
         '<label>'+t.msgStyleLabel+'</label>'+
@@ -2610,7 +2612,7 @@ function renderDailyTasksSetup(t){
       : (state.mode === 'task' && taskInfo
           ? '<div style="font-size:70px; margin:18px 0;">'+taskInfo.icon+'</div>'
           : ((state.mode === 'leaving' || state.mode === 'screen')
-              ? '<div class="leavingPlaceholder" style="padding:10px;"><img src="' + (state.age === 'young' ? (state.mode === 'screen' ? 'assets/schedule/screen-phone.jpg' : 'assets/schedule/leaving-football.png') : (state.age === 'big' ? (state.mode === 'screen' ? 'assets/schedule/Age8StartScreentime.jpg' : 'assets/schedule/ParkSceneAge8.jpg') : (state.mode === 'screen' ? 'assets/schedule/Age 5 to 7 StartScreentime.png' : 'assets/schedule/Time for Fun.png'))) + '" alt="' + (state.mode === 'screen' ? (state.age === 'big' ? 'Happy screentime.' : 'Start screen time.') : 'Time for fun.') + '" style="width:100%;height:100%;object-fit:cover;border-radius:18px;" /></div>'
+              ? '<div class="leavingPlaceholder" style="padding:10px;"><img src="' + (state.age === 'young' ? (state.mode === 'screen' ? 'assets/schedule/screen-phone.jpg' : 'assets/schedule/leaving-football.png') : (state.age === 'big' ? (state.mode === 'screen' ? 'assets/schedule/Age8StartScreentime.jpg' : 'assets/schedule/ParkSceneAge8.jpg') : (state.mode === 'screen' ? 'assets/schedule/age 5 to 7 EnjoyScreentime.png' : 'assets/schedule/Time for Fun.png'))) + '" alt="' + (state.mode === 'screen' ? (state.age === 'big' ? 'Happy screentime.' : 'Start screen time.') : 'Time for fun.') + '" style="width:100%;height:100%;object-fit:cover;border-radius:18px;" /></div>'
               : '<div style="min-height:70px; margin:18px 0;"></div>'));
     var parentText = state.mode === 'task'
       ? (state.lang === 'es' ? 'Rutina en curso — cuando termine, devolvedle el teléfono a tu hijo/a.' : 'Routine in progress — hand phone back to your child for the final reveal.')
