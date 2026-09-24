@@ -32,7 +32,7 @@
       transformDoneHeading: "Transformation complete!",
       transformDoneButterfly: "The butterfly is flying free! 🦋",
       transformDoneDino: "The dinosaur has hatched! 🦖",
-      readySubTransform: "Press the button when YOU are ready. Watch the magic transformation as you go!",
+      readySubTransform: "Press the long rectangular ▶ button below to begin. Watch the magic transformation as you go!",
       groupLabel: "Who's this for?",
       groupSingle: "1 child",
       groupSmall: "Premium",
@@ -63,7 +63,7 @@
       waitingInProgress: "In progress",
       parentRevealBtn: "Parent: click this now, hand/show child",
       readyQuestion: "Ready to start your countdown?",
-      readySub: "Press the button when YOU are ready. A magic picture will reveal itself as you go!",
+      readySub: "Press the long rectangular ▶ button below to begin. A magic picture will reveal itself as you go!",
       startBtn: "▶ Press to start",
       pauseBtnLabel: "⏸ Pause (parent)",
       resumeBtnLabel: "▶ Resume (parent)",
@@ -86,9 +86,9 @@
       countdownStarted: "🚀 Countdown started.",
       bedtimeStart: "Let's begin.",
       encourageLine: "Listening to your grown-up helps you both have more fun days together!",
-      waitingSubParentLeaving: "Parent: when it's almost time to leave, hand/show the phone back to your child — the timer will be ready for them.",
-      waitingSubParentScreen: "Parent: when it's almost time to finish, hand the phone back to your child — the timer will be ready for them.",
-      waitingSubParent: "Parent: when it's almost time to leave, hand/show the phone back to your child — the timer will be ready for them.",
+      waitingSubParentLeaving: "Parent: when it's almost time to leave, hand/show the phone back to your child — the timer will be ready for them. To make this as useful as possible, avoid very short time durations, this way you can show the transformation image in stages, which may help to keep the kids engaged and close to you, willingly breaking themselves away from the activity!",
+      waitingSubParentScreen: "Parent: when it's almost time to finish, hand the phone back to your child — the timer will be ready for them. To make this as useful as possible, avoid very short time durations, this way you can show the transformation image in stages, which may help to keep the kids engaged and close to you, willingly breaking themselves away from the activity!",
+      waitingSubParent: "Parent: when it's almost time to leave, hand/show the phone back to your child — the timer will be ready for them. To make this as useful as possible, avoid very short time durations, this way you can show the transformation image in stages, which may help to keep the kids engaged and close to you, willingly breaking themselves away from the activity!",
       msgStyleLabel: "Show progress as:",
       msgStyleFun: "Fun words",
       msgStyleFraction: "¼",
@@ -195,7 +195,7 @@
       transformDoneHeading: "¡Transformación completada!",
       transformDoneButterfly: "¡La mariposa vuela libre! 🦋",
       transformDoneDino: "¡El dinosaurio ha salido del cascarón! 🦖",
-      readySubTransform: "Pulsa el botón cuando TÚ estés listo/a. ¡Mira la transformación mágica poco a poco!",
+      readySubTransform: "Pulsa el botón rectangular largo ▶ de abajo para comenzar. ¡Mira la transformación mágica poco a poco!",
       groupLabel: "¿Para quién es?",
       groupSingle: "1 niño/a",
       groupSmall: "Premium",
@@ -226,7 +226,7 @@
       waitingInProgress: "En curso",
       parentRevealBtn: "Padres: pulsad aquí ahora, devolvedle/mostradle al niño/a",
       readyQuestion: "¿Listo/a para empezar tu cuenta atrás?",
-      readySub: "Pulsa el botón cuando TÚ estés listo/a. ¡Una imagen mágica se irá revelando poco a poco!",
+      readySub: "Pulsa el botón rectangular largo ▶ de abajo para comenzar. ¡Una imagen mágica se irá revelando poco a poco!",
       startBtn: "▶ Pulsa para empezar",
       pauseBtnLabel: "⏸ Pausar (padres)",
       resumeBtnLabel: "▶ Reanudar (padres)",
@@ -249,9 +249,9 @@
       countdownStarted: "🚀 Cuenta atrás iniciada.",
       bedtimeStart: "Vamos a empezar.",
       encourageLine: "Escuchar a tu adulto ayuda a que los dos tengáis más días divertidos juntos.",
-      waitingSubParentLeaving: "Padres: cuando esté a punto de ser hora de irse, devolvedle/mostradle el teléfono a vuestro hijo/a — el temporizador estará listo para él o ella.",
-      waitingSubParentScreen: "Padres: cuando esté a punto de terminar, devolvedle el teléfono a vuestro hijo/a — el temporizador estará listo para él o ella.",
-      waitingSubParent: "Padres: cuando esté a punto de ser hora de irse, devolvedle/mostradle el teléfono a vuestro hijo/a — el temporizador estará listo para él o ella.",
+      waitingSubParentLeaving: "Padres: cuando esté a punto de ser hora de irse, devolvedle/mostradle el teléfono a vuestro hijo/a — el temporizador estará listo para él o ella. Para que esto sea lo más útil posible, evita duraciones muy cortas; de este modo podrás mostrar la imagen de transformación por etapas, lo que puede ayudar a mantener a los niños entretenidos y cerca de ti, alejándose por propia voluntad de la actividad.",
+      waitingSubParentScreen: "Padres: cuando esté a punto de terminar, devolvedle el teléfono a vuestro hijo/a — el temporizador estará listo para él o ella. Para que esto sea lo más útil posible, evita duraciones muy cortas; de este modo podrás mostrar la imagen de transformación por etapas, lo que puede ayudar a mantener a los niños entretenidos y cerca de ti, alejándose por propia voluntad de la actividad.",
+      waitingSubParent: "Padres: cuando esté a punto de ser hora de irse, devolvedle/mostradle el teléfono a vuestro hijo/a — el temporizador estará listo para él o ella. Para que esto sea lo más útil posible, evita duraciones muy cortas; de este modo podrás mostrar la imagen de transformación por etapas, lo que puede ayudar a mantener a los niños entretenidos y cerca de ti, alejándose por propia voluntad de la actividad.",
       msgStyleLabel: "Mostrar el progreso como:",
       msgStyleFun: "Palabras divertidas",
       msgStyleFraction: "¼",
@@ -439,41 +439,41 @@
     leaving: {
       en: { tag:"Time to Finish soon", finalHeading:"You did it!", finalNote:"Nice work finishing the countdown all by yourself. Time to finish or leave.",
         ownership:"Your treat is waiting for you, the one you picked out yourself!", kickoffQ:"Ready to start your fun?",
-        kickoffSub:"Press the button to begin. Later on, this same timer will come back so YOU can press it to stop the fun or leave.",
+        kickoffSub:"Press the long rectangular ▶ button below to begin. Later on, this same timer will come back so YOU can press it to stop the fun or leave.",
         kickoffBtn:"▶ Press to begin your fun activity!", waitingTitle:"Have fun!", waitingSub:"Ask a grown-up for the phone when it's almost time to finish — the timer will be waiting for you." },
       es: { tag:"Pronto terminamos", finalHeading:"¡Lo lograste!", finalNote:"Muy bien terminando la cuenta atrás tú solo/a. Hora de terminar.",
         ownership:"Tu premio te espera, ¡el que elegiste tú mismo/a!", kickoffQ:"¿Listo/a para empezar la diversión?",
-        kickoffSub:"Pulsa el botón para comenzar. Más tarde, este mismo reloj volverá para que TÚ lo pulses cuando sea hora de terminar la diversión.",
+        kickoffSub:"Pulsa el botón rectangular largo ▶ de abajo para comenzar. Más tarde, este mismo reloj volverá para que TÚ lo pulses cuando sea hora de terminar la diversión.",
         kickoffBtn:"▶ ¡Pulsa para empezar!", waitingTitle:"¡Que lo pases genial!", waitingSub:"Pídele el teléfono a un adulto cuando ya casi sea hora de terminar: el reloj te estará esperando." }
     },
     screen: {
       en: { tag:"Screen time ending soon", finalHeading:"All done!", finalNote:"You finished the whole countdown yourself. Time to turn it off.",
         ownership:"Time for your next thing — the one you picked!", kickoffQ:"Ready to start your screen time?",
-        kickoffSub:"Press the button to begin. Later on, this same timer will come back so YOU can press it to finish screen time.",
+        kickoffSub:"Press the long rectangular ▶ button below to begin. Later on, this same timer will come back so YOU can press it to finish screen time.",
         kickoffBtn:"▶ Press to begin!", waitingTitle:"Enjoy!", waitingSub:"Parent: hand the phone/tablet back when it's almost time to finish — the timer will be ready." },
       es: { tag:"El tiempo de pantalla está a punto de acabar", finalHeading:"¡Todo listo!", finalNote:"Terminaste toda la cuenta atrás tú solo/a. Hora de apagarlo.",
         ownership:"Hora de tu próxima actividad, ¡la que tú elegiste!", kickoffQ:"¿Listo/a para empezar tu tiempo de pantalla?",
-        kickoffSub:"Pulsa el botón para comenzar. Más tarde, este mismo temporizador volverá para que TÚ lo pulses cuando sea hora de apagarlo.",
+        kickoffSub:"Pulsa el botón rectangular largo ▶ de abajo para comenzar. Más tarde, este mismo temporizador volverá para que TÚ lo pulses cuando sea hora de apagarlo.",
         kickoffBtn:"▶ ¡Pulsa para empezar!", waitingTitle:"¡Disfruta!", waitingSub:"Padres: devolved el teléfono o la tablet cuando esté casi terminado — el temporizador estará listo." }
     },
     bedtime: {
       en: { tag:"Wind-down time", finalHeading:"All done!", finalNote:"You finished the whole countdown. That means it's time to snuggle in.",
         ownership:"Time to get the book (or toy) you chose for tonight and hop into bed.", kickoffQ:"Ready to start tonight's wind-down?",
-        kickoffSub:"Press the button to begin. In a little while, this same timer will come back so YOU can press it to start getting ready for bed.",
+        kickoffSub:"Press the long rectangular ▶ button below to begin. In a little while, this same timer will come back so YOU can press it to start getting ready for bed.",
         kickoffBtn:"▶ Press to begin!", waitingTitle:"Enjoy story time!", waitingSub:"Ask a grown-up for the phone when it's almost bedtime — the timer will be waiting for you." },
       es: { tag:"Hora de relajarse", finalHeading:"¡Todo listo!", finalNote:"Terminaste toda la cuenta atrás. Eso significa que es hora de acurrucarte.",
         ownership:"Es hora de coger el libro (o el juguete) que elegiste para esta noche y meterte en la cama.", kickoffQ:"¿Listo/a para empezar a relajarte esta noche?",
-        kickoffSub:"Pulsa el botón para comenzar. Dentro de un rato, este mismo reloj volverá para que TÚ lo pulses cuando sea hora de prepararte para dormir.",
+        kickoffSub:"Pulsa el botón rectangular largo ▶ de abajo para comenzar. Dentro de un rato, este mismo reloj volverá para que TÚ lo pulses cuando sea hora de prepararte para dormir.",
         kickoffBtn:"▶ ¡Pulsa para empezar!", waitingTitle:"¡Disfruta el cuento!", waitingSub:"Pídele el teléfono a un adulto cuando ya casi sea la hora de dormir: el reloj te estará esperando." }
     },
     task: {
       en: { tag:"Daily routine countdown", finalHeading:"Great job!", finalNote:"You finished your task! All done!",
         ownership:"Time for your next daily activity!", kickoffQ:"Ready to start your task?",
-        kickoffSub:"Press the button when YOU are ready. A magic picture will reveal itself as you go!",
+        kickoffSub:"Press the long rectangular ▶ button below to begin. A magic picture will reveal itself as you go!",
         kickoffBtn:"▶ Press to begin!", waitingTitle:"In progress!", waitingSub:"Grown-up: when your child is almost done, hand the phone back for the final reveal." },
       es: { tag:"Cuenta atrás de rutina diaria", finalHeading:"¡Buen trabajo!", finalNote:"¡Terminaste tu tarea! ¡Todo listo!",
         ownership:"¡Hora de tu siguiente actividad!", kickoffQ:"¿Listo/a para empezar tu tarea?",
-        kickoffSub:"Pulsa el botón cuando TÚ estés listo/a. ¡Una imagen mágica se irá revelando!",
+        kickoffSub:"Pulsa el botón rectangular largo ▶ de abajo para comenzar. ¡Una imagen mágica se irá revelando!",
         kickoffBtn:"▶ ¡Pulsa para empezar!", waitingTitle:"¡En curso!", waitingSub:"Adulto: cuando el niño/a esté a punto de terminar, devolvedle el teléfono para la sorpresa final." }
     }
   };
@@ -2582,7 +2582,7 @@ function renderDailyTasksSetup(t){
       ? (state.lang === 'es' ? ('¿Listo/a para: ' + taskInfo.icon + ' ' + taskInfo.name + '?') : ('Ready for: ' + taskInfo.icon + ' ' + taskInfo.name + '?'))
       : c.kickoffQ;
     var kickoffSub = taskInfo
-      ? (state.lang === 'es' ? 'Pulsa el botón cuando TÚ estés listo/a. ¡Mira la transformación mágica mientras avanzas!' : 'Press the button when YOU are ready. Watch the magic transformation as you go!')
+      ? (state.lang === 'es' ? 'Pulsa el botón rectangular largo ▶ de abajo para comenzar. ¡Mira la transformación mágica mientras avanzas!' : 'Press the long rectangular ▶ button below to begin. Watch the magic transformation as you go!')
       : c.kickoffSub;
     var kickoffBtn = taskInfo
       ? (state.lang === 'es' ? ('▶ ¡Empezar ' + taskInfo.name + '!') : ('▶ Start ' + taskInfo.name + '!'))
@@ -2642,7 +2642,7 @@ function renderDailyTasksSetup(t){
       ? (state.lang === 'es' ? ('¿Listo/a para: ' + taskInfo.icon + ' ' + taskInfo.name + '?') : ('Ready for: ' + taskInfo.icon + ' ' + taskInfo.name + '?'))
       : (state.mode==='leaving' ? 'YOU start the countdown.' : t.readyQuestion);
     var introSub = state.mode==='leaving'
-      ? (state.timerMode==='transformation' ? "It's time for YOU to press the button. Watch the magic transformation as you count down!" : (state.lang==='es' ? "¡Es hora de que TÚ pulses el botón y termines la diversión!" : "It's time for YOU to press the button and stop the fun!"))
+      ? (state.timerMode==='transformation' ? (state.lang==='es' ? "Pulsa el botón rectangular largo ▶ de abajo para comenzar. ¡Mira la transformación mágica en la cuenta atrás!" : "Press the long rectangular ▶ button below to begin. Watch the magic transformation as you count down!") : (state.lang==='es' ? "Pulsa el botón rectangular largo ▶ de abajo para comenzar. ¡Es hora de terminar la diversión!" : "Press the long rectangular ▶ button below to begin. It's time for YOU to stop the fun!"))
       : (state.timerMode==='transformation' ? t.readySubTransform : t.readySub);
     return ''+
     '<div class="kidScreen">'+
