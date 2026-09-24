@@ -64,7 +64,7 @@
       parentRevealBtn: "Parent: click this now, hand/show child",
       readyQuestion: "Ready to start your countdown?",
       readySub: "Press the long rectangular ▶ button below to begin. A magic picture will reveal itself as you go!",
-      startBtn: "▶ Press to start",
+      startBtn: "▶ Nearly time to stop",
       pauseBtnLabel: "⏸ Pause (parent)",
       resumeBtnLabel: "▶ Resume (parent)",
       pausedLabel: "⏸ Paused",
@@ -73,6 +73,7 @@
       whatIsIt: "What do you think it is?",
       itsA: "It's a ",
       restartBtn: "New countdown",
+      audioVolumeLabel: "Voice & Audio Volume",
       heartbeatTitle: "Sleep heartbeat",
       heartbeatStart: "▶ Play for 1 hour",
       heartbeatStop: "■ Stop heartbeat",
@@ -218,29 +219,30 @@
       flavorPicked: "Imagen elegida: permanece borrosa hasta el último tramo.",
       flavorSurpriseBedtime: "Una imagen sorpresa tranquila y relajante, borrosa hasta el final.",
       flavorSurpriseLeaving: "Una imagen sorpresa, borrosa hasta el final.",
-      handOverBtn: "Dale el teléfono a tu hijo/a →",
+      handOverBtn: "Dale el teléfono a tu peque →",
       skipBtn: "Ir directo a la cuenta atrás",
       footNote: "Sin cuenta, sin anuncios. No se guarda nada al cerrar esta página.",
       kickoffGettingStarted: "Empezando",
       backToSetup: "Volver a configuración",
       waitingInProgress: "En curso",
-      parentRevealBtn: "Padres: pulsad aquí ahora, devolvedle/mostradle al niño/a",
-      readyQuestion: "¿Listo/a para empezar tu cuenta atrás?",
+      parentRevealBtn: "Padres: pulsad aquí ahora, mostradle la pantalla al peque",
+      readyQuestion: "¿Listo para empezar tu cuenta atrás?",
       readySub: "Pulsa el botón rectangular largo ▶ de abajo para comenzar. ¡Una imagen mágica se irá revelando poco a poco!",
-      startBtn: "▶ Pulsa para empezar",
+      startBtn: "▶ Casi es hora de parar",
       pauseBtnLabel: "⏸ Pausar (padres)",
       resumeBtnLabel: "▶ Reanudar (padres)",
       pausedLabel: "⏸ En pausa",
       stopBtnLabel: "✕ Detener (pulsado por error)",
       emergencyBtnLabel: "🚨 Emergencia — ir directo a la cuenta atrás",
       whatIsIt: "¿Qué crees que es?",
-      itsA: "Es un/una ",
+      itsA: "Es ",
       restartBtn: "Nueva cuenta atrás",
+      audioVolumeLabel: "Volumen de voz y audio",
       heartbeatTitle: "Latido para dormir",
       heartbeatStart: "▶ Reproducir 1 hora",
       heartbeatStop: "■ Detener latido",
       heartbeatVolumeLabel: "Volumen",
-      heartbeatReady: "Opcional: reproduce un latido suave mientras tu hijo/a se duerme.",
+      heartbeatReady: "Opcional: reproduce un latido suave mientras tu hijo se duerme.",
       heartbeatPlaying: "El latido se reproduce durante 1 hora como máximo.",
       heartbeatStopped: "Latido detenido.",
       turnTemplate: "¡Le toca a {name}!",
@@ -249,9 +251,9 @@
       countdownStarted: "🚀 Cuenta atrás iniciada.",
       bedtimeStart: "Vamos a empezar.",
       encourageLine: "Escuchar a tu adulto ayuda a que los dos tengáis más días divertidos juntos.",
-      waitingSubParentLeaving: "Padres: cuando esté a punto de ser hora de irse, devolvedle/mostradle el teléfono a vuestro hijo/a — el temporizador estará listo para él o ella. Para que esto sea lo más útil posible, evita duraciones muy cortas; de este modo podrás mostrar la imagen de transformación por etapas, lo que puede ayudar a mantener a los niños entretenidos y cerca de ti, alejándose por propia voluntad de la actividad.",
-      waitingSubParentScreen: "Padres: cuando esté a punto de terminar, devolvedle el teléfono a vuestro hijo/a — el temporizador estará listo para él o ella. Para que esto sea lo más útil posible, evita duraciones muy cortas; de este modo podrás mostrar la imagen de transformación por etapas, lo que puede ayudar a mantener a los niños entretenidos y cerca de ti, alejándose por propia voluntad de la actividad.",
-      waitingSubParent: "Padres: cuando esté a punto de ser hora de irse, devolvedle/mostradle el teléfono a vuestro hijo/a — el temporizador estará listo para él o ella. Para que esto sea lo más útil posible, evita duraciones muy cortas; de este modo podrás mostrar la imagen de transformación por etapas, lo que puede ayudar a mantener a los niños entretenidos y cerca de ti, alejándose por propia voluntad de la actividad.",
+      waitingSubParentLeaving: "Padres: cuando esté a punto de ser hora de irse, mostradle el teléfono a vuestro peque — el temporizador estará listo. Para que esto sea lo más útil posible, evita duraciones muy cortas; de este modo podrás mostrar la imagen de transformación por etapas, lo que puede ayudar a mantener a los niños entretenidos y cerca de ti, alejándose por propia voluntad de la actividad.",
+      waitingSubParentScreen: "Padres: cuando esté a punto de terminar, devolvedle el teléfono a vuestro peque — el temporizador estará listo. Para que esto sea lo más útil posible, evita duraciones muy cortas; de este modo podrás mostrar la imagen de transformación por etapas, lo que puede ayudar a mantener a los niños entretenidos y cerca de ti, alejándose por propia voluntad de la actividad.",
+      waitingSubParent: "Padres: cuando esté a punto de ser hora de irse, mostradle el teléfono a vuestro peque — el temporizador estará listo. Para que esto sea lo más útil posible, evita duraciones muy cortas; de este modo podrás mostrar la imagen de transformación por etapas, lo que puede ayudar a mantener a los niños entretenidos y cerca de ti, alejándose por propia voluntad de la actividad.",
       msgStyleLabel: "Mostrar el progreso como:",
       msgStyleFun: "Palabras divertidas",
       msgStyleFraction: "¼",
@@ -392,7 +394,7 @@
       parentRevealBtn: "家长：点击此处，交给/展示给孩子<span class='btnPinyin'>Jiāzhǎng diǎnjī cǐchù</span>",
       readyQuestion: "准备好开始倒计时了吗？",
       readySub: "点击下方长方形 ▶ 按钮开始。一张神奇的图片将逐渐显现！",
-      startBtn: "▶ 点击开始<span class='btnPinyin'>▶ Diǎnjī kāishǐ</span>",
+      startBtn: "▶ 快到结束时间了<span class='btnPinyin'>▶ Kuài dào jiéshù shíjiān le</span>",
       pauseBtnLabel: "⏸ 暂停（家长）<span class='btnPinyin'>Zhàntíng</span>",
       resumeBtnLabel: "▶ 继续（家长）<span class='btnPinyin'>Jìxù</span>",
       pausedLabel: "⏸ 已暂停",
@@ -401,6 +403,7 @@
       whatIsIt: "猜猜这是什么？",
       itsA: "这是一只 ",
       restartBtn: "开始新的倒计时<span class='btnPinyin'>Kāishǐ xīn de dǎojìshí</span>",
+      audioVolumeLabel: "语音与音频音量",
       heartbeatTitle: "助眠心跳声",
       heartbeatStart: "▶ 播放1小时<span class='btnPinyin'>Bōfàng 1 xiǎoshí</span>",
       heartbeatStop: "■ 停止心跳声<span class='btnPinyin'>Tíngzhǐ</span>",
@@ -603,16 +606,16 @@
   var COPY = {
     leaving: {
       en: { tag:"Time to Finish soon", finalHeading:"You did it!", finalNote:"Nice work finishing the countdown all by yourself. Time to finish or leave.",
-        ownership:"Your treat is waiting for you, the one you picked out yourself!", kickoffQ:"Ready to start your fun?",
-        kickoffSub:"Press the long rectangular ▶ button below to begin. Later on, this same timer will come back so YOU can press it to stop the fun or leave.",
+        ownership:"Your treat is waiting for you, the one you picked out yourself!", kickoffQ:"Are you ready to start your fun?",
+        kickoffSub:"Press the long rectangular ▶ button below to start fun time. Later, when its nearly time to finish, you press another button that says Nearly Time to stop. You will see your hourglass or clock timer. If you finish calmly, you may get a treat!",
         kickoffBtn:"▶ Press to begin your fun activity!", waitingTitle:"Have fun!", waitingSub:"Ask a grown-up for the phone when it's almost time to finish — the timer will be waiting for you." },
-      es: { tag:"Pronto terminamos", finalHeading:"¡Lo lograste!", finalNote:"Muy bien terminando la cuenta atrás tú solo/a. Hora de terminar.",
-        ownership:"Tu premio te espera, ¡el que elegiste tú mismo/a!", kickoffQ:"¿Listo/a para empezar la diversión?",
-        kickoffSub:"Pulsa el botón rectangular largo ▶ de abajo para comenzar. Más tarde, este mismo reloj volverá para que TÚ lo pulses cuando sea hora de terminar la diversión.",
+      es: { tag:"Pronto terminamos", finalHeading:"¡Lo lograste!", finalNote:"Muy bien terminando la cuenta atrás tú solo. Hora de terminar.",
+        ownership:"Tu premio te espera, ¡el que elegiste tú mismo!", kickoffQ:"¿Estás listo para empezar la diversión?",
+        kickoffSub:"Pulsa el botón rectangular largo ▶ de abajo para comenzar la diversión. Más tarde, cuando casi sea hora de terminar, pulsarás otro botón que dice Casi es hora de parar. Verás tu reloj de arena o reloj de colores. ¡Si terminas con calma, podrás recibir un premio!",
         kickoffBtn:"▶ ¡Pulsa para empezar!", waitingTitle:"¡Que lo pases genial!", waitingSub:"Pídele el teléfono a un adulto cuando ya casi sea hora de terminar: el reloj te estará esperando." },
       zh: { tag:"准备结束玩耍", finalHeading:"你做到了！", finalNote:"真棒，自己独立完成了倒计时。现在该收起玩具或准备出门啦。",
         ownership:"你亲自挑选的神秘奖励正等着你！", kickoffQ:"准备好开始开心玩耍了吗？",
-        kickoffSub:"点击下方长方形 ▶ 按钮开始。稍后，同一个计时器会再次出现，让你自己按下按钮结束玩耍！",
+        kickoffSub:"点击下方长方形 ▶ 按钮开始开心玩耍。稍后快要结束时，你会按下另一个写着“快到结束时间了”的按钮。你将看到你的沙漏或时钟。如果你平静地结束，就可以获得奖励哦！",
         kickoffBtn:"▶ 点击开始开心活动！<span class='btnPinyin'>▶ Diǎnjī kāishǐ huódòng!</span>", waitingTitle:"尽情玩耍吧！", waitingSub:"快要结束时，请向大人拿手机——倒计时器已为你准备就绪。" }
     },
     screen: {
@@ -620,8 +623,8 @@
         ownership:"Time for your next thing — the one you picked!", kickoffQ:"Ready to start your screen time?",
         kickoffSub:"Press the long rectangular ▶ button below to begin. Later on, this same timer will come back so YOU can press it to finish screen time.",
         kickoffBtn:"▶ Press to begin!", waitingTitle:"Enjoy!", waitingSub:"Parent: hand the phone/tablet back when it's almost time to finish — the timer will be ready." },
-      es: { tag:"El tiempo de pantalla está a punto de acabar", finalHeading:"¡Todo listo!", finalNote:"Terminaste toda la cuenta atrás tú solo/a. Hora de apagarlo.",
-        ownership:"Hora de tu próxima actividad, ¡la que tú elegiste!", kickoffQ:"¿Listo/a para empezar tu tiempo de pantalla?",
+      es: { tag:"El tiempo de pantalla está a punto de acabar", finalHeading:"¡Todo listo!", finalNote:"Terminaste toda la cuenta atrás tú solo. Hora de apagarlo.",
+        ownership:"Hora de tu próxima actividad, ¡la que tú elegiste!", kickoffQ:"¿Estás listo para empezar tu tiempo de pantalla?",
         kickoffSub:"Pulsa el botón rectangular largo ▶ de abajo para comenzar. Más tarde, este mismo temporizador volverá para que TÚ lo pulses cuando sea hora de apagarlo.",
         kickoffBtn:"▶ ¡Pulsa para empezar!", waitingTitle:"¡Disfruta!", waitingSub:"Padres: devolved el teléfono o la tablet cuando esté casi terminado — el temporizador estará listo." },
       zh: { tag:"屏幕时间倒计时", finalHeading:"屏幕时间结束！", finalNote:"太棒了，自己关掉屏幕！现在可以去休息一下眼睛啦。",
@@ -635,7 +638,7 @@
         kickoffSub:"Press the long rectangular ▶ button below to begin. In a little while, this same timer will come back so YOU can press it to start getting ready for bed.",
         kickoffBtn:"▶ Press to begin!", waitingTitle:"Enjoy story time!", waitingSub:"Ask a grown-up for the phone when it's almost bedtime — the timer will be waiting for you." },
       es: { tag:"Hora de relajarse", finalHeading:"¡Todo listo!", finalNote:"Terminaste toda la cuenta atrás. Eso significa que es hora de acurrucarte.",
-        ownership:"Es hora de coger el libro (o el juguete) que elegiste para esta noche y meterte en la cama.", kickoffQ:"¿Listo/a para empezar a relajarte esta noche?",
+        ownership:"Es hora de coger el libro (o el juguete) que elegiste para esta noche y meterte en la cama.", kickoffQ:"¿Estás listo para empezar a relajarte esta noche?",
         kickoffSub:"Pulsa el botón rectangular largo ▶ de abajo para comenzar. Dentro de un rato, este mismo reloj volverá para que TÚ lo pulses cuando sea hora de prepararte para dormir.",
         kickoffBtn:"▶ ¡Pulsa para empezar!", waitingTitle:"¡Disfruta el cuento!", waitingSub:"Pídele el teléfono a un adulto cuando ya casi sea la hora de dormir: el reloj te estará esperando." },
       zh: { tag:"睡前准备", finalHeading:"晚安，做个好梦！", finalNote:"你已经准备好睡觉啦。闭上眼睛，好好休息吧。",
@@ -649,9 +652,9 @@
         kickoffSub:"Press the long rectangular ▶ button below to begin. A magic picture will reveal itself as you go!",
         kickoffBtn:"▶ Press to begin!", waitingTitle:"In progress!", waitingSub:"Grown-up: when your child is almost done, hand the phone back for the final reveal." },
       es: { tag:"Cuenta atrás de rutina diaria", finalHeading:"¡Buen trabajo!", finalNote:"¡Terminaste tu tarea! ¡Todo listo!",
-        ownership:"¡Hora de tu siguiente actividad!", kickoffQ:"¿Listo/a para empezar tu tarea?",
+        ownership:"¡Hora de tu siguiente actividad!", kickoffQ:"¿Listo para empezar tu tarea?",
         kickoffSub:"Pulsa el botón rectangular largo ▶ de abajo para comenzar. ¡Una imagen mágica se irá revelando!",
-        kickoffBtn:"▶ ¡Pulsa para empezar!", waitingTitle:"¡En curso!", waitingSub:"Adulto: cuando el niño/a esté a punto de terminar, devolvedle el teléfono para la sorpresa final." },
+        kickoffBtn:"▶ ¡Pulsa para empezar!", waitingTitle:"¡En curso!", waitingSub:"Adulto: cuando el peque esté a punto de terminar, devolvedle el teléfono para la sorpresa final." },
       zh: { tag:"日常自理任务", finalHeading:"任务完成！", finalNote:"你独立完成了任务，太厉害了！",
         ownership:"为你自己的坚持感到骄傲吧！", kickoffQ:"准备好开始了吗？",
         kickoffSub:"点击下方长方形 ▶ 按钮开始。神奇的图案会随着倒计时逐渐显现！",
@@ -799,7 +802,15 @@
                .replace(/<span class=['"]schedOrdinalPinyin['"][^>]*>[\s\S]*?<\/span>/gi, '')
                .replace(/<span class=['"]btnPinyin['"][^>]*>[\s\S]*?<\/span>/gi, '')
                .replace(/<[^>]*>/g, '')
+               .replace(/([Ll]isto)\/[Aa]/g, '$1')
+               .replace(/([Nn]iño)\/[Aa]/g, '$1')
+               .replace(/([Ss]olo)\/[Aa]/g, '$1')
+               .replace(/([Hh]ijo)\/[Aa]/g, '$1')
+               .replace(/([Mm]ismo)\/[Aa]/g, '$1')
+               .replace(/([Uu]no?)\/([Uu]na)/g, '$1')
+               .replace(/[\/\\]/g, ' ')
                .replace(/[▶✨🐰💤👋🍪⚽🍦🛹🎮📱🎯✋📖🤫🧘😴]/g, '')
+               .replace(/\s+/g, ' ')
                .trim();
   }
 
@@ -941,7 +952,14 @@
     licenseMsg: "",
     licenseMsgType: "",
     sleepHeartbeatPlaying: false,
-    sleepHeartbeatVolume: 0.6
+    sleepHeartbeatVolume: 0.6,
+    appVolume: (function(){
+      try {
+        var v = localStorage.getItem('calm_app_volume');
+        if(v !== null) return parseFloat(v);
+      } catch(e){}
+      return 1.0;
+    })()
   };
 
   var timerHandle = null;
@@ -1033,8 +1051,9 @@
       var g = ctx.createGain();
       o.type = 'sine';
       o.frequency.value = freq;
+      var vol = (typeof state !== 'undefined' && typeof state.appVolume === 'number') ? state.appVolume : 1.0;
       g.gain.setValueAtTime(0.001, ctx.currentTime);
-      g.gain.linearRampToValueAtTime(0.06, ctx.currentTime + 0.02);
+      g.gain.linearRampToValueAtTime(0.06 * vol, ctx.currentTime + 0.02);
       g.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + dur);
       o.connect(g); g.connect(ctx.destination);
       o.start();
@@ -1322,52 +1341,128 @@
     }
   }
 
+  var currentBilingualAudio = null;
+  var activeTestAudio = null;
+  var activeSpeakingEl = null;
+
+  function stopAllImmersionAudio(){
+    try {
+      if('speechSynthesis' in window){
+        window.speechSynthesis.cancel();
+        if(window.speechSynthesis.paused) {
+          window.speechSynthesis.resume();
+        }
+      }
+    } catch(e){}
+    window._activeUtterance = null;
+    if(currentBilingualAudio){
+      try {
+        currentBilingualAudio.pause();
+        currentBilingualAudio.currentTime = 0;
+        currentBilingualAudio.src = '';
+      } catch(ex){}
+      currentBilingualAudio = null;
+    }
+    if(activeTestAudio){
+      try {
+        activeTestAudio.pause();
+        activeTestAudio.currentTime = 0;
+        activeTestAudio.src = '';
+      } catch(ex){}
+      activeTestAudio = null;
+    }
+    stopAllVoicePlayback();
+    document.querySelectorAll('.speaking').forEach(function(s){
+      s.classList.remove('speaking');
+    });
+    activeSpeakingEl = null;
+  }
+
   function speakBilingual(text, targetLang, el){
     if(!('speechSynthesis' in window)) return;
     try {
-      window.speechSynthesis.cancel();
-      var u = new SpeechSynthesisUtterance(text);
+      // If clicking the currently speaking element, stop immediately mid-flow!
+      if(el && (el.classList.contains('speaking') || activeSpeakingEl === el)){
+        stopAllImmersionAudio();
+        return;
+      }
+      // Stop any other currently playing audio
+      stopAllImmersionAudio();
+
+      var cleanText = cleanSpeechText(text, targetLang);
+      if(!cleanText) return;
+
+      var u = new SpeechSynthesisUtterance(cleanText);
       u.lang = targetLang === 'es' ? 'es-ES' : (targetLang === 'zh' ? 'zh-CN' : 'en-US');
       var bestVoice = findBestVoice(targetLang === 'es' ? 'es' : (targetLang === 'zh' ? 'zh' : 'en'));
-      if(bestVoice) u.voice = bestVoice;
+      if(bestVoice){
+        u.voice = bestVoice;
+        if(bestVoice.lang) u.lang = bestVoice.lang;
+      }
       u.rate = 0.72; // slow tutor speed for clear syllable articulation
       u.pitch = 1.35; // child speaking voice
+      u.volume = (typeof state !== 'undefined' && typeof state.appVolume === 'number') ? state.appVolume : 1.0;
+
+      // Keep utterance reference in window scope to protect from mobile garbage collection
+      window._activeUtterance = u;
+
       if(el){
         el.classList.add('speaking');
-        u.onend = function(){ el.classList.remove('speaking'); };
-        u.onerror = function(){ el.classList.remove('speaking'); };
+        activeSpeakingEl = el;
       }
+
+      u.onend = function(){
+        if(el) el.classList.remove('speaking');
+        if(activeSpeakingEl === el) activeSpeakingEl = null;
+        window._activeUtterance = null;
+      };
+      u.onerror = function(err){
+        console.warn('Speech synthesis error:', err);
+        if(el) el.classList.remove('speaking');
+        if(activeSpeakingEl === el) activeSpeakingEl = null;
+        window._activeUtterance = null;
+      };
+
+      // Resume synthesis if paused (common mobile Safari bug)
+      if(window.speechSynthesis.paused) {
+        try { window.speechSynthesis.resume(); } catch(ex){}
+      }
+
       window.speechSynthesis.speak(u);
     } catch(e){
       console.warn('Speech synthesis error:', e);
       if(el) el.classList.remove('speaking');
+      if(activeSpeakingEl === el) activeSpeakingEl = null;
+      window._activeUtterance = null;
     }
   }
 
-  var currentBilingualAudio = null;
-  var activeTestAudio = null;
   function playBilingualAudio(audioSrc, fallbackText, targetLang, el){
     try {
-      if(activeTestAudio){
-        try {
-          activeTestAudio.pause();
-          activeTestAudio.currentTime = 0;
-        } catch(ex){}
+      if(el && (el.classList.contains('speaking') || activeSpeakingEl === el)){
+        stopAllImmersionAudio();
+        return;
       }
-      if(currentBilingualAudio){
-        currentBilingualAudio.pause();
-        currentBilingualAudio.currentTime = 0;
-      }
+      stopAllImmersionAudio();
+
       if(audioSrc){
-        var audio = new Audio(audioSrc);
+        var audio = new Audio();
+        audio.preload = 'auto';
+        audio.src = audioSrc;
+        audio.volume = (typeof state !== 'undefined' && typeof state.appVolume === 'number') ? state.appVolume : 1.0;
         currentBilingualAudio = audio;
-        if(el) el.classList.add('speaking');
+        if(el) {
+          el.classList.add('speaking');
+          activeSpeakingEl = el;
+        }
         audio.onended = function(){
           if(el) el.classList.remove('speaking');
+          if(activeSpeakingEl === el) activeSpeakingEl = null;
           currentBilingualAudio = null;
         };
         audio.onerror = function(){
           if(el) el.classList.remove('speaking');
+          if(activeSpeakingEl === el) activeSpeakingEl = null;
           currentBilingualAudio = null;
           speakBilingual(fallbackText, targetLang, el);
         };
@@ -1375,6 +1470,9 @@
         if(p !== undefined){
           p.catch(function(err){
             console.warn('Audio play error, falling back to speech synthesis:', err);
+            if(el) el.classList.remove('speaking');
+            if(activeSpeakingEl === el) activeSpeakingEl = null;
+            currentBilingualAudio = null;
             speakBilingual(fallbackText, targetLang, el);
           });
         }
@@ -1467,6 +1565,7 @@
 
   // ---------- Screens ----------
   function render(){
+    stopAllImmersionAudio();
     try{
       document.body.classList.toggle('theme-bedtime', state.mode === 'bedtime');
       document.body.classList.toggle('theme-screen', state.mode === 'screen');
@@ -1607,6 +1706,7 @@
       var ctx = beep._ctx || (beep._ctx = new AudioContext());
       if (ctx.state === 'suspended') ctx.resume();
       var now = ctx.currentTime;
+      var vol = (typeof state !== 'undefined' && typeof state.appVolume === 'number') ? state.appVolume : 1.0;
 
       if (archetype === 'blippi') {
         var o1 = ctx.createOscillator();
@@ -1614,7 +1714,7 @@
         o1.type = 'triangle';
         o1.frequency.setValueAtTime(320, now);
         o1.frequency.exponentialRampToValueAtTime(700, now + 0.1);
-        g1.gain.setValueAtTime(0.09, now);
+        g1.gain.setValueAtTime(0.09 * vol, now);
         g1.gain.exponentialRampToValueAtTime(0.001, now + 0.12);
         o1.connect(g1); g1.connect(ctx.destination);
         o1.start(now); o1.stop(now + 0.13);
@@ -1624,7 +1724,7 @@
         o2.type = 'triangle';
         o2.frequency.setValueAtTime(520, now + 0.12);
         o2.frequency.exponentialRampToValueAtTime(960, now + 0.24);
-        g2.gain.setValueAtTime(0.1, now + 0.12);
+        g2.gain.setValueAtTime(0.1 * vol, now + 0.12);
         g2.gain.exponentialRampToValueAtTime(0.001, now + 0.26);
         o2.connect(g2); g2.connect(ctx.destination);
         o2.start(now + 0.12); o2.stop(now + 0.27);
@@ -1636,7 +1736,7 @@
         om.frequency.setValueAtTime(1046, now);
         om.frequency.setValueAtTime(1318, now + 0.08);
         om.frequency.setValueAtTime(1567, now + 0.16);
-        gm.gain.setValueAtTime(0.07, now);
+        gm.gain.setValueAtTime(0.07 * vol, now);
         gm.gain.exponentialRampToValueAtTime(0.001, now + 0.28);
         om.connect(gm); gm.connect(ctx.destination);
         om.start(now); om.stop(now + 0.29);
@@ -1648,7 +1748,7 @@
           or.type = 'sine';
           or.frequency.value = freq;
           var t = now + (i * 0.07);
-          gr.gain.setValueAtTime(0.06, t);
+          gr.gain.setValueAtTime(0.06 * vol, t);
           gr.gain.exponentialRampToValueAtTime(0.001, t + 0.22);
           or.connect(gr); gr.connect(ctx.destination);
           or.start(t); or.stop(t + 0.24);
@@ -1660,7 +1760,7 @@
         og.type = 'sawtooth';
         og.frequency.setValueAtTime(140, now);
         og.frequency.linearRampToValueAtTime(320, now + 0.14);
-        gg.gain.setValueAtTime(0.06, now);
+        gg.gain.setValueAtTime(0.06 * vol, now);
         gg.gain.exponentialRampToValueAtTime(0.001, now + 0.18);
         og.connect(gg); gg.connect(ctx.destination);
         og.start(now); og.stop(now + 0.2);
@@ -1671,7 +1771,7 @@
         oc.type = 'square';
         oc.frequency.setValueAtTime(880, now);
         oc.frequency.setValueAtTime(1174, now + 0.08);
-        gc.gain.setValueAtTime(0.05, now);
+        gc.gain.setValueAtTime(0.05 * vol, now);
         gc.gain.exponentialRampToValueAtTime(0.001, now + 0.22);
         oc.connect(gc); gc.connect(ctx.destination);
         oc.start(now); oc.stop(now + 0.24);
@@ -1683,7 +1783,7 @@
         o.type = 'sine';
         o.frequency.setValueAtTime(587.33, now); // D5
         o.frequency.exponentialRampToValueAtTime(880, now + 0.2); // A5
-        g.gain.setValueAtTime(0.08, now);
+        g.gain.setValueAtTime(0.08 * vol, now);
         g.gain.exponentialRampToValueAtTime(0.001, now + 0.38);
         o.connect(g); g.connect(ctx.destination);
         o.start(now); o.stop(now + 0.4);
@@ -1699,6 +1799,7 @@
     if (audioSrc) {
       try {
         currentAudioPlayer = new Audio(audioSrc);
+        currentAudioPlayer.volume = (typeof state !== 'undefined' && typeof state.appVolume === 'number') ? state.appVolume : 1.0;
         if (onEnd) currentAudioPlayer.onended = onEnd;
         currentAudioPlayer.onerror = function(){
           if (onEnd) onEnd();
@@ -2707,7 +2808,7 @@ function renderDailyTasksSetup(t){
         '<p class="sub">'+(state.lang==='es'?'Rutinas claras y tranquilas para hábitos diarios.':'Predictable, calm routines for everyday habits.')+'</p>'+
 
         '<div class="field">'+
-          '<label>'+(state.lang==='es' ? '1. Edad del niño/a' : '1. Child\'s age')+'</label>'+
+          '<label>'+(state.lang==='es' ? '1. Edad del peque' : '1. Child\'s age')+'</label>'+
           '<div class="seg">'+
             '<button class="seg-age '+(state.age==='young'?'active':'')+'" data-age="young" type="button">'+t.age24+'</button>'+
             '<button class="seg-age '+(state.age==='mid'?'active':'')+'" data-age="mid" type="button">'+t.age57+'</button>'+
@@ -2736,6 +2837,14 @@ function renderDailyTasksSetup(t){
             '</div>'+
             previewMarkup
           ) : '')+
+        '</div>'+
+
+        '<div class="field" style="margin-top:10px;">'+
+          '<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px;">'+
+            '<label style="margin:0;font-size:14px;font-weight:700;">🔊 '+t.audioVolumeLabel+'</label>'+
+            '<span style="font-size:13px;font-weight:700;color:var(--sand);" class="appVolumeLabel">'+Math.round(state.appVolume * 100)+'%</span>'+
+          '</div>'+
+          '<input class="sleepVolume appVolumeSlider" type="range" min="0" max="1" step="0.05" value="'+state.appVolume+'" style="width:100%;cursor:pointer;" aria-label="'+t.audioVolumeLabel+'" />'+
         '</div>'+
 
         ctaButton +
@@ -2964,6 +3073,13 @@ function renderDailyTasksSetup(t){
       ) : (
         '<p class="flavorLine">✨ '+ (state.lang === 'zh' ? (getTheme(state.style).flavor_zh || getTheme(state.style).flavor_en) : (state.lang === 'es' ? getTheme(state.style).flavor_es : getTheme(state.style).flavor_en)) +'</p>'
       ))+
+      '<div class="field" style="margin-top:10px;">'+
+        '<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px;">'+
+          '<label style="margin:0;font-size:14px;font-weight:700;">🔊 '+t.audioVolumeLabel+'</label>'+
+          '<span style="font-size:13px;font-weight:700;color:var(--sand);" class="appVolumeLabel">'+Math.round(state.appVolume * 100)+'%</span>'+
+        '</div>'+
+        '<input class="sleepVolume appVolumeSlider" type="range" min="0" max="1" step="0.05" value="'+state.appVolume+'" style="width:100%;cursor:pointer;" aria-label="'+t.audioVolumeLabel+'" />'+
+      '</div>'+
       '<button class="bigBtn" id="handOverBtn" type="button">'+t.handOverBtn+'</button>'+
       '<button class="ghostBtn" id="skipToCountdownBtn" type="button" style="margin-top:10px;">'+t.skipBtn+'</button>'+
       '<p class="footNote">'+t.footNote+'</p>'+
@@ -3020,22 +3136,22 @@ function renderDailyTasksSetup(t){
       var tNameZhClean = (curTask.id === 'custom' && customName) ? customName : cleanSpeechText(curTask.name_zh || curTask.name_en, 'zh');
       var tNameZhDisplay = (curTask.id === 'custom' && customName) ? customName : (curTask.name_zh || curTask.name_en);
       enQ = 'Are you ready for: ' + curTask.icon + ' ' + tNameEn + '?';
-      esQ = '¿Listo/a para: ' + curTask.icon + ' ' + tNameEs + '?';
+      esQ = '¿Listo para: ' + curTask.icon + ' ' + tNameEs + '?';
       zhQ = '准备好进行：' + curTask.icon + ' ' + tNameZhClean + ' 了吗？';
       zhDisplay = '准备好进行：' + curTask.icon + ' ' + tNameZhDisplay + ' 了吗？';
     } else if(state.mode === 'screen'){
       enQ = 'Are you ready to start your screen time?';
-      esQ = '¿Estás listo/a para empezar tu tiempo de pantalla?';
+      esQ = '¿Estás listo para empezar tu tiempo de pantalla?';
       zhQ = '准备好开始看屏幕了吗？';
       zhDisplay = '准备好开始看屏幕了吗？<span class="btnPinyin">Zhǔnbèi hǎo kāishǐ kàn píngmù le ma?</span>';
     } else if(state.mode === 'bedtime'){
       enQ = 'Are you ready to start tonight\'s wind-down?';
-      esQ = '¿Estás listo/a para relajarte esta noche?';
+      esQ = '¿Estás listo para relajarte esta noche?';
       zhQ = '准备好开始睡前准备了吗？';
       zhDisplay = '准备好开始睡前准备了吗？<span class="btnPinyin">Zhǔnbèi hǎo kāishǐ shuìqián zhǔnbèi le ma?</span>';
     } else {
       enQ = 'Are you ready to start your fun?';
-      esQ = '¿Estás listo/a para empezar la diversión?';
+      esQ = '¿Estás listo para empezar la diversión?';
       zhQ = '准备好开始开心玩耍了吗？';
       zhDisplay = '准备好开始开心玩耍了吗？<span class="btnPinyin">Zhǔnbèi hǎo kāishǐ wánshuǎ le ma?</span>';
     }
@@ -3141,7 +3257,7 @@ function renderDailyTasksSetup(t){
       : '<div class="hourglassWrap" style="height:'+wrapHeight()+';">'+ timerVisual(0) +'</div>';
     var taskInfo = getTaskInfo();
     var introQuestion = state.mode==='task'
-      ? (state.lang === 'zh' ? ('准备好进行：' + taskInfo.icon + ' ' + taskInfo.name + ' 了吗？') : (state.lang === 'es' ? ('¿Listo/a para: ' + taskInfo.icon + ' ' + taskInfo.name + '?') : ('Ready for: ' + taskInfo.icon + ' ' + taskInfo.name + '?')))
+      ? (state.lang === 'zh' ? ('准备好进行：' + taskInfo.icon + ' ' + taskInfo.name + ' 了吗？') : (state.lang === 'es' ? ('¿Listo para: ' + taskInfo.icon + ' ' + taskInfo.name + '?') : ('Ready for: ' + taskInfo.icon + ' ' + taskInfo.name + '?')))
       : (state.mode==='leaving' ? (state.lang === 'zh' ? '由你来启动倒计时。' : (state.lang === 'es' ? 'TÚ inicias la cuenta atrás.' : 'YOU start the countdown.')) : t.readyQuestion);
     var introSub = state.mode==='leaving'
       ? (state.timerMode==='transformation' ? (state.lang==='zh' ? "点击下方长方形 ▶ 按钮开始。看着画面在倒计时中神奇蜕变！" : (state.lang==='es' ? "Pulsa el botón rectangular largo ▶ de abajo para comenzar. ¡Mira la transformación mágica en la cuenta atrás!" : "Press the long rectangular ▶ button below to begin. Watch the magic transformation as you count down!")) : (state.lang==='zh' ? "点击下方长方形 ▶ 按钮开始。该由你亲自按下按钮结束玩耍啦！" : (state.lang==='es' ? "Pulsa el botón rectangular largo ▶ de abajo para comenzar. ¡Es hora de terminar la diversión!" : "Press the long rectangular ▶ button below to begin. It's time for YOU to stop the fun!")))
@@ -3282,7 +3398,11 @@ function renderDailyTasksSetup(t){
 
     // Bilingual Learning Spark (Audio playback)
     app.querySelectorAll('.bilingualSpark').forEach(function(spark){
+      var lastTouch = 0;
       function handleSpark(e){
+        var now = Date.now();
+        if(e && e.type === 'click' && (now - lastTouch < 400)) return;
+        if(e && e.type === 'touchend') lastTouch = now;
         if(e) e.stopPropagation();
         var audioSrc = spark.getAttribute('data-audio-src');
         var text = spark.getAttribute('data-speak-text');
@@ -3293,6 +3413,7 @@ function renderDailyTasksSetup(t){
           speakBilingual(text, lang, spark);
         }
       }
+      spark.addEventListener('touchend', handleSpark, { passive: true });
       spark.addEventListener('click', handleSpark);
       spark.addEventListener('keydown', function(e){
         if(e.key === 'Enter' || e.key === ' '){
@@ -3304,7 +3425,11 @@ function renderDailyTasksSetup(t){
 
     // Page 2 Immersion elements audio triggers (Spanish on Left, Mandarin on Right)
     app.querySelectorAll('.immersionSide, .immersionPill, .instructionSideBtn, .cardImmersionSide').forEach(function(el){
+      var lastTouch = 0;
       function handleImmersionSpeak(e){
+        var now = Date.now();
+        if(e && e.type === 'click' && (now - lastTouch < 400)) return;
+        if(e && e.type === 'touchend') lastTouch = now;
         if(e) e.stopPropagation();
         var audioSrc = el.getAttribute('data-audio-src');
         var text = el.getAttribute('data-speak-text');
@@ -3315,6 +3440,7 @@ function renderDailyTasksSetup(t){
           speakBilingual(text, lang, el);
         }
       }
+      el.addEventListener('touchend', handleImmersionSpeak, { passive: true });
       el.addEventListener('click', handleImmersionSpeak);
       el.addEventListener('keydown', function(e){
         if(e.key === 'Enter' || e.key === ' '){
@@ -3748,6 +3874,30 @@ function renderDailyTasksSetup(t){
         if(timerHandle) clearInterval(timerHandle);
         timerHandle = setInterval(tick, 200);
         tick();
+      });
+    });
+
+    // Voice & Audio Volume Slider
+    app.querySelectorAll('.appVolumeSlider').forEach(function(slider){
+      slider.addEventListener('input', function(e){
+        var val = parseFloat(e.target.value);
+        if(isNaN(val)) val = 1.0;
+        state.appVolume = val;
+        try {
+          if(typeof window !== 'undefined' && window.localStorage){
+            localStorage.setItem('calm_app_volume', String(val));
+          }
+        } catch(err){}
+        var pct = Math.round(val * 100) + '%';
+        app.querySelectorAll('.appVolumeLabel').forEach(function(lbl){
+          lbl.textContent = pct;
+        });
+        if(currentBilingualAudio){
+          try { currentBilingualAudio.volume = val; } catch(err){}
+        }
+        if(currentAudioPlayer){
+          try { currentAudioPlayer.volume = val; } catch(err){}
+        }
       });
     });
 
