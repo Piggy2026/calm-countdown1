@@ -1114,11 +1114,47 @@
     }
   }
 
-  function bilingualSparkHTML(phrase, targetLang){
+  var currentBilingualAudio = null;
+  function playBilingualAudio(audioSrc, fallbackText, targetLang, el){
+    try {
+      if(currentBilingualAudio){
+        currentBilingualAudio.pause();
+        currentBilingualAudio.currentTime = 0;
+      }
+      if(audioSrc){
+        var audio = new Audio(audioSrc);
+        currentBilingualAudio = audio;
+        if(el) el.classList.add('speaking');
+        audio.onended = function(){
+          if(el) el.classList.remove('speaking');
+          currentBilingualAudio = null;
+        };
+        audio.onerror = function(){
+          if(el) el.classList.remove('speaking');
+          currentBilingualAudio = null;
+          speakBilingual(fallbackText, targetLang, el);
+        };
+        var p = audio.play();
+        if(p !== undefined){
+          p.catch(function(err){
+            console.warn('Audio play error, falling back to speech synthesis:', err);
+            speakBilingual(fallbackText, targetLang, el);
+          });
+        }
+        return;
+      }
+    } catch(e){
+      console.warn('Audio error:', e);
+    }
+    speakBilingual(fallbackText, targetLang, el);
+  }
+
+  function bilingualSparkHTML(phrase, targetLang, audioSrc){
     if(!phrase) return '';
     var label = state.lang === 'es' ? 'En inglés:' : 'In Spanish:';
+    var audioAttr = audioSrc ? (' data-audio-src="'+ audioSrc +'"') : '';
     return ''+
-      '<div class="bilingualSpark" role="button" tabindex="0" data-speak-text="'+ phrase.replace(/"/g, '&quot;') +'" data-speak-lang="'+ targetLang +'" title="'+ (state.lang === 'es' ? 'Pulsa para escuchar' : 'Tap to listen') +'">'+
+      '<div class="bilingualSpark" role="button" tabindex="0" data-speak-text="'+ phrase.replace(/"/g, '&quot;') +'" data-speak-lang="'+ targetLang +'"'+ audioAttr +' title="'+ (state.lang === 'es' ? 'Pulsa para escuchar' : 'Tap to listen') +'">'+
         '<span class="bilingualSparkLabel">'+ label +'</span>'+
         '<span class="bilingualSparkText">“'+ phrase +'”</span>'+
         '<span class="bilingualSparkBtn" aria-hidden="true">▶ 🔊</span>'+
@@ -2666,8 +2702,9 @@ function renderDailyTasksSetup(t){
     var t = T();
     var c = (COPY[state.mode] && COPY[state.mode][state.lang]) || COPY['leaving'][state.lang];
     var otherLang = state.lang === 'es' ? 'en' : 'es';
-    var otherCopy = (COPY[state.mode] && COPY[state.mode][otherLang]) || COPY['leaving'][otherLang];
-    var sparkMarkup = bilingualSparkHTML(otherCopy.waitingTitle, otherLang);
+    var sparkPhrase = state.lang === 'es' ? 'Time to play! Have fun!' : '¡A jugar! ¡Que te diviertas!';
+    var sparkAudio = state.lang === 'es' ? 'assets/audio/bilingual/waiting_en.mp3' : 'assets/audio/bilingual/waiting_es.mp3';
+    var sparkMarkup = bilingualSparkHTML(sparkPhrase, otherLang, sparkAudio);
     var taskInfo = state.mode === 'task' ? getTaskInfo() : null;
     var waitingGraphic = state.mode === 'bedtime'
       ? '<div style="font-size:70px; margin:18px 0;">🐰💤</div>'
@@ -2777,8 +2814,9 @@ function renderDailyTasksSetup(t){
   function renderDone(){
     var t = T(); var c = (COPY[state.mode] && COPY[state.mode][state.lang]) || COPY['leaving'][state.lang];
     var otherLang = state.lang === 'es' ? 'en' : 'es';
-    var otherCopy = (COPY[state.mode] && COPY[state.mode][otherLang]) || COPY['leaving'][otherLang];
-    var sparkMarkup = bilingualSparkHTML(otherCopy.finalHeading, otherLang);
+    var sparkPhrase = state.lang === 'es' ? 'Super job! You did it!' : '¡Muy bien! ¡Lo lograste!';
+    var sparkAudio = state.lang === 'es' ? 'assets/audio/bilingual/done_en.mp3' : 'assets/audio/bilingual/done_es.mp3';
+    var sparkMarkup = bilingualSparkHTML(sparkPhrase, otherLang, sparkAudio);
     var doneRevealMarkup = '';
     if(state.timerMode === 'classic'){
       doneRevealMarkup = magicImageHTML(false, true, true);
@@ -2845,9 +2883,12 @@ function renderDailyTasksSetup(t){
     app.querySelectorAll('.bilingualSpark').forEach(function(spark){
       function handleSpark(e){
         if(e) e.stopPropagation();
+        var audioSrc = spark.getAttribute('data-audio-src');
         var text = spark.getAttribute('data-speak-text');
         var lang = spark.getAttribute('data-speak-lang');
-        if(text && lang){
+        if(audioSrc){
+          playBilingualAudio(audioSrc, text, lang, spark);
+        } else if(text && lang){
           speakBilingual(text, lang, spark);
         }
       }
