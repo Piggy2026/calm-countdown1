@@ -339,20 +339,37 @@
     min-height:34px;
   }
 
-  /* ---- Bilingual Learning Spark ---- */
+  /* ---- Multilingual Learning Sparks ---- */
+  .sparksWrap{
+    display:flex;
+    flex-direction:column;
+    gap:6px;
+    align-items:center;
+    width:100%;
+    margin:4px auto 10px;
+  }
+  .sparksIntroHeader{
+    font-size:12px;
+    font-weight:700;
+    color:var(--sand);
+    opacity:0.85;
+    letter-spacing:0.3px;
+    margin-bottom:2px;
+    text-align:center;
+  }
   .bilingualSpark{
     display:inline-flex;
     align-items:center;
     justify-content:center;
     gap:8px;
-    margin:2px auto 10px;
-    padding:4px 12px;
+    margin:2px auto;
+    padding:5px 14px;
     background:rgba(255,255,255,0.08);
     border:1px solid rgba(255,255,255,0.22);
     border-radius:20px;
     cursor:pointer;
     user-select:none;
-    max-width:92%;
+    max-width:94%;
     flex-wrap:wrap;
     transition:all 0.18s ease;
   }
@@ -366,22 +383,28 @@
   }
   .bilingualSparkLabel{
     font-size:12px;
-    font-weight:600;
-    opacity:0.8;
-    font-style:italic;
+    font-weight:700;
+    opacity:0.9;
     color:var(--sand);
   }
   .bilingualSparkText{
-    font-size:14.5px;
+    font-size:14px;
     font-weight:700;
     letter-spacing:0.2px;
     color:#fff;
+  }
+  .sparkPinyin{
+    font-size:12px;
+    opacity:0.85;
+    font-weight:600;
+    color:var(--sand);
+    margin-left:3px;
   }
   .bilingualSparkBtn{
     display:inline-flex;
     align-items:center;
     gap:4px;
-    padding:2px 7px;
+    padding:2px 8px;
     font-size:11.5px;
     font-weight:700;
     color:var(--sand);
@@ -393,57 +416,6 @@
     background:rgba(78,205,196,0.25);
     border-color:var(--teal);
     box-shadow:0 0 12px rgba(78,205,196,0.4);
-  }
-
-  .voicePreviewRow{
-    display:flex;
-    gap:8px;
-    justify-content:center;
-    align-items:center;
-    flex-wrap:wrap;
-    margin:8px auto 14px;
-    max-width:96%;
-    padding:10px 12px;
-    background:rgba(0,0,0,0.22);
-    border:1px dashed rgba(78,205,196,0.4);
-    border-radius:16px;
-  }
-  .voicePreviewTitle{
-    font-size:12.5px;
-    opacity:0.9;
-    width:100%;
-    text-align:center;
-    font-weight:700;
-    color:var(--sand);
-    margin-bottom:2px;
-    letter-spacing:0.3px;
-  }
-  .voiceTestBtn{
-    display:inline-flex;
-    align-items:center;
-    gap:5px;
-    padding:6px 12px;
-    font-size:12px;
-    font-family:'Quicksand',sans-serif;
-    font-weight:700;
-    color:var(--sand);
-    background:rgba(255,255,255,0.08);
-    border:1px solid rgba(255,255,255,0.22);
-    border-radius:14px;
-    cursor:pointer;
-    touch-action:manipulation;
-    transition:all 0.15s ease;
-  }
-  .voiceTestBtn:hover{
-    background:rgba(255,255,255,0.18);
-    transform:translateY(-1px);
-    border-color:rgba(255,255,255,0.35);
-  }
-  .voiceTestBtn.playing{
-    background:rgba(78,205,196,0.35);
-    border-color:var(--teal);
-    color:#fff;
-    box-shadow:0 0 12px rgba(78,205,196,0.45);
   }
 
   /* ---- Magic image reveal ---- */

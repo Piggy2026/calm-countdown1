@@ -332,6 +332,169 @@
       readyTaskSub: "Pulsa el botón cuando TÚ estés listo/a. ¡Mira la transformación mágica poco a poco!",
       taskDoneHeading: "¡Tarea completada!",
       taskDoneSub: "¡Fantástico trabajo completando {task}!"
+    },
+    zh: {
+      tagline: "让孩子自主掌控倒计时——通过生动有趣的渐进揭秘图片与故事，轻松完成过渡。",
+      parentSetup: "家长设置",
+      momentLabel: "当前场景",
+      leavingModeBtn: "结束玩耍",
+      screenModeBtn: "结束屏幕时间",
+      bedtimeModeBtn: "睡前就寝常规",
+      ageLabel: "适合年龄段（用于图片匹配）",
+      age24: "2–4岁", age57: "5–7岁", age8: "8岁及以上",
+      minutesLabel: "设置多少分钟？",
+      customBtn: "自定义",
+      customMinutesNote: "分钟 (1–120)",
+      styleLabel: "计时器风格",
+      timerModeLabel: "选择图片类型",
+      modeClassic: "经典惊喜图片",
+      modeTransform: "神奇蜕变计时器",
+      classicStyleLabel: "选择计时器外观",
+      transformThemeLabel: "蜕变主题",
+      hourglassBtn: "⏳ 沙漏",
+      clockBtn: "🕐 彩色时钟",
+      flavorTransformButterfly: "看着毛毛虫随着倒计时蜕变成美丽的蝴蝶！",
+      flavorTransformDino: "看着恐龙蛋随着倒计时破壳而出！",
+      transformDoneHeading: "蜕变完成！",
+      transformDoneButterfly: "蝴蝶自由飞舞啦！🦋",
+      transformDoneDino: "小恐龙破壳而出啦！🦖",
+      readySubTransform: "点击下方长方形 ▶ 按钮开始。看着画面一点点发生神奇变化！",
+      groupLabel: "使用对象",
+      groupSingle: "1位孩子",
+      groupSmall: "高级模式",
+      groupPremiumSub: "支持多位孩子、专属卡片与更多功能",
+      groupClass: "班级模式",
+      premiumBadge: "🔒",
+      unlockPrompt: "该模式需要解锁码：",
+      unlockPlaceholder: "输入解锁码",
+      unlockBtn: "解锁",
+      unlockChecking: "正在验证…",
+      unlockSuccess: "解锁成功！✓ 现已开启多儿童与班级模式。",
+      unlockError: "解锁码不正确，请核对后再试。",
+      unlockedNote: "本设备已成功解锁班级与多儿童模式 ✓",
+      namesLabel: "孩子姓名 (2–4位)，每行一个",
+      namesPlaceholder: "小明\n小华\n美美",
+      pickerToggleShow: "家长：选择揭秘图片（可选）▼",
+      pickerToggleHide: "收起图片选择 ▲",
+      surpriseBtn: "🎲 给我一个惊喜",
+      surpriseSelected: " (已选)",
+      flavorPicked: "图片已选定——在倒计时最后一刻之前将保持模糊神秘感。",
+      flavorSurpriseBedtime: "一张宁静助眠的惊喜图片，在最后阶段揭晓。",
+      flavorSurpriseLeaving: "一张神秘惊喜图片，在最后阶段揭晓。",
+      handOverBtn: "将手机交给孩子 →",
+      skipBtn: "直接跳过进入倒计时",
+      footNote: "无账户、无广告。关闭页面后不会保存任何数据。",
+      kickoffGettingStarted: "准备开始",
+      backToSetup: "返回设置",
+      waitingInProgress: "进行中",
+      parentRevealBtn: "家长：点击此处，交给/展示给孩子",
+      readyQuestion: "准备好开始倒计时了吗？",
+      readySub: "点击下方长方形 ▶ 按钮开始。一张神奇的图片将逐渐显现！",
+      startBtn: "▶ 点击开始",
+      pauseBtnLabel: "⏸ 暂停（家长）",
+      resumeBtnLabel: "▶ 继续（家长）",
+      pausedLabel: "⏸ 已暂停",
+      stopBtnLabel: "✕ 停止（误触按键）",
+      emergencyBtnLabel: "🚨 紧急情况 — 立即进入倒计时",
+      whatIsIt: "猜猜这是什么？",
+      itsA: "这是一只 ",
+      restartBtn: "开始新的倒计时",
+      heartbeatTitle: "助眠心跳声",
+      heartbeatStart: "▶ 播放1小时",
+      heartbeatStop: "■ 停止心跳声",
+      heartbeatVolumeLabel: "音量",
+      heartbeatReady: "可选：在孩子入睡时播放轻柔的心跳白噪音。",
+      heartbeatPlaying: "心跳声正在播放，最多持续1小时。",
+      heartbeatStopped: "心跳声已停止。",
+      turnTemplate: "轮到 {name} 的方块啦！",
+      classroomBanner: "👩‍🏫 班级集体模式 — 一起行动！",
+      offWeGo: "🚀 出发啦！",
+      countdownStarted: "🚀 倒计时开始。",
+      bedtimeStart: "我们开始吧。",
+      encourageLine: "听大人的话，我们能一起度过更多开心快乐的日子！",
+      waitingSubParentLeaving: "家长：快要离开时，请将手机交给/展示给孩子——计时器已为他们准备就绪。建议分阶段展示蜕变过程，帮助孩子自愿主动离开当前活动！",
+      waitingSubParentScreen: "家长：屏幕时间快结束时，请将手机交回孩子——计时器已为他们准备就绪。建议分阶段展示蜕变过程，帮助孩子温和脱离屏幕！",
+      waitingSubParent: "家长：快要离开时，请将手机交给/展示给孩子——计时器已为他们准备就绪。建议分阶段展示蜕变过程，帮助孩子自愿主动离开当前活动！",
+      msgStyleLabel: "进度显示方式：",
+      msgStyleFun: "趣味词语",
+      msgStyleFraction: "¼",
+      msgStylePercent: "%",
+      msgStyleSeconds: "秒数",
+      durationUnitLabel: "时长单位",
+      unitMinutes: "分钟",
+      unitSeconds: "秒（快速计时）",
+      secondsNote: "秒 (1–300)",
+      tabTransitions: "日常过渡",
+      tabTasks: "日常自理任务",
+      tabRewards: "奖励保险库",
+      rewardsTitle: "平静保险库与刮刮卡奖励",
+      rewardsSub: "通过平静平稳的过渡赢得刮刮卡。你的专属收藏永远安全！",
+      awardCardBtn: "🎁 颁发一张刮刮卡",
+      vaultPauseBtn: "🌬️ 平静深呼吸暂停 — 安全存放于保险库",
+      vaultTitle: "在保险库中安全封存",
+      vaultSub: "你的刮刮卡已安全锁定在保险库里！它绝不会消失。请慢慢深呼吸，放松心情。",
+      voiceBtn: "🎙️ 播放舒缓安抚语音",
+      unlockVaultBtn: "🌟 孩子已恢复平静 — 打开保险库！",
+      albumTitle: "刮刮卡收藏画册",
+      scratchPrompt: "刮开见惊喜！",
+      viewAlbumBtn: "📖 在我的画册中查看",
+      scratchAnotherBtn: "🎁 再刮一张卡片",
+      collectedMsg: "已收集！",
+      lockedMsg: "保持平静即可解锁！",
+      resetAlbumBtn: "重置画册",
+      resetAlbumConfirm: "确定要重置你的刮刮卡收藏画册吗？",
+      albumCompleteTitle: "🏆 收集大圆满！",
+      albumCompleteSub: "你已经集满了所有卡槽！将整套画册安全存入永久保险库，即可开启新画册，已获得的奖励永不丢失！",
+      albumSlotsFilled: "已集满卡槽",
+      storeInVaultBtn: "🔐 存入保险库并开启新画册",
+      viewVaultBtn: "🏆 查看保险库中的卡片",
+      activeAlbumTab: "📖 当前画册",
+      vaultArchiveTab: "🔐 卡片保险库",
+      vaultBadge: "已保存在保险库",
+      vaultEmptyMsg: "你的卡片保险库已就绪！当集满一本画册的所有卡槽后，即可存入这里永久珍藏。",
+      resetAlbumAndRestartBtn: "🔄 重置画册并重新开始",
+      doneScratchBtn: "🎁 刮开你的奖励卡片！",
+      albumTitle24: "🐥 幼儿刮刮卡收藏册",
+      albumTitle57: "🦖 小小探险家图鉴",
+      albumTitle8: "🎮 少年特权金库",
+      countingStarsText: "1... 2... 3颗星！⭐⭐⭐ 太棒啦！",
+      powerStarsLabel: "能量值：",
+      perkVoucherLabel: "🎟️ 特权兑换券 — 与家长兑换！",
+      perkRedeemed: "已与家长兑换 ✓",
+      agePill24: "🐥 2–4岁 幼儿",
+      agePill57: "🦖 5–7岁 探险家",
+      agePill8: "🎮 8岁以上 特权与战利品",
+      voicePromptEn: "It's okay to feel upset. Let's take a slow breath together. In... and out. Your scratch card is safe in the vault and waiting for you whenever you are calm and ready.",
+      voiceSelectorTitle: "🎙️ 保险库安抚语音与角色",
+      voiceSelectorSub: "选择在情绪平静时引导孩子的语音角色：",
+      voiceCalm: "温和引导员（柔和舒缓）",
+      voiceBlippi: "活力伙伴（欢快活泼）",
+      voiceMickey: "快乐卡通（调皮亲切）",
+      voiceRachel: "音乐老师（温暖悠扬）",
+      voiceGamer: "任务指挥官 / 游戏控（适合7岁以上）",
+      voiceCoach: "活力教练（适合7岁以上）",
+      voiceCustom: "自定义 / 家长录音",
+      voiceTestBtn: "▶ 试听语音",
+      recordVoiceBtn: "⏺ 开始录音",
+      stopRecordBtn: "■ 停止录音",
+      uploadAudioBtn: "📁 上传音频",
+      deleteVoiceBtn: "🗑️ 删除",
+      recordingStatus: "正在录音…",
+      customVoiceLabel: "语音名称：",
+      tasksTag: "日常自理常规",
+      tasksTitle: "日常任务",
+      tasksSub: "专为日常习惯设计的快速倒计时。选一项任务，让孩子自主掌控！",
+      tasksLabel: "请选择要进行的任务",
+      selectedTaskLabel: "已选任务：",
+      timeForTask: "进行 {task} 的时间：",
+      noTaskSelectedPrompt: "点击上方常规任务以开始",
+      selectTaskFirstBtn: "👆 点击上方常规任务以开始",
+      deselectTaskBtn: "取消选择",
+      customTaskPlaceholder: "任务名称（例如：练琴、穿外套……）",
+      readyTaskQ: "准备好进行 {task} 了吗？",
+      readyTaskSub: "当你准备好时点击按钮开始。看着画面一点点神奇揭晓！",
+      taskDoneHeading: "任务完成！",
+      taskDoneSub: "太厉害了，顺利完成了 {task}！"
     }
   };
 
@@ -425,7 +588,7 @@
     return {
       id: cur.id,
       icon: cur.icon,
-      name: (cur.id === 'custom' && customName) ? customName : (state.lang === 'es' ? cur.name_es : cur.name_en),
+      name: (cur.id === 'custom' && customName) ? customName : (state.lang === 'zh' ? (cur.name_zh || cur.name_en) : (state.lang === 'es' ? cur.name_es : cur.name_en)),
       defaultMin: cur.defaultMin
     };
   }
@@ -474,28 +637,32 @@
       es: { tag:"Cuenta atrás de rutina diaria", finalHeading:"¡Buen trabajo!", finalNote:"¡Terminaste tu tarea! ¡Todo listo!",
         ownership:"¡Hora de tu siguiente actividad!", kickoffQ:"¿Listo/a para empezar tu tarea?",
         kickoffSub:"Pulsa el botón rectangular largo ▶ de abajo para comenzar. ¡Una imagen mágica se irá revelando!",
-        kickoffBtn:"▶ ¡Pulsa para empezar!", waitingTitle:"¡En curso!", waitingSub:"Adulto: cuando el niño/a esté a punto de terminar, devolvedle el teléfono para la sorpresa final." }
+        kickoffBtn:"▶ ¡Pulsa para empezar!", waitingTitle:"¡En curso!", waitingSub:"Adulto: cuando el niño/a esté a punto de terminar, devolvedle el teléfono para la sorpresa final." },
+        zh: { tag:"日常自理任务", finalHeading:"任务完成！", finalNote:"你独立完成了任务，太厉害了！",
+        ownership:"为你自己的坚持感到骄傲吧！", kickoffQ:"准备好开始了吗？",
+        kickoffSub:"点击下方长方形 ▶ 按钮开始。神奇的图案会随着倒计时逐渐显现！",
+        kickoffBtn:"▶ 点击开始！", waitingTitle:"正在进行中！", waitingSub:"大人：当孩子快要完成时，请将手机交回孩子观看最终揭秘。" }
     }
   };
 
   var STAGE_MSGS = {
     young: {
-      leaving: { en:["Almost done!","Getting close!","Nearly there!","All done!"], es:["¡Casi terminamos!","¡Nos acercamos!","¡Ya casi!","¡Todo listo!"] },
-      screen: { en:["Almost done!","Getting close!","Nearly there!","Time to turn off!"], es:["¡Casi terminamos!","¡Nos acercamos!","¡Ya casi!","¡Hora de apagar!"] },
-      bedtime: { en:["Slow down time!","Halfway to bed!","Almost lights out!","Cuddle time!"], es:["¡Hora de calmarse!","¡Mitad de camino a la cama!","¡Casi apagamos la luz!","¡Hora de abrazos!"] },
-      task: { en:["Doing great!","Keep going!","Almost done!","All done! 🎉"], es:["¡Vas muy bien!","¡Sigue así!","¡Casi listo!","¡Todo listo! 🎉"] }
+      leaving: { en:["Almost done!","Getting close!","Nearly there!","All done!"], es:["¡Casi terminamos!","¡Nos acercamos!","¡Ya casi!","¡Todo listo!"], zh:["快完成啦！","越来越近啦！","就快到啦！","全部完成！"] },
+      screen: { en:["Almost done!","Getting close!","Nearly there!","Time to turn off!"], es:["¡Casi terminamos!","¡Nos acercamos!","¡Ya casi!","¡Hora de apagar!"], zh:["快完成啦！","越来越近啦！","就快到啦！","关屏幕时间到！"] },
+      bedtime: { en:["Slow down time!","Halfway to bed!","Almost lights out!","Cuddle time!"], es:["¡Hora de calmarse!","¡Mitad de camino a la cama!","¡Casi apagamos la luz!","¡Hora de abrazos!"], zh:["慢下来时间！","就快上床啦！","快要关灯啦！","抱抱时间！"] },
+      task: { en:["Doing great!","Keep going!","Almost done!","All done! 🎉"], es:["¡Vas muy bien!","¡Sigue así!","¡Casi listo!","¡Todo listo! 🎉"], zh:["做得真棒！","继续加油！","快完成啦！","全部搞定！🎉"] }
     },
     mid: {
       leaving: { en:["Quarter of the way there.","Halfway to go-time.","Almost time to leave.","Time's up — let's go!"], es:["Un cuarto del camino.","Ya vamos por la mitad.","Casi es hora de irnos.","¡Se acabó el tiempo, vámonos!"] },
-      screen: { en:["Quarter of the way there.","Halfway through your screen time.","Almost time to finish up.","Time's up — let's turn it off!"], es:["Un cuarto del camino.","Ya vamos por la mitad del tiempo de pantalla.","Casi es hora de terminar.","¡Se acabó el tiempo, vamos a apagarlo!"] },
-      bedtime: { en:["Wind down and slow down.","Halfway to bedtime.","Nearly time for lights out.","Cuddle time!"], es:["Relájate y ve más despacio.","Ya vamos por la mitad hacia la hora de dormir.","Casi es hora de apagar la luz.","¡Hora de abrazos!"] },
-      task: { en:["First stretch done!","Halfway there, keep going!","Almost finished!","Time's up — brilliant job!"], es:["¡Primer tramo listo!","¡Mitad de camino, sigue!","¡Casi terminamos!","¡Tiempo cumplido — gran trabajo!"] }
+      screen: { en:["Quarter of the way there.","Halfway through your screen time.","Almost time to finish up.","Time's up — let's turn it off!"], es:["Un cuarto del camino.","Ya vamos por la mitad del tiempo de pantalla.","Casi es hora de terminar.","¡Se acabó el tiempo, vamos a apagarlo!"], zh:["进行到1/4了。","屏幕时间过半啦。","差不多该结束了。","时间到 — 关掉屏幕啦！"] },
+      bedtime: { en:["Wind down and slow down.","Halfway to bedtime.","Nearly time for lights out.","Cuddle time!"], es:["Relájate y ve más despacio.","Ya vamos por la mitad hacia la hora de dormir.","Casi es hora de apagar la luz.","¡Hora de abrazos!"], zh:["准备放松下来。","就寝时间过半了。","快要到关灯时间了。","钻进被窝，抱抱！"] },
+      task: { en:["First stretch done!","Halfway there, keep going!","Almost finished!","Time's up — brilliant job!"], es:["¡Primer tramo listo!","¡Mitad de camino, sigue!","¡Casi terminamos!","¡Tiempo cumplido — gran trabajo!"], zh:["起步顺利！","稳步推进中，加油！","快完成啦！","时间到 — 做得太棒了！"] }
     },
     big: {
-      leaving: { en:["25% done — stay on track.","Halfway through the countdown.","75% done — last stretch.","Countdown complete."], es:["25% completado, vamos bien.","Mitad de la cuenta atrás.","75% completado, último tramo.","Cuenta atrás completada."] },
-      screen: { en:["25% done — stay on track.","Halfway through your screen time.","75% done — almost time to finish.","Countdown complete — time to turn it off."], es:["25% completado, vamos bien.","Mitad del tiempo de pantalla.","75% completado, casi termina.","Cuenta atrás completada — hora de apagarlo."] },
+      leaving: { en:["25% done — stay on track.","Halfway through the countdown.","75% done — last stretch.","Countdown complete."], es:["25% completado, vamos bien.","Mitad de la cuenta atrás.","75% completado, último tramo.","Cuenta atrás completada."], zh:["已完成25% — 保持节奏。","倒计时已过半。","已完成75% — 最后冲刺。","倒计时完成。"] },
+      screen: { en:["25% done — stay on track.","Halfway through your screen time.","75% done — almost time to finish.","Countdown complete — time to turn it off."], es:["25% completado, vamos bien.","Mitad del tiempo de pantalla.","75% completado, casi termina.","Cuenta atrás completada — hora de apagarlo."], zh:["已完成25% — 保持节奏。","屏幕时间已过半。","已完成75% — 准备结束。","倒计时完成 — 该关掉啦。"] },
       bedtime: { en:["Wind down and slow down.","Halfway to bedtime.","Nearly time for lights out.","Cuddle time!"], es:["Relájate y ve más despacio.","Ya vamos por la mitad hacia la hora de dormir.","Casi es hora de apagar la luz.","¡Hora de abrazos!"] },
-      task: { en:["25% done — great pace.","Halfway through your task.","75% done — final stretch!","Task complete — well done!"], es:["25% completado — buen ritmo.","Mitad de tu tarea.","75% completado — ¡último tramo!","Tarea completada — ¡bien hecho!"] }
+      task: { en:["25% done — great pace.","Halfway through your task.","75% done — final stretch!","Task complete — well done!"], es:["25% completado — buen ritmo.","Mitad de tu tarea.","75% completado — ¡último tramo!","Tarea completada — ¡bien hecho!"], zh:["已完成25% — 节奏很好。","任务进度已过半。","已完成75% — 最后收尾！","任务完成 — 非常棒！"] }
     }
   };
 
@@ -504,16 +671,19 @@
     if(style === 'fraction'){
       var fr_en = ["0/4 done — let's go!","1/4 done — 3/4 to go!","Halfway — 2/4 done!","3/4 done — 1/4 to go!","4/4 — all done!"];
       var fr_es = ["0/4 hecho — ¡vamos!","1/4 hecho — quedan 3/4","Mitad — 2/4 hecho","3/4 hecho — queda 1/4","4/4 — ¡completado!"];
-      return (lang==='es'?fr_es:fr_en)[stageIdx];
+      var fr_zh = ["0/4 完成 — 开始啦！","1/4 完成 — 还剩 3/4！","已过半 — 2/4 完成！","3/4 完成 — 还剩 1/4！","4/4 — 全部完成！"];
+      return (lang==='zh'?fr_zh:(lang==='es'?fr_es:fr_en))[stageIdx];
     }
     if(style === 'percent'){
       var pc_en = ["0% — let's go!","25% done","50% done — halfway!","75% done","100% — complete!"];
       var pc_es = ["0% — ¡vamos!","25% completado","50% completado — ¡mitad!","75% completado","100% — ¡completo!"];
-      return (lang==='es'?pc_es:pc_en)[stageIdx];
+      var pc_zh = ["0% — 出发！","已完成 25%","已完成 50% — 进度过半！","已完成 75%","100% — 圆满完成！"];
+      return (lang==='zh'?pc_zh:(lang==='es'?pc_es:pc_en))[stageIdx];
     }
     if(style === 'seconds'){
       var elapsed = Math.round(totalSec*(stageIdx/4));
       var remaining = totalSec - elapsed;
+      if(lang==='zh') return "已过 "+elapsed+"秒 — 还剩 "+remaining+"秒";
       if(lang==='es') return elapsed+"s pasados — quedan "+remaining+"s";
       return elapsed+"s gone — "+remaining+"s left";
     }
@@ -521,14 +691,14 @@
   }
 
   var DAILY_TASKS = [
-    { id: "teeth",   icon: "🪥", name_en: "Brush teeth",             name_es: "Cepillarse los dientes",      defaultMin: 2 },
-    { id: "shoes",   icon: "👟", name_en: "Shoes on / off",          name_es: "Ponerse / quitarse zapatos", defaultMin: 3 },
-    { id: "clothes", icon: "👕", name_en: "Get changed",             name_es: "Cambiarse de ropa",           defaultMin: 5 },
-    { id: "tidy",    icon: "🧸", name_en: "Tidy up toys",            name_es: "Recoger los juguetes",       defaultMin: 5 },
-    { id: "food",    icon: "🥣", name_en: "Eat your food",           name_es: "Comer la comida",             defaultMin: 15 },
-    { id: "bag",     icon: "🎒", name_en: "Pack your bag",           name_es: "Preparar la mochila",        defaultMin: 3 },
-    { id: "bath",    icon: "🛁", name_en: "Wash hair / bath / shower time", name_es: "Lavarse el pelo / baño / ducha", defaultMin: 15 },
-    { id: "custom",  icon: "✨", name_en: "Custom task...",          name_es: "Tarea personalizada...",     defaultMin: 5 }
+    { id: "teeth",   icon: "🪥", name_en: "Brush teeth",             name_es: "Cepillarse los dientes",      name_zh: "刷牙", defaultMin: 2 },
+    { id: "shoes",   icon: "👟", name_en: "Shoes on / off",          name_es: "Ponerse / quitarse zapatos", name_zh: "穿鞋 / 脱鞋", defaultMin: 3 },
+    { id: "clothes", icon: "👕", name_en: "Get changed",             name_es: "Cambiarse de ropa",           name_zh: "换衣服", defaultMin: 5 },
+    { id: "tidy",    icon: "🧸", name_en: "Tidy up toys",            name_es: "收拾玩具",                   name_zh: "收拾玩具", defaultMin: 5 },
+    { id: "food",    icon: "🥣", name_en: "Eat your food",           name_es: "Comer la comida",             name_zh: "好好吃饭", defaultMin: 15 },
+    { id: "bag",     icon: "🎒", name_en: "Pack your bag",           name_es: "Preparar la mochila",        name_zh: "收拾书包", defaultMin: 3 },
+    { id: "bath",    icon: "🛁", name_en: "Wash hair / bath / shower time", name_es: "Lavarse el pelo / baño / ducha", name_zh: "洗澡 / 淋浴", defaultMin: 15 },
+    { id: "custom",  icon: "✨", name_en: "Custom task...",          name_es: "Tarea personalizada...",     name_zh: "自定义任务...", defaultMin: 5 }
   ];
 
   var DURATIONS = { leaving: [3,5,10], screen: [5,10,15], bedtime: [10,15,20], task: [1,2,3,5,10,15] };
@@ -596,8 +766,8 @@
     })()
   };
   var SCHEDULE_WORDS = {
-    "first-then": { en:["First","Then"], es:["Primero","Luego"] },
-    "now-next":   { en:["Now","Next"],   es:["Ahora","Luego"] }
+    "first-then": { en:["First","Then"], es:["Primero","Luego"], zh:["先","然后"] },
+    "now-next":   { en:["Now","Next"],   es:["Ahora","Luego"],   zh:["现在","接下来"] }
   };
 
   function scheduleStripHTML(mode, style, lang, age){
@@ -618,9 +788,9 @@
     if(mode === 'bedtime'){
       // Bedtime has four cards: the final pair follows the selected US/UK wording.
       if(style === 'now-next'){
-        words = lang === 'es' ? ["Ahora","Siguiente","Ahora","Siguiente"] : ["Now","Next","Now","Next"];
+        words = lang === 'zh' ? ["现在","接下来","现在","接下来"] : (lang === 'es' ? ["Ahora","Siguiente","Ahora","Siguiente"] : ["Now","Next","Now","Next"]);
       } else {
-        words = lang === 'es' ? ["Primero","Luego","Primero","Luego"] : ["First","Then","First","Then"];
+        words = lang === 'zh' ? ["先","然后","先","然后"] : (lang === 'es' ? ["Primero","Luego","Primero","Luego"] : ["First","Then","First","Then"]);
       }
     }
     var cards = steps.map(function(s, i){
@@ -630,7 +800,7 @@
       } else {
         topLabel = (lang==='es' ? ordinals_es : ordinals_en)[i] || (i+1);
       }
-      var label = lang==='es' ? s.label_es : s.label_en;
+      var label = lang==='zh' ? (s.label_zh || s.label_en) : (lang==='es' ? s.label_es : s.label_en);
       var imgSrc = (lang==='es' && s.img_es) ? s.img_es : s.img;
       var visual = imgSrc
         ? '<img class="scheduleIconImg'+(animate?' animated':'')+'" src="'+imgSrc+'" alt="" />'
@@ -754,8 +924,8 @@
   }catch(e){}
 
   // ---------- Helpers ----------
-  function catName(cat){ return state.lang === 'es' ? cat.category_es : cat.category; }
-  function imgName(img){ return state.lang === 'es' ? img.name_es : img.name; }
+  function catName(cat){ return state.lang === 'zh' ? (cat.category_zh || cat.category) : (state.lang === 'es' ? cat.category_es : cat.category); }
+  function imgName(img){ return state.lang === 'zh' ? (img.name_zh || img.name) : (state.lang === 'es' ? img.name_es : img.name); }
 
   function pickImage(mode){
     var flat = flatPool(mode);
@@ -852,10 +1022,13 @@
       id: "chrysalis",
       name_en: "Butterfly",
       name_es: "Mariposa",
+      name_zh: "蝴蝶蜕变",
       flavor_en: "Watch the caterpillar turn into a butterfly as time counts down!",
       flavor_es: "¡Mira cómo la oruga se convierte en mariposa mientras avanza la cuenta atrás!",
+      flavor_zh: "看着毛毛虫随着倒计时蜕变成美丽的蝴蝶！",
       done_en: "The butterfly is flying free! 🦋",
       done_es: "¡La mariposa vuela libre! 🦋",
+      done_zh: "蝴蝶自由飞舞啦！🦋",
       images: [
         "assets/timer-themes/chrysalis-1.jpg",
         "assets/timer-themes/chrysalis-2.jpg",
@@ -867,10 +1040,13 @@
       id: "dinoegg",
       name_en: "Dino egg",
       name_es: "Huevo de dino",
+      name_zh: "恐龙破壳",
       flavor_en: "Watch the dino egg hatch as time counts down!",
       flavor_es: "¡Mira cómo el huevo de dinosaurio eclosiona mientras avanza la cuenta atrás!",
+      flavor_zh: "看着恐龙蛋随着倒计时破壳而出！",
       done_en: "The dinosaur has hatched! 🦖",
       done_es: "¡El dinosaurio ha nacido! 🦖",
+      done_zh: "小恐龙破壳而出啦！🦖",
       images: [
         "assets/timer-themes/dinoegg-1.jpg",
         "assets/timer-themes/dinoegg-2.jpg",
@@ -882,10 +1058,13 @@
       id: "dinobones",
       name_en: "Dino fossil",
       name_es: "Fósil de dino",
+      name_zh: "恐龙化石",
       flavor_en: "Dig up and uncover the hidden dinosaur fossil as time counts down!",
       flavor_es: "¡Desentierra y descubre el fósil de dinosaurio mientras avanza la cuenta atrás!",
+      flavor_zh: "发掘泥土，在倒计时中让神秘的恐龙化石显现！",
       done_en: "The dinosaur fossil is fully uncovered! 🦕",
       done_es: "¡El fósil de dinosaurio está completamente descubierto! 🦕",
+      done_zh: "恐龙化石完全发掘出来啦！🦕",
       images: [
         "assets/timer-themes/dinobones-1.jpg",
         "assets/timer-themes/dinobones-2.jpg",
@@ -912,10 +1091,13 @@
       id: "abyss",
       name_en: "Deep sea",
       name_es: "Océano profundo",
+      name_zh: "深海奇景",
       flavor_en: "Dive into the deep ocean abyss as time counts down!",
       flavor_es: "¡Sumérgete en el océano profundo mientras avanza la cuenta atrás!",
+      flavor_zh: "潜入神秘的蔚蓝深海，探索未知的水下世界！",
       done_en: "You discovered the magical deep sea creature! 🐙",
       done_es: "¡Descubriste la criatura del océano profundo! 🐙",
+      done_zh: "你发现了神奇的深海巨兽！🐙",
       images: [
         "assets/timer-themes/abyss-1.jpg",
         "assets/timer-themes/abyss-2.jpg",
@@ -927,10 +1109,13 @@
       id: "space",
       name_en: "Space rocket",
       name_es: "Cohete espacial",
+      name_zh: "太空火箭",
       flavor_en: "Watch the cosmic rocket blast off into deep space as time counts down!",
       flavor_es: "¡Mira cómo el cohete despega hacia el espacio mientras avanza la cuenta atrás!",
+      flavor_zh: "看着宇宙火箭蓄势待发，伴随倒数飞向星空！",
       done_en: "Blast off! The rocket reached the stars! 🚀",
       done_es: "¡Despegue! ¡El cohete llegó a las estrellas! 🚀",
+      done_zh: "点火发射！火箭飞向璀璨星空啦！🚀",
       images: [
         "assets/timer-themes/space-1.jpg",
         "assets/timer-themes/space-2.jpg",
@@ -1063,6 +1248,7 @@
     '<div class="langToggle">'+
       '<button type="button" class="lang-btn '+(state.lang==='en'?'active':'')+'" data-lang="en">EN</button>'+
       '<button type="button" class="lang-btn '+(state.lang==='es'?'active':'')+'" data-lang="es">ES</button>'+
+      '<button type="button" class="lang-btn '+(state.lang==='zh'?'active':'')+'" data-lang="zh">中文</button>'+
     '</div>';
   }
 
@@ -1097,8 +1283,8 @@
     try {
       window.speechSynthesis.cancel();
       var u = new SpeechSynthesisUtterance(text);
-      u.lang = targetLang === 'es' ? 'es-ES' : 'en-US';
-      var bestVoice = findBestVoice(targetLang === 'es' ? 'es' : 'en');
+      u.lang = targetLang === 'es' ? 'es-ES' : (targetLang === 'zh' ? 'zh-CN' : 'en-US');
+      var bestVoice = findBestVoice(targetLang === 'es' ? 'es' : (targetLang === 'zh' ? 'zh' : 'en'));
       if(bestVoice) u.voice = bestVoice;
       u.rate = 0.72; // slow tutor speed for clear syllable articulation
       u.pitch = 1.35; // child speaking voice
@@ -1156,27 +1342,81 @@
     speakBilingual(fallbackText, targetLang, el);
   }
 
-  function bilingualSparkHTML(phrase, targetLang, audioSrc){
-    if(!phrase) return '';
-    var label = state.lang === 'es' ? 'En inglés:' : 'In Spanish:';
-    var audioAttr = audioSrc ? (' data-audio-src="'+ audioSrc +'"') : '';
-    return ''+
-      '<div class="bilingualSpark" role="button" tabindex="0" data-speak-text="'+ phrase.replace(/"/g, '&quot;') +'" data-speak-lang="'+ targetLang +'"'+ audioAttr +' title="'+ (state.lang === 'es' ? 'Pulsa para escuchar' : 'Tap to listen') +'">'+
-        '<span class="bilingualSparkLabel">'+ label +'</span>'+
-        '<span class="bilingualSparkText">“'+ phrase +'”</span>'+
-        '<span class="bilingualSparkBtn" aria-hidden="true">▶ 🔊</span>'+
-      '</div>';
-  }
+    var SPARKS_DATA = {
+    waiting: {
+      en: {
+        text: 'Time to play! Have fun!',
+        pinyin: '',
+        labels: { en: 'In English:', es: 'En inglés:', zh: '英语:' },
+        audioEducator: 'assets/audio/bilingual/waiting_en.mp3',
+        audioChild: 'assets/audio/bilingual/waiting_en_child.mp3'
+      },
+      es: {
+        text: '¡A jugar! ¡Que te diviertas!',
+        pinyin: '',
+        labels: { en: 'In Spanish:', es: 'En español:', zh: '西班牙语:' },
+        audioEducator: 'assets/audio/bilingual/waiting_es.mp3',
+        audioChild: 'assets/audio/bilingual/waiting_es_child.mp3'
+      },
+      zh: {
+        text: '去玩吧！玩得开心！',
+        pinyin: 'Qù wán ba! Wán de kāixīn!',
+        labels: { en: 'In Mandarin:', es: 'En mandarín:', zh: '中文:' },
+        audioEducator: 'assets/audio/bilingual/waiting_zh.mp3',
+        audioChild: 'assets/audio/bilingual/waiting_zh_child.mp3'
+      }
+    },
+    done: {
+      en: {
+        text: 'Super job! You did it!',
+        pinyin: '',
+        labels: { en: 'In English:', es: 'En inglés:', zh: '英语:' },
+        audioEducator: 'assets/audio/bilingual/done_en.mp3',
+        audioChild: 'assets/audio/bilingual/done_en_child.mp3'
+      },
+      es: {
+        text: '¡Muy bien! ¡Lo lograste!',
+        pinyin: '',
+        labels: { en: 'In Spanish:', es: 'En español:', zh: '西班牙语:' },
+        audioEducator: 'assets/audio/bilingual/done_es.mp3',
+        audioChild: 'assets/audio/bilingual/done_es_child.mp3'
+      },
+      zh: {
+        text: '太棒了！你做到了！',
+        pinyin: 'Tài bàng le! Nǐ zuò dào le!',
+        labels: { en: 'In Mandarin:', es: 'En mandarín:', zh: '中文:' },
+        audioEducator: 'assets/audio/bilingual/done_zh.mp3',
+        audioChild: 'assets/audio/bilingual/done_zh_child.mp3'
+      }
+    }
+  };
 
-  function voicePreviewHTML(){
-    return ''+
-      '<div class="voicePreviewRow">'+
-        '<div class="voicePreviewTitle">🎧 '+(state.lang==='es'?'Toca para comparar voces para niños de 2 a 4 años:':'Tap to compare toddler (2–4) voice options:')+'</div>'+
-        '<button class="voiceTestBtn" data-preview-src="assets/audio/bilingual/preview_ana.mp3" type="button">▶ Voice 1: Child (Ana)</button>'+
-        '<button class="voiceTestBtn" data-preview-src="assets/audio/bilingual/preview_dalia_child.mp3" type="button">▶ Voice 2: Young Kid (Dalia +pitch)</button>'+
-        '<button class="voiceTestBtn" data-preview-src="assets/audio/bilingual/preview_salome_child.mp3" type="button">▶ Voice 3: Young Kid (Salomé)</button>'+
-        '<button class="voiceTestBtn" data-preview-src="assets/audio/bilingual/preview_educator.mp3" type="button">▶ Voice 4: Educator (Ages 5–8)</button>'+
-      '</div>';
+  function renderLearningSparks(scene){
+    var data = SPARKS_DATA[scene];
+    if(!data) return '';
+    var langs = ['en', 'es', 'zh'];
+    var otherLangs = langs.filter(function(l){ return l !== state.lang; });
+    var introTitle = state.lang === 'zh' ? '🎧 多语言学习角：' : (state.lang === 'es' ? '🎧 Chispas de Aprendizaje:' : '🎧 Language Learning Sparks:');
+    var itemsHtml = otherLangs.map(function(langKey){
+      var item = data[langKey];
+      if(!item) return '';
+      var audioSrc = state.age === 'young' ? item.audioChild : item.audioEducator;
+      var label = item.labels[state.lang] || item.labels.en;
+      var textMarkup = '“' + item.text + '”';
+      if(item.pinyin){
+        textMarkup += ' <span class="sparkPinyin">(' + item.pinyin + ')</span>';
+      }
+      var audioAttr = audioSrc ? (' data-audio-src="'+ audioSrc +'"') : '';
+      var tooltip = state.lang === 'zh' ? '点击收听发音' : (state.lang === 'es' ? 'Pulsa para escuchar' : 'Tap to listen');
+      return ''+
+        '<div class="bilingualSpark" role="button" tabindex="0" data-speak-text="'+ item.text.replace(/"/g, '&quot;') +'" data-speak-lang="'+ langKey +'"'+ audioAttr +' title="'+ tooltip +'">'+
+          '<span class="bilingualSparkLabel">'+ label +'</span>'+
+          '<span class="bilingualSparkText">'+ textMarkup +'</span>'+
+          '<span class="bilingualSparkBtn" aria-hidden="true">▶ 🔊</span>'+
+        '</div>';
+    }).join('');
+
+    return '<div class="sparksWrap"><div class="sparksIntroHeader">'+ introTitle +'</div>' + itemsHtml + '</div>';
   }
 
   // ---------- Screens ----------
@@ -2400,7 +2640,7 @@ function renderDailyTasksSetup(t){
     }).join('');
 
     var curThemeObj = getTheme(state.style);
-    var flavorText = state.lang === 'es' ? curThemeObj.flavor_es : curThemeObj.flavor_en;
+    var flavorText = state.lang === 'zh' ? (curThemeObj.flavor_zh || curThemeObj.flavor_en) : (state.lang === 'es' ? curThemeObj.flavor_es : curThemeObj.flavor_en);
     var previewMarkup = ''+
       '<div class="themePreviewCard" style="margin-top:14px; text-align:center;">'+
         '<div class="magicCaption" style="margin-top:8px;font-size:14px;color:var(--sand);">'+flavorText+'</div>'+
@@ -2613,7 +2853,6 @@ function renderDailyTasksSetup(t){
       '<div class="modeTag">'+t.parentSetup+'</div>'+
       '<h1 class="title display">Calm Countdown</h1>'+
       '<p class="sub">'+t.tagline+'</p>'+
-      voicePreviewHTML() +
 
       '<div class="field">'+
         '<label>'+t.ageLabel+'</label>'+
@@ -2677,11 +2916,11 @@ function renderDailyTasksSetup(t){
         '</div>'+
         '<p class="flavorLine">✨ '+ (state.chosenId!==null ? t.flavorPicked : (state.mode==='bedtime' ? t.flavorSurpriseBedtime : t.flavorSurpriseLeaving)) +'</p>'
       ) : (
-        '<p class="flavorLine">✨ '+ (state.lang === 'es' ? getTheme(state.style).flavor_es : getTheme(state.style).flavor_en) +'</p>'
+        '<p class="flavorLine">✨ '+ (state.lang === 'zh' ? (getTheme(state.style).flavor_zh || getTheme(state.style).flavor_en) : (state.lang === 'es' ? getTheme(state.style).flavor_es : getTheme(state.style).flavor_en)) +'</p>'
       ))+
 
       (state.durationUnit === 'seconds' ? (
-        '<button class="bigBtn" id="quickStartBtn" type="button" style="margin-bottom:12px;background:var(--coral);border-color:var(--coral);color:#fff;box-shadow:0 6px 18px rgba(255,107,107,0.35);">⚡ '+(state.lang==='es'?'¡Empezar Temporizador Rápido ('+state.seconds+'s)!':'Start Quick Timer ('+state.seconds+'s)!')+'</button>'
+        '<button class="bigBtn" id="quickStartBtn" type="button" style="margin-bottom:12px;background:var(--coral);border-color:var(--coral);color:#fff;box-shadow:0 6px 18px rgba(255,107,107,0.35);">⚡ '+(state.lang==='zh'?'开始快速计时 ('+state.seconds+'秒)!':(state.lang==='es'?'¡Empezar Temporizador Rápido ('+state.seconds+'s)!':'Start Quick Timer ('+state.seconds+'s)!'))+'</button>'
       ) : '') +
       '<button class="bigBtn" id="handOverBtn" type="button">'+t.handOverBtn+'</button>'+
       '<button class="ghostBtn" id="skipToCountdownBtn" type="button" style="margin-top:10px;">'+t.skipBtn+'</button>'+
@@ -2693,19 +2932,19 @@ function renderDailyTasksSetup(t){
     var t = T(); var c = (COPY[state.mode] && COPY[state.mode][state.lang]) || COPY['leaving'][state.lang];
     var taskInfo = state.mode === 'task' ? getTaskInfo() : null;
     var kickoffQ = taskInfo
-      ? (state.lang === 'es' ? ('¿Listo/a para: ' + taskInfo.icon + ' ' + taskInfo.name + '?') : ('Ready for: ' + taskInfo.icon + ' ' + taskInfo.name + '?'))
+      ? (state.lang === 'zh' ? ('准备好进行：' + taskInfo.icon + ' ' + taskInfo.name + ' 了吗？') : (state.lang === 'es' ? ('¿Listo/a para: ' + taskInfo.icon + ' ' + taskInfo.name + '?') : ('Ready for: ' + taskInfo.icon + ' ' + taskInfo.name + '?')))
       : c.kickoffQ;
     var kickoffSub = taskInfo
-      ? (state.lang === 'es' ? 'Pulsa el botón rectangular largo ▶ de abajo para comenzar. ¡Mira la transformación mágica mientras avanzas!' : 'Press the long rectangular ▶ button below to begin. Watch the magic transformation as you go!')
+      ? (state.lang === 'zh' ? '点击下方长方形 ▶ 按钮开始。看着画面一点点神奇蜕变！' : (state.lang === 'es' ? 'Pulsa el botón rectangular largo ▶ de abajo para comenzar. ¡Mira la transformación mágica mientras avanzas!' : 'Press the long rectangular ▶ button below to begin. Watch the magic transformation as you go!'))
       : c.kickoffSub;
     var kickoffBtn = taskInfo
-      ? (state.lang === 'es' ? ('▶ ¡Empezar ' + taskInfo.name + '!') : ('▶ Start ' + taskInfo.name + '!'))
+      ? (state.lang === 'zh' ? ('▶ 开始 ' + taskInfo.name + '！') : (state.lang === 'es' ? ('▶ ¡Empezar ' + taskInfo.name + '!') : ('▶ Start ' + taskInfo.name + '!')))
       : c.kickoffBtn;
 
     return ''+
     '<div class="kidScreen">'+
       (state.groupMode==='class' ? '<div class="classroomBanner">'+t.classroomBanner+'</div>' : '') +
-      '<div class="modeTag">'+ (state.mode === 'task' ? (state.lang==='es'?'Rutina Diaria':'Daily Routine') : t.kickoffGettingStarted) +'</div>'+
+      '<div class="modeTag">'+ (state.mode === 'task' ? (state.lang==='zh'?'日常自理任务':(state.lang==='es'?'Rutina Diaria':'Daily Routine')) : t.kickoffGettingStarted) +'</div>'+
       '<div class="hourglassWrap" style="height:'+wrapHeight()+';">'+ timerVisual(0) +'</div>'+
       '<div class="kidMsg display">'+ kickoffQ +'</div>'+
       '<p class="sub" style="margin-bottom:8px;">'+ kickoffSub +'</p>'+
@@ -2720,10 +2959,7 @@ function renderDailyTasksSetup(t){
   function renderWaiting(){
     var t = T();
     var c = (COPY[state.mode] && COPY[state.mode][state.lang]) || COPY['leaving'][state.lang];
-    var otherLang = state.lang === 'es' ? 'en' : 'es';
-    var sparkPhrase = state.lang === 'es' ? 'Time to play! Have fun!' : '¡A jugar! ¡Que te diviertas!';
-    var sparkAudio = state.lang === 'es' ? 'assets/audio/bilingual/waiting_en.mp3' : 'assets/audio/bilingual/waiting_es.mp3';
-    var sparkMarkup = bilingualSparkHTML(sparkPhrase, otherLang, sparkAudio);
+    var sparkMarkup = renderLearningSparks('waiting');
     var taskInfo = state.mode === 'task' ? getTaskInfo() : null;
     var waitingGraphic = state.mode === 'bedtime'
       ? '<div style="font-size:70px; margin:18px 0;">🐰💤</div>'
@@ -2733,7 +2969,7 @@ function renderDailyTasksSetup(t){
               ? '<div class="leavingPlaceholder" style="padding:10px;"><img src="' + (state.age === 'young' ? (state.mode === 'screen' ? 'assets/schedule/screen-phone.jpg' : 'assets/schedule/leaving-football.png') : (state.age === 'big' ? (state.mode === 'screen' ? 'assets/schedule/Age8StartScreentime.jpg' : 'assets/schedule/ParkSceneAge8.jpg') : (state.mode === 'screen' ? 'assets/schedule/age 5 to 7 EnjoyScreentime.png' : 'assets/schedule/Time for Fun.png'))) + '" alt="' + (state.mode === 'screen' ? (state.age === 'big' ? 'Happy screentime.' : 'Start screen time.') : 'Time for fun.') + '" style="width:100%;height:100%;object-fit:cover;border-radius:18px;" /></div>'
               : '<div style="min-height:70px; margin:18px 0;"></div>'));
     var parentText = state.mode === 'task'
-      ? (state.lang === 'es' ? 'Rutina en curso — cuando termine, devolvedle el teléfono a tu hijo/a.' : 'Routine in progress — hand phone back to your child for the final reveal.')
+      ? (state.lang === 'zh' ? '日常任务进行中 — 结束时请将手机交回孩子观看最终揭秘。' : (state.lang === 'es' ? 'Rutina en curso — cuando termine, devolvedle el teléfono a tu hijo/a.' : 'Routine in progress — hand phone back to your child for the final reveal.'))
       : (state.mode === 'screen'
           ? t.waitingSubParentScreen
           : (state.mode === 'leaving' ? t.waitingSubParentLeaving : t.waitingSubParent));
@@ -2742,7 +2978,6 @@ function renderDailyTasksSetup(t){
       '<div class="modeTag">'+t.waitingInProgress+'</div>'+
       '<div class="kidMsg display">'+ c.waitingTitle +'</div>'+
       sparkMarkup +
-      voicePreviewHTML() +
       '<p class="sub">'+ c.waitingSub +'</p>'+
       waitingGraphic +
       '<p class="sub" style="font-size:13px; opacity:0.75; margin-top:12px;">'+ parentText +'</p>'+
@@ -2759,10 +2994,10 @@ function renderDailyTasksSetup(t){
       : '<div class="hourglassWrap" style="height:'+wrapHeight()+';">'+ timerVisual(0) +'</div>';
     var taskInfo = getTaskInfo();
     var introQuestion = state.mode==='task'
-      ? (state.lang === 'es' ? ('¿Listo/a para: ' + taskInfo.icon + ' ' + taskInfo.name + '?') : ('Ready for: ' + taskInfo.icon + ' ' + taskInfo.name + '?'))
-      : (state.mode==='leaving' ? 'YOU start the countdown.' : t.readyQuestion);
+      ? (state.lang === 'zh' ? ('准备好进行：' + taskInfo.icon + ' ' + taskInfo.name + ' 了吗？') : (state.lang === 'es' ? ('¿Listo/a para: ' + taskInfo.icon + ' ' + taskInfo.name + '?') : ('Ready for: ' + taskInfo.icon + ' ' + taskInfo.name + '?')))
+      : (state.mode==='leaving' ? (state.lang === 'zh' ? '由你来启动倒计时。' : (state.lang === 'es' ? 'TÚ inicias la cuenta atrás.' : 'YOU start the countdown.')) : t.readyQuestion);
     var introSub = state.mode==='leaving'
-      ? (state.timerMode==='transformation' ? (state.lang==='es' ? "Pulsa el botón rectangular largo ▶ de abajo para comenzar. ¡Mira la transformación mágica en la cuenta atrás!" : "Press the long rectangular ▶ button below to begin. Watch the magic transformation as you count down!") : (state.lang==='es' ? "Pulsa el botón rectangular largo ▶ de abajo para comenzar. ¡Es hora de terminar la diversión!" : "Press the long rectangular ▶ button below to begin. It's time for YOU to stop the fun!"))
+      ? (state.timerMode==='transformation' ? (state.lang==='zh' ? "点击下方长方形 ▶ 按钮开始。看着画面在倒计时中神奇蜕变！" : (state.lang==='es' ? "Pulsa el botón rectangular largo ▶ de abajo para comenzar. ¡Mira la transformación mágica en la cuenta atrás!" : "Press the long rectangular ▶ button below to begin. Watch the magic transformation as you count down!")) : (state.lang==='zh' ? "点击下方长方形 ▶ 按钮开始。该由你亲自按下按钮结束玩耍啦！" : (state.lang==='es' ? "Pulsa el botón rectangular largo ▶ de abajo para comenzar. ¡Es hora de terminar la diversión!" : "Press the long rectangular ▶ button below to begin. It's time for YOU to stop the fun!")))
       : (state.timerMode==='transformation' ? t.readySubTransform : t.readySub);
     return ''+
     '<div class="kidScreen">'+
@@ -2823,9 +3058,9 @@ function renderDailyTasksSetup(t){
       '<button class="ghostBtn" id="emergencyBtn" type="button" style="margin-top:10px;opacity:0.95;font-size:14px;font-weight:700;border:2px solid var(--coral);color:var(--coral);border-radius:14px;padding:9px 16px;">'+t.emergencyBtnLabel+'</button>'+
       (state.emergencyOpen ? (
         '<div class="emergencyChips" style="display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-top:10px;">'+
-          '<button class="seg-emergency" data-emergency-sec="5" type="button" style="background:var(--coral);color:#fff;border:none;font-weight:700;font-size:14px;padding:10px 16px;border-radius:12px;cursor:pointer;">⚡ 5s '+(state.lang==='es'?'Cuenta atrás':'Countdown')+'</button>'+
+          '<button class="seg-emergency" data-emergency-sec="5" type="button" style="background:var(--coral);color:#fff;border:none;font-weight:700;font-size:14px;padding:10px 16px;border-radius:12px;cursor:pointer;">⚡ 5s '+(state.lang==='zh'?'倒计时':(state.lang==='es'?'Cuenta atrás':'Countdown'))+'</button>'+
           '<button class="seg-emergency" data-emergency-sec="10" type="button" style="background:rgba(255,255,255,0.08);color:var(--cream);border:2px solid rgba(255,107,107,0.5);font-weight:700;font-size:14px;padding:10px 16px;border-radius:12px;cursor:pointer;">⚡ 10s</button>'+
-          '<button class="seg-emergency" data-emergency-sec="0" type="button" style="background:rgba(255,255,255,0.08);color:var(--cream);border:2px solid rgba(255,107,107,0.5);font-weight:700;font-size:14px;padding:10px 16px;border-radius:12px;cursor:pointer;">🎉 '+(state.lang==='es'?'Terminar Ya':'Finish Now')+'</button>'+
+          '<button class="seg-emergency" data-emergency-sec="0" type="button" style="background:rgba(255,255,255,0.08);color:var(--cream);border:2px solid rgba(255,107,107,0.5);font-weight:700;font-size:14px;padding:10px 16px;border-radius:12px;cursor:pointer;">🎉 '+(state.lang==='zh'?'立即完成':(state.lang==='es'?'Terminar Ya':'Finish Now'))+'</button>'+
         '</div>'
       ) : '') +
     '</div>';
@@ -2833,16 +3068,13 @@ function renderDailyTasksSetup(t){
 
   function renderDone(){
     var t = T(); var c = (COPY[state.mode] && COPY[state.mode][state.lang]) || COPY['leaving'][state.lang];
-    var otherLang = state.lang === 'es' ? 'en' : 'es';
-    var sparkPhrase = state.lang === 'es' ? 'Super job! You did it!' : '¡Muy bien! ¡Lo lograste!';
-    var sparkAudio = state.lang === 'es' ? 'assets/audio/bilingual/done_en.mp3' : 'assets/audio/bilingual/done_es.mp3';
-    var sparkMarkup = bilingualSparkHTML(sparkPhrase, otherLang, sparkAudio);
+    var sparkMarkup = renderLearningSparks('done');
     var doneRevealMarkup = '';
     if(state.timerMode === 'classic'){
       doneRevealMarkup = magicImageHTML(false, true, true);
     } else {
       var curTheme = getTheme(state.style);
-      var transformNote = state.lang === 'es' ? curTheme.done_es : curTheme.done_en;
+      var transformNote = state.lang === 'zh' ? (curTheme.done_zh || curTheme.done_en) : (state.lang === 'es' ? curTheme.done_es : curTheme.done_en);
       doneRevealMarkup = ''+
         '<div class="hourglassWrap" style="height:'+wrapHeight()+';margin-bottom:2px;">'+ themedTimerHTML(state.style, 1) +'</div>'+
         '<div class="magicCaption" style="font-size:18px;font-weight:700;color:var(--sand);margin-bottom:8px;">'+ transformNote +'</div>';
@@ -2917,58 +3149,6 @@ function renderDailyTasksSetup(t){
         if(e.key === 'Enter' || e.key === ' '){
           e.preventDefault();
           handleSpark(e);
-        }
-      });
-    });
-
-    // Voice preview testing buttons (to compare child voices)
-    app.querySelectorAll('.voiceTestBtn').forEach(function(b){
-      b.addEventListener('click', function(e){
-        e.stopPropagation();
-        var src = b.getAttribute('data-preview-src');
-        if(!src) return;
-        if(currentBilingualAudio){
-          try {
-            currentBilingualAudio.pause();
-            currentBilingualAudio.currentTime = 0;
-          } catch(ex){}
-        }
-        if(activeTestAudio){
-          try {
-            activeTestAudio.pause();
-            activeTestAudio.currentTime = 0;
-          } catch(ex){}
-        }
-        app.querySelectorAll('.voiceTestBtn').forEach(function(btn){
-          btn.classList.remove('playing');
-          var orig = btn.getAttribute('data-orig-label');
-          if(orig) btn.textContent = orig;
-        });
-        if(!b.getAttribute('data-orig-label')){
-          b.setAttribute('data-orig-label', b.textContent);
-        }
-        var baseLabel = b.getAttribute('data-orig-label');
-        b.textContent = '🔊 Playing...';
-        b.classList.add('playing');
-
-        var audio = new Audio(src);
-        activeTestAudio = audio;
-        function resetBtn(){
-          b.classList.remove('playing');
-          b.textContent = baseLabel;
-          activeTestAudio = null;
-        }
-        audio.onended = resetBtn;
-        audio.onerror = function(err){
-          console.warn('Audio preview error:', err);
-          resetBtn();
-        };
-        var playPromise = audio.play();
-        if(playPromise !== undefined){
-          playPromise.catch(function(err){
-            console.warn('Audio play catch:', err);
-            resetBtn();
-          });
         }
       });
     });
