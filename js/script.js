@@ -3574,6 +3574,7 @@ function renderDailyTasksSetup(t){
     var stopBtn = document.getElementById('stopBtn');
     if(stopBtn) stopBtn.addEventListener('click', function(){
       if(timerHandle) clearInterval(timerHandle);
+      releaseWakeLock();
       state.screen = 'setup';
       state.stage = 0;
       state.revealed = [false,false,false,false];
@@ -3619,6 +3620,7 @@ function renderDailyTasksSetup(t){
         state.durationUnit = 'seconds';
         state.seconds = secVal;
         state.isPaused = false;
+        requestWakeLock();
         if(timerHandle) clearInterval(timerHandle);
         timerHandle = setInterval(tick, 200);
         tick();
@@ -4135,6 +4137,31 @@ function renderDailyTasksSetup(t){
     state.sleepHeartbeatPlaying = false;
   }
 
+  // ---------- Screen Wake Lock & Background Sync ----------
+  var wakeLockSentinel = null;
+
+  function requestWakeLock(){
+    if('wakeLock' in navigator && !wakeLockSentinel){
+      try {
+        navigator.wakeLock.request('screen').then(function(sentinel){
+          wakeLockSentinel = sentinel;
+          wakeLockSentinel.addEventListener('release', function(){
+            wakeLockSentinel = null;
+          });
+        }).catch(function(){});
+      } catch(e){}
+    }
+  }
+
+  function releaseWakeLock(){
+    if(wakeLockSentinel){
+      try {
+        wakeLockSentinel.release().catch(function(){});
+      } catch(e){}
+      wakeLockSentinel = null;
+    }
+  }
+
   // ---------- Countdown engine ----------
   function beginCountdown(){
     state.screen = 'running';
@@ -4145,6 +4172,7 @@ function renderDailyTasksSetup(t){
     state.isIntroPaused = false;
     totalMs = state.durationUnit === 'seconds' ? state.seconds*1000 : state.minutes*60*1000;
     startTs = Date.now();
+    requestWakeLock();
     render();
     beep(660,0.15);
 
@@ -4156,9 +4184,11 @@ function renderDailyTasksSetup(t){
     if(state.isPaused){
       startTs = Date.now() - (totalMs - pausedRemainingMs);
       state.isPaused = false;
+      requestWakeLock();
       timerHandle = setInterval(tick, 200);
     } else {
       clearInterval(timerHandle);
+      releaseWakeLock();
       var elapsed = Date.now() - startTs;
       pausedRemainingMs = Math.max(0, totalMs - elapsed);
       state.isPaused = true;
@@ -4179,23 +4209,28 @@ function renderDailyTasksSetup(t){
     var tl = document.getElementById('timeLeft');
     if(tl) tl.textContent = fmtTime(remaining);
 
+    var isFinished = progress >= 1;
     var newStage = Math.min(4, Math.floor(progress*4 + 0.0001));
     if(newStage > state.stage){
       for(var s=state.stage+1; s<=newStage; s++){
-        awardStage(s);
+        var shouldPlaySound = !isFinished && (s === newStage);
+        awardStage(s, shouldPlaySound);
       }
       state.stage = newStage;
     }
 
-    if(progress >= 1){
+    if(isFinished){
       clearInterval(timerHandle);
-      setTimeout(finishCountdown, 700);
+      releaseWakeLock();
+      setTimeout(finishCountdown, 400);
     }
   }
 
-  function awardStage(stageIdx){
+  function awardStage(stageIdx, playSound){
     state.revealed[stageIdx-1] = true;
-    beep(520 + stageIdx*70,0.18);
+    if(playSound !== false){
+      beep(520 + stageIdx*70,0.18);
+    }
 
     var msgEl = document.getElementById('kidMsg');
     if(msgEl) msgEl.textContent = stageMessage(stageIdx);
@@ -4223,12 +4258,13 @@ function renderDailyTasksSetup(t){
       }
     }
 
-    if(stageIdx===4){
+    if(stageIdx===4 && playSound !== false){
       confettiBurst();
     }
   }
 
   function finishCountdown(){
+    releaseWakeLock();
     state.screen = 'done';
     render();
     confettiBurst();
@@ -4239,6 +4275,24 @@ function renderDailyTasksSetup(t){
       beep(880,0.25);
     }
   }
+
+  // ---------- Visibility & Resync Lifecycle ----------
+  document.addEventListener('visibilitychange', function(){
+    if(document.visibilityState === 'visible'){
+      if(state.screen === 'running' && !state.isPaused){
+        requestWakeLock();
+        try {
+          if(beep._ctx && beep._ctx.state === 'suspended'){
+            beep._ctx.resume().catch(function(){});
+          }
+          if(syntheticHeartbeatCtx && syntheticHeartbeatCtx.state === 'suspended'){
+            syntheticHeartbeatCtx.resume().catch(function(){});
+          }
+        } catch(e){}
+        tick();
+      }
+    }
+  });
 
   // ---------- Boot ----------
   render();
