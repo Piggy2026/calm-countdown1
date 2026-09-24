@@ -1115,8 +1115,15 @@
   }
 
   var currentBilingualAudio = null;
+  var activeTestAudio = null;
   function playBilingualAudio(audioSrc, fallbackText, targetLang, el){
     try {
+      if(activeTestAudio){
+        try {
+          activeTestAudio.pause();
+          activeTestAudio.currentTime = 0;
+        } catch(ex){}
+      }
       if(currentBilingualAudio){
         currentBilingualAudio.pause();
         currentBilingualAudio.currentTime = 0;
@@ -1158,6 +1165,17 @@
         '<span class="bilingualSparkLabel">'+ label +'</span>'+
         '<span class="bilingualSparkText">“'+ phrase +'”</span>'+
         '<span class="bilingualSparkBtn" aria-hidden="true">▶ 🔊</span>'+
+      '</div>';
+  }
+
+  function voicePreviewHTML(){
+    return ''+
+      '<div class="voicePreviewRow">'+
+        '<div class="voicePreviewTitle">🎧 '+(state.lang==='es'?'Toca para comparar voces para niños de 2 a 4 años:':'Tap to compare toddler (2–4) voice options:')+'</div>'+
+        '<button class="voiceTestBtn" data-preview-src="assets/audio/bilingual/preview_ana.mp3" type="button">▶ Voice 1: Child (Ana)</button>'+
+        '<button class="voiceTestBtn" data-preview-src="assets/audio/bilingual/preview_dalia_child.mp3" type="button">▶ Voice 2: Young Kid (Dalia +pitch)</button>'+
+        '<button class="voiceTestBtn" data-preview-src="assets/audio/bilingual/preview_salome_child.mp3" type="button">▶ Voice 3: Young Kid (Salomé)</button>'+
+        '<button class="voiceTestBtn" data-preview-src="assets/audio/bilingual/preview_educator.mp3" type="button">▶ Voice 4: Educator (Ages 5–8)</button>'+
       '</div>';
   }
 
@@ -2595,6 +2613,7 @@ function renderDailyTasksSetup(t){
       '<div class="modeTag">'+t.parentSetup+'</div>'+
       '<h1 class="title display">Calm Countdown</h1>'+
       '<p class="sub">'+t.tagline+'</p>'+
+      voicePreviewHTML() +
 
       '<div class="field">'+
         '<label>'+t.ageLabel+'</label>'+
@@ -2723,6 +2742,7 @@ function renderDailyTasksSetup(t){
       '<div class="modeTag">'+t.waitingInProgress+'</div>'+
       '<div class="kidMsg display">'+ c.waitingTitle +'</div>'+
       sparkMarkup +
+      voicePreviewHTML() +
       '<p class="sub">'+ c.waitingSub +'</p>'+
       waitingGraphic +
       '<p class="sub" style="font-size:13px; opacity:0.75; margin-top:12px;">'+ parentText +'</p>'+
@@ -2897,6 +2917,58 @@ function renderDailyTasksSetup(t){
         if(e.key === 'Enter' || e.key === ' '){
           e.preventDefault();
           handleSpark(e);
+        }
+      });
+    });
+
+    // Voice preview testing buttons (to compare child voices)
+    app.querySelectorAll('.voiceTestBtn').forEach(function(b){
+      b.addEventListener('click', function(e){
+        e.stopPropagation();
+        var src = b.getAttribute('data-preview-src');
+        if(!src) return;
+        if(currentBilingualAudio){
+          try {
+            currentBilingualAudio.pause();
+            currentBilingualAudio.currentTime = 0;
+          } catch(ex){}
+        }
+        if(activeTestAudio){
+          try {
+            activeTestAudio.pause();
+            activeTestAudio.currentTime = 0;
+          } catch(ex){}
+        }
+        app.querySelectorAll('.voiceTestBtn').forEach(function(btn){
+          btn.classList.remove('playing');
+          var orig = btn.getAttribute('data-orig-label');
+          if(orig) btn.textContent = orig;
+        });
+        if(!b.getAttribute('data-orig-label')){
+          b.setAttribute('data-orig-label', b.textContent);
+        }
+        var baseLabel = b.getAttribute('data-orig-label');
+        b.textContent = '🔊 Playing...';
+        b.classList.add('playing');
+
+        var audio = new Audio(src);
+        activeTestAudio = audio;
+        function resetBtn(){
+          b.classList.remove('playing');
+          b.textContent = baseLabel;
+          activeTestAudio = null;
+        }
+        audio.onended = resetBtn;
+        audio.onerror = function(err){
+          console.warn('Audio preview error:', err);
+          resetBtn();
+        };
+        var playPromise = audio.play();
+        if(playPromise !== undefined){
+          playPromise.catch(function(err){
+            console.warn('Audio play catch:', err);
+            resetBtn();
+          });
         }
       });
     });
