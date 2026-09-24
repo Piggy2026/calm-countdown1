@@ -1177,6 +1177,26 @@
     font-size:14.5px;
     line-height:1.2;
   }
+  .taskCardLangs{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:2px;
+    margin-top:2px;
+    margin-bottom:2px;
+    line-height:1.2;
+    text-align:center;
+  }
+  .taskCardLangPill{
+    color:rgba(255,255,255,0.78);
+    font-size:10.5px;
+    font-weight:600;
+  }
+  .taskCardLangPill .btnPinyin{
+    font-size:9.5px;
+    color:var(--sand);
+    margin-left:2px;
+  }
   .taskCardBadge{
     font-size:11.5px;
     font-weight:600;
@@ -1284,13 +1304,25 @@
     line-height:1.2;
   }
   .taskSelectedName{
-    font-size:16px;
+    font-size:15.5px;
     font-weight:700;
     color:var(--sand);
-    white-space:nowrap;
-    overflow:hidden;
-    text-overflow:ellipsis;
-    max-width:140px;
+    line-height:1.25;
+  }
+  .taskSelectedSubLangs{
+    font-size:11.5px;
+    font-weight:600;
+    color:rgba(255,255,255,0.85);
+    margin-top:2px;
+    line-height:1.2;
+    display:flex;
+    flex-wrap:wrap;
+    gap:4px;
+  }
+  .taskSelectedSubLangs .btnPinyin{
+    font-size:10px;
+    color:var(--sand);
+    margin-left:2px;
   }
   .taskSelectedControls{
     display:flex;

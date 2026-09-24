@@ -594,6 +594,9 @@
       id: cur.id,
       icon: cur.icon,
       name: (cur.id === 'custom' && customName) ? customName : (state.lang === 'zh' ? (cur.name_zh || cur.name_en) : (state.lang === 'es' ? cur.name_es : cur.name_en)),
+      name_en: (cur.id === 'custom' && customName) ? customName : cur.name_en,
+      name_es: (cur.id === 'custom' && customName) ? customName : cur.name_es,
+      name_zh: (cur.id === 'custom' && customName) ? customName : (cur.name_zh || cur.name_en),
       defaultMin: cur.defaultMin
     };
   }
@@ -621,15 +624,15 @@
     screen: {
       en: { tag:"Screen time ending soon", finalHeading:"All done!", finalNote:"You finished the whole countdown yourself. Time to turn it off.",
         ownership:"Time for your next thing — the one you picked!", kickoffQ:"Ready to start your screen time?",
-        kickoffSub:"Press the long rectangular ▶ button below to begin. Later on, this same timer will come back so YOU can press it to finish screen time.",
+        kickoffSub:"Press the long rectangular ▶ button below to start fun time. Later, when its nearly time to finish, you press another button that says Nearly Time to stop. You will see your hourglass or clock timer. If you finish calmly, you may get a treat!",
         kickoffBtn:"▶ Press to begin!", waitingTitle:"Enjoy!", waitingSub:"Parent: hand the phone/tablet back when it's almost time to finish — the timer will be ready." },
       es: { tag:"El tiempo de pantalla está a punto de acabar", finalHeading:"¡Todo listo!", finalNote:"Terminaste toda la cuenta atrás tú solo. Hora de apagarlo.",
         ownership:"Hora de tu próxima actividad, ¡la que tú elegiste!", kickoffQ:"¿Estás listo para empezar tu tiempo de pantalla?",
-        kickoffSub:"Pulsa el botón rectangular largo ▶ de abajo para comenzar. Más tarde, este mismo temporizador volverá para que TÚ lo pulses cuando sea hora de apagarlo.",
+        kickoffSub:"Pulsa el botón rectangular largo ▶ de abajo para comenzar la diversión. Más tarde, cuando casi sea hora de terminar, pulsarás otro botón que dice Casi es hora de parar. Verás tu reloj de arena o reloj de colores. ¡Si terminas con calma, podrás recibir un premio!",
         kickoffBtn:"▶ ¡Pulsa para empezar!", waitingTitle:"¡Disfruta!", waitingSub:"Padres: devolved el teléfono o la tablet cuando esté casi terminado — el temporizador estará listo." },
       zh: { tag:"屏幕时间倒计时", finalHeading:"屏幕时间结束！", finalNote:"太棒了，自己关掉屏幕！现在可以去休息一下眼睛啦。",
         ownership:"自己遵守约定的孩子最棒！", kickoffQ:"准备好开始看屏幕了吗？",
-        kickoffSub:"点击下方长方形 ▶ 按钮开始。时间快到时，由你亲自来关掉它！",
+        kickoffSub:"点击下方长方形 ▶ 按钮开始开心玩耍。稍后快要结束时，你会按下另一个写着“快到结束时间了”的按钮。你将看到你的沙漏或时钟。如果你平静地结束，就可以获得奖励哦！",
         kickoffBtn:"▶ 点击开始屏幕时间！<span class='btnPinyin'>▶ Diǎnjī kāishǐ píngmù!</span>", waitingTitle:"享受你的时间！", waitingSub:"时间快到时，请向大人拿手机——魔法倒计时会等着你！" }
     },
     bedtime: {
@@ -649,15 +652,15 @@
     task: {
       en: { tag:"Daily routine countdown", finalHeading:"Great job!", finalNote:"You finished your task! All done!",
         ownership:"Time for your next daily activity!", kickoffQ:"Ready to start your task?",
-        kickoffSub:"Press the long rectangular ▶ button below to begin. A magic picture will reveal itself as you go!",
+        kickoffSub:"Press the long rectangular ▶ button below to start fun time. Later, when its nearly time to finish, you press another button that says Nearly Time to stop. You will see your hourglass or clock timer. If you finish calmly, you may get a treat!",
         kickoffBtn:"▶ Press to begin!", waitingTitle:"In progress!", waitingSub:"Grown-up: when your child is almost done, hand the phone back for the final reveal." },
       es: { tag:"Cuenta atrás de rutina diaria", finalHeading:"¡Buen trabajo!", finalNote:"¡Terminaste tu tarea! ¡Todo listo!",
         ownership:"¡Hora de tu siguiente actividad!", kickoffQ:"¿Listo para empezar tu tarea?",
-        kickoffSub:"Pulsa el botón rectangular largo ▶ de abajo para comenzar. ¡Una imagen mágica se irá revelando!",
+        kickoffSub:"Pulsa el botón rectangular largo ▶ de abajo para comenzar la diversión. Más tarde, cuando casi sea hora de terminar, pulsarás otro botón que dice Casi es hora de parar. Verás tu reloj de arena o reloj de colores. ¡Si terminas con calma, podrás recibir un premio!",
         kickoffBtn:"▶ ¡Pulsa para empezar!", waitingTitle:"¡En curso!", waitingSub:"Adulto: cuando el peque esté a punto de terminar, devolvedle el teléfono para la sorpresa final." },
       zh: { tag:"日常自理任务", finalHeading:"任务完成！", finalNote:"你独立完成了任务，太厉害了！",
         ownership:"为你自己的坚持感到骄傲吧！", kickoffQ:"准备好开始了吗？",
-        kickoffSub:"点击下方长方形 ▶ 按钮开始。神奇的图案会随着倒计时逐渐显现！",
+        kickoffSub:"点击下方长方形 ▶ 按钮开始开心玩耍。稍后快要结束时，你会按下另一个写着“快到结束时间了”的按钮。你将看到你的沙漏或时钟。如果你平静地结束，就可以获得奖励哦！",
         kickoffBtn:"▶ 点击开始！<span class='btnPinyin'>▶ Diǎnjī kāishǐ!</span>", waitingTitle:"正在进行中！", waitingSub:"大人：当孩子快要完成时，请将手机交回孩子观看最终揭秘。" }
     }
   };
@@ -809,18 +812,37 @@
                .replace(/([Mm]ismo)\/[Aa]/g, '$1')
                .replace(/([Uu]no?)\/([Uu]na)/g, '$1')
                .replace(/[\/\\]/g, ' ')
-               .replace(/[▶✨🐰💤👋🍪⚽🍦🛹🎮📱🎯✋📖🤫🧘😴]/g, '')
+               .replace(/[▶✨🐰💤👋🍪⚽🍦🛹🎮📱🎯✋📖🤫🧘😴🪥👟👕🧸🥣🎒🛁🎁⭐]/g, '')
                .replace(/\s+/g, ' ')
                .trim();
   }
 
   function scheduleStripHTML(mode, style, lang, age){
-    var rawSteps = SCHEDULE_STEPS[mode];
-    if(!rawSteps) return '';
-    var steps = rawSteps;
-    if(!Array.isArray(rawSteps)){
-      var curAge = age || (typeof state !== 'undefined' && state.age) || 'young';
-      steps = rawSteps[curAge] || rawSteps['mid'] || rawSteps['young'] || [];
+    var steps;
+    if(mode === 'task'){
+      var curTask = getTaskInfo();
+      steps = [
+        {
+          icon: curTask.icon,
+          label_en: curTask.name_en,
+          label_es: curTask.name_es,
+          label_zh: curTask.name_zh
+        },
+        {
+          icon: "🎁",
+          label_en: "All done, time for a treat!",
+          label_es: "¡Todo listo, hora del premio!",
+          label_zh: "完成任务，享受奖励！<span class='schedPinyin'>Wánchéng rènwu, xiǎngshòu jiǎnglì!</span>"
+        }
+      ];
+    } else {
+      var rawSteps = SCHEDULE_STEPS[mode];
+      if(!rawSteps) return '';
+      steps = rawSteps;
+      if(!Array.isArray(rawSteps)){
+        var curAge = age || (typeof state !== 'undefined' && state.age) || 'young';
+        steps = rawSteps[curAge] || rawSteps['mid'] || rawSteps['young'] || [];
+      }
     }
     if(!steps || !steps.length) return '';
     var anyPlaceholder = false;
@@ -844,7 +866,7 @@
       var visual = imgSrc
         ? '<img class="scheduleIconImg'+(animate?' animated':'')+'" src="'+imgSrc+'" alt="'+labelEn+'" />'
         : '<div class="scheduleIcon'+(animate?' animated':'')+'">'+s.icon+'</div>';
-      if(!imgSrc) anyPlaceholder = true;
+      if(!imgSrc && mode !== 'task') anyPlaceholder = true;
       var sparkles = (animate && imgSrc) ? '<span class="scheduleSparkle s1">✨</span><span class="scheduleSparkle s2">✨</span>' : '';
       return ''+
         '<div class="scheduleCard immersionCard">'+
@@ -2713,9 +2735,10 @@ function renderDailyTasksSetup(t){
 
     var taskCardsHtml = DAILY_TASKS.map(function(task){
       var isActive = state.taskId === task.id;
-      var name = state.lang === 'zh' ? (task.name_zh || task.name_en) : (state.lang === 'es' ? task.name_es : task.name_en);
-      if (task.id === 'custom' && state.taskCustomName && state.taskCustomName.trim()) {
-        name = state.taskCustomName.trim();
+      var isCustom = task.id === 'custom' && state.taskCustomName && state.taskCustomName.trim();
+      var primaryName = state.lang === 'zh' ? (task.name_zh || task.name_en) : (state.lang === 'es' ? task.name_es : task.name_en);
+      if (isCustom) {
+        primaryName = state.taskCustomName.trim();
       }
       var m = state.taskMinutes[task.id] != null ? state.taskMinutes[task.id] : task.defaultMin;
 
@@ -2731,11 +2754,23 @@ function renderDailyTasksSetup(t){
         badgeHtml = '<span class="taskCardBadge">'+m+' min</span>';
       }
 
-      var cardTitle = (isActive ? (t.deselectTaskBtn || 'Deselect') : name).replace(/<[^>]*>/g, '');
+      var cardTitle = (isActive ? (t.deselectTaskBtn || 'Deselect') : primaryName).replace(/<[^>]*>/g, '');
+      var subLangsHtml = '';
+      if(!isCustom && task.id !== 'custom'){
+        if(state.lang === 'en'){
+          subLangsHtml = '<div class="taskCardLangs"><span class="taskCardLangPill">ES: '+task.name_es+'</span><span class="taskCardLangPill">中文: '+task.name_zh+'</span></div>';
+        } else if(state.lang === 'es'){
+          subLangsHtml = '<div class="taskCardLangs"><span class="taskCardLangPill">EN: '+task.name_en+'</span><span class="taskCardLangPill">中文: '+task.name_zh+'</span></div>';
+        } else {
+          subLangsHtml = '<div class="taskCardLangs"><span class="taskCardLangPill">EN: '+task.name_en+'</span><span class="taskCardLangPill">ES: '+task.name_es+'</span></div>';
+        }
+      }
+
       return ''+
         '<div class="taskCard '+(isActive?'active':'')+'" data-taskid="'+task.id+'" role="button" tabindex="0" title="'+cardTitle+'">'+
           '<span class="taskCardIcon">'+task.icon+'</span>'+
-          '<span class="taskCardName">'+name+'</span>'+
+          '<span class="taskCardName">'+primaryName+'</span>'+
+          subLangsHtml +
           badgeHtml +
         '</div>';
     }).join('');
@@ -2743,6 +2778,16 @@ function renderDailyTasksSetup(t){
     var bannerHtml = '';
     if (state.taskId && currentInfo) {
       var currentMin = state.taskMinutes[state.taskId] != null ? state.taskMinutes[state.taskId] : currentInfo.defaultMin;
+      var bannerSubLangs = '';
+      if(state.taskId !== 'custom'){
+        if(state.lang === 'en'){
+          bannerSubLangs = '<div class="taskSelectedSubLangs"><span>ES: ' + currentInfo.name_es + '</span> · <span>中文: ' + currentInfo.name_zh + '</span></div>';
+        } else if(state.lang === 'es'){
+          bannerSubLangs = '<div class="taskSelectedSubLangs"><span>EN: ' + currentInfo.name_en + '</span> · <span>中文: ' + currentInfo.name_zh + '</span></div>';
+        } else {
+          bannerSubLangs = '<div class="taskSelectedSubLangs"><span>EN: ' + currentInfo.name_en + '</span> · <span>ES: ' + currentInfo.name_es + '</span></div>';
+        }
+      }
       bannerHtml = ''+
         '<div class="taskSelectedBanner">'+
           '<div class="taskSelectedInfo">'+
@@ -2750,6 +2795,7 @@ function renderDailyTasksSetup(t){
             '<div class="taskSelectedTextWrap">'+
               '<div class="taskSelectedTag">'+(state.lang === 'zh' ? '已选常规' : (state.lang === 'es' ? 'Rutina seleccionada' : 'Selected routine'))+'</div>'+
               '<div class="taskSelectedName">'+currentInfo.name+'</div>'+
+              bannerSubLangs +
             '</div>'+
           '</div>'+
           '<div class="taskSelectedControls">'+
@@ -2758,14 +2804,14 @@ function renderDailyTasksSetup(t){
               '<span class="taskBannerValue">'+currentMin+' min</span>'+
               '<button class="taskBannerStep plus" data-step="1" type="button" aria-label="Increase time">+</button>'+
             '</div>'+
-            '<button type="button" class="taskDeselectBtn" id="taskDeselectBtn" title="'+(state.lang === 'es' ? 'Cambiar rutina' : 'Change routine')+'">'+(state.lang === 'es' ? '✕ Cambiar' : '✕ Change')+'</button>'+
+            '<button type="button" class="taskDeselectBtn" id="taskDeselectBtn" title="'+(state.lang === 'zh' ? '更换常规任务' : (state.lang === 'es' ? 'Cambiar rutina' : 'Change routine'))+'">'+(state.lang === 'zh' ? '✕ 更换' : (state.lang === 'es' ? '✕ Cambiar' : '✕ Change'))+'</button>'+
           '</div>'+
         '</div>';
     } else {
       bannerHtml = ''+
         '<div class="taskSelectedBanner empty">'+
           '<span class="taskSelectedEmptyIcon">👆</span>'+
-          '<span class="taskSelectedEmptyText">'+(t.noTaskSelectedPrompt || (state.lang === 'es' ? 'Pulsa una rutina arriba para comenzar' : 'Tap a routine above to get started'))+'</span>'+
+          '<span class="taskSelectedEmptyText">'+(t.noTaskSelectedPrompt || (state.lang === 'zh' ? '点击上方常规任务以开始' : (state.lang === 'es' ? 'Pulsa una rutina arriba para comenzar' : 'Tap a routine above to get started')))+'</span>'+
         '</div>';
     }
 
@@ -2803,12 +2849,12 @@ function renderDailyTasksSetup(t){
       '<div class="card">'+
         renderHomeTabSwitcher(t) +
         langToggleHTML() +
-        '<div class="modeTag">'+(state.lang==='es'?'Rutinas Diarias':'Daily Routines')+'</div>'+
-        '<h1 class="title display">'+(state.lang==='es'?'Rutinas Diarias':'Daily Tasks')+'</h1>'+
-        '<p class="sub">'+(state.lang==='es'?'Rutinas claras y tranquilas para hábitos diarios.':'Predictable, calm routines for everyday habits.')+'</p>'+
+        '<div class="modeTag">'+(t.tasksTag || (state.lang==='es'?'Rutinas Diarias':'Daily Routines'))+'</div>'+
+        '<h1 class="title display">'+(t.tasksTitle || (state.lang==='es'?'Rutinas Diarias':'Daily Tasks'))+'</h1>'+
+        '<p class="sub">'+(t.tasksSub || (state.lang==='es'?'Rutinas claras y tranquilas para hábitos diarios.':'Predictable, calm routines for everyday habits.'))+'</p>'+
 
         '<div class="field">'+
-          '<label>'+(state.lang==='es' ? '1. Edad del peque' : '1. Child\'s age')+'</label>'+
+          '<label>'+(state.lang==='zh' ? '1. 孩子年龄' : (state.lang==='es' ? '1. Edad del peque' : '1. Child\'s age'))+'</label>'+
           '<div class="seg">'+
             '<button class="seg-age '+(state.age==='young'?'active':'')+'" data-age="young" type="button">'+t.age24+'</button>'+
             '<button class="seg-age '+(state.age==='mid'?'active':'')+'" data-age="mid" type="button">'+t.age57+'</button>'+
@@ -2817,7 +2863,7 @@ function renderDailyTasksSetup(t){
         '</div>'+
 
         '<div class="field">'+
-          '<label>'+(state.lang==='es' ? '2. Elige una rutina diaria' : '2. Choose a daily routine')+'</label>'+
+          '<label>'+(state.lang==='zh' ? '2. 选择日常自理任务' : (state.lang==='es' ? '2. Elige una rutina diaria' : '2. Choose a daily routine'))+'</label>'+
           '<div class="taskGrid">'+
             taskCardsHtml +
           '</div>'+
@@ -2826,7 +2872,7 @@ function renderDailyTasksSetup(t){
         '</div>'+
 
         '<div class="field">'+
-          '<label>'+(state.lang==='es' ? '3. Estilo de reloj' : '3. Timer style')+'</label>'+
+          '<label>'+(state.lang==='zh' ? '3. 倒计时器样式' : (state.lang==='es' ? '3. Estilo de reloj' : '3. Timer style'))+'</label>'+
           '<div class="seg" style="margin-bottom:12px;">'+
             '<button class="seg-timermode '+(state.timerMode==='classic'?'active':'')+'" data-timermode="classic" type="button">'+t.modeClassic+'</button>'+
             '<button class="seg-timermode '+(state.timerMode==='transformation'?'active':'')+'" data-timermode="transformation" type="button">'+t.modeTransform+'</button>'+
@@ -3171,11 +3217,7 @@ function renderDailyTasksSetup(t){
 
   function getKickoffSubImmersion(){
     var enSub, esSub, zhSub;
-    if(state.mode === 'task'){
-      enSub = 'Press the long rectangular ▶ button below to begin. Watch the magic transformation as you go!';
-      esSub = 'Pulsa el botón rectangular largo ▶ de abajo para comenzar. ¡Mira la transformación mágica mientras avanzas!';
-      zhSub = '点击下方长方形 ▶ 按钮开始。看着画面一点点神奇蜕变！';
-    } else if(COPY[state.mode]){
+    if(COPY[state.mode]){
       enSub = COPY[state.mode].en.kickoffSub;
       esSub = COPY[state.mode].es.kickoffSub;
       zhSub = cleanSpeechText(COPY[state.mode].zh.kickoffSub, 'zh');
@@ -3211,8 +3253,8 @@ function renderDailyTasksSetup(t){
       '<div class="hourglassWrap" style="height:'+wrapHeight()+';">'+ timerVisual(0) +'</div>'+
       getKickoffQuestionImmersion() +
       getKickoffSubImmersion() +
-      (state.mode !== 'task' ? scheduleStripHTML(state.mode, state.scheduleStyle, state.lang, state.age) : '') +
-      (state.mode !== 'task' ? scheduleStyleToggleHTML(state.scheduleStyle, state.lang) : '') +
+      scheduleStripHTML(state.mode, state.scheduleStyle, state.lang, state.age) +
+      scheduleStyleToggleHTML(state.scheduleStyle, state.lang) +
       '<button class="bigBtn" id="kickoffBtn" type="button" style="margin-top:12px;">'+ kickoffBtn +'</button>'+
       '<button class="ghostBtn" id="kickoffEmergencyBtn" type="button" style="margin-top:8px;border-color:rgba(255,107,107,0.6);color:var(--coral);font-weight:700;font-size:13.5px;">'+t.emergencyBtnLabel+'</button>'+
       '<button class="ghostBtn" id="backBtn2" type="button" style="margin-top:10px;">'+t.backToSetup+'</button>'+
