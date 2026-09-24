@@ -962,14 +962,20 @@
   var syntheticHeartbeatHandle = null;
   var syntheticHeartbeatCtx = null;
 
-  function T(){ return STR[state.lang]; }
-
-  // ---------- Persisted unlock ----------
+  // ---------- Persisted preferences ----------
   try{
-    if(window.localStorage && localStorage.getItem('calmcountdown_unlocked') === 'true'){
-      state.groupUnlocked = true;
+    if(typeof window !== 'undefined' && window.localStorage){
+      if(localStorage.getItem('calmcountdown_unlocked') === 'true'){
+        state.groupUnlocked = true;
+      }
+      var savedLang = localStorage.getItem('calm_lang');
+      if(savedLang && (savedLang === 'en' || savedLang === 'es' || savedLang === 'zh')){
+        state.lang = savedLang;
+      }
     }
   }catch(e){}
+
+  function T(){ return STR[state.lang] || STR.en; }
 
   // ---------- Helpers ----------
   function catName(cat){ return state.lang === 'zh' ? (cat.category_zh || cat.category) : (state.lang === 'es' ? cat.category_es : cat.category); }
@@ -3326,6 +3332,11 @@ function renderDailyTasksSetup(t){
     app.querySelectorAll('.lang-btn').forEach(function(b){
       b.addEventListener('click', function(){
         state.lang = b.getAttribute('data-lang');
+        try {
+          if (typeof window !== 'undefined' && window.localStorage) {
+            localStorage.setItem('calm_lang', state.lang);
+          }
+        } catch(e){}
         render();
       });
     });
