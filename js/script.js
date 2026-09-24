@@ -793,6 +793,16 @@
     "now-next":   { en:["Now","Next"],   es:["Ahora","Luego"],   zh:["现在","接下来"] }
   };
 
+  function cleanSpeechText(text, lang){
+    if(!text) return '';
+    return text.replace(/<span class=['"]schedPinyin['"][^>]*>[\s\S]*?<\/span>/gi, '')
+               .replace(/<span class=['"]schedOrdinalPinyin['"][^>]*>[\s\S]*?<\/span>/gi, '')
+               .replace(/<span class=['"]btnPinyin['"][^>]*>[\s\S]*?<\/span>/gi, '')
+               .replace(/<[^>]*>/g, '')
+               .replace(/[▶✨🐰💤👋🍪⚽🍦🛹🎮📱🎯✋📖🤫🧘😴]/g, '')
+               .trim();
+  }
+
   function scheduleStripHTML(mode, style, lang, age){
     var rawSteps = SCHEDULE_STEPS[mode];
     if(!rawSteps) return '';
@@ -805,69 +815,49 @@
     var anyPlaceholder = false;
     var animate = mode !== 'bedtime';
     var ordinals_en = ["1st","2nd","3rd","4th"];
-    var ordinals_es = ["1º","2º","3º","4º"];
-    var ordinals_zh = [
-      "第1步<span class='schedOrdinalPinyin'>Dì yī bù</span>",
-      "第2步<span class='schedOrdinalPinyin'>Dì èr bù</span>",
-      "第3步<span class='schedOrdinalPinyin'>Dì sān bù</span>",
-      "第4步<span class='schedOrdinalPinyin'>Dì sì bù</span>"
-    ];
     var schedWords = SCHEDULE_WORDS[style] || SCHEDULE_WORDS["first-then"];
-    var words = schedWords[lang] || schedWords["en"];
-    if(lang === 'zh'){
-      if(style === 'now-next'){
-        words = ["现在<span class='schedOrdinalPinyin'>Xiànzài</span>","接下来<span class='schedOrdinalPinyin'>Jiēxiàlai</span>"];
-      } else {
-        words = ["先<span class='schedOrdinalPinyin'>Xiān</span>","然后<span class='schedOrdinalPinyin'>Ránhòu</span>"];
-      }
-    }
+    var words = schedWords["en"] || ["First","Then"];
     if(mode === 'bedtime'){
-      // Bedtime has four cards: the final pair follows the selected US/UK wording.
-      if(style === 'now-next'){
-        words = lang === 'zh'
-          ? ["现在<span class='schedOrdinalPinyin'>Xiànzài</span>","接下来<span class='schedOrdinalPinyin'>Jiēxiàlai</span>","现在<span class='schedOrdinalPinyin'>Xiànzài</span>","接下来<span class='schedOrdinalPinyin'>Jiēxiàlai</span>"]
-          : (lang === 'es' ? ["Ahora","Siguiente","Ahora","Siguiente"] : ["Now","Next","Now","Next"]);
-      } else {
-        words = lang === 'zh'
-          ? ["先<span class='schedOrdinalPinyin'>Xiān</span>","然后<span class='schedOrdinalPinyin'>Ránhòu</span>","先<span class='schedOrdinalPinyin'>Xiān</span>","然后<span class='schedOrdinalPinyin'>Ránhòu</span>"]
-          : (lang === 'es' ? ["Primero","Luego","Primero","Luego"] : ["First","Then","First","Then"]);
-      }
+      words = (style === 'now-next')
+        ? ["Now","Next","Now","Next"]
+        : ["First","Then","First","Then"];
     }
     var cards = steps.map(function(s, i){
-      var topLabel;
-      if(i < words.length){
-        topLabel = words[i];
-      } else {
-        topLabel = (lang==='zh' ? ordinals_zh : (lang==='es' ? ordinals_es : ordinals_en))[i] || (i+1);
-      }
-      var label = lang==='zh' ? (s.label_zh || s.label_en) : (lang==='es' ? s.label_es : s.label_en);
-      var cleanLabel = (lang==='zh' ? (s.label_zh || s.label_en) : (lang==='es' ? s.label_es : s.label_en)).replace(/<[^>]*>/g, '');
-      var imgSrc = (lang==='es' && s.img_es) ? s.img_es : s.img;
+      var topLabel = (i < words.length) ? words[i] : (ordinals_en[i] || (i+1));
+      var labelEn = s.label_en || '';
+      var labelEs = s.label_es || s.label_en || '';
+      var labelZh = s.label_zh || s.label_en || '';
+      var cleanEs = cleanSpeechText(labelEs, 'es');
+      var cleanZh = cleanSpeechText(labelZh, 'zh');
+      var imgSrc = s.img || '';
       var visual = imgSrc
-        ? '<img class="scheduleIconImg'+(animate?' animated':'')+'" src="'+imgSrc+'" alt="'+cleanLabel+'" />'
+        ? '<img class="scheduleIconImg'+(animate?' animated':'')+'" src="'+imgSrc+'" alt="'+labelEn+'" />'
         : '<div class="scheduleIcon'+(animate?' animated':'')+'">'+s.icon+'</div>';
       if(!imgSrc) anyPlaceholder = true;
       var sparkles = (animate && imgSrc) ? '<span class="scheduleSparkle s1">✨</span><span class="scheduleSparkle s2">✨</span>' : '';
       return ''+
-        '<div class="scheduleCard">'+
+        '<div class="scheduleCard immersionCard">'+
           '<div class="scheduleOrdinal">'+topLabel+'</div>'+
-          sparkles +
-          visual +
-          '<div class="scheduleLabel">'+label+'</div>'+
+          '<div class="cardImmersionRow">'+
+            '<div class="cardImmersionSide left" data-speak-lang="es" data-speak-text="'+cleanEs+'" role="button" tabindex="0" title="Escuchar en español">'+
+              '<span class="cardSideBadge">ES 🔊</span>'+
+              '<span class="cardSideLabel">'+labelEs+'</span>'+
+            '</div>'+
+            '<div class="cardImmersionCenter">'+
+              sparkles +
+              visual +
+              '<div class="scheduleLabel">'+labelEn+'</div>'+
+            '</div>'+
+            '<div class="cardImmersionSide right" data-speak-lang="zh" data-speak-text="'+cleanZh+'" role="button" tabindex="0" title="收听中文">'+
+              '<span class="cardSideBadge">中文 🔊</span>'+
+              '<span class="cardSideLabel">'+labelZh+'</span>'+
+            '</div>'+
+          '</div>'+
         '</div>'+
-        (i < steps.length-1 ? '<div class="scheduleArrow">→</div>' : '');
+        (i < steps.length-1 ? '<div class="scheduleArrow">↓</div>' : '');
     });
-    var placeholderNote = lang==='zh' ? '🐰 占位图示 — 这里将放置小兔插画' : (lang==='es' ? '🐰 Arte de muestra — tus ilustraciones de conejito van aquí' : '🐰 Placeholder art — your bunny images go here');
-    if(mode === 'bedtime' && cards.length > 2){
-      var row1 = cards.slice(0, 2).join('');
-      var row2 = cards.slice(2).join('');
-      return '<div class="scheduleStrip">'+
-        '<div class="scheduleRow">'+row1+'</div>'+
-        '<div class="scheduleRow">'+row2+'</div>'+
-        '</div>'+
-        (anyPlaceholder ? '<div class="schedulePlaceholderNote">'+placeholderNote+'</div>' : '');
-    }
-    return '<div class="scheduleStrip"><div class="scheduleRow">'+ cards.join('') +'</div></div>'+
+    var placeholderNote = '🐰 Placeholder art — your bunny images go here';
+    return '<div class="scheduleStrip"><div class="scheduleRow immersionRow">'+ cards.join('') +'</div></div>'+
       (anyPlaceholder ? '<div class="schedulePlaceholderNote">'+placeholderNote+'</div>' : '');
   }
 
@@ -2980,26 +2970,131 @@ function renderDailyTasksSetup(t){
     '</div>';
   }
 
+  function getTimerChoiceImmersion(){
+    var enText, esText, zhText, zhDisplay;
+    if(state.timerMode === 'transformation'){
+      var theme = getTheme(state.style);
+      var nameEn = (theme && theme.name_en) ? theme.name_en : 'transformation';
+      var nameEs = (theme && theme.name_es) ? theme.name_es : 'transformación';
+      var nameZh = (theme && theme.name_zh) ? theme.name_zh : (theme && theme.name_en ? theme.name_en : '魔法蜕变');
+      enText = 'You have chosen the ' + nameEn.toLowerCase() + ' timer style.';
+      esText = 'Has elegido el estilo ' + nameEs.toLowerCase() + '.';
+      zhText = '你选择了' + nameZh + '倒计时风格。';
+      zhDisplay = zhText;
+    } else if(state.classicStyle === 'hourglass'){
+      enText = 'You have chosen the hourglass timer style.';
+      esText = 'Has elegido el estilo reloj de arena.';
+      zhText = '你选择了沙漏倒计时风格。';
+      zhDisplay = '你选择了沙漏倒计时风格。<span class="btnPinyin">Nǐ xuǎnzé le shālòu dǎojìshí fēnggé.</span>';
+    } else {
+      enText = 'You have chosen the colour clock timer style.';
+      esText = 'Has elegido el estilo reloj de colores.';
+      zhText = '你选择了彩色时钟倒计时风格。';
+      zhDisplay = '你选择了彩色时钟倒计时风格。<span class="btnPinyin">Nǐ xuǎnzé le cǎisè shízhōng dǎojìshí fēnggé.</span>';
+    }
+    return ''+
+    '<div class="timerChoiceImmersionBlock">'+
+      '<div class="immersionSide left" data-speak-lang="es" data-speak-text="'+esText+'" role="button" tabindex="0" title="Escuchar en español">'+
+        '<span class="immersionTag">ES 🔊</span>'+
+        '<span class="immersionText">'+esText+'</span>'+
+      '</div>'+
+      '<div class="immersionCenterTitle">'+enText+'</div>'+
+      '<div class="immersionSide right" data-speak-lang="zh" data-speak-text="'+zhText+'" role="button" tabindex="0" title="收听中文">'+
+        '<span class="immersionTag">中文 🔊</span>'+
+        '<span class="immersionText">'+zhDisplay+'</span>'+
+      '</div>'+
+    '</div>';
+  }
+
+  function getKickoffQuestionImmersion(){
+    var enQ, esQ, zhQ, zhDisplay;
+    if(state.mode === 'task'){
+      var curTask = null;
+      for(var i=0; i<DAILY_TASKS.length; i++){
+        if(DAILY_TASKS[i].id === state.taskId){ curTask = DAILY_TASKS[i]; break; }
+      }
+      if(!curTask) curTask = DAILY_TASKS[0];
+      var customName = state.taskCustomName && state.taskCustomName.trim();
+      var tNameEn = (curTask.id === 'custom' && customName) ? customName : curTask.name_en;
+      var tNameEs = (curTask.id === 'custom' && customName) ? customName : curTask.name_es;
+      var tNameZhClean = (curTask.id === 'custom' && customName) ? customName : cleanSpeechText(curTask.name_zh || curTask.name_en, 'zh');
+      var tNameZhDisplay = (curTask.id === 'custom' && customName) ? customName : (curTask.name_zh || curTask.name_en);
+      enQ = 'Are you ready for: ' + curTask.icon + ' ' + tNameEn + '?';
+      esQ = '¿Listo/a para: ' + curTask.icon + ' ' + tNameEs + '?';
+      zhQ = '准备好进行：' + curTask.icon + ' ' + tNameZhClean + ' 了吗？';
+      zhDisplay = '准备好进行：' + curTask.icon + ' ' + tNameZhDisplay + ' 了吗？';
+    } else if(state.mode === 'screen'){
+      enQ = 'Are you ready to start your screen time?';
+      esQ = '¿Estás listo/a para empezar tu tiempo de pantalla?';
+      zhQ = '准备好开始看屏幕了吗？';
+      zhDisplay = '准备好开始看屏幕了吗？<span class="btnPinyin">Zhǔnbèi hǎo kāishǐ kàn píngmù le ma?</span>';
+    } else if(state.mode === 'bedtime'){
+      enQ = 'Are you ready to start tonight\'s wind-down?';
+      esQ = '¿Estás listo/a para relajarte esta noche?';
+      zhQ = '准备好开始睡前准备了吗？';
+      zhDisplay = '准备好开始睡前准备了吗？<span class="btnPinyin">Zhǔnbèi hǎo kāishǐ shuìqián zhǔnbèi le ma?</span>';
+    } else {
+      enQ = 'Are you ready to start your fun?';
+      esQ = '¿Estás listo/a para empezar la diversión?';
+      zhQ = '准备好开始开心玩耍了吗？';
+      zhDisplay = '准备好开始开心玩耍了吗？<span class="btnPinyin">Zhǔnbèi hǎo kāishǐ wánshuǎ le ma?</span>';
+    }
+    return ''+
+    '<div class="kidQuestionImmersionRow">'+
+      '<div class="immersionPill left" data-speak-lang="es" data-speak-text="'+esQ+'" role="button" tabindex="0" title="Escuchar en español">'+
+        '<span class="immersionTag">ES 🔊</span>'+
+        '<span class="immersionText">'+esQ+'</span>'+
+      '</div>'+
+      '<div class="kidMsg display immersionMainTitle">'+enQ+'</div>'+
+      '<div class="immersionPill right" data-speak-lang="zh" data-speak-text="'+zhQ+'" role="button" tabindex="0" title="收听中文">'+
+        '<span class="immersionTag">中文 🔊</span>'+
+        '<span class="immersionText">'+zhDisplay+'</span>'+
+      '</div>'+
+    '</div>';
+  }
+
+  function getKickoffSubImmersion(){
+    var enSub, esSub, zhSub;
+    if(state.mode === 'task'){
+      enSub = 'Press the long rectangular ▶ button below to begin. Watch the magic transformation as you go!';
+      esSub = 'Pulsa el botón rectangular largo ▶ de abajo para comenzar. ¡Mira la transformación mágica mientras avanzas!';
+      zhSub = '点击下方长方形 ▶ 按钮开始。看着画面一点点神奇蜕变！';
+    } else if(COPY[state.mode]){
+      enSub = COPY[state.mode].en.kickoffSub;
+      esSub = COPY[state.mode].es.kickoffSub;
+      zhSub = cleanSpeechText(COPY[state.mode].zh.kickoffSub, 'zh');
+    } else {
+      enSub = 'Press the long rectangular ▶ button below to begin.';
+      esSub = 'Pulsa el botón rectangular largo ▶ de abajo para comenzar.';
+      zhSub = '点击下方长方形 ▶ 按钮开始。';
+    }
+    return ''+
+    '<div class="instructionImmersionWrap">'+
+      '<button type="button" class="instructionSideBtn left" data-speak-lang="es" data-speak-text="'+esSub+'" title="Escuchar en español">'+
+        'ES 🔊 Escuchar'+
+      '</button>'+
+      '<p class="instructionCenterSub">'+enSub+'</p>'+
+      '<button type="button" class="instructionSideBtn right" data-speak-lang="zh" data-speak-text="'+zhSub+'" title="收听中文">'+
+        '中文 🔊 收听'+
+      '</button>'+
+    '</div>';
+  }
+
   function renderKickoff(){
-    var t = T(); var c = getCopy(state.mode, state.lang);
+    var t = T();
     var taskInfo = state.mode === 'task' ? getTaskInfo() : null;
-    var kickoffQ = taskInfo
-      ? (state.lang === 'zh' ? ('准备好进行：' + taskInfo.icon + ' ' + taskInfo.name + ' 了吗？') : (state.lang === 'es' ? ('¿Listo/a para: ' + taskInfo.icon + ' ' + taskInfo.name + '?') : ('Ready for: ' + taskInfo.icon + ' ' + taskInfo.name + '?')))
-      : c.kickoffQ;
-    var kickoffSub = taskInfo
-      ? (state.lang === 'zh' ? '点击下方长方形 ▶ 按钮开始。看着画面一点点神奇蜕变！' : (state.lang === 'es' ? 'Pulsa el botón rectangular largo ▶ de abajo para comenzar. ¡Mira la transformación mágica mientras avanzas!' : 'Press the long rectangular ▶ button below to begin. Watch the magic transformation as you go!'))
-      : c.kickoffSub;
     var kickoffBtn = taskInfo
       ? (state.lang === 'zh' ? ('▶ 开始 ' + taskInfo.name + '！<span class="btnPinyin">▶ Diǎnjī kāishǐ!</span>') : (state.lang === 'es' ? ('▶ ¡Empezar ' + taskInfo.name + '!') : ('▶ Start ' + taskInfo.name + '!')))
-      : c.kickoffBtn;
+      : (COPY[state.mode] ? (state.lang === 'zh' ? COPY[state.mode].zh.kickoffBtn : (state.lang === 'es' ? COPY[state.mode].es.kickoffBtn : COPY[state.mode].en.kickoffBtn)) : '▶ Press to begin!');
 
     return ''+
     '<div class="kidScreen">'+
       (state.groupMode==='class' ? '<div class="classroomBanner">'+t.classroomBanner+'</div>' : '') +
-      '<div class="modeTag">'+ (state.mode === 'task' ? (state.lang==='zh'?'日常自理任务':(state.lang==='es'?'Rutina Diaria':'Daily Routine')) : t.kickoffGettingStarted) +'</div>'+
+      '<div class="parentKickoffNote"><span class="parentNoteBadge">Parent:</span> Help child read and listen, below.</div>'+
+      getTimerChoiceImmersion() +
       '<div class="hourglassWrap" style="height:'+wrapHeight()+';">'+ timerVisual(0) +'</div>'+
-      '<div class="kidMsg display">'+ kickoffQ +'</div>'+
-      '<p class="sub" style="margin-bottom:8px;">'+ kickoffSub +'</p>'+
+      getKickoffQuestionImmersion() +
+      getKickoffSubImmersion() +
       (state.mode !== 'task' ? scheduleStripHTML(state.mode, state.scheduleStyle, state.lang, state.age) : '') +
       (state.mode !== 'task' ? scheduleStyleToggleHTML(state.scheduleStyle, state.lang) : '') +
       '<button class="bigBtn" id="kickoffBtn" type="button" style="margin-top:12px;">'+ kickoffBtn +'</button>'+
@@ -3203,6 +3298,28 @@ function renderDailyTasksSetup(t){
         if(e.key === 'Enter' || e.key === ' '){
           e.preventDefault();
           handleSpark(e);
+        }
+      });
+    });
+
+    // Page 2 Immersion elements audio triggers (Spanish on Left, Mandarin on Right)
+    app.querySelectorAll('.immersionSide, .immersionPill, .instructionSideBtn, .cardImmersionSide').forEach(function(el){
+      function handleImmersionSpeak(e){
+        if(e) e.stopPropagation();
+        var audioSrc = el.getAttribute('data-audio-src');
+        var text = el.getAttribute('data-speak-text');
+        var lang = el.getAttribute('data-speak-lang');
+        if(audioSrc){
+          playBilingualAudio(audioSrc, text, lang, el);
+        } else if(text && lang){
+          speakBilingual(text, lang, el);
+        }
+      }
+      el.addEventListener('click', handleImmersionSpeak);
+      el.addEventListener('keydown', function(e){
+        if(e.key === 'Enter' || e.key === ' '){
+          e.preventDefault();
+          handleImmersionSpeak(e);
         }
       });
     });

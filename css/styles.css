@@ -874,6 +874,198 @@
     text-align:center;
     margin-bottom:4px;
   }
+
+  /* ---- Page 2 Immersion Elements ---- */
+  .parentKickoffNote{
+    align-self:flex-start;
+    text-align:left;
+    font-size:12.5px;
+    font-weight:600;
+    color:var(--sand);
+    opacity:0.92;
+    margin-bottom:6px;
+    padding:4px 10px;
+    background:rgba(255,255,255,0.06);
+    border-left:3px solid var(--sand);
+    border-radius:0 8px 8px 0;
+  }
+  .parentKickoffNote .parentNoteBadge{
+    font-weight:800;
+    color:#fff;
+    margin-right:2px;
+  }
+  .timerChoiceImmersionBlock{
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:8px;
+    margin-bottom:8px;
+  }
+  .immersionSide{
+    flex:1 1 0;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+    background:rgba(255,255,255,0.07);
+    border:1.5px solid rgba(255,255,255,0.18);
+    border-radius:12px;
+    padding:6px 6px;
+    cursor:pointer;
+    color:var(--cream);
+    transition:background .15s ease, transform .1s ease, border-color .15s ease;
+  }
+  .immersionSide:active, .immersionPill:active, .instructionSideBtn:active, .cardImmersionSide:active{
+    transform:scale(0.96);
+  }
+  .immersionSide.speaking, .immersionPill.speaking, .instructionSideBtn.speaking, .cardImmersionSide.speaking{
+    background:rgba(78,205,196,0.25) !important;
+    border-color:var(--sky) !important;
+    box-shadow:0 0 12px rgba(78,205,196,0.5);
+  }
+  .immersionSide.left{ border-color:rgba(255,107,107,0.45); }
+  .immersionSide.right{ border-color:rgba(78,205,196,0.45); }
+  .immersionTag{
+    font-size:11px;
+    font-weight:800;
+    color:var(--sand);
+    margin-bottom:2px;
+  }
+  .immersionText{
+    font-size:11.5px;
+    line-height:1.25;
+    opacity:0.95;
+  }
+  .immersionCenterTitle{
+    flex:1.2 1 0;
+    font-family:'Baloo 2',sans-serif;
+    font-weight:700;
+    font-size:13.5px;
+    line-height:1.25;
+    color:var(--cream);
+    text-align:center;
+  }
+  .kidQuestionImmersionRow{
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:8px;
+    margin:6px 0 4px;
+  }
+  .immersionPill{
+    flex:1 1 0;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+    background:rgba(255,255,255,0.07);
+    border:1.5px solid rgba(255,255,255,0.18);
+    border-radius:12px;
+    padding:6px 6px;
+    cursor:pointer;
+    color:var(--cream);
+    transition:background .15s ease, transform .1s ease;
+  }
+  .immersionPill.left{ border-color:rgba(255,107,107,0.45); }
+  .immersionPill.right{ border-color:rgba(78,205,196,0.45); }
+  .immersionMainTitle{
+    flex:1.4 1 0;
+    font-size:clamp(19px, 5.5vw, 24px);
+    margin:0;
+    line-height:1.25;
+    color:var(--cream);
+  }
+  .instructionImmersionWrap{
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:8px;
+    margin-bottom:8px;
+  }
+  .instructionSideBtn{
+    flex:0 0 auto;
+    display:inline-flex;
+    align-items:center;
+    gap:4px;
+    padding:6px 10px;
+    border-radius:12px;
+    background:rgba(255,255,255,0.08);
+    border:1.5px solid rgba(255,255,255,0.22);
+    color:var(--cream);
+    font-family:'Quicksand',sans-serif;
+    font-weight:700;
+    font-size:12px;
+    cursor:pointer;
+    transition:background .15s ease, transform .1s ease;
+  }
+  .instructionSideBtn.left{ border-color:rgba(255,107,107,0.5); color:var(--sand); }
+  .instructionSideBtn.right{ border-color:rgba(78,205,196,0.5); color:var(--sand); }
+  .instructionCenterSub{
+    flex:1 1 auto;
+    font-size:13px;
+    line-height:1.35;
+    opacity:0.88;
+    margin:0;
+  }
+  .scheduleCard.immersionCard{
+    width:100%;
+    max-width:340px;
+    padding:8px 8px;
+  }
+  .cardImmersionRow{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:6px;
+    width:100%;
+    margin-top:4px;
+  }
+  .cardImmersionSide{
+    flex:1 1 0;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    background:rgba(255,255,255,0.06);
+    border:1.5px solid rgba(255,255,255,0.18);
+    border-radius:10px;
+    padding:6px 4px;
+    cursor:pointer;
+    min-height:76px;
+    color:var(--cream);
+    transition:background .15s ease, transform .1s ease;
+  }
+  .cardImmersionSide.left{ border-color:rgba(255,107,107,0.45); }
+  .cardImmersionSide.right{ border-color:rgba(78,205,196,0.45); }
+  .cardSideBadge{
+    font-size:11px;
+    font-weight:800;
+    color:var(--sand);
+    margin-bottom:2px;
+  }
+  .cardSideLabel{
+    font-size:11px;
+    line-height:1.2;
+    opacity:0.95;
+  }
+  .cardImmersionCenter{
+    flex:0 0 auto;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+    padding:0 4px;
+  }
+  .scheduleRow.immersionRow{
+    flex-direction:column;
+    align-items:center;
+    gap:8px;
+    width:100%;
+  }
   .scheduleStyleToggle{
     display:flex;
     flex-direction:column;
