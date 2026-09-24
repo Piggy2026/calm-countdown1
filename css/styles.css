@@ -786,7 +786,8 @@
     margin:10px 0 4px;
   }
   .scheduleCard{
-    width:96px;
+    width:104px;
+    min-width:96px;
     background:rgba(255,255,255,0.07);
     border:2px solid rgba(255,255,255,0.16);
     border-radius:16px;
@@ -803,6 +804,16 @@
     color:rgba(255,255,255,0.55);
     margin-bottom:4px;
     min-height:14px;
+  }
+  .schedOrdinalPinyin{
+    display:block;
+    font-size:9.5px;
+    font-weight:600;
+    opacity:0.9;
+    letter-spacing:0.2px;
+    line-height:1.1;
+    color:var(--sand);
+    text-transform:none;
   }
   .scheduleIcon{
     font-size:34px;
@@ -842,6 +853,16 @@
     font-size:11.5px;
     line-height:1.25;
     opacity:0.9;
+  }
+  .schedPinyin{
+    display:block;
+    font-size:10px;
+    font-weight:600;
+    opacity:0.88;
+    letter-spacing:0.2px;
+    line-height:1.15;
+    margin-top:2px;
+    color:var(--sand);
   }
   .scheduleArrow{
     font-size:20px;
