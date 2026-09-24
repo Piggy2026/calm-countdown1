@@ -1,14 +1,14 @@
 
   :root{
-    --bg-deep:#0F2E2B;
-    --bg-deep2:#154440;
-    --sand:#FFC857;
-    --sand-dark:#F0A93F;
-    --coral:#FF7B54;
-    --sky:#8ECAE6;
-    --cream:#FBF3E7;
-    --glass:rgba(255,255,255,0.10);
-    --ink:#0B2320;
+    --bg-deep:#0E4352;
+    --bg-deep2:#0A2833;
+    --sand:#FFD166;
+    --sand-dark:#F4A261;
+    --coral:#FF6B6B;
+    --sky:#4ECDC4;
+    --cream:#F8FAFC;
+    --glass:rgba(255,255,255,0.12);
+    --ink:#07212B;
   }
   body.theme-bedtime{
     --bg-deep:#241B3A;
@@ -112,6 +112,16 @@
     color:var(--ink);
   }
   .seg button:focus-visible{outline:3px solid var(--sky); outline-offset:2px;}
+  .seg-unit{
+    font-size:15px !important;
+    padding:10px 14px !important;
+    border-radius:14px !important;
+  }
+  .seg-unit.active, .seg-sec.active{
+    background:var(--sand) !important;
+    border-color:var(--sand) !important;
+    color:var(--ink) !important;
+  }
   .seg-group{
     min-width:0;
     font-size:14.5px !important;
@@ -199,6 +209,16 @@
     background:rgba(255,255,255,0.06);
     padding:6px;
     transition:opacity .25s ease;
+  }
+  .timerThemeImg.widescreen{
+    width: min(94vw, 360px);
+    height: auto;
+    max-height: 185px;
+    object-fit: cover;
+    border-radius: 18px;
+    padding: 0;
+    background: rgba(0, 0, 0, 0.25);
+    box-shadow: 0 8px 24px rgba(0, 229, 255, 0.22);
   }
   .timerThemeChips{
     display:flex;
@@ -730,6 +750,882 @@
     border-radius:14px;
     cursor:pointer;
   }
+  /* ---------- Home Tab Switcher & Daily Tasks ---------- */
+  .homeTabSwitcher{
+    display:flex;
+    gap:8px;
+    background:rgba(0,0,0,0.28);
+    padding:4px;
+    border-radius:18px;
+    margin-bottom:20px;
+    border:1px solid rgba(255,255,255,0.12);
+  }
+  .homeTabBtn{
+    flex:1;
+    padding:11px 12px;
+    border:none;
+    background:transparent;
+    color:var(--cream);
+    font-family:'Baloo 2',sans-serif;
+    font-size:15.5px;
+    font-weight:700;
+    border-radius:14px;
+    cursor:pointer;
+    transition:all 0.2s ease;
+    opacity:0.72;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:6px;
+  }
+  .homeTabBtn:hover{
+    opacity:0.9;
+  }
+  .homeTabBtn.active{
+    background:var(--sand);
+    color:var(--ink);
+    opacity:1;
+    box-shadow:0 3px 10px rgba(0,0,0,0.25);
+  }
+  .taskGrid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:10px;
+    margin:12px 0 16px;
+  }
+  .taskCard{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    padding:13px 8px;
+    background:rgba(255,255,255,0.05);
+    border:2px solid rgba(255,255,255,0.16);
+    border-radius:18px;
+    color:var(--cream);
+    cursor:pointer;
+    transition:all 0.18s ease;
+    text-align:center;
+    gap:5px;
+    user-select:none;
+    box-sizing:border-box;
+  }
+  .taskCard:hover{
+    background:rgba(255,255,255,0.08);
+    border-color:rgba(255,255,255,0.28);
+    transform:translateY(-1px);
+  }
+  .taskCard.active{
+    background:rgba(255,200,87,0.16);
+    border-color:var(--sand);
+    box-shadow:0 0 14px rgba(255,200,87,0.28);
+  }
+  .taskCardIcon{
+    font-size:30px;
+    line-height:1;
+  }
+  .taskCardName{
+    font-family:'Baloo 2',sans-serif;
+    font-weight:700;
+    font-size:14.5px;
+    line-height:1.2;
+  }
+  .taskCardBadge{
+    font-size:11.5px;
+    font-weight:600;
+    opacity:0.85;
+    background:rgba(0,0,0,0.28);
+    padding:2px 8px;
+    border-radius:8px;
+    white-space:nowrap;
+  }
+  .taskCardBadge.active{
+    background:rgba(255,200,87,0.24);
+    color:var(--sand);
+    font-weight:700;
+    border:1px solid rgba(255,200,87,0.4);
+    opacity:1;
+  }
+  .taskCardStepper{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:4px;
+    margin-top:2px;
+  }
+  .taskMiniStep{
+    width:24px;
+    height:24px;
+    border-radius:50%;
+    border:1px solid rgba(255,200,87,0.45);
+    background:rgba(255,200,87,0.18);
+    color:var(--sand);
+    font-family:'Baloo 2',sans-serif;
+    font-size:16px;
+    font-weight:700;
+    line-height:1;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    cursor:pointer;
+    padding:0;
+    transition:all 0.15s ease;
+    user-select:none;
+  }
+  .taskMiniStep:hover{
+    background:var(--sand);
+    color:var(--ink);
+    transform:scale(1.12);
+  }
+  .taskMiniStep:active{
+    transform:scale(0.92);
+  }
+  .taskCustomInputBox{
+    margin-top:10px;
+    margin-bottom:14px;
+    text-align:left;
+  }
+  .taskCustomInput{
+    width:100%;
+    padding:12px 14px;
+    border-radius:14px;
+    border:2px solid rgba(255,255,255,0.25);
+    background:rgba(255,255,255,0.06);
+    color:var(--cream);
+    font-family:'Baloo 2',sans-serif;
+    font-size:16px;
+    box-sizing:border-box;
+  }
+  .taskSelectedBanner{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:10px;
+    padding:10px 14px;
+    background:rgba(255,200,87,0.12);
+    border:1.5px solid rgba(255,200,87,0.3);
+    border-radius:16px;
+    margin-top:12px;
+    margin-bottom:14px;
+    font-family:'Baloo 2',sans-serif;
+    box-sizing:border-box;
+  }
+  .taskSelectedInfo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    text-align:left;
+    min-width:0;
+  }
+  .taskSelectedIcon{
+    font-size:26px;
+    line-height:1;
+    flex-shrink:0;
+  }
+  .taskSelectedTextWrap{
+    display:flex;
+    flex-direction:column;
+    min-width:0;
+    text-align:left;
+  }
+  .taskSelectedTag{
+    font-size:11px;
+    text-transform:uppercase;
+    letter-spacing:0.5px;
+    opacity:0.75;
+    color:var(--sand);
+    line-height:1.2;
+  }
+  .taskSelectedName{
+    font-size:16px;
+    font-weight:700;
+    color:var(--sand);
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    max-width:140px;
+  }
+  .taskSelectedControls{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    flex-shrink:0;
+  }
+  .taskBannerStepper{
+    display:flex;
+    align-items:center;
+    gap:4px;
+  }
+  .taskDeselectBtn{
+    border:1px solid rgba(255,255,255,0.22);
+    background:rgba(255,255,255,0.08);
+    color:var(--cream);
+    font-family:'Baloo 2',sans-serif;
+    font-size:13px;
+    font-weight:700;
+    padding:6px 12px;
+    border-radius:12px;
+    cursor:pointer;
+    transition:all 0.15s ease;
+    white-space:nowrap;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:4px;
+    flex-shrink:0;
+  }
+  .taskDeselectBtn:hover{
+    background:rgba(255,90,90,0.28);
+    border-color:rgba(255,120,120,0.55);
+    color:#fff;
+  }
+  .taskSelectedBanner.empty{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:8px;
+    border-style:dashed;
+    background:rgba(255,255,255,0.03);
+    border-color:rgba(255,255,255,0.2);
+    color:var(--cream);
+    padding:13px 14px;
+    margin-top:12px;
+    margin-bottom:14px;
+  }
+  .taskSelectedEmptyIcon{
+    font-size:18px;
+  }
+  .taskSelectedEmptyText{
+    font-size:14.5px;
+    font-weight:600;
+    opacity:0.85;
+    color:var(--sand);
+  }
+  @keyframes taskBannerPulse{
+    0%{ transform:scale(1); border-color:rgba(255,200,87,0.3); }
+    40%{ transform:scale(1.025); border-color:var(--sand); box-shadow:0 0 16px rgba(255,200,87,0.45); }
+    100%{ transform:scale(1); border-color:rgba(255,200,87,0.3); }
+  }
+  .taskBannerAlert{
+    animation:taskBannerPulse 0.5s ease-in-out;
+  }
+  .taskBannerStep{
+    width:32px;
+    height:32px;
+    border-radius:10px;
+    border:1.5px solid rgba(255,200,87,0.45);
+    background:rgba(255,200,87,0.2);
+    color:var(--sand);
+    font-family:'Baloo 2',sans-serif;
+    font-size:20px;
+    font-weight:700;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    cursor:pointer;
+    padding:0;
+    line-height:1;
+    transition:all 0.15s ease;
+    user-select:none;
+  }
+  .taskBannerStep:hover{
+    background:var(--sand);
+    color:var(--ink);
+    transform:translateY(-1px);
+  }
+  .taskBannerStep:active{
+    transform:scale(0.92);
+  }
+  .taskBannerValue{
+    font-size:17px;
+    font-weight:700;
+    color:var(--cream);
+    min-width:54px;
+    text-align:center;
+    user-select:none;
+  }
+  @media (max-width:380px){
+    .taskSelectedBanner{
+      flex-direction:column;
+      gap:8px;
+      text-align:center;
+    }
+    .taskSelectedInfo{
+      align-items:center;
+      text-align:center;
+    }
+    .taskSelectedName{
+      max-width:100%;
+    }
+  }
   @media (prefers-reduced-motion: reduce){
     *{animation-duration:0.01ms !important; transition-duration:0.01ms !important;}
   }
+
+  /* ---------- Calm Vault & Scratch Card Rewards ---------- */
+  @media (max-width: 420px) {
+    .homeTabBtn {
+      font-size: 13.5px;
+      padding: 9px 4px;
+      gap: 4px;
+    }
+    .homeTabIcon {
+      font-size: 14px;
+    }
+  }
+
+  .scratchCardContainer {
+    position: relative;
+    width: 100%;
+    max-width: 320px;
+    height: 200px;
+    margin: 16px auto;
+    border-radius: 22px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4), 0 0 0 3px rgba(255, 200, 87, 0.5);
+    background: linear-gradient(135deg, #1e1b4b, #312e81);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: none;
+  }
+  .scratchUnderlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    text-align: center;
+    background: radial-gradient(circle at center, rgba(255, 200, 87, 0.22), rgba(15, 46, 43, 0.95));
+  }
+  .scratchUnderlayIcon {
+    font-size: 58px;
+    line-height: 1;
+    margin-bottom: 6px;
+    filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.35));
+    animation: popPrize 0.5s ease;
+  }
+  @keyframes popPrize {
+    0% { transform: scale(0.6) rotate(-10deg); opacity: 0; }
+    70% { transform: scale(1.15) rotate(5deg); }
+    100% { transform: scale(1) rotate(0); opacity: 1; }
+  }
+  .scratchUnderlayName {
+    font-family: 'Baloo 2', sans-serif;
+    font-size: 22px;
+    font-weight: 800;
+    color: var(--sand);
+    line-height: 1.1;
+  }
+  .scratchUnderlayTag {
+    font-size: 13px;
+    color: var(--cream);
+    opacity: 0.85;
+    margin-top: 4px;
+  }
+  .scratchCanvas {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    z-index: 2;
+    transition: opacity 0.4s ease;
+    border-radius: 22px;
+  }
+
+  .calmVaultCard {
+    background: linear-gradient(135deg, rgba(245, 158, 11, 0.14), rgba(16, 185, 129, 0.1));
+    border: 2px solid rgba(245, 158, 11, 0.45);
+    border-radius: 22px;
+    padding: 20px 16px;
+    margin: 16px 0;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  }
+  .vaultChestIcon {
+    font-size: 64px;
+    margin-bottom: 8px;
+    display: inline-block;
+    filter: drop-shadow(0 4px 14px rgba(245, 158, 11, 0.5));
+    animation: vaultFloat 3s ease-in-out infinite;
+  }
+  @keyframes vaultFloat {
+    0%, 100% { transform: translateY(0) scale(1); }
+    50% { transform: translateY(-6px) scale(1.04); }
+  }
+  .calmBreathingCircle {
+    width: 96px;
+    height: 96px;
+    margin: 14px auto;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(142, 202, 230, 0.35), rgba(74, 222, 128, 0.15));
+    border: 3px solid rgba(142, 202, 230, 0.85);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    animation: calmBreathe 8s ease-in-out infinite;
+    box-shadow: 0 0 20px rgba(142, 202, 230, 0.4);
+  }
+  @keyframes calmBreathe {
+    0%, 100% { transform: scale(0.85); border-color: rgba(142, 202, 230, 0.5); }
+    50% { transform: scale(1.22); border-color: rgba(74, 222, 128, 0.95); box-shadow: 0 0 30px rgba(74, 222, 128, 0.6); }
+  }
+  .breathingText {
+    font-family: 'Baloo 2', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--sky);
+    margin-top: 6px;
+    min-height: 22px;
+  }
+
+  .stickerAlbumGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-top: 14px;
+  }
+  @media (max-width: 360px) {
+    .stickerAlbumGrid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  .stickerCard {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1.5px solid rgba(255, 255, 255, 0.12);
+    border-radius: 16px;
+    padding: 10px 8px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 110px;
+    transition: all 0.22s ease;
+    cursor: pointer;
+    position: relative;
+    user-select: none;
+  }
+  .stickerCard:hover {
+    transform: translateY(-3px) scale(1.02);
+    border-color: rgba(255, 200, 87, 0.6);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.35);
+  }
+  .stickerCard.unlocked {
+    background: linear-gradient(135deg, rgba(255, 200, 87, 0.18), rgba(255, 123, 84, 0.10));
+    border-color: rgba(255, 200, 87, 0.65);
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.28);
+  }
+  .stickerCard.unlocked:hover {
+    transform: translateY(-3px) scale(1.03);
+    border-color: var(--sand);
+    box-shadow: 0 8px 20px rgba(255, 200, 87, 0.35);
+  }
+  .stickerCard.locked {
+    opacity: 0.82;
+  }
+  .stickerCard.locked.no-img {
+    opacity: 0.5;
+    filter: grayscale(0.8);
+  }
+  .stickerCardThumbWrap {
+    position: relative;
+    width: 62px;
+    height: 62px;
+    margin: 0 auto 6px auto;
+  }
+  .stickerCardThumbImg {
+    width: 62px;
+    height: 62px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+    border: 2px solid rgba(255, 215, 0, 0.6);
+    display: block;
+    transition: transform 0.2s ease;
+  }
+  .stickerCard:hover .stickerCardThumbImg {
+    transform: scale(1.05);
+  }
+  .stickerCard.locked .stickerCardThumbImg {
+    filter: brightness(0.85);
+    border-color: rgba(255, 255, 255, 0.25);
+  }
+  .stickerCardStatusBadge {
+    position: absolute;
+    bottom: -4px;
+    right: -4px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+    border: 1.5px solid rgba(255, 255, 255, 0.3);
+  }
+  .statusBadge-unlocked {
+    background: #10b981;
+    color: #fff;
+    font-weight: 800;
+  }
+  .statusBadge-locked {
+    background: rgba(15, 23, 42, 0.85);
+    color: var(--sand);
+  }
+  .stickerIcon {
+    font-size: 34px;
+    line-height: 1;
+    margin-bottom: 6px;
+  }
+  .stickerCard.locked.no-img .stickerIcon {
+    filter: brightness(0.4);
+  }
+  .stickerName {
+    font-family: 'Baloo 2', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--cream);
+    line-height: 1.15;
+  }
+  .stickerRarity {
+    font-size: 10px;
+    padding: 2px 6px;
+    border-radius: 8px;
+    margin-top: 4px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  .rarity-common { background: rgba(142, 202, 230, 0.2); color: var(--sky); }
+  .rarity-rare { background: rgba(255, 200, 87, 0.2); color: var(--sand); }
+  .rarity-epic { background: rgba(168, 85, 247, 0.25); color: #d8b4fe; }
+  .rarity-legendary { background: linear-gradient(135deg, #f59e0b, #ef4444); color: #fff; }
+
+  .albumProgressBar {
+    width: 100%;
+    height: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 6px;
+    overflow: hidden;
+    margin: 8px 0 16px 0;
+  }
+  .albumProgressFill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--sand), var(--coral));
+    border-radius: 6px;
+    transition: width 0.4s ease;
+  }
+
+  .voiceSelectorGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+    margin-bottom: 10px;
+  }
+  @media (max-width: 380px) {
+    .voiceSelectorGrid {
+      grid-template-columns: 1fr;
+    }
+  }
+  .voiceChoiceChip {
+    padding: 10px 8px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1.5px solid rgba(255, 255, 255, 0.15);
+    color: var(--cream);
+    border-radius: 12px;
+    font-family: 'Baloo 2', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    transition: all 0.2s ease;
+  }
+  .voiceChoiceChip:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 200, 87, 0.4);
+  }
+  .voiceChoiceChip.active {
+    background: linear-gradient(135deg, rgba(255, 200, 87, 0.25), rgba(255, 123, 84, 0.15));
+    border-color: var(--sand);
+    color: var(--sand);
+    box-shadow: 0 0 12px rgba(255, 200, 87, 0.25);
+  }
+
+  /* ---------- Age-Appropriate Rewards & Counting Stars ---------- */
+  .ageSelectorPills {
+    display: flex;
+    gap: 6px;
+    background: rgba(0, 0, 0, 0.25);
+    padding: 4px;
+    border-radius: 999px;
+    margin-bottom: 14px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+  }
+  .agePillBtn {
+    flex: 1;
+    border: none;
+    background: transparent;
+    color: var(--cream);
+    font-family: 'Baloo 2', sans-serif;
+    font-weight: 700;
+    font-size: 12.5px;
+    padding: 6px 8px;
+    border-radius: 999px;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.2s ease;
+    opacity: 0.8;
+  }
+  .agePillBtn:hover {
+    opacity: 1;
+    background: rgba(255, 255, 255, 0.08);
+  }
+  .agePillBtn.active {
+    background: var(--sand);
+    color: var(--ink);
+    opacity: 1;
+    font-weight: 800;
+    box-shadow: 0 2px 8px rgba(255, 200, 87, 0.35);
+  }
+
+  /* Counting Stars for Little Kids (Ages 2-4) */
+  .countingStarsBanner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin: 12px 0 6px 0;
+  }
+  .countingStar {
+    font-size: 38px;
+    line-height: 1;
+    display: inline-block;
+    filter: drop-shadow(0 0 10px rgba(255, 200, 87, 0.8));
+    animation: bounceStar 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+  }
+  .countingStar-1 { animation-delay: 0.05s; }
+  .countingStar-2 { animation-delay: 0.22s; }
+  .countingStar-3 { animation-delay: 0.40s; }
+  @keyframes bounceStar {
+    0% { transform: scale(0) rotate(-45deg); opacity: 0; }
+    70% { transform: scale(1.3) rotate(10deg); opacity: 1; }
+    100% { transform: scale(1) rotate(0deg); opacity: 1; }
+  }
+  .countingStarsText {
+    font-family: 'Baloo 2', sans-serif;
+    font-size: 17px;
+    font-weight: 800;
+    color: var(--sand);
+    text-shadow: 0 0 8px rgba(255, 200, 87, 0.4);
+    margin-bottom: 8px;
+  }
+
+  /* Power Stars for Middle Kids (Ages 5-7) */
+  .powerStarsRow {
+    display: inline-flex;
+    gap: 3px;
+    font-size: 13px;
+    color: #fbbf24;
+    margin-top: 3px;
+  }
+
+  /* Loot & Privilege Voucher for Older Kids (Ages 8+) */
+  .rarity-perk {
+    background: linear-gradient(135deg, #10b981, #059669);
+    color: #fff;
+    font-weight: 700;
+  }
+  .perkVoucherBox {
+    background: rgba(16, 185, 129, 0.12);
+    border: 1.5px dashed rgba(16, 185, 129, 0.5);
+    border-radius: 12px;
+    padding: 10px 14px;
+    margin: 10px auto;
+    max-width: 300px;
+    font-size: 13.5px;
+    color: #34d399;
+    line-height: 1.4;
+  }
+
+  /* Card Showcase Modal */
+  .cardModalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(11, 35, 32, 0.82);
+    backdrop-filter: blur(8px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 99999;
+    padding: 20px;
+    animation: fadeInModal 0.2s ease-out;
+  }
+  .cardModalCard {
+    background: linear-gradient(180deg, #154440 0%, #0F2E2B 100%);
+    border: 2px solid rgba(255, 200, 87, 0.5);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.6), 0 0 30px rgba(255, 200, 87, 0.2);
+    border-radius: 28px;
+    padding: 24px 20px;
+    max-width: 360px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    animation: popModal 0.3s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+  }
+  @keyframes fadeInModal {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  @keyframes popModal {
+    from { transform: scale(0.85); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+  }
+  .cardModalCloseBtn {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: var(--cream);
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+  }
+  .cardModalCloseBtn:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.1);
+  }
+  .cardModalImg {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 20px;
+    margin: 0 auto 14px auto;
+    display: block;
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.45);
+    border: 3px solid rgba(255, 215, 0, 0.7);
+  }
+  .cardModalIcon {
+    font-size: 80px;
+    line-height: 1;
+    margin: 10px auto 14px auto;
+  }
+  .cardModalTitle {
+    font-family: 'Baloo 2', sans-serif;
+    font-size: 24px;
+    font-weight: 800;
+    color: var(--sand);
+    margin-bottom: 4px;
+    line-height: 1.2;
+  }
+  .cardModalDesc {
+    font-size: 14px;
+    color: var(--cream);
+    opacity: 0.9;
+    margin-bottom: 12px;
+    line-height: 1.45;
+  }
+  .cardModalActions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 16px;
+  }
+
+  /* ---------- Card Vault Archive & Switcher ---------- */
+  .albumViewSwitcher {
+    display: flex;
+    gap: 8px;
+    background: rgba(0, 0, 0, 0.35);
+    padding: 5px;
+    border-radius: 14px;
+    margin-bottom: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+  }
+  .albumViewBtn {
+    flex: 1;
+    border: none;
+    background: transparent;
+    color: var(--cream);
+    font-family: 'Baloo 2', sans-serif;
+    font-weight: 700;
+    font-size: 13.5px;
+    padding: 9px 12px;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.25s ease;
+    opacity: 0.75;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+  }
+  .albumViewBtn:hover {
+    opacity: 1;
+    background: rgba(255, 255, 255, 0.08);
+  }
+  .albumViewBtn.active {
+    background: linear-gradient(135deg, rgba(255, 200, 87, 0.28), rgba(255, 123, 84, 0.25));
+    border: 1.5px solid var(--sand);
+    color: var(--sand);
+    opacity: 1;
+    font-weight: 800;
+    box-shadow: 0 4px 14px rgba(255, 200, 87, 0.2);
+  }
+  .albumViewBtn.active.vaultTab {
+    background: linear-gradient(135deg, rgba(16, 185, 129, 0.3), rgba(5, 150, 105, 0.3));
+    border: 1.5px solid #34d399;
+    color: #34d399;
+    box-shadow: 0 4px 14px rgba(16, 185, 129, 0.25);
+  }
+  .vaultCopyBadge {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    background: linear-gradient(135deg, #10b981, #059669);
+    color: #fff;
+    font-family: 'Baloo 2', sans-serif;
+    font-size: 11px;
+    font-weight: 800;
+    padding: 2px 8px;
+    border-radius: 999px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.45);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    line-height: 1.2;
+    z-index: 2;
+  }
+  .stickerCard.vaultedCard {
+    border-color: rgba(16, 185, 129, 0.65);
+    box-shadow: 0 6px 16px rgba(16, 185, 129, 0.15);
+  }
+  .stickerCard.vaultedCard:hover {
+    border-color: #34d399;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(16, 185, 129, 0.3);
+  }
+  .stickerCard.vaultedNotYet {
+    opacity: 0.55;
+    border-style: dashed;
+  }
+
+
+

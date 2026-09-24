@@ -1,0 +1,6 @@
+# Ignore unrelated prompt and note files
+*.txt
+!heartbeat-replacement.txt
+
+# Antigravity / Gemini CLI system files
+.gemini/
