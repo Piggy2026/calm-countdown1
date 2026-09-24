@@ -2974,10 +2974,6 @@ function renderDailyTasksSetup(t){
       ) : (
         '<p class="flavorLine">✨ '+ (state.lang === 'zh' ? (getTheme(state.style).flavor_zh || getTheme(state.style).flavor_en) : (state.lang === 'es' ? getTheme(state.style).flavor_es : getTheme(state.style).flavor_en)) +'</p>'
       ))+
-
-      (state.durationUnit === 'seconds' ? (
-        '<button class="bigBtn" id="quickStartBtn" type="button" style="margin-bottom:12px;background:var(--coral);border-color:var(--coral);color:#2A0F08;box-shadow:0 6px 0 #C7502F;">⚡ '+(state.lang==='zh'?'开始快速计时 ('+state.seconds+'秒)!<span class="btnPinyin">Kāishǐ kuàisù jìshí!</span>':(state.lang==='es'?'¡Empezar Temporizador Rápido ('+state.seconds+'s)!':'Start Quick Timer ('+state.seconds+'s)!'))+'</button>'
-      ) : '') +
       '<button class="bigBtn" id="handOverBtn" type="button">'+t.handOverBtn+'</button>'+
       '<button class="ghostBtn" id="skipToCountdownBtn" type="button" style="margin-top:10px;">'+t.skipBtn+'</button>'+
       '<p class="footNote">'+t.footNote+'</p>'+
@@ -3117,8 +3113,8 @@ function renderDailyTasksSetup(t){
       (state.emergencyOpen ? (
         '<div class="emergencyChips" style="display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-top:10px;">'+
           '<button class="seg-emergency" data-emergency-sec="5" type="button" style="background:var(--coral);color:#fff;border:none;font-weight:700;font-size:14px;padding:10px 16px;border-radius:12px;cursor:pointer;">⚡ 5s '+(state.lang==='zh'?'倒计时':(state.lang==='es'?'Cuenta atrás':'Countdown'))+'</button>'+
-          '<button class="seg-emergency" data-emergency-sec="10" type="button" style="background:rgba(255,255,255,0.08);color:var(--cream);border:2px solid rgba(255,107,107,0.5);font-weight:700;font-size:14px;padding:10px 16px;border-radius:12px;cursor:pointer;">⚡ 10s</button>'+
-          '<button class="seg-emergency" data-emergency-sec="0" type="button" style="background:rgba(255,255,255,0.08);color:var(--cream);border:2px solid rgba(255,107,107,0.5);font-weight:700;font-size:14px;padding:10px 16px;border-radius:12px;cursor:pointer;">🎉 '+(state.lang==='zh'?'立即完成':(state.lang==='es'?'Terminar Ya':'Finish Now'))+'</button>'+
+          '<button class="seg-emergency" data-emergency-sec="10" type="button" style="background:var(--coral);color:#fff;border:none;font-weight:700;font-size:14px;padding:10px 16px;border-radius:12px;cursor:pointer;">⚡ 10s '+(state.lang==='zh'?'倒计时':(state.lang==='es'?'Cuenta atrás':'Countdown'))+'</button>'+
+          '<button class="seg-emergency" data-emergency-sec="0" type="button" style="background:rgba(255,255,255,0.12);color:var(--cream);border:2px solid rgba(255,107,107,0.7);font-weight:700;font-size:14px;padding:10px 16px;border-radius:12px;cursor:pointer;">🎉 '+(state.lang==='zh'?'立即完成':(state.lang==='es'?'Terminar Ya':'Finish Now'))+'</button>'+
         '</div>'
       ) : '') +
     '</div>';
@@ -3509,11 +3505,6 @@ function renderDailyTasksSetup(t){
       render();
     });
 
-    var quickStartBtn = document.getElementById('quickStartBtn');
-    if(quickStartBtn) quickStartBtn.addEventListener('click', function(){
-      beginCountdown();
-    });
-
     var skipBtn = document.getElementById('skipToCountdownBtn');
     if(skipBtn) skipBtn.addEventListener('click', function(){
       if(state.mode === 'task' && !state.taskId){
@@ -3618,7 +3609,8 @@ function renderDailyTasksSetup(t){
       }
     });
     app.querySelectorAll('.seg-emergency').forEach(function(b){
-      b.addEventListener('click', function(){
+      b.addEventListener('click', function(e){
+        if(e) { e.preventDefault(); e.stopPropagation(); }
         var secVal = parseInt(b.getAttribute('data-emergency-sec'),10);
         state.emergencyOpen = false;
         if(secVal === 0){
@@ -3630,8 +3622,12 @@ function renderDailyTasksSetup(t){
         startTs = Date.now();
         state.durationUnit = 'seconds';
         state.seconds = secVal;
+        state.stage = 0;
+        state.revealed = [false,false,false,false];
         state.isPaused = false;
         requestWakeLock();
+        render();
+        beep(660,0.15);
         if(timerHandle) clearInterval(timerHandle);
         timerHandle = setInterval(tick, 200);
         tick();
