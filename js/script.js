@@ -1066,24 +1066,42 @@
     '</div>';
   }
 
+  function findBestVoice(langPrefix){
+    try {
+      var voices = (window.speechSynthesis && window.speechSynthesis.getVoices()) || [];
+      var matching = voices.filter(function(v){
+        return v.lang && v.lang.toLowerCase().replace('_', '-').indexOf(langPrefix) === 0;
+      });
+      if(!matching.length) return null;
+      var preferredNames = ['child', 'kid', 'young', 'laura', 'sabina', 'helena', 'dalia', 'paloma', 'paulina', 'monica', 'miren', 'sofia', 'lucia', 'elena', 'victoria', 'zira', 'samantha', 'karen'];
+      for(var p = 0; p < preferredNames.length; p++){
+        for(var i = 0; i < matching.length; i++){
+          if(matching[i].name && matching[i].name.toLowerCase().indexOf(preferredNames[p]) !== -1){
+            return matching[i];
+          }
+        }
+      }
+      for(var g = 0; g < matching.length; g++){
+        if(matching[g].name && (matching[g].name.indexOf('Google') !== -1 || matching[g].name.indexOf('Natural') !== -1)){
+          return matching[g];
+        }
+      }
+      return matching[0];
+    } catch(e) {
+      return null;
+    }
+  }
+
   function speakBilingual(text, targetLang, el){
     if(!('speechSynthesis' in window)) return;
     try {
       window.speechSynthesis.cancel();
       var u = new SpeechSynthesisUtterance(text);
       u.lang = targetLang === 'es' ? 'es-ES' : 'en-US';
-      var voices = window.speechSynthesis.getVoices();
-      if(voices && voices.length){
-        var prefix = targetLang === 'es' ? 'es' : 'en';
-        for(var i = 0; i < voices.length; i++){
-          if(voices[i].lang && voices[i].lang.toLowerCase().indexOf(prefix) === 0){
-            u.voice = voices[i];
-            break;
-          }
-        }
-      }
-      u.rate = 0.88;
-      u.pitch = 1.05;
+      var bestVoice = findBestVoice(targetLang === 'es' ? 'es' : 'en');
+      if(bestVoice) u.voice = bestVoice;
+      u.rate = 0.72; // slow tutor speed for clear syllable articulation
+      u.pitch = 1.35; // child speaking voice
       if(el){
         el.classList.add('speaking');
         u.onend = function(){ el.classList.remove('speaking'); };
@@ -1098,9 +1116,9 @@
 
   function bilingualSparkHTML(phrase, targetLang){
     if(!phrase) return '';
-    var label = targetLang === 'es' ? 'En español:' : 'In English:';
+    var label = state.lang === 'es' ? 'En inglés:' : 'In Spanish:';
     return ''+
-      '<div class="bilingualSpark" role="button" tabindex="0" data-speak-text="'+ phrase.replace(/"/g, '&quot;') +'" data-speak-lang="'+ targetLang +'" title="'+ (targetLang === 'es' ? 'Pulsa para escuchar en español' : 'Tap to listen in English') +'">'+
+      '<div class="bilingualSpark" role="button" tabindex="0" data-speak-text="'+ phrase.replace(/"/g, '&quot;') +'" data-speak-lang="'+ targetLang +'" title="'+ (state.lang === 'es' ? 'Pulsa para escuchar' : 'Tap to listen') +'">'+
         '<span class="bilingualSparkLabel">'+ label +'</span>'+
         '<span class="bilingualSparkText">“'+ phrase +'”</span>'+
         '<span class="bilingualSparkBtn" aria-hidden="true">▶ 🔊</span>'+
