@@ -1411,28 +1411,29 @@
     flex-direction:row;
     align-items:center;
     justify-content:space-between;
-    padding:12px 14px;
-    background:rgba(255,255,255,0.05);
+    padding:14px 18px;
+    background:rgba(255,255,255,0.06);
     border:2px solid rgba(255,255,255,0.16);
-    border-radius:18px;
+    border-radius:20px;
     color:var(--cream);
     cursor:pointer;
-    transition:all 0.18s ease;
+    transition:all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
     text-align:left;
-    gap:12px;
+    gap:14px;
     user-select:none;
     box-sizing:border-box;
     width:100%;
   }
   .taskCard:hover{
-    background:rgba(255,255,255,0.08);
-    border-color:rgba(255,255,255,0.28);
-    transform:translateY(-1px);
+    background:rgba(255,255,255,0.10);
+    border-color:rgba(255,200,87,0.5);
+    transform:translateY(-2px);
+    box-shadow:0 6px 18px rgba(0,0,0,0.25);
   }
   .taskCard.active{
-    background:rgba(255,200,87,0.16);
+    background:linear-gradient(135deg, rgba(255,200,87,0.22), rgba(255,123,84,0.15));
     border-color:var(--sand);
-    box-shadow:0 0 14px rgba(255,200,87,0.28);
+    box-shadow:0 0 16px rgba(255,200,87,0.35);
   }
   .taskCardLeft{
     display:flex;
@@ -1441,7 +1442,7 @@
     flex-shrink:0;
   }
   .taskCardIcon{
-    font-size:32px;
+    font-size:36px;
     line-height:1;
   }
   .taskCardMain{
@@ -1449,7 +1450,7 @@
     min-width:0;
     display:flex;
     flex-direction:column;
-    gap:4px;
+    gap:2px;
     text-align:left;
   }
   .taskCardTitleRow{
@@ -1461,9 +1462,16 @@
   .taskCardName{
     font-family:'Baloo 2',sans-serif;
     font-weight:700;
-    font-size:15.5px;
+    font-size:17px;
     line-height:1.2;
     color:var(--cream);
+  }
+  .taskCardSub{
+    font-size:13px;
+    color:var(--sand);
+    opacity:0.85;
+    font-weight:600;
+    line-height:1.25;
   }
   .taskVoiceBtn{
     display:inline-flex;

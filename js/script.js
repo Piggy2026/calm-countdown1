@@ -1430,9 +1430,9 @@
   function langToggleHTML(){
     return ''+
     '<div class="langToggle notranslate" translate="no">'+
-      '<button type="button" class="lang-btn notranslate '+(state.lang==='en'?'active':'')+'" data-lang="en" translate="no"><span class="notranslate" translate="no">EN</span></button>'+
-      '<button type="button" class="lang-btn notranslate '+(state.lang==='es'?'active':'')+'" data-lang="es" translate="no"><span class="notranslate" translate="no">ES</span></button>'+
-      '<button type="button" class="lang-btn notranslate '+(state.lang==='zh'?'active':'')+'" data-lang="zh" translate="no"><span class="notranslate" translate="no">中文</span></button>'+
+      '<button type="button" class="lang-btn notranslate '+(state.lang==='en'?'active':'')+'" data-lang="en" translate="no"><span class="notranslate" translate="no">🇬🇧 EN</span></button>'+
+      '<button type="button" class="lang-btn notranslate '+(state.lang==='es'?'active':'')+'" data-lang="es" translate="no"><span class="notranslate" translate="no">🇪🇸 ES</span></button>'+
+      '<button type="button" class="lang-btn notranslate '+(state.lang==='zh'?'active':'')+'" data-lang="zh" translate="no"><span class="notranslate" translate="no">🇨🇳 中文</span></button>'+
     '</div>';
   }
 
@@ -2920,61 +2920,28 @@
           var isCustom = task.id === 'custom' && state.taskCustomName && state.taskCustomName.trim();
           var primaryName = state.lang === 'zh' ? (task.name_zh || task.name_en) : (state.lang === 'es' ? task.name_es : task.name_en);
           if (isCustom) primaryName = state.taskCustomName.trim();
-          var m = state.taskMinutes[task.id] != null ? state.taskMinutes[task.id] : task.defaultMin;
-
-          var badgeHtml = '';
-          if (isActive) {
-            badgeHtml = ''+
-              '<div class="taskCardStepper">'+
-                '<button class="taskMiniStep minus" data-step="-1" type="button" aria-label="Decrease time" title="Less time">−</button>'+
-                '<span class="taskCardBadge active">'+m+' min</span>'+
-                '<button class="taskMiniStep plus" data-step="1" type="button" aria-label="Increase time" title="More time">+</button>'+
-              '</div>';
-          } else {
-            badgeHtml = '<span class="taskCardBadge">'+m+' min</span>';
-          }
-
-          var cardTitle = (isActive ? (t.deselectTaskBtn || 'Deselect') : primaryName).replace(/<[^>]*>/g, '');
-          var cleanPrimary = cleanSpeechText(primaryName, state.lang);
-          var voiceBtnLabel = t.taskVoiceBtnLabel || (state.lang === 'zh' ? '🔊 语音' : (state.lang === 'es' ? '🔊 Voz' : '🔊 Voice'));
-          var primaryVoiceBtn = '<button type="button" class="taskVoiceBtn notranslate" translate="no" data-speak-lang="'+state.lang+'" data-speak-text="'+cleanPrimary+'" title="'+(state.lang==='zh'?'收听语音':(state.lang==='es'?'Escuchar voz':'Listen to voice'))+'" aria-label="'+voiceBtnLabel.replace(/<[^>]*>/g, '')+'">'+
-            voiceBtnLabel +
-          '</button>';
-
-          var subLangsHtml = '';
+          var subName = '';
           if (!isCustom && task.id !== 'custom') {
-            var cleanEn = cleanSpeechText(task.name_en, 'en');
-            var cleanEs = cleanSpeechText(task.name_es, 'es');
-            var cleanZh = cleanSpeechText(task.name_zh, 'zh');
             if (state.lang === 'en') {
-              subLangsHtml = '<div class="taskCardLangs">'+
-                '<button type="button" class="taskLangVoiceBtn notranslate" translate="no" data-speak-lang="es" data-speak-text="'+cleanEs+'" title="Escuchar en español"><span class="taskLangBadge">ES 🔊</span> <span class="taskLangText">'+task.name_es+'</span></button>'+
-                '<button type="button" class="taskLangVoiceBtn notranslate" translate="no" data-speak-lang="zh" data-speak-text="'+cleanZh+'" title="收听中文"><span class="taskLangBadge">中文 🔊</span> <span class="taskLangText">'+task.name_zh+'</span></button>'+
-              '</div>';
+              subName = task.name_es + ' · ' + task.name_zh;
             } else if (state.lang === 'es') {
-              subLangsHtml = '<div class="taskCardLangs">'+
-                '<button type="button" class="taskLangVoiceBtn notranslate" translate="no" data-speak-lang="en" data-speak-text="'+cleanEn+'" title="Listen in English"><span class="taskLangBadge">EN 🔊</span> <span class="taskLangText">'+task.name_en+'</span></button>'+
-                '<button type="button" class="taskLangVoiceBtn notranslate" translate="no" data-speak-lang="zh" data-speak-text="'+cleanZh+'" title="收听中文"><span class="taskLangBadge">中文 🔊</span> <span class="taskLangText">'+task.name_zh+'</span></button>'+
-              '</div>';
+              subName = task.name_en + ' · ' + task.name_zh;
             } else {
-              subLangsHtml = '<div class="taskCardLangs">'+
-                '<button type="button" class="taskLangVoiceBtn notranslate" translate="no" data-speak-lang="en" data-speak-text="'+cleanEn+'" title="Listen in English"><span class="taskLangBadge">EN 🔊</span> <span class="taskLangText">'+task.name_en+'</span></button>'+
-                '<button type="button" class="taskLangVoiceBtn notranslate" translate="no" data-speak-lang="es" data-speak-text="'+cleanEs+'" title="Escuchar en español"><span class="taskLangBadge">ES 🔊</span> <span class="taskLangText">'+task.name_es+'</span></button>'+
-              '</div>';
+              subName = task.name_en + ' · ' + task.name_es;
             }
           }
+          var m = state.taskMinutes[task.id] != null ? state.taskMinutes[task.id] : task.defaultMin;
 
           return ''+
-            '<div class="taskCard wizardCardItem '+(isActive?'active':'')+'" data-taskid="'+task.id+'" role="button" tabindex="0" title="'+cardTitle+'">'+
+            '<div class="taskCard wizardCardItem '+(isActive?'active':'')+'" data-taskid="'+task.id+'" role="button" tabindex="0">'+
               '<div class="taskCardLeft"><span class="taskCardIcon">'+task.icon+'</span></div>'+
               '<div class="taskCardMain">'+
-                '<div class="taskCardTitleRow">'+
-                  '<span class="taskCardName">'+primaryName+'</span>'+
-                  primaryVoiceBtn +
-                '</div>'+
-                subLangsHtml +
+                '<span class="taskCardName">'+primaryName+'</span>'+
+                (subName ? '<span class="taskCardSub">'+subName+'</span>' : '')+
               '</div>'+
-              '<div class="taskCardRight">'+ badgeHtml +'</div>'+
+              '<div class="taskCardRight">'+
+                '<span class="taskCardBadge '+(isActive?'active':'')+'">'+m+' min '+(isActive?'✓':'➔')+'</span>'+
+              '</div>'+
             '</div>';
         }).join('');
 
@@ -2986,9 +2953,8 @@
 
         routinesSection = ''+
           '<div class="field">'+
-            '<div class="taskSectionHeaderRow">'+
-              '<label style="margin:0;font-weight:800;font-size:15.5px;">'+(state.lang==='zh'?'✨ 选择常规任务（点击自动下一步）':(state.lang==='es'?'✨ Elige una rutina (avanza al tocar)':'✨ Choose a routine (tap to advance)'))+'</label>'+
-              '<span class="taskVoiceHintPill">'+(t.taskVoiceHint || '🔊 Tap "Voice" to listen')+'</span>'+
+            '<div class="taskSectionHeaderRow" style="margin-bottom:10px;">'+
+              '<label style="margin:0;font-weight:800;font-size:16px;">'+(state.lang==='zh'?'✨ 选择日常任务（点击进入下一步）':(state.lang==='es'?'✨ Elige una rutina diaria':'✨ Choose a daily task'))+'</label>'+
             '</div>'+
             '<div class="taskGrid">'+ taskCardsHtml +'</div>'+
             customInputHtml +
@@ -3002,85 +2968,53 @@
             icon: '🌳',
             name_en: 'Leaving Park / Play',
             name_es: 'Terminar de Jugar / Parque',
-            name_zh: '结束玩耍 / 离开公园',
-            desc_en: 'Smooth exit without tears · Surprise image reveal',
-            desc_es: 'Salida tranquila del parque o juegos · Sorpresa visual',
-            desc_zh: '平静离开不哭闹 · 神奇图片逐渐揭晓'
+            name_zh: '结束玩耍 / 离开公园'
           },
           {
             id: 'screen',
             icon: '📱',
             name_en: 'Ending Screen Time',
-            name_es: 'Fin del Tiempo de Pantalla',
-            name_zh: '关掉屏幕时间',
-            desc_en: 'Gentle handover from tablet or TV · Visual countdown',
-            desc_es: 'Transición suave de tablet o TV · Reloj visual',
-            desc_zh: '温和告别平板与电视 · 趣味视觉倒计时'
+            name_es: 'Fin de Pantalla',
+            name_zh: '关掉屏幕时间'
           },
           {
             id: 'bedtime',
             icon: '🌙',
             name_en: 'Bedtime Wind-Down',
-            name_es: 'Rutina para Dormir',
-            name_zh: '睡前平静就寝',
-            desc_en: 'Cozy wind-down, story, cuddle time · Calming sounds',
-            desc_es: 'Calma nocturna, cuento y descanso · Sonidos relajantes',
-            desc_zh: '静心放松，读故事抱抱 · 轻柔舒缓白噪音'
+            name_es: 'Hora de Dormir',
+            name_zh: '睡前平静就寝'
           }
         ];
 
         var transCardsHtml = transitionsData.map(function(item){
           var isActive = state.mode === item.id;
           var curName = state.lang === 'zh' ? item.name_zh : (state.lang === 'es' ? item.name_es : item.name_en);
-          var curDesc = state.lang === 'zh' ? item.desc_zh : (state.lang === 'es' ? item.desc_es : item.desc_en);
-          var cleanName = cleanSpeechText(curName, state.lang);
-
-          var voiceBtnLabel = t.taskVoiceBtnLabel || (state.lang === 'zh' ? '🔊 语音' : (state.lang === 'es' ? '🔊 Voz' : '🔊 Voice'));
-          var primaryVoiceBtn = '<button type="button" class="taskVoiceBtn notranslate" translate="no" data-speak-lang="'+state.lang+'" data-speak-text="'+cleanName+'" title="Listen">'+voiceBtnLabel+'</button>';
-
-          var cleanEn = cleanSpeechText(item.name_en, 'en');
-          var cleanEs = cleanSpeechText(item.name_es, 'es');
-          var cleanZh = cleanSpeechText(item.name_zh, 'zh');
-          var subLangsHtml = '';
+          var subName = '';
           if (state.lang === 'en') {
-            subLangsHtml = '<div class="taskCardLangs">'+
-              '<button type="button" class="taskLangVoiceBtn notranslate" translate="no" data-speak-lang="es" data-speak-text="'+cleanEs+'" title="Escuchar en español"><span class="taskLangBadge">ES 🔊</span> <span class="taskLangText">'+item.name_es+'</span></button>'+
-              '<button type="button" class="taskLangVoiceBtn notranslate" translate="no" data-speak-lang="zh" data-speak-text="'+cleanZh+'" title="收听中文"><span class="taskLangBadge">中文 🔊</span> <span class="taskLangText">'+item.name_zh+'</span></button>'+
-            '</div>';
+            subName = item.name_es + ' · ' + item.name_zh;
           } else if (state.lang === 'es') {
-            subLangsHtml = '<div class="taskCardLangs">'+
-              '<button type="button" class="taskLangVoiceBtn notranslate" translate="no" data-speak-lang="en" data-speak-text="'+cleanEn+'" title="Listen in English"><span class="taskLangBadge">EN 🔊</span> <span class="taskLangText">'+item.name_en+'</span></button>'+
-              '<button type="button" class="taskLangVoiceBtn notranslate" translate="no" data-speak-lang="zh" data-speak-text="'+cleanZh+'" title="收听中文"><span class="taskLangBadge">中文 🔊</span> <span class="taskLangText">'+item.name_zh+'</span></button>'+
-            '</div>';
+            subName = item.name_en + ' · ' + item.name_zh;
           } else {
-            subLangsHtml = '<div class="taskCardLangs">'+
-              '<button type="button" class="taskLangVoiceBtn notranslate" translate="no" data-speak-lang="en" data-speak-text="'+cleanEn+'" title="Listen in English"><span class="taskLangBadge">EN 🔊</span> <span class="taskLangText">'+item.name_en+'</span></button>'+
-              '<button type="button" class="taskLangVoiceBtn notranslate" translate="no" data-speak-lang="es" data-speak-text="'+cleanEs+'" title="Escuchar en español"><span class="taskLangBadge">ES 🔊</span> <span class="taskLangText">'+item.name_es+'</span></button>'+
-            '</div>';
+            subName = item.name_en + ' · ' + item.name_es;
           }
 
           return ''+
             '<div class="taskCard wizardCardItem '+(isActive?'active':'')+'" data-transition-mode="'+item.id+'" role="button" tabindex="0">'+
               '<div class="taskCardLeft"><span class="taskCardIcon">'+item.icon+'</span></div>'+
               '<div class="taskCardMain">'+
-                '<div class="taskCardTitleRow">'+
-                  '<span class="taskCardName">'+curName+'</span>'+
-                  primaryVoiceBtn +
-                '</div>'+
-                '<div style="font-size:12.5px;color:var(--cream);opacity:0.8;margin:2px 0 4px;">'+curDesc+'</div>'+
-                subLangsHtml +
+                '<span class="taskCardName">'+curName+'</span>'+
+                '<span class="taskCardSub">'+subName+'</span>'+
               '</div>'+
               '<div class="taskCardRight">'+
-                '<span class="taskCardBadge" style="'+(isActive?'background:var(--sand);color:var(--ink);font-weight:800;':'')+'">'+(isActive ? '✓' : '➔')+'</span>'+
+                '<span class="taskCardBadge '+(isActive?'active':'')+'">'+(isActive ? '✓' : '➔')+'</span>'+
               '</div>'+
             '</div>';
         }).join('');
 
         routinesSection = ''+
           '<div class="field">'+
-            '<div class="taskSectionHeaderRow">'+
-              '<label style="margin:0;font-weight:800;font-size:15.5px;">'+(t.chooseMomentLabel || 'Choose a moment (tap to advance)')+'</label>'+
-              '<span class="taskVoiceHintPill">'+(t.taskVoiceHint || '🔊 Tap "Voice" to listen')+'</span>'+
+            '<div class="taskSectionHeaderRow" style="margin-bottom:10px;">'+
+              '<label style="margin:0;font-weight:800;font-size:16px;">'+(t.chooseMomentLabel || 'Choose a moment')+'</label>'+
             '</div>'+
             '<div class="taskGrid">'+ transCardsHtml +'</div>'+
           '</div>';
