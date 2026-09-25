@@ -169,7 +169,21 @@
       readyTaskQ: "Ready for {task}?",
       readyTaskSub: "Press the button when YOU are ready. Watch the magic transformation as you go!",
       taskDoneHeading: "Task complete!",
-      taskDoneSub: "Brilliant job finishing {task}!"
+      taskDoneSub: "Brilliant job finishing {task}!",
+      taskVoiceBtnLabel: "🔊 Voice",
+      taskVoiceHint: "🔊 Tap \"Voice\" to listen",
+      step1Title: "1. Who & Routine",
+      step2Title: "2. Time & Style",
+      step3Title: "3. Handover",
+      stepNextBtn: "Continue ➔",
+      stepBackBtn: "‹ Back",
+      quickStartLast: "⚡ Quick Start Last Routine:",
+      quickStartTap: "Tap to Start ➔",
+      swipeTip: "👈 Swipe or tap to move between steps 👉",
+      startCountdownBtn: "🚀 Start Countdown!",
+      handOverToKidBtn: "📱 Hand Phone to Child",
+      chooseMomentLabel: "Choose your routine or moment",
+      stepOf: "Step {current} of {total}"
     },
     es: {
       tagline: "Un temporizador que tu hijo/a activa él mismo, con una imagen mágica que se revela mientras avanza la cuenta atrás.",
@@ -333,7 +347,21 @@
       readyTaskQ: "¿Listo/a para: {task}?",
       readyTaskSub: "Pulsa el botón cuando TÚ estés listo/a. ¡Mira la transformación mágica poco a poco!",
       taskDoneHeading: "¡Tarea completada!",
-      taskDoneSub: "¡Fantástico trabajo completando {task}!"
+      taskDoneSub: "¡Fantástico trabajo completando {task}!",
+      taskVoiceBtnLabel: "🔊 Voz",
+      taskVoiceHint: "🔊 Pulsa \"Voz\" para escuchar",
+      step1Title: "1. Quién y Rutina",
+      step2Title: "2. Tiempo y Estilo",
+      step3Title: "3. Entregar al peque",
+      stepNextBtn: "Continuar ➔",
+      stepBackBtn: "‹ Atrás",
+      quickStartLast: "⚡ Inicio Rápido:",
+      quickStartTap: "Toca para Iniciar ➔",
+      swipeTip: "👈 Desliza o toca para cambiar de paso 👉",
+      startCountdownBtn: "🚀 ¡Empezar Cuenta Atrás!",
+      handOverToKidBtn: "📱 Entregar Teléfono al Peque",
+      chooseMomentLabel: "Elige la rutina o momento",
+      stepOf: "Paso {current} de {total}"
     },
     zh: {
       tagline: "让孩子自主掌控倒计时——通过生动有趣的渐进揭秘图片与故事，轻松完成过渡。",
@@ -469,6 +497,7 @@
       agePill24: "🐥 2–4岁 幼儿",
       agePill57: "🦖 5–7岁 探险家",
       agePill8: "🎮 8岁以上 特权与战利品",
+      voicePromptZh: "感到难过或不高兴是完全正常的。我们一起慢慢深呼吸。慢慢吸气……缓缓呼气……你的刮刮卡正安全锁在保险库里，随时等你平静准备好后来打开。",
       voicePromptEn: "It's okay to feel upset. Let's take a slow breath together. In... and out. Your scratch card is safe in the vault and waiting for you whenever you are calm and ready.",
       voiceSelectorTitle: "🎙️ 保险库安抚语音与角色",
       voiceSelectorSub: "选择在情绪平静时引导孩子的语音角色：",
@@ -499,7 +528,21 @@
       readyTaskQ: "准备好进行 {task} 了吗？",
       readyTaskSub: "当你准备好时点击按钮开始。看着画面一点点神奇揭晓！",
       taskDoneHeading: "任务完成！",
-      taskDoneSub: "太厉害了，顺利完成了 {task}！"
+      taskDoneSub: "太厉害了，顺利完成了 {task}！",
+      taskVoiceBtnLabel: "🔊 语音<span class='btnPinyin'>Yǔyīn</span>",
+      taskVoiceHint: "🔊 点击“语音”收听发音",
+      step1Title: "1. 孩子与日常常规",
+      step2Title: "2. 时间与样式",
+      step3Title: "3. 交给孩子",
+      stepNextBtn: "下一步 ➔",
+      stepBackBtn: "‹ 返回",
+      quickStartLast: "⚡ 快速开始：",
+      quickStartTap: "点击直接开始 ➔",
+      swipeTip: "👈 左右滑动或点击圆点切换步骤 👉",
+      startCountdownBtn: "🚀 开始倒计时！",
+      handOverToKidBtn: "📱 将手机交给孩子",
+      chooseMomentLabel: "选择过渡场景或日常常规",
+      stepOf: "第 {current} 步，共 {total} 步"
     }
   };
 
@@ -610,7 +653,7 @@
     leaving: {
       en: { tag:"Time to Finish soon", finalHeading:"You did it!", finalNote:"Nice work finishing the countdown all by yourself. Time to finish or leave.",
         ownership:"Your treat is waiting for you, the one you picked out yourself!", kickoffQ:"Are you ready to start your fun?",
-        kickoffSub:"Press the long rectangular ▶ button below to start fun time. Later, when its nearly time to finish, you press another button that says Nearly Time to stop. You will see your hourglass or clock timer. If you finish calmly, you may get a treat!",
+        kickoffSub:"Press the long rectangular ▶ button below to start fun time. Later, when its nearly time to finish, you press another button that says Nearly time to stop. You will see your hourglass or clock timer. If you finish calmly, you may get a treat!",
         kickoffBtn:"▶ Press to begin your fun activity!", waitingTitle:"Have fun!", waitingSub:"Ask a grown-up for the phone when it's almost time to finish — the timer will be waiting for you." },
       es: { tag:"Pronto terminamos", finalHeading:"¡Lo lograste!", finalNote:"Muy bien terminando la cuenta atrás tú solo. Hora de terminar.",
         ownership:"Tu premio te espera, ¡el que elegiste tú mismo!", kickoffQ:"¿Estás listo para empezar la diversión?",
@@ -624,7 +667,7 @@
     screen: {
       en: { tag:"Screen time ending soon", finalHeading:"All done!", finalNote:"You finished the whole countdown yourself. Time to turn it off.",
         ownership:"Time for your next thing — the one you picked!", kickoffQ:"Ready to start your screen time?",
-        kickoffSub:"Press the long rectangular ▶ button below to start fun time. Later, when its nearly time to finish, you press another button that says Nearly Time to stop. You will see your hourglass or clock timer. If you finish calmly, you may get a treat!",
+        kickoffSub:"Press the long rectangular ▶ button below to start fun time. Later, when its nearly time to finish, you press another button that says Nearly time to stop. You will see your hourglass or clock timer. If you finish calmly, you may get a treat!",
         kickoffBtn:"▶ Press to begin!", waitingTitle:"Enjoy!", waitingSub:"Parent: hand the phone/tablet back when it's almost time to finish — the timer will be ready." },
       es: { tag:"El tiempo de pantalla está a punto de acabar", finalHeading:"¡Todo listo!", finalNote:"Terminaste toda la cuenta atrás tú solo. Hora de apagarlo.",
         ownership:"Hora de tu próxima actividad, ¡la que tú elegiste!", kickoffQ:"¿Estás listo para empezar tu tiempo de pantalla?",
@@ -652,7 +695,7 @@
     task: {
       en: { tag:"Daily routine countdown", finalHeading:"Great job!", finalNote:"You finished your task! All done!",
         ownership:"Time for your next daily activity!", kickoffQ:"Ready to start your task?",
-        kickoffSub:"Press the long rectangular ▶ button below to start fun time. Later, when its nearly time to finish, you press another button that says Nearly Time to stop. You will see your hourglass or clock timer. If you finish calmly, you may get a treat!",
+        kickoffSub:"Press the long rectangular ▶ button below to start fun time. Later, when its nearly time to finish, you press another button that says Nearly time to stop. You will see your hourglass or clock timer. If you finish calmly, you may get a treat!",
         kickoffBtn:"▶ Press to begin!", waitingTitle:"In progress!", waitingSub:"Grown-up: when your child is almost done, hand the phone back for the final reveal." },
       es: { tag:"Cuenta atrás de rutina diaria", finalHeading:"¡Buen trabajo!", finalNote:"¡Terminaste tu tarea! ¡Todo listo!",
         ownership:"¡Hora de tu siguiente actividad!", kickoffQ:"¿Listo para empezar tu tarea?",
@@ -723,7 +766,7 @@
     { id: "teeth",   icon: "🪥", name_en: "Brush teeth",             name_es: "Cepillarse los dientes",      name_zh: "刷牙<span class='btnPinyin'>Shuā yá</span>", defaultMin: 2 },
     { id: "shoes",   icon: "👟", name_en: "Shoes on / off",          name_es: "Ponerse / quitarse zapatos", name_zh: "穿鞋 / 脱鞋<span class='btnPinyin'>Chuān xié / Tuō xié</span>", defaultMin: 3 },
     { id: "clothes", icon: "👕", name_en: "Get changed",             name_es: "Cambiarse de ropa",           name_zh: "换衣服<span class='btnPinyin'>Huàn yīfu</span>", defaultMin: 5 },
-    { id: "tidy",    icon: "🧸", name_en: "Tidy up toys",            name_es: "收拾玩具",                   name_zh: "收拾玩具<span class='btnPinyin'>Shōushi wánjù</span>", defaultMin: 5 },
+    { id: "tidy",    icon: "🧸", name_en: "Tidy up toys",            name_es: "Recoger los juguetes",       name_zh: "收拾玩具<span class='btnPinyin'>Shōushi wánjù</span>", defaultMin: 5 },
     { id: "food",    icon: "🥣", name_en: "Eat your food",           name_es: "Comer la comida",             name_zh: "好好吃饭<span class='btnPinyin'>Hǎohǎo chīfàn</span>", defaultMin: 15 },
     { id: "bag",     icon: "🎒", name_en: "Pack your bag",           name_es: "Preparar la mochila",        name_zh: "收拾书包<span class='btnPinyin'>Shōushi shūbāo</span>", defaultMin: 3 },
     { id: "bath",    icon: "🛁", name_en: "Wash hair / bath / shower time", name_es: "Lavarse el pelo / baño / ducha", name_zh: "洗澡 / 淋浴<span class='btnPinyin'>Xǐzǎo / Línyù</span>", defaultMin: 15 },
@@ -847,24 +890,70 @@
     if(!steps || !steps.length) return '';
     var anyPlaceholder = false;
     var animate = mode !== 'bedtime';
+    var curLang = lang || (typeof state !== 'undefined' && state.lang) || 'en';
     var ordinals_en = ["1st","2nd","3rd","4th"];
+    var ordinals_es = ["1.º","2.º","3.º","4.º"];
+    var ordinals_zh = ["第一","第二","第三","第四"];
     var schedWords = SCHEDULE_WORDS[style] || SCHEDULE_WORDS["first-then"];
-    var words = schedWords["en"] || ["First","Then"];
+    var words = schedWords[curLang] || schedWords["en"] || ["First","Then"];
     if(mode === 'bedtime'){
-      words = (style === 'now-next')
-        ? ["Now","Next","Now","Next"]
-        : ["First","Then","First","Then"];
+      if(curLang === 'zh'){
+        words = (style === 'now-next') ? ["现在","接下来","现在","接下来"] : ["先","然后","先","然后"];
+      } else if(curLang === 'es'){
+        words = (style === 'now-next') ? ["Ahora","Luego","Ahora","Luego"] : ["Primero","Luego","Primero","Luego"];
+      } else {
+        words = (style === 'now-next') ? ["Now","Next","Now","Next"] : ["First","Then","First","Then"];
+      }
     }
     var cards = steps.map(function(s, i){
-      var topLabel = (i < words.length) ? words[i] : (ordinals_en[i] || (i+1));
+      var fallbackOrdinal = curLang === 'zh' ? (ordinals_zh[i] || (i+1)) : (curLang === 'es' ? (ordinals_es[i] || (i+1)) : (ordinals_en[i] || (i+1)));
+      var topLabel = (i < words.length) ? words[i] : fallbackOrdinal;
       var labelEn = s.label_en || '';
       var labelEs = s.label_es || s.label_en || '';
       var labelZh = s.label_zh || s.label_en || '';
+      var cleanEn = cleanSpeechText(labelEn, 'en');
       var cleanEs = cleanSpeechText(labelEs, 'es');
       var cleanZh = cleanSpeechText(labelZh, 'zh');
+      var centerLabel, leftSideHtml, rightSideHtml, altText;
+
+      if(curLang === 'es'){
+        centerLabel = labelEs;
+        altText = cleanEs;
+        leftSideHtml = '<div class="cardImmersionSide left" data-speak-lang="en" data-speak-text="'+cleanEn+'" role="button" tabindex="0" title="Listen in English">'+
+          '<span class="cardSideBadge notranslate" translate="no">EN 🔊</span>'+
+          '<span class="cardSideLabel">'+labelEn+'</span>'+
+        '</div>';
+        rightSideHtml = '<div class="cardImmersionSide right" data-speak-lang="zh" data-speak-text="'+cleanZh+'" role="button" tabindex="0" title="收听中文">'+
+          '<span class="cardSideBadge notranslate" translate="no">中文 🔊</span>'+
+          '<span class="cardSideLabel">'+labelZh+'</span>'+
+        '</div>';
+      } else if(curLang === 'zh'){
+        centerLabel = labelZh;
+        altText = cleanZh;
+        leftSideHtml = '<div class="cardImmersionSide left" data-speak-lang="en" data-speak-text="'+cleanEn+'" role="button" tabindex="0" title="Listen in English">'+
+          '<span class="cardSideBadge notranslate" translate="no">EN 🔊</span>'+
+          '<span class="cardSideLabel">'+labelEn+'</span>'+
+        '</div>';
+        rightSideHtml = '<div class="cardImmersionSide right" data-speak-lang="es" data-speak-text="'+cleanEs+'" role="button" tabindex="0" title="Escuchar en español">'+
+          '<span class="cardSideBadge notranslate" translate="no">ES 🔊</span>'+
+          '<span class="cardSideLabel">'+labelEs+'</span>'+
+        '</div>';
+      } else {
+        centerLabel = labelEn;
+        altText = cleanEn;
+        leftSideHtml = '<div class="cardImmersionSide left" data-speak-lang="es" data-speak-text="'+cleanEs+'" role="button" tabindex="0" title="Escuchar en español">'+
+          '<span class="cardSideBadge notranslate" translate="no">ES 🔊</span>'+
+          '<span class="cardSideLabel">'+labelEs+'</span>'+
+        '</div>';
+        rightSideHtml = '<div class="cardImmersionSide right" data-speak-lang="zh" data-speak-text="'+cleanZh+'" role="button" tabindex="0" title="收听中文">'+
+          '<span class="cardSideBadge notranslate" translate="no">中文 🔊</span>'+
+          '<span class="cardSideLabel">'+labelZh+'</span>'+
+        '</div>';
+      }
+
       var imgSrc = s.img || '';
       var visual = imgSrc
-        ? '<img class="scheduleIconImg'+(animate?' animated':'')+'" src="'+imgSrc+'" alt="'+labelEn+'" />'
+        ? '<img class="scheduleIconImg'+(animate?' animated':'')+'" src="'+imgSrc+'" alt="'+altText+'" />'
         : '<div class="scheduleIcon'+(animate?' animated':'')+'">'+s.icon+'</div>';
       if(!imgSrc && mode !== 'task') anyPlaceholder = true;
       var sparkles = (animate && imgSrc) ? '<span class="scheduleSparkle s1">✨</span><span class="scheduleSparkle s2">✨</span>' : '';
@@ -872,24 +961,20 @@
         '<div class="scheduleCard immersionCard">'+
           '<div class="scheduleOrdinal">'+topLabel+'</div>'+
           '<div class="cardImmersionRow">'+
-            '<div class="cardImmersionSide left" data-speak-lang="es" data-speak-text="'+cleanEs+'" role="button" tabindex="0" title="Escuchar en español">'+
-              '<span class="cardSideBadge">ES 🔊</span>'+
-              '<span class="cardSideLabel">'+labelEs+'</span>'+
-            '</div>'+
+            leftSideHtml +
             '<div class="cardImmersionCenter">'+
               sparkles +
               visual +
-              '<div class="scheduleLabel">'+labelEn+'</div>'+
+              '<div class="scheduleLabel">'+centerLabel+'</div>'+
             '</div>'+
-            '<div class="cardImmersionSide right" data-speak-lang="zh" data-speak-text="'+cleanZh+'" role="button" tabindex="0" title="收听中文">'+
-              '<span class="cardSideBadge">中文 🔊</span>'+
-              '<span class="cardSideLabel">'+labelZh+'</span>'+
-            '</div>'+
+            rightSideHtml +
           '</div>'+
         '</div>'+
         (i < steps.length-1 ? '<div class="scheduleArrow">↓</div>' : '');
     });
-    var placeholderNote = '🐰 Placeholder art — your bunny images go here';
+    var placeholderNote = curLang === 'zh'
+      ? '🐰 小兔子插画占位符 — 此处将展示你的小兔插图'
+      : (curLang === 'es' ? '🐰 Arte provisional: aquí irán tus imágenes del conejito' : '🐰 Placeholder art — your bunny images go here');
     return '<div class="scheduleStrip"><div class="scheduleRow immersionRow">'+ cards.join('') +'</div></div>'+
       (anyPlaceholder ? '<div class="schedulePlaceholderNote">'+placeholderNote+'</div>' : '');
   }
@@ -920,11 +1005,22 @@
   var SECOND_DURATIONS = [10,30,60];
   var TILE_ORDER = ["t-tl","t-tr","t-bl","t-br"];
 
+  var initialHomeTab = "transitions";
+  try {
+    if (typeof window !== 'undefined' && window.localStorage) {
+      var savedTab = localStorage.getItem('calm_home_tab');
+      if (savedTab === 'tasks' || savedTab === 'transitions') {
+        initialHomeTab = savedTab;
+      }
+    }
+  } catch(e){}
+
   // ---------- State ----------
   var state = {
     lang: "en",
     screen: "setup",
-    homeTab: "transitions",   // transitions | tasks | rewards
+    homeTab: initialHomeTab,   // transitions | tasks | rewards
+    setupStep: 1,              // 1: Who & Routine | 2: Time & Style | 3: Handover
     activeScratchCard: null,
     vaultLocked: false,
     collectedStickers: [],
@@ -946,7 +1042,7 @@
       bag: 3,
       custom: 5
     },
-    mode: "leaving",
+    mode: (initialHomeTab === 'tasks' ? 'task' : 'leaving'),
     age: "mid",
     minutes: 5,
     isCustomMin: false,
@@ -1001,6 +1097,9 @@
       var savedLang = localStorage.getItem('calm_lang');
       if(savedLang && (savedLang === 'en' || savedLang === 'es' || savedLang === 'zh')){
         state.lang = savedLang;
+      }
+      if(typeof document !== 'undefined' && document.documentElement){
+        document.documentElement.lang = state.lang;
       }
     }
   }catch(e){}
@@ -1330,10 +1429,10 @@
 
   function langToggleHTML(){
     return ''+
-    '<div class="langToggle">'+
-      '<button type="button" class="lang-btn '+(state.lang==='en'?'active':'')+'" data-lang="en">EN</button>'+
-      '<button type="button" class="lang-btn '+(state.lang==='es'?'active':'')+'" data-lang="es">ES</button>'+
-      '<button type="button" class="lang-btn '+(state.lang==='zh'?'active':'')+'" data-lang="zh">中文</button>'+
+    '<div class="langToggle notranslate" translate="no">'+
+      '<button type="button" class="lang-btn notranslate '+(state.lang==='en'?'active':'')+'" data-lang="en" translate="no"><span class="notranslate" translate="no">EN</span></button>'+
+      '<button type="button" class="lang-btn notranslate '+(state.lang==='es'?'active':'')+'" data-lang="es" translate="no"><span class="notranslate" translate="no">ES</span></button>'+
+      '<button type="button" class="lang-btn notranslate '+(state.lang==='zh'?'active':'')+'" data-lang="zh" translate="no"><span class="notranslate" translate="no">中文</span></button>'+
     '</div>';
   }
 
@@ -1605,59 +1704,59 @@
   // ---------- Collectibles & Scratch Card Rewards by Age ----------
   var COLLECTIBLES_BY_AGE = {
     young: [ // Ages 2–4: Toddlers & Little Kids (Sensory, Cute Animals, Vehicles, Wonders, Counting Stars)
-      { id: 'young_pup', icon: '🐶', name_en: 'Sunny pup', name_es: 'Perrito alegre', desc_en: 'Warm, soft, and loves calm hugs!', desc_es: '¡Suave, cariñoso y le encantan los abrazos!', stars: 3, rarity: 'common', ageGroup: 'young' },
-      { id: 'young_bunny', icon: '🐰', name_en: 'Little bunny', name_es: 'Conejito tierno', desc_en: 'Gentle bunny hopping happily along!', desc_es: '¡Conejito tierno saltando feliz!', stars: 3, rarity: 'common', ageGroup: 'young' },
-      { id: 'young_duck', icon: '🦆', name_en: 'Sunny duckling', name_es: 'Patito feliz', desc_en: 'Quack, quack! Great listening today!', desc_es: '¡Cuac, cuac! ¡Qué bien escuchas hoy!', stars: 3, rarity: 'common', ageGroup: 'young' },
-      { id: 'young_kitten', icon: '🐱', name_en: 'Cozy kitten', name_es: 'Gatito tierno', desc_en: 'Purring softly and calm as can be!', desc_es: '¡Ronroneando suave y con mucha calma!', stars: 3, rarity: 'common', ageGroup: 'young' },
-      { id: 'young_teddy', icon: '🧸', name_en: 'Snuggle bear', name_es: 'Osito cariñoso', desc_en: 'Super soft bedtime and transition buddy!', desc_es: '¡Amigo súper suave para cualquier momento!', stars: 3, rarity: 'rare', ageGroup: 'young' },
-      { id: 'young_train', icon: '🚂', name_en: 'Choo-choo train', name_es: 'Trencito choo-choo', desc_en: 'Chugga-chugga! Rolling on to the next fun stop!', desc_es: '¡Chugga-chugga! ¡Avanzando a la diversión!', stars: 3, rarity: 'rare', ageGroup: 'young' },
-      { id: 'young_fire', icon: '🚒', name_en: 'Rescue engine', name_es: 'Camión bombero', desc_en: 'Brave helper on the move!', desc_es: '¡Gran héroe rescatista en camino!', stars: 3, rarity: 'rare', ageGroup: 'young' },
-      { id: 'young_dolphin', icon: '🐬', name_en: 'Splash dolphin', name_es: 'Delfincito', desc_en: 'Happy splash through every daily step!', desc_es: '¡Chapuzón feliz en cada rutina!', stars: 3, rarity: 'rare', ageGroup: 'young' },
-      { id: 'young_rainbow', icon: '🌈', name_en: 'Sparkle rainbow', name_es: 'Arcoíris brillante', desc_en: 'So many beautiful colors shining for you!', desc_es: '¡Hermosos colores brillando para ti!', stars: 3, rarity: 'epic', ageGroup: 'young' },
-      { id: 'young_balloon', icon: '🎈', name_en: 'Happy balloon', name_es: 'Globo mágico', desc_en: 'Floating high with joyful calm energy!', desc_es: '¡Flotando alto con alegría y calma!', stars: 3, rarity: 'epic', ageGroup: 'young' },
-      { id: 'young_star', icon: '⭐', name_en: 'Twinkle star', name_es: 'Estrellita mágica', desc_en: 'Shining bright with 3 golden counting stars!', desc_es: '¡Brillando fuerte con 3 estrellas doradas!', stars: 3, rarity: 'legendary', ageGroup: 'young' },
-      { id: 'young_crown', icon: '👑', name_en: 'Calm prince & princess', name_es: 'Corona de la calma', desc_en: 'Royally calm transition champion!', desc_es: '¡Campeón de la calma con corona real!', stars: 3, rarity: 'legendary', ageGroup: 'young' }
+      { id: 'young_pup', icon: '🐶', name_en: 'Sunny pup', name_es: 'Perrito alegre', name_zh: '暖阳小狗', desc_en: 'Warm, soft, and loves calm hugs!', desc_es: '¡Suave, cariñoso y le encantan los abrazos!', desc_zh: '温暖柔和，喜欢平静温暖的拥抱！', stars: 3, rarity: 'common', ageGroup: 'young' },
+      { id: 'young_bunny', icon: '🐰', name_en: 'Little bunny', name_es: 'Conejito tierno', name_zh: '萌萌小兔', desc_en: 'Gentle bunny hopping happily along!', desc_es: '¡Conejito tierno saltando feliz!', desc_zh: '蹦蹦跳跳的小兔子，温和又开心！', stars: 3, rarity: 'common', ageGroup: 'young' },
+      { id: 'young_duck', icon: '🦆', name_en: 'Sunny duckling', name_es: 'Patito feliz', name_zh: '欢快小鸭', desc_en: 'Quack, quack! Great listening today!', desc_es: '¡Cuac, cuac! ¡Qué bien escuchas hoy!', desc_zh: '嘎嘎嘎！今天听话配合真棒！', stars: 3, rarity: 'common', ageGroup: 'young' },
+      { id: 'young_kitten', icon: '🐱', name_en: 'Cozy kitten', name_es: 'Gatito tierno', name_zh: '乖乖小猫', desc_en: 'Purring softly and calm as can be!', desc_es: '¡Ronroneando suave y con mucha calma!', desc_zh: '轻轻打着呼噜，无比安静祥和！', stars: 3, rarity: 'common', ageGroup: 'young' },
+      { id: 'young_teddy', icon: '🧸', name_en: 'Snuggle bear', name_es: 'Osito cariñoso', name_zh: '抱抱小熊', desc_en: 'Super soft bedtime and transition buddy!', desc_es: '¡Amigo súper suave para cualquier momento!', desc_zh: '超柔软的睡前与日常过渡好伙伴！', stars: 3, rarity: 'rare', ageGroup: 'young' },
+      { id: 'young_train', icon: '🚂', name_en: 'Choo-choo train', name_es: 'Trencito choo-choo', name_zh: '呜呜小火车', desc_en: 'Chugga-chugga! Rolling on to the next fun stop!', desc_es: '¡Chugga-chugga! ¡Avanzando a la diversión!', desc_zh: '呜—咔嚓咔嚓！开往下一站开心时光！', stars: 3, rarity: 'rare', ageGroup: 'young' },
+      { id: 'young_fire', icon: '🚒', name_en: 'Rescue engine', name_es: 'Camión bombero', name_zh: '救援消防车', desc_en: 'Brave helper on the move!', desc_es: '¡Gran héroe rescatista en camino!', desc_zh: '勇敢的小帮手出发啦！', stars: 3, rarity: 'rare', ageGroup: 'young' },
+      { id: 'young_dolphin', icon: '🐬', name_en: 'Splash dolphin', name_es: 'Delfincito', name_zh: '跃水小海豚', desc_en: 'Happy splash through every daily step!', desc_es: '¡Chapuzón feliz en cada rutina!', desc_zh: '在每个日常步骤中欢快畅游！', stars: 3, rarity: 'rare', ageGroup: 'young' },
+      { id: 'young_rainbow', icon: '🌈', name_en: 'Sparkle rainbow', name_es: 'Arcoíris brillante', name_zh: '闪亮彩虹', desc_en: 'So many beautiful colors shining for you!', desc_es: '¡Hermosos colores brillando para ti!', desc_zh: '绚丽多彩的光芒为你闪耀！', stars: 3, rarity: 'epic', ageGroup: 'young' },
+      { id: 'young_balloon', icon: '🎈', name_en: 'Happy balloon', name_es: 'Globo mágico', name_zh: '欢乐气球', desc_en: 'Floating high with joyful calm energy!', desc_es: '¡Flotando alto con alegría y calma!', desc_zh: '带着快乐平静的能量高高飞起！', stars: 3, rarity: 'epic', ageGroup: 'young' },
+      { id: 'young_star', icon: '⭐', name_en: 'Twinkle star', name_es: 'Estrellita mágica', name_zh: '璀璨闪星', desc_en: 'Shining bright with 3 golden counting stars!', desc_es: '¡Brillando fuerte con 3 estrellas doradas!', desc_zh: '闪耀着3颗金色的星星！', stars: 3, rarity: 'legendary', ageGroup: 'young' },
+      { id: 'young_crown', icon: '👑', name_en: 'Calm prince & princess', name_es: 'Corona de la calma', name_zh: '平静皇冠', desc_en: 'Royally calm transition champion!', desc_es: '¡Campeón de la calma con corona real!', desc_zh: '从容平静的过渡小冠军！', stars: 3, rarity: 'legendary', ageGroup: 'young' }
     ],
     mid: [ // Ages 5–7: Middle Kids (Dino Explorers, Dog Adventures, Dragons, Cosmic Champions)
-      { id: 'sunny_pup', icon: '🦖', img: 'assets/rewards/rex-titan-card.jpg', name_en: 'Rex titan explorer', name_es: 'Rex titán explorador', desc_en: 'Prehistoric amber explorer with golden compass focus!', desc_es: '¡Aventurero prehistórico con brújula dorada y calma!', stars: 5, rarity: 'legendary', ageGroup: 'mid' },
-      { id: 'tri_armor', icon: '🦕', img: 'assets/rewards/tri-armor-titan.jpg', name_en: 'Tri-armor titan', name_es: 'Titán tri-armadura', desc_en: 'Geocache explorer with crystal compass discipline!', desc_es: '¡Explorador con armadura de cristal y calma total!', stars: 5, rarity: 'epic', ageGroup: 'mid' },
-      { id: 'skate_pups', icon: '🛹', img: 'assets/rewards/skate-pups-card.jpg', name_en: 'Skate pups adventure', name_es: 'Cachorros skaters', desc_en: 'Landed the ultimate park trick with steady balance and focus!', desc_es: '¡El mejor truco con equilibrio y calma!', stars: 5, rarity: 'epic', ageGroup: 'mid' },
-      { id: 'golden_star', icon: '⚽', img: 'assets/rewards/soccer-dogs-card.jpg', name_en: 'Golden striker pups', name_es: 'Cachorros goleadores', desc_en: 'Top champion teamwork and calm routine focus!', desc_es: '¡Cachorros campeones con juego limpio y calma!', stars: 5, rarity: 'legendary', ageGroup: 'mid' },
-      { id: 'space_rocket', icon: '🚌', img: 'assets/rewards/star-voyager-pups.jpg', name_en: 'Star voyager pups', name_es: 'Cachorros viajeros estelares', desc_en: 'Cruise smoothly into the next adventure on time!', desc_es: '¡Viaja feliz y a tiempo hacia la siguiente aventura!', stars: 5, rarity: 'legendary', ageGroup: 'mid' },
-      { id: 'ptero_soar', icon: '🦅', name_en: 'Pterosaur sky patrol', name_es: 'Patrulla pterosaurio', desc_en: 'Soaring high above the ancient jungle canopy with sharp focus!', desc_es: '¡Volando alto sobre la selva prehistórica con gran atención!', stars: 4, rarity: 'rare', ageGroup: 'mid' },
-      { id: 'raptor_racer', icon: '⚡', name_en: 'Velociraptor speedster', name_es: 'Velociraptor veloz', desc_en: 'Lightning quick focus when it is time to wrap up!', desc_es: '¡Rápido y enfocado cuando toca terminar a tiempo!', stars: 4, rarity: 'rare', ageGroup: 'mid' },
-      { id: 'stego_shield', icon: '🛡️', name_en: 'Stegosaurus sun-plate', name_es: 'Estegosaurio solar', desc_en: 'Solar armored giant steady and patient in every transition!', desc_es: '¡Gigante acorazado con placas solares, paciente y tranquilo!', stars: 4, rarity: 'rare', ageGroup: 'mid' },
-      { id: 'ankylosaur', icon: '🔨', name_en: 'Ankylosaurus iron-tail', name_es: 'Anquilosaurio blindado', desc_en: 'Impenetrable defense and steady focus to finish routines!', desc_es: '¡Defensa impenetrable y paciencia de roca para terminar la rutina!', stars: 4, rarity: 'rare', ageGroup: 'mid' },
-      { id: 'mecha_titan', icon: '🤖', name_en: 'Explorer rescue bot', name_es: 'Robot rescatista', desc_en: 'Equipped and powered up for every schedule transition!', desc_es: '¡Preparado y activo para cualquier transición del día!', stars: 4, rarity: 'rare', ageGroup: 'mid' },
-      { id: 'deep_sea', icon: '🐉', name_en: 'Ember dragon guardian', name_es: 'Dragón de fuego', desc_en: 'Legendary mythical guardian of calm strength and courage!', desc_es: '¡Guardián mítico legendario de la fuerza tranquila!', stars: 5, rarity: 'legendary', ageGroup: 'mid' },
-      { id: 'snow_husky', icon: '❄️', name_en: 'Arctic rescue husky', name_es: 'Husky rescate ártico', desc_en: 'Brave winter team leader navigating snowy trails calmly!', desc_es: '¡Líder audaz en senderos nevados con espíritu de equipo!', stars: 4, rarity: 'epic', ageGroup: 'mid' },
-      { id: 'detective_dog', icon: '🔍', name_en: 'Detective hound mystery', name_es: 'Sabueso detective', desc_en: 'Solved the mystery clue with sharp eyes and patience!', desc_es: '¡Resolvió el gran misterio con concentración y calma!', stars: 4, rarity: 'rare', ageGroup: 'mid' },
-      { id: 'astro_pup', icon: '🌙', name_en: 'Astro-pup zero gravity', name_es: 'Astro-cachorro lunar', desc_en: 'Floating through moon missions with steady joy!', desc_es: '¡Flotando en la luna con alegría y paciencia!', stars: 5, rarity: 'epic', ageGroup: 'mid' },
-      { id: 'mighty_rex', icon: '🪐', name_en: 'Saturn ring explorer', name_es: 'Explorador de Saturno', desc_en: 'Cruising the cosmic rings of patience and discipline!', desc_es: '¡Navegando los anillos cósmicos con calma y paciencia!', stars: 3, rarity: 'rare', ageGroup: 'mid' },
-      { id: 'dino_fossil', icon: '🐙', name_en: 'Deep trench kraken', name_es: 'Kraken abisal', desc_en: 'Master of deep ocean focus and calm skill!', desc_es: '¡Dueño de los océanos con calma y habilidad!', stars: 4, rarity: 'epic', ageGroup: 'mid' },
-      { id: 'champion_trophy', icon: '🏆', name_en: 'Golden champion cup', name_es: 'Copa de oro de la calma', desc_en: 'All-star routine master champion of the day!', desc_es: '¡Superestrella de las rutinas del día!', stars: 5, rarity: 'legendary', ageGroup: 'mid' }
+      { id: 'sunny_pup', icon: '🦖', img: 'assets/rewards/rex-titan-card.jpg', name_en: 'Rex titan explorer', name_es: 'Rex titán explorador', name_zh: '霸王龙探险家', desc_en: 'Prehistoric amber explorer with golden compass focus!', desc_es: '¡Aventurero prehistórico con brújula dorada y calma!', desc_zh: '手握金色罗盘的史前探险家！', stars: 5, rarity: 'legendary', ageGroup: 'mid' },
+      { id: 'tri_armor', icon: '🦕', img: 'assets/rewards/tri-armor-titan.jpg', name_en: 'Tri-armor titan', name_es: 'Titán tri-armadura', name_zh: '三角龙装甲泰坦', desc_en: 'Geocache explorer with crystal compass discipline!', desc_es: '¡Explorador con armadura de cristal y calma total!', desc_zh: '手握水晶罗盘，自律沉着的小探险家！', stars: 5, rarity: 'epic', ageGroup: 'mid' },
+      { id: 'skate_pups', icon: '🛹', img: 'assets/rewards/skate-pups-card.jpg', name_en: 'Skate pups adventure', name_es: 'Cachorros skaters', name_zh: '滑板小狗大冒险', desc_en: 'Landed the ultimate park trick with steady balance and focus!', desc_es: '¡El mejor truco con equilibrio y calma!', desc_zh: '平衡专注，完成了终极滑板挑战！', stars: 5, rarity: 'epic', ageGroup: 'mid' },
+      { id: 'golden_star', icon: '⚽', img: 'assets/rewards/soccer-dogs-card.jpg', name_en: 'Golden striker pups', name_es: 'Cachorros goleadores', name_zh: '金牌射手小狗', desc_en: 'Top champion teamwork and calm routine focus!', desc_es: '¡Cachorros campeones con juego limpio y calma!', desc_zh: '默契团队合作与专注平静的冠军！', stars: 5, rarity: 'legendary', ageGroup: 'mid' },
+      { id: 'space_rocket', icon: '🚌', img: 'assets/rewards/star-voyager-pups.jpg', name_en: 'Star voyager pups', name_es: 'Cachorros viajeros estelares', name_zh: '星际旅行小狗', desc_en: 'Cruise smoothly into the next adventure on time!', desc_es: '¡Viaja feliz y a tiempo hacia la siguiente aventura!', desc_zh: '平稳按时启航，开启下一场冒险！', stars: 5, rarity: 'legendary', ageGroup: 'mid' },
+      { id: 'ptero_soar', icon: '🦅', name_en: 'Pterosaur sky patrol', name_es: 'Patrulla pterosaurio', name_zh: '翼龙空中巡逻队', desc_en: 'Soaring high above the ancient jungle canopy with sharp focus!', desc_es: '¡Volando alto sobre la selva prehistórica con gran atención!', desc_zh: '目光专注，翱翔在古老丛林上空！', stars: 4, rarity: 'rare', ageGroup: 'mid' },
+      { id: 'raptor_racer', icon: '⚡', name_en: 'Velociraptor speedster', name_es: 'Velociraptor veloz', name_zh: '飞速迅猛龙', desc_en: 'Lightning quick focus when it is time to wrap up!', desc_es: '¡Rápido y enfocado cuando toca terminar a tiempo!', desc_zh: '需要收心结束时，行动如闪电般迅速！', stars: 4, rarity: 'rare', ageGroup: 'mid' },
+      { id: 'stego_shield', icon: '🛡️', name_en: 'Stegosaurus sun-plate', name_es: 'Estegosaurio solar', name_zh: '剑龙太阳盾甲', desc_en: 'Solar armored giant steady and patient in every transition!', desc_es: '¡Gigante acorazado con placas solares, paciente y tranquilo!', desc_zh: '披着太阳背板的沉稳耐心巨龙！', stars: 4, rarity: 'rare', ageGroup: 'mid' },
+      { id: 'ankylosaur', icon: '🔨', name_en: 'Ankylosaurus iron-tail', name_es: 'Anquilosaurio blindado', name_zh: '甲龙铁尾装甲', desc_en: 'Impenetrable defense and steady focus to finish routines!', desc_es: '¡Defensa impenetrable y paciencia de roca para terminar la rutina!', desc_zh: '坚不可摧的毅力，从容完成任务！', stars: 4, rarity: 'rare', ageGroup: 'mid' },
+      { id: 'mecha_titan', icon: '🤖', name_en: 'Explorer rescue bot', name_es: 'Robot rescatista', name_zh: '探险救援机器人', desc_en: 'Equipped and powered up for every schedule transition!', desc_es: '¡Preparado y activo para cualquier transición del día!', desc_zh: '能量充沛，随时就绪迎接每一项过渡！', stars: 4, rarity: 'rare', ageGroup: 'mid' },
+      { id: 'deep_sea', icon: '🐉', name_en: 'Ember dragon guardian', name_es: 'Dragón de fuego', name_zh: '炽焰守护巨龙', desc_en: 'Legendary mythical guardian of calm strength and courage!', desc_es: '¡Guardián mítico legendario de la fuerza tranquila!', desc_zh: '从容力量与勇气的传说神兽！', stars: 5, rarity: 'legendary', ageGroup: 'mid' },
+      { id: 'snow_husky', icon: '❄️', name_en: 'Arctic rescue husky', name_es: 'Husky rescate ártico', name_zh: '极地救援哈士奇', desc_en: 'Brave winter team leader navigating snowy trails calmly!', desc_es: '¡Líder audaz en senderos nevados con espíritu de equipo!', desc_zh: '勇敢沉着，带领队伍穿越雪地！', stars: 4, rarity: 'epic', ageGroup: 'mid' },
+      { id: 'detective_dog', icon: '🔍', name_en: 'Detective hound mystery', name_es: 'Sabueso detective', name_zh: '侦探猎犬大破案', desc_en: 'Solved the mystery clue with sharp eyes and patience!', desc_es: '¡Resolvió el gran misterio con concentración y calma!', desc_zh: '敏锐耐心，顺利破解神秘线索！', stars: 4, rarity: 'rare', ageGroup: 'mid' },
+      { id: 'astro_pup', icon: '🌙', name_en: 'Astro-pup zero gravity', name_es: 'Astro-cachorro lunar', name_zh: '太空零重力小狗', desc_en: 'Floating through moon missions with steady joy!', desc_es: '¡Flotando en la luna con alegría y paciencia!', desc_zh: '在月球任务中快乐平稳漫步！', stars: 5, rarity: 'epic', ageGroup: 'mid' },
+      { id: 'mighty_rex', icon: '🪐', name_en: 'Saturn ring explorer', name_es: 'Explorador de Saturno', name_zh: '土星环漫游探险家', desc_en: 'Cruising the cosmic rings of patience and discipline!', desc_es: '¡Navegando los anillos cósmicos con calma y paciencia!', desc_zh: '在耐心自律的宇宙光环中遨游！', stars: 3, rarity: 'rare', ageGroup: 'mid' },
+      { id: 'dino_fossil', icon: '🐙', name_en: 'Deep trench kraken', name_es: 'Kraken abisal', name_zh: '深海巨渊海怪', desc_en: 'Master of deep ocean focus and calm skill!', desc_es: '¡Dueño de los océanos con calma y habilidad!', desc_zh: '深海专注与沉着技能大师！', stars: 4, rarity: 'epic', ageGroup: 'mid' },
+      { id: 'champion_trophy', icon: '🏆', name_en: 'Golden champion cup', name_es: 'Copa de oro de la calma', name_zh: '每日平静黄金奖杯', desc_en: 'All-star routine master champion of the day!', desc_es: '¡Superestrella de las rutinas del día!', desc_zh: '今日全能常规大师冠军！', stars: 5, rarity: 'legendary', ageGroup: 'mid' }
     ],
     big: [ // Ages 8+: Tweens & Older Kids (20 Cards: Apex Esports/Cosmic Sports Gear + VIP Passes with cartoon food/movie)
-      { id: 'big_hover', icon: '🛹', img: 'assets/rewards/apex-hoverboard.jpg', name_en: 'Apex hoverboard', name_es: 'Aerotabla Apex', desc_en: 'A-Rank rare cruiser with forged carbon chassis, dual plasma thrusters & stat gauges!', desc_es: '¡Crucero de fibra de carbono con propulsores de plasma gemelos y medidores de estadísticas!', stars: 5, rarity: 'epic', type: 'gear', ageGroup: 'big' },
-      { id: 'big_mech', icon: '🤖', img: 'assets/rewards/titan-aegis-mech.jpg', name_en: 'Titan Aegis mech', name_es: 'Titán Aegis mech', desc_en: 'S-Rank Legendary heavy chassis with dual hexagonal energy barrier shields!', desc_es: '¡Chasis pesado legendario rango S con escudos hexagonales de barrera de energía!', stars: 5, rarity: 'legendary', type: 'gear', ageGroup: 'big' },
-      { id: 'big_headset', icon: '🎧', img: 'assets/rewards/pro-esports-rig.jpg', name_en: 'Pro esports command rig', name_es: 'Cabina esports pro', desc_en: 'S-Rank Legendary cockpit with curved ultrawide displays and RGB mechanical setup!', desc_es: '¡Cabina de mando legendaria rango S con pantallas curvas ultrawide y setup RGB!', stars: 5, rarity: 'legendary', type: 'gear', ageGroup: 'big' },
-      { id: 'big_speeder', icon: '🏎️', img: 'assets/rewards/cosmic-sports-speeder.jpg', name_en: 'Cosmic sports speeder', name_es: 'Bólido deportivo cósmico', desc_en: 'S-Rank Legendary Aether Striker racer clocking top speed on the orbital speedway!', desc_es: '¡Bólido Aether Striker legendario rango S a máxima velocidad en pista orbital!', stars: 5, rarity: 'legendary', type: 'gear', ageGroup: 'big' },
-      { id: 'big_cleats', icon: '⚽', name_en: 'Neon striker cyber-cleats', name_es: 'Botas cyber striker', desc_en: 'Kinetic speed turf cleats with glowing traction studs and speed booster!', desc_es: '¡Botas de fútbol cinéticas con tacos de tracción neón y propulsor!', stars: 4, rarity: 'epic', type: 'gear', ageGroup: 'big' },
-      { id: 'big_drone', icon: '🛸', name_en: 'Apex quantum scout drone', name_es: 'Dron de reconocimiento Apex', desc_en: 'Aerodynamic stealth disc drone with 360-degree laser tracking!', desc_es: '¡Dron de disco sigiloso aerodinámico con rastreo láser 360!', stars: 4, rarity: 'rare', type: 'gear', ageGroup: 'big' },
-      { id: 'big_shield', icon: '🛡️', name_en: 'Aegis energy barrier', name_es: 'Barrera de energía Aegis', desc_en: 'Hexagonal personal photon defense field with pulse reflection!', desc_es: '¡Campo de defensa hexagonal personal de fotones con reflexión de pulsos!', stars: 5, rarity: 'legendary', type: 'gear', ageGroup: 'big' },
-      { id: 'big_blade', icon: '⚔️', name_en: 'Quantum plasma katana', name_es: 'Katana de plasma cuántica', desc_en: 'Tier 5 Mythic energy blade forged in discipline and laser focus.', desc_es: 'Espada de energía mítica forjada en disciplina y enfoque láser.', stars: 5, rarity: 'legendary', type: 'gear', ageGroup: 'big' },
-      { id: 'big_energy', icon: '💎', name_en: 'Hyper core reactor', name_es: 'Reactor hiper núcleo', desc_en: 'Pulsing with neon stadium power for instant routine momentum.', desc_es: 'Pulsando con energía de estadio neón para máxima inercia en la rutina.', stars: 4, rarity: 'rare', type: 'gear', ageGroup: 'big' },
-      { id: 'big_starship', icon: '🚀', name_en: 'Hyper-drive star glider', name_es: 'Planeador estelar hiperimpulso', desc_en: 'Deep-space cruiser engineered for supersonic routine transitions.', desc_es: 'Crucero de espacio profundo para transiciones de rutina supersónicas.', stars: 5, rarity: 'legendary', type: 'gear', ageGroup: 'big' },
-      { id: 'big_screen', icon: '🎮', img: 'assets/rewards/gaming-overdrive-pass.jpg', name_en: '+25 min gaming overdrive', name_es: '+25 min juego overdrive', desc_en: 'Official VIP Privilege Pass: Valid for 25 minutes bonus screen time!', desc_es: 'Pase VIP Oficial: ¡Válido por 25 minutos extra de videojuegos!', stars: 5, rarity: 'perk', type: 'perk', ageGroup: 'big' },
-      { id: 'big_pizza', icon: '🍕', img: 'assets/rewards/pizza-combo-pass.jpg', name_en: 'The perfect pizza combo', name_es: 'Combo de pizza perfecto', desc_en: 'Cartoon Special Edition Pass: Pick tonight\'s pizza, fries & feast!', desc_es: 'Pase Edición Especial Cartoon: ¡Elige la pizza, patatas y festín de hoy!', stars: 5, rarity: 'perk', type: 'perk', ageGroup: 'big' },
-      { id: 'big_movie', icon: '🎬', img: 'assets/rewards/movie-night-pass.jpg', name_en: 'Movie night director', name_es: 'Director de cine familiar', desc_en: 'Cartoon Collector\'s Edition: Popcorn, 3D glasses, and remote control master!', desc_es: 'Edición Coleccionista Cartoon: ¡Palomitas, gafas 3D y control total del mando!', stars: 5, rarity: 'perk', type: 'perk', ageGroup: 'big' },
-      { id: 'big_arcade', icon: '🕹️', name_en: 'Neon vortex arcade pass', name_es: 'Pase zona arcade neón', desc_en: 'Privilege Voucher: Special trip to the gaming arcade or VR zone!', desc_es: 'Vale Especial: ¡Salida especial a los salones recreativos o realidad virtual!', stars: 5, rarity: 'perk', type: 'perk', ageGroup: 'big' },
-      { id: 'big_sleep', icon: '⏰', name_en: 'Weekend night owl pass', name_es: 'Pase noche especial', desc_en: 'Privilege Voucher: Stay up 30 mins later this weekend!', desc_es: 'Vale Especial: ¡Duerme 30 min más tarde este fin de semana!', stars: 5, rarity: 'perk', type: 'perk', ageGroup: 'big' },
-      { id: 'big_chore', icon: '🛡️', name_en: 'Chore shield pass', name_es: 'Pase escudo de tareas', desc_en: 'Privilege Voucher: Immunity pass! Skip 1 household chore today.', desc_es: 'Vale Especial: ¡Inmunidad! Salta 1 tarea doméstica hoy.', stars: 5, rarity: 'perk', type: 'perk', ageGroup: 'big' },
-      { id: 'big_sundae', icon: '🍨', name_en: 'Sweet treat sundae overdrive', name_es: 'Pase súper copa helado', desc_en: 'Privilege Voucher: Colossal ice cream sundae feast of your choice!', desc_es: 'Vale Especial: ¡Copa de helado gigante con todos los toppings!', stars: 4, rarity: 'perk', type: 'perk', ageGroup: 'big' },
-      { id: 'big_pancake', icon: '🥞', name_en: 'Pancake stack breakfast feast', name_es: 'Pase festín de tortitas', desc_en: 'Privilege Voucher: Giant pancake tower with maple syrup & strawberries!', desc_es: 'Vale Especial: ¡Torre de tortitas con sirope y fresas!', stars: 5, rarity: 'perk', type: 'perk', ageGroup: 'big' },
-      { id: 'big_boardgame', icon: '🎲', name_en: 'Board game boss pass', name_es: 'Pase jefe de juegos de mesa', desc_en: 'Privilege Voucher: You choose the family board game and play first!', desc_es: 'Vale Especial: ¡Eliges el juego de mesa familiar y empiezas primero!', stars: 4, rarity: 'perk', type: 'perk', ageGroup: 'big' },
-      { id: 'big_playlist', icon: '🎵', name_en: 'Car & home DJ master', name_es: 'Pase DJ del coche y casa', desc_en: 'Privilege Voucher: Full command of the music playlist on the drive!', desc_es: 'Vale Especial: ¡Control total de la música en el coche o en casa!', stars: 5, rarity: 'perk', type: 'perk', ageGroup: 'big' }
+      { id: 'big_hover', icon: '🛹', img: 'assets/rewards/apex-hoverboard.jpg', name_en: 'Apex hoverboard', name_es: 'Aerotabla Apex', name_zh: '极影悬浮滑板', desc_en: 'A-Rank rare cruiser with forged carbon chassis, dual plasma thrusters & stat gauges!', desc_es: '¡Crucero de fibra de carbono con propulsores de plasma gemelos y medidores de estadísticas!', desc_zh: 'A级稀有巡航板，锻造碳纤维底盘与双等离子推进器！', stars: 5, rarity: 'epic', type: 'gear', ageGroup: 'big' },
+      { id: 'big_mech', icon: '🤖', img: 'assets/rewards/titan-aegis-mech.jpg', name_en: 'Titan Aegis mech', name_es: 'Titán Aegis mech', name_zh: '泰坦宙斯机甲', desc_en: 'S-Rank Legendary heavy chassis with dual hexagonal energy barrier shields!', desc_es: '¡Chasis pesado legendario rango S con escudos hexagonales de barrera de energía!', desc_zh: 'S级传说重装机甲，配备六边形能量护盾！', stars: 5, rarity: 'legendary', type: 'gear', ageGroup: 'big' },
+      { id: 'big_headset', icon: '🎧', img: 'assets/rewards/pro-esports-rig.jpg', name_en: 'Pro esports command rig', name_es: 'Cabina esports pro', name_zh: '职业电竞指挥舱', desc_en: 'S-Rank Legendary cockpit with curved ultrawide displays and RGB mechanical setup!', desc_es: '¡Cabina de mando legendaria rango S con pantallas curvas ultrawide y setup RGB!', desc_zh: 'S级传说座舱，环形超宽屏与RGB电竞装备！', stars: 5, rarity: 'legendary', type: 'gear', ageGroup: 'big' },
+      { id: 'big_speeder', icon: '🏎️', img: 'assets/rewards/cosmic-sports-speeder.jpg', name_en: 'Cosmic sports speeder', name_es: 'Bólido deportivo cósmico', name_zh: '宇宙极速飞艇', desc_en: 'S-Rank Legendary Aether Striker racer clocking top speed on the orbital speedway!', desc_es: '¡Bólido Aether Striker legendario rango S a máxima velocidad en pista orbital!', desc_zh: 'S级传说以太冲刺者赛艇，轨道竞速极速冲锋！', stars: 5, rarity: 'legendary', type: 'gear', ageGroup: 'big' },
+      { id: 'big_cleats', icon: '⚽', name_en: 'Neon striker cyber-cleats', name_es: 'Botas cyber striker', name_zh: '赛博极光足球鞋', desc_en: 'Kinetic speed turf cleats with glowing traction studs and speed booster!', desc_es: '¡Botas de fútbol cinéticas con tacos de tracción neón y propulsor!', desc_zh: '动能草地足球鞋，配备发光防滑钉与速度助推器！', stars: 4, rarity: 'epic', type: 'gear', ageGroup: 'big' },
+      { id: 'big_drone', icon: '🛸', name_en: 'Apex quantum scout drone', name_es: 'Dron de reconocimiento Apex', name_zh: '量子侦察无人机', desc_en: 'Aerodynamic stealth disc drone with 360-degree laser tracking!', desc_es: '¡Dron de disco sigiloso aerodinámico con rastreo láser 360!', desc_zh: '空气动力学隐形圆盘无人机，配360度激光追踪！', stars: 4, rarity: 'rare', type: 'gear', ageGroup: 'big' },
+      { id: 'big_shield', icon: '🛡️', name_en: 'Aegis energy barrier', name_es: 'Barrera de energía Aegis', name_zh: '宙斯光盾护壁', desc_en: 'Hexagonal personal photon defense field with pulse reflection!', desc_es: '¡Campo de defensa hexagonal personal de fotones con reflexión de pulsos!', desc_zh: '六角个人光子防御力场，带脉冲反弹！', stars: 5, rarity: 'legendary', type: 'gear', ageGroup: 'big' },
+      { id: 'big_blade', icon: '⚔️', name_en: 'Quantum plasma katana', name_es: 'Katana de plasma cuántica', name_zh: '量子等离子光剑', desc_en: 'Tier 5 Mythic energy blade forged in discipline and laser focus.', desc_es: 'Espada de energía mítica forjada en disciplina y enfoque láser.', desc_zh: '5阶神话能量光刃，以专注与自律铸就！', stars: 5, rarity: 'legendary', type: 'gear', ageGroup: 'big' },
+      { id: 'big_energy', icon: '💎', name_en: 'Hyper core reactor', name_es: 'Reactor hiper núcleo', name_zh: '超核反应炉', desc_en: 'Pulsing with neon stadium power for instant routine momentum.', desc_es: 'Pulsando con energía de estadio neón para máxima inercia en la rutina.', desc_zh: '闪耀霓虹竞技场能量，瞬间点燃执行动力！', stars: 4, rarity: 'rare', type: 'gear', ageGroup: 'big' },
+      { id: 'big_starship', icon: '🚀', name_en: 'Hyper-drive star glider', name_es: 'Planeador estelar hiperimpulso', name_zh: '超光速星际滑翔机', desc_en: 'Deep-space cruiser engineered for supersonic routine transitions.', desc_es: 'Crucero de espacio profundo para transiciones de rutina supersónicas.', desc_zh: '深空巡航舰，为超音速日程过渡而生！', stars: 5, rarity: 'legendary', type: 'gear', ageGroup: 'big' },
+      { id: 'big_screen', icon: '🎮', img: 'assets/rewards/gaming-overdrive-pass.jpg', name_en: '+25 min gaming overdrive', name_es: '+25 min juego overdrive', name_zh: '+25分钟游戏超能券', desc_en: 'Official VIP Privilege Pass: Valid for 25 minutes bonus screen time!', desc_es: 'Pase VIP Oficial: ¡Válido por 25 minutos extra de videojuegos!', desc_zh: '官方VIP特权券：可兑换25分钟额外游戏时间！', stars: 5, rarity: 'perk', type: 'perk', ageGroup: 'big' },
+      { id: 'big_pizza', icon: '🍕', img: 'assets/rewards/pizza-combo-pass.jpg', name_en: 'The perfect pizza combo', name_es: 'Combo de pizza perfecto', name_zh: '完美披萨盛宴券', desc_en: 'Cartoon Special Edition Pass: Pick tonight\'s pizza, fries & feast!', desc_es: 'Pase Edición Especial Cartoon: ¡Elige la pizza, patatas y festín de hoy!', desc_zh: '卡通特别版兑换券：由你决定今晚的披萨与大餐！', stars: 5, rarity: 'perk', type: 'perk', ageGroup: 'big' },
+      { id: 'big_movie', icon: '🎬', img: 'assets/rewards/movie-night-pass.jpg', name_en: 'Movie night director', name_es: 'Director de cine familiar', name_zh: '家庭电影之夜导演券', desc_en: 'Cartoon Collector\'s Edition: Popcorn, 3D glasses, and remote control master!', desc_es: 'Edición Coleccionista Cartoon: ¡Palomitas, gafas 3D y control total del mando!', desc_zh: '卡通珍藏版：爆米花、3D眼镜与遥控器全权掌控！', stars: 5, rarity: 'perk', type: 'perk', ageGroup: 'big' },
+      { id: 'big_arcade', icon: '🕹️', name_en: 'Neon vortex arcade pass', name_es: 'Pase zona arcade neón', name_zh: '霓虹街机电玩体验券', desc_en: 'Privilege Voucher: Special trip to the gaming arcade or VR zone!', desc_es: 'Vale Especial: ¡Salida especial a los salones recreativos o realidad virtual!', desc_zh: '特权券：由家长陪同前往街机厅或VR体验区！', stars: 5, rarity: 'perk', type: 'perk', ageGroup: 'big' },
+      { id: 'big_sleep', icon: '⏰', name_en: 'Weekend night owl pass', name_es: 'Pase noche especial', name_zh: '周末夜猫子特权券', desc_en: 'Privilege Voucher: Stay up 30 mins later this weekend!', desc_es: 'Vale Especial: ¡Duerme 30 min más tarde este fin de semana!', desc_zh: '特权券：本周末可推迟30分钟睡觉！', stars: 5, rarity: 'perk', type: 'perk', ageGroup: 'big' },
+      { id: 'big_chore', icon: '🛡️', name_en: 'Chore shield pass', name_es: 'Pase escudo de tareas', name_zh: '家务免除护盾券', desc_en: 'Privilege Voucher: Immunity pass! Skip 1 household chore today.', desc_es: 'Vale Especial: ¡Inmunidad! Salta 1 tarea doméstica hoy.', desc_zh: '特权券：今日免除1项日常家务！', stars: 5, rarity: 'perk', type: 'perk', ageGroup: 'big' },
+      { id: 'big_sundae', icon: '🍨', name_en: 'Sweet treat sundae overdrive', name_es: 'Pase súper copa helado', name_zh: '缤纷圣代冰淇淋特权券', desc_en: 'Privilege Voucher: Colossal ice cream sundae feast of your choice!', desc_es: 'Vale Especial: ¡Copa de helado gigante con todos los toppings!', desc_zh: '特权券：挑选一份超大份自选配料圣代冰淇淋！', stars: 4, rarity: 'perk', type: 'perk', ageGroup: 'big' },
+      { id: 'big_pancake', icon: '🥞', name_en: 'Pancake stack breakfast feast', name_es: 'Pase festín de tortitas', name_zh: '巨塔松饼早餐盛宴券', desc_en: 'Privilege Voucher: Giant pancake tower with maple syrup & strawberries!', desc_es: 'Vale Especial: ¡Torre de tortitas con sirope y fresas!', desc_zh: '特权券：枫糖浆草莓巨塔松饼大餐！', stars: 5, rarity: 'perk', type: 'perk', ageGroup: 'big' },
+      { id: 'big_boardgame', icon: '🎲', name_en: 'Board game boss pass', name_es: 'Pase jefe de juegos de mesa', name_zh: '桌游领队特权券', desc_en: 'Privilege Voucher: You choose the family board game and play first!', desc_es: 'Vale Especial: ¡Eliges el juego de mesa familiar y empiezas primero!', desc_zh: '特权券：由你挑选家庭桌游并获得先手权！', stars: 4, rarity: 'perk', type: 'perk', ageGroup: 'big' },
+      { id: 'big_playlist', icon: '🎵', name_en: 'Car & home DJ master', name_es: 'Pase DJ del coche y casa', name_zh: '车载与居家音乐DJ券', desc_en: 'Privilege Voucher: Full command of the music playlist on the drive!', desc_es: 'Vale Especial: ¡Control total de la música en el coche o en casa!', desc_zh: '特权券：在路上全权掌控音乐播放列表！', stars: 5, rarity: 'perk', type: 'perk', ageGroup: 'big' }
     ]
   };
 
@@ -2034,13 +2133,13 @@
             t.vaultTitle +
           '</div>'+
           '<h2 style="font-family:\'Baloo 2\',sans-serif;font-size:22px;color:var(--cream);margin:0 0 8px 0;">'+
-            (state.lang==='es'?'Tu tarjeta está a salvo en el cofre':'Your card is safe in the vault') +
+            (state.lang==='zh'?'你的卡片已安全锁在保险库里':(state.lang==='es'?'Tu tarjeta está a salvo en el cofre':'Your card is safe in the vault')) +
           '</h2>'+
           '<p style="font-size:14px;color:var(--cream);opacity:0.9;margin:0 auto 12px auto;max-width:340px;line-height:1.45;">'+
             t.vaultSub +
           '</p>'+
           '<div class="calmBreathingCircle">🌬️</div>'+
-          '<div class="breathingText" id="breathingText">'+ (state.lang==='es'?'Inhala despacio... y exhala... 🍃':'Breathe in... and breathe out... 🍃') +'</div>'+
+          '<div class="breathingText" id="breathingText">'+ (state.lang==='zh'?'慢慢吸气… 缓缓呼气… 🍃':(state.lang==='es'?'Inhala despacio... y exhala... 🍃':'Breathe in... and breathe out... 🍃')) +'</div>'+
           '<div style="display:flex;flex-direction:column;gap:10px;max-width:280px;margin:18px auto 0 auto;">'+
             '<button class="ghostBtn" id="vaultVoiceBtn" type="button" style="border-color:var(--sky);color:var(--sky);font-size:14px;font-weight:700;">'+
               t.voiceBtn +
@@ -2055,13 +2154,13 @@
         '<div class="card albumCompletedCard" style="margin-bottom:18px;text-align:center;padding:26px 18px;border:2px solid #f59e0b;background:radial-gradient(circle at top, rgba(245,158,11,0.22), rgba(0,0,0,0.5));">'+
           '<div style="font-size:56px;line-height:1;margin-bottom:8px;animation:popPrize 0.6s ease;">🏆</div>'+
           '<div style="font-family:\'Baloo 2\',sans-serif;font-size:24px;font-weight:800;color:var(--sand);margin-bottom:6px;">'+
-            (t.albumCompleteTitle || (state.lang==='es'?'¡Colección Completada!':'Collection Complete!')) +
+            (t.albumCompleteTitle || (state.lang==='zh'?'🏆 收集大圆满！':(state.lang==='es'?'¡Colección Completada!':'Collection Complete!'))) +
           '</div>'+
           '<p style="font-size:14px;color:var(--cream);opacity:0.9;margin:0 auto 12px auto;max-width:360px;line-height:1.45;">'+
-            (t.albumCompleteSub || (state.lang==='es'?'¡Has desbloqueado todos los '+totalCount+' espacios de este álbum! Guarda tu colección a salvo en el Cofre Permanente para conservarla para siempre, y empieza un nuevo álbum sin perder nada.':'You have filled all '+totalCount+' slots in this album! Store this collection safely in your permanent Vault so you never lose what you have earned, then start a fresh album!')) +
+            (state.lang==='zh' ? ('你已经集满了这本画册的所有 '+totalCount+' 个卡槽！将整套画册安全存入永久保险库，即可开启新画册，已获得的奖励永不丢失！') : (state.lang==='es' ? ('¡Has desbloqueado todos los '+totalCount+' espacios de este álbum! Guarda tu colección a salvo en el Cofre Permanente para conservarla para siempre, y empieza un nuevo álbum sin perder nada.') : ('You have filled all '+totalCount+' slots in this album! Store this collection safely in your permanent Vault so you never lose what you have earned, then start a fresh album!'))) +
           '</p>'+
           '<div style="display:inline-block;padding:5px 16px;border-radius:12px;background:rgba(16,185,129,0.22);border:1.5px solid rgba(16,185,129,0.65);color:#34d399;font-family:\'Baloo 2\',sans-serif;font-size:14px;font-weight:700;margin-bottom:18px;">'+
-            '✓ ' + unlockedCount + ' / ' + totalCount + ' ' + (t.albumSlotsFilled || (state.lang==='es'?'Espacios Llenos':'Slots Filled')) + ' ⭐'+
+            '✓ ' + unlockedCount + ' / ' + totalCount + ' ' + (t.albumSlotsFilled || (state.lang==='zh'?'已集满卡槽':(state.lang==='es'?'Espacios Llenos':'Slots Filled'))) + ' ⭐'+
           '</div>'+
           '<div style="display:flex;flex-direction:column;gap:10px;max-width:320px;margin:0 auto;">'+
             '<button class="bigBtn" id="vaultAndResetBtn" type="button" style="background:linear-gradient(135deg,#10b981,#059669);box-shadow:0 6px 20px rgba(16,185,129,0.35);font-size:15px;font-weight:800;">'+
@@ -2074,8 +2173,8 @@
         '</div>';
     } else if (state.activeScratchCard.revealed) {
       var item = state.activeScratchCard.item;
-      var itemName = state.lang === 'es' ? item.name_es : item.name_en;
-      var itemDesc = state.lang === 'es' ? item.desc_es : item.desc_en;
+      var itemName = state.lang === 'zh' ? (item.name_zh || item.name_en) : (state.lang === 'es' ? item.name_es : item.name_en);
+      var itemDesc = state.lang === 'zh' ? (item.desc_zh || item.desc_en) : (state.lang === 'es' ? item.desc_es : item.desc_en);
 
       var ageExtraHtml = '';
       if (item.ageGroup === 'young') {
@@ -2085,13 +2184,13 @@
             '<span class="countingStar countingStar-2">⭐</span>'+
             '<span class="countingStar countingStar-3">⭐</span>'+
           '</div>'+
-          '<div class="countingStarsText">'+ (t.countingStarsText || (state.lang==='es'?'¡1... 2... 3 Estrellas! ⭐⭐⭐':'1... 2... 3 Stars! ⭐⭐⭐')) +'</div>';
+          '<div class="countingStarsText">'+ (t.countingStarsText || (state.lang==='zh'?'1... 2... 3颗星！⭐⭐⭐ 太棒啦！':(state.lang==='es'?'¡1... 2... 3 Estrellas! ⭐⭐⭐':'1... 2... 3 Stars! ⭐⭐⭐'))) +'</div>';
       } else if (item.ageGroup === 'big') {
         if (item.type === 'perk') {
           ageExtraHtml = ''+
             '<div class="perkVoucherBox">'+
-              '🎟️ <strong>'+ (state.lang==='es'?'Vale Especial de Privilegio':'Family Privilege Voucher') +'</strong><br/>'+
-              '<span style="font-size:12px;opacity:0.9;">'+ (state.lang==='es'?'¡Muestra este vale a tus padres para canjear tu premio!':'Show this voucher to a parent to claim your reward!') +'</span>'+
+              '🎟️ <strong>'+ (state.lang==='zh'?'家庭特权兑换券':(state.lang==='es'?'Vale Especial de Privilegio':'Family Privilege Voucher')) +'</strong><br/>'+
+              '<span style="font-size:12px;opacity:0.9;">'+ (state.lang==='zh'?'向家长出示此券即可兑换你的奖励！':(state.lang==='es'?'¡Muestra este vale a tus padres para canjear tu premio!':'Show this voucher to a parent to claim your reward!')) +'</span>'+
             '</div>';
         } else {
           ageExtraHtml = ''+
@@ -2114,10 +2213,10 @@
       if (isAlbumFull) {
         actionButtonsHtml = ''+
           '<div style="background:rgba(245,158,11,0.22);border:2px solid #f59e0b;border-radius:14px;padding:12px 14px;margin-bottom:14px;color:var(--sand);font-weight:800;font-size:15px;">'+
-            '🏆 ' + (state.lang==='es'?'¡ESTA TARJETA COMPLETA TODOS LOS ESPACIOS!':'THIS CARD COMPLETES ALL SLOTS IN THE ALBUM!') + ' ('+unlockedCount+'/'+totalCount+')'+
+            '🏆 ' + (state.lang==='zh'?'本张卡片集齐了所有卡槽！':(state.lang==='es'?'¡ESTA TARJETA COMPLETA TODOS LOS ESPACIOS!':'THIS CARD COMPLETES ALL SLOTS IN THE ALBUM!')) + ' ('+unlockedCount+'/'+totalCount+')'+
           '</div>'+
           '<p style="font-size:13px;color:var(--cream);opacity:0.9;margin-bottom:14px;line-height:1.4;">'+
-            (state.lang==='es'?'¡Guarda toda la colección en tu Cofre permanente para no perderla jamás y empezar un nuevo álbum!':'Store this full collection in your permanent Vault so you never lose what you earned, and start a fresh album!')+
+            (state.lang==='zh'?'将整套画册存入永久保险库，即可开启新画册，已获得的奖励永不丢失！':(state.lang==='es'?'¡Guarda toda la colección en tu Cofre permanente para no perderla jamás y empezar un nuevo álbum!':'Store this full collection in your permanent Vault so you never lose what you earned, and start a fresh album!'))+
           '</p>'+
           '<div style="display:flex;flex-direction:column;gap:10px;max-width:320px;margin:0 auto;">'+
             '<button class="bigBtn" id="vaultAndResetBtn" type="button" style="background:linear-gradient(135deg,#10b981,#059669);box-shadow:0 6px 20px rgba(16,185,129,0.35);font-size:15px;font-weight:800;">'+
@@ -2149,11 +2248,11 @@
         '</div>';
     } else {
       var item = state.activeScratchCard.item;
-      var itemName = state.lang === 'es' ? item.name_es : item.name_en;
-      var itemDesc = state.lang === 'es' ? item.desc_es : item.desc_en;
+      var itemName = state.lang === 'zh' ? (item.name_zh || item.name_en) : (state.lang === 'es' ? item.name_es : item.name_en);
+      var itemDesc = state.lang === 'zh' ? (item.desc_zh || item.desc_en) : (state.lang === 'es' ? item.desc_es : item.desc_en);
       var underlayStars = '';
       if (item.ageGroup === 'young') underlayStars = '<div class="powerStarsRow" style="justify-content:center;margin-top:4px;">⭐⭐⭐</div>';
-      else if (item.ageGroup === 'big' && item.type === 'perk') underlayStars = '<div style="font-size:11px;color:#34d399;margin-top:4px;font-weight:700;">🎟️ PRIVILEGE VOUCHER</div>';
+      else if (item.ageGroup === 'big' && item.type === 'perk') underlayStars = '<div style="font-size:11px;color:#34d399;margin-top:4px;font-weight:700;">🎟️ '+(state.lang==='zh'?'特权券':(state.lang==='es'?'VALE':'PRIVILEGE VOUCHER'))+'</div>';
       else if (item.stars) underlayStars = '<div class="powerStarsRow" style="justify-content:center;margin-top:4px;">' + '⭐'.repeat(item.stars) + '</div>';
 
       var underlayVisual = item.img
@@ -2164,7 +2263,7 @@
         '<div class="card" style="margin-bottom:18px;text-align:center;padding:20px 16px;">'+
           '<h2 style="font-family:\'Baloo 2\',sans-serif;font-size:20px;color:var(--sand);margin:0 0 4px 0;">'+ t.scratchPrompt +'</h2>'+
           '<p style="font-size:13px;color:var(--cream);opacity:0.8;margin:0 0 10px 0;">'+
-            (state.lang==='es'?'¡Frota con el dedo para descubrir la sorpresa!':'Rub with your finger to reveal the secret prize!') +
+            (state.lang==='zh'?'用手指刮开即可揭晓神秘奖励！':(state.lang==='es'?'¡Frota con el dedo para descubrir la sorpresa!':'Rub with your finger to reveal the secret prize!')) +
           '</p>'+
           '<div class="scratchCardContainer" id="scratchCardContainer">'+
             '<div class="scratchUnderlay">'+
@@ -2177,22 +2276,22 @@
           '</div>'+
           '<div style="display:flex;gap:8px;margin-top:14px;">'+
             '<button class="ghostBtn" id="quickRevealBtn" type="button" style="flex:1;border-color:rgba(255,215,0,0.75);color:var(--sand);font-size:13.5px;font-weight:700;">'+
-              '✨ ' + (state.lang==='es'?'Revelar Tarjeta':'Quick Reveal') +
+              '✨ ' + (state.lang==='zh'?'直接揭开卡片':(state.lang==='es'?'Revelar Tarjeta':'Quick Reveal')) +
             '</button>'+
             '<button class="ghostBtn" id="vaultPauseBtn" type="button" style="flex:1;border-color:rgba(245,158,11,0.6);color:var(--sand);font-size:13.5px;">'+
               t.vaultPauseBtn +
             '</button>'+
           '</div>'+
           '<p style="font-size:12px;opacity:0.65;color:var(--cream);margin:8px 0 0 0;">'+
-            (state.lang==='es'?'Toca cualquier tarjeta del álbum abajo para verla en detalle.':'Tap any card in your album below to inspect its full artwork!') +
+            (state.lang==='zh'?'点击下方画册中的任意卡片可查看详情。':(state.lang==='es'?'Toca cualquier tarjeta del álbum abajo para verla en detalle.':'Tap any card in your album below to inspect its full artwork!')) +
           '</p>'+
         '</div>';
     }
 
     var albumGridHtml = ageCollectibles.map(function(c){
       var isUnlocked = collectedIds.indexOf(c.id) !== -1;
-      var name = state.lang === 'es' ? c.name_es : c.name_en;
-      var rarityLabel = (c.type === 'perk') ? (state.lang==='es'?'VALE':'PERK') : (c.rarity || 'common').toUpperCase();
+      var name = state.lang === 'zh' ? (c.name_zh || c.name_en) : (state.lang === 'es' ? c.name_es : c.name_en);
+      var rarityLabel = (c.type === 'perk') ? (state.lang==='zh'?'特权券':(state.lang==='es'?'VALE':'PERK')) : (state.lang==='zh'?'普通':(c.rarity || 'common').toUpperCase());
       var starsDisplay = c.stars ? '<div class="powerStarsRow">' + '⭐'.repeat(c.stars) + '</div>' : '';
 
       var cardVisual = '';
@@ -2271,23 +2370,23 @@
           '</div>'
         ) : '')+
         '<div style="font-size:13px;color:var(--sand);font-weight:700;margin-bottom:10px;">'+
-          (currentCharAudio ? ('✓ ' + (state.lang==='es'?'Clip de audio listo para: ':'Custom audio ready for: ') + activeChar.name) : (state.lang==='es'?'Sin audio propio aún. ¡Graba o sube tu versión de este personaje!':'No custom audio yet. Record or upload your version of this character!'))+
+          (currentCharAudio ? ('✓ ' + (state.lang==='zh'?'音频片段已就绪：':(state.lang==='es'?'Clip de audio listo para: ':'Custom audio ready for: ')) + activeChar.name) : (state.lang==='zh'?'暂无自定义音频。录音或上传属于该角色的声音吧！':(state.lang==='es'?'Sin audio propio aún. ¡Graba o sube tu versión de este personaje!':'No custom audio yet. Record or upload your version of this character!')))+
         '</div>'+
         '<div style="display:flex;gap:8px;flex-wrap:wrap;justify-content:center;align-items:center;">'+
           '<button class="ghostBtn" id="testVoiceBtn" type="button" style="font-size:13px;padding:8px 14px;border-color:var(--sand);color:var(--sand);font-weight:700;">'+
-            '▶ ' + (state.lang==='es'?'Reproducir / Probar':'Play / Test Clip') +
+            '▶ ' + (state.lang==='zh'?'播放 / 试听':(state.lang==='es'?'Reproducir / Probar':'Play / Test Clip')) +
           '</button>'+
           '<button class="ghostBtn" id="recordVoiceBtn" type="button" style="font-size:13px;padding:8px 14px;' + (state.isRecordingAudio ? 'background:#ef4444;color:#fff;border-color:#ef4444;' : '') + '">' +
-            (state.isRecordingAudio ? ('🔴 ' + t.stopRecordBtn) : ('⏺ ' + (state.lang==='es'?'Grabar Voz':'Record Voice'))) +
+            (state.isRecordingAudio ? ('🔴 ' + t.stopRecordBtn) : ('⏺ ' + (state.lang==='zh'?'录制语音':(state.lang==='es'?'Grabar Voz':'Record Voice')))) +
           '</button>'+
           '<label class="ghostBtn" style="font-size:13px;padding:8px 14px;cursor:pointer;margin:0;">'+
-            '📁 ' + (state.lang==='es'?'Subir Audio':'Upload Audio') +
+            '📁 ' + (state.lang==='zh'?'上传音频':(state.lang==='es'?'Subir Audio':'Upload Audio')) +
             '<input type="file" id="voiceFileInput" accept="audio/*" style="display:none;" />'+
           '</label>'+
-          (currentCharAudio ? ('<button class="ghostBtn" id="deleteVoiceBtn" type="button" style="font-size:13px;padding:8px 12px;opacity:0.75;color:#f87171;">🗑️ ' + (state.lang==='es'?'Borrar Clip':'Remove Clip') + '</button>') : '') +
+          (currentCharAudio ? ('<button class="ghostBtn" id="deleteVoiceBtn" type="button" style="font-size:13px;padding:8px 12px;opacity:0.75;color:#f87171;">🗑️ ' + (state.lang==='zh'?'删除片段':(state.lang==='es'?'Borrar Clip':'Remove Clip')) + '</button>') : '') +
         '</div>'+
         '<div style="font-size:12px;opacity:0.7;color:var(--cream);margin-top:8px;">'+
-          (state.lang==='es'?'Sube cualquier archivo de audio o graba con el micrófono para darle voz a este personaje durante las pausas de calma.':'Upload any audio file or record with your mic to bring this character to life during calm pauses.')+
+          (state.lang==='zh'?'上传任何音频文件或通过麦克风录音，在平静重置时为该角色发声。':(state.lang==='es'?'Sube cualquier archivo de audio o graba con el micrófono para darle voz a este personaje durante las pausas de calma.':'Upload any audio file or record with your mic to bring this character to life during calm pauses.'))+
         '</div>'+
       '</div>';
 
@@ -2328,20 +2427,20 @@
           '<div style="text-align:center;padding:30px 16px;background:rgba(255,255,255,0.04);border-radius:16px;border:1.5px dashed rgba(245,158,11,0.35);margin-bottom:12px;">'+
             '<div style="font-size:46px;margin-bottom:8px;">🔐</div>'+
             '<div style="font-family:\'Baloo 2\',sans-serif;font-size:18px;font-weight:800;color:var(--sand);margin-bottom:6px;">'+
-              (state.lang==='es'?'Tu Cofre de Tarjetas está Vacío':'Your Card Vault is Ready') +
+              (state.lang==='zh'?'你的卡片保险库已就绪':(state.lang==='es'?'Tu Cofre de Tarjetas está Vacío':'Your Card Vault is Ready')) +
             '</div>'+
             '<p style="font-size:13.5px;color:var(--cream);opacity:0.85;max-width:340px;margin:0 auto 16px auto;line-height:1.45;">'+
               t.vaultEmptyMsg +
             '</p>'+
             '<button class="ghostBtn albumViewBtn" data-albumview="active" type="button" style="border-color:var(--sand);color:var(--sand);font-size:13.5px;font-weight:700;">'+
-              '📖 ' + (state.lang==='es'?'Ver Álbum Actual':'View Current Album') +
+              '📖 ' + (state.lang==='zh'?'查看当前画册':(state.lang==='es'?'Ver Álbum Actual':'View Current Album')) +
             '</button>'+
           '</div>';
       } else {
         var vaultGridHtml = ageCollectibles.map(function(c){
           var vItem = vaultedAgeCards.find(function(v){ return v.id === c.id; });
-          var name = state.lang === 'es' ? c.name_es : c.name_en;
-          var rarityLabel = (c.type === 'perk') ? (state.lang==='es'?'VALE':'PERK') : (c.rarity || 'common').toUpperCase();
+          var name = state.lang === 'zh' ? (c.name_zh || c.name_en) : (state.lang === 'es' ? c.name_es : c.name_en);
+          var rarityLabel = (c.type === 'perk') ? (state.lang==='zh'?'特权券':(state.lang==='es'?'VALE':'PERK')) : (state.lang==='zh'?(c.rarity==='rare'?'稀有':(c.rarity==='legendary'?'传说':(c.rarity==='epic'?'史诗':'普通'))):(c.rarity || 'common').toUpperCase());
           var starsDisplay = c.stars ? '<div class="powerStarsRow">' + '⭐'.repeat(c.stars) + '</div>' : '';
 
           if (vItem) {
@@ -2353,8 +2452,8 @@
 
             var voucherMark = (c.type === 'perk')
               ? (vItem.redeemed
-                  ? '<div style="font-size:10px;color:#f87171;font-weight:900;margin-top:2px;">[CANJEADO]</div>'
-                  : '<div style="font-size:10px;color:#34d399;font-weight:900;margin-top:2px;">[VALE ACTIVO]</div>')
+                  ? '<div style="font-size:10px;color:#f87171;font-weight:900;margin-top:2px;">[' + (state.lang==='zh'?'已兑换':(state.lang==='es'?'CANJEADO':'REDEEMED')) + ']</div>'
+                  : '<div style="font-size:10px;color:#34d399;font-weight:900;margin-top:2px;">[' + (state.lang==='zh'?'有效特权':(state.lang==='es'?'VALE ACTIVO':'ACTIVE PASS')) + ']</div>')
               : '';
 
             return ''+
@@ -2384,12 +2483,14 @@
         albumContentHtml = ''+
           '<div style="background:linear-gradient(135deg,rgba(16,185,129,0.18),rgba(245,158,11,0.18));border:1.5px solid rgba(16,185,129,0.45);border-radius:14px;padding:12px 14px;margin-bottom:14px;text-align:center;">'+
             '<div style="font-family:\'Baloo 2\',sans-serif;font-size:16px;font-weight:800;color:var(--sand);">'+
-              '🔐 ' + (state.lang==='es'?'Cofre Seguro de Colecciones Guardadas':'Permanent Vault Storage') +
+              '🔐 ' + (state.lang==='zh'?'已存入画册永久保险库':(state.lang==='es'?'Cofre Seguro de Colecciones Guardadas':'Permanent Vault Storage')) +
             '</div>'+
             '<div style="font-size:13px;color:var(--cream);opacity:0.9;margin-top:2px;">'+
-              (state.lang==='es'
-                ? ('¡Aquí se conservan para siempre todas las cartas que ganas! Colecciones completadas: ' + completedRuns + ' · Copias totales: ' + totalVaultedCopies)
-                : ('Cards you earn are permanently kept here! Completed collections banked: ' + completedRuns + ' · Total cards: ' + totalVaultedCopies))+
+              (state.lang==='zh'
+                ? ('你获得的卡片将永久保存在这里！已封存画册套数：' + completedRuns + ' · 卡片总数：' + totalVaultedCopies)
+                : (state.lang==='es'
+                  ? ('¡Aquí se conservan para siempre todas las cartas que ganas! Colecciones completadas: ' + completedRuns + ' · Copias totales: ' + totalVaultedCopies)
+                  : ('Cards you earn are permanently kept here! Completed collections banked: ' + completedRuns + ' · Total cards: ' + totalVaultedCopies)))+
             '</div>'+
           '</div>'+
           '<div class="stickerAlbumGrid">'+
@@ -2397,7 +2498,7 @@
           '</div>'+
           '<div style="text-align:center;margin-top:16px;">'+
             '<button class="ghostBtn albumViewBtn" data-albumview="active" type="button" style="border-color:var(--sand);color:var(--sand);font-size:13px;font-weight:700;">'+
-              '📖 ' + (state.lang==='es'?'Volver al Álbum Actual':'Back to Current Album') +
+              '📖 ' + (state.lang==='zh'?'返回当前画册':(state.lang==='es'?'Volver al Álbum Actual':'Back to Current Album')) +
             '</button>'+
           '</div>';
       }
@@ -2405,7 +2506,7 @@
       var fullBanner = isAlbumFull
         ? ('<div style="background:rgba(245,158,11,0.22);border:1.5px solid #f59e0b;border-radius:12px;padding:10px 14px;margin-bottom:14px;display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;">'+
             '<div style="font-size:13px;color:var(--sand);font-weight:700;">'+
-              '🏆 ' + (state.lang==='es'?'¡Álbum completo! Guárdalo en el cofre para no perderlo.':'Album full! Store in vault to keep them forever.')+
+              '🏆 ' + (state.lang==='zh'?'画册已集满！存入保险库永久珍藏吧。':(state.lang==='es'?'¡Álbum completo! Guárdalo en el cofre para no perderlo.':'Album full! Store in vault to keep them forever.'))+
             '</div>'+
             '<button class="bigBtn" id="vaultAndResetBtn" type="button" style="background:linear-gradient(135deg,#10b981,#059669);padding:7px 14px;font-size:13px;font-weight:800;box-shadow:none;">'+
               t.storeInVaultBtn +
@@ -2434,7 +2535,7 @@
         '<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;">'+
           '<h2 style="font-family:\'Baloo 2\',sans-serif;font-size:20px;color:var(--cream);margin:0;">'+ (viewMode==='vault' ? ('🔐 ' + t.vaultArchiveTab) : albumTitleText) +'</h2>'+
           '<span style="font-family:\'Baloo 2\',sans-serif;font-size:15px;font-weight:700;color:var(--sand);">'+
-            (viewMode==='vault' ? (vaultedAgeCards.length + ' / ' + totalCount + ' ' + (state.lang==='es'?'Guardadas':'Vaulted')) : (unlockedCount + ' / ' + totalCount)) +
+            (viewMode==='vault' ? (vaultedAgeCards.length + ' / ' + totalCount + ' ' + (state.lang==='zh'?'已封存':(state.lang==='es'?'Guardadas':'Vaulted'))) : (unlockedCount + ' / ' + totalCount)) +
           '</span>'+
         '</div>'+
         albumContentHtml +
@@ -2445,8 +2546,8 @@
       var allCards = (COLLECTIBLES_BY_AGE.young || []).concat(COLLECTIBLES_BY_AGE.mid || []).concat(COLLECTIBLES_BY_AGE.big || []);
       var pCard = allCards.find(function(c){ return c.id === state.previewingCardId; });
       if (pCard) {
-        var pName = state.lang === 'es' ? pCard.name_es : pCard.name_en;
-        var pDesc = state.lang === 'es' ? pCard.desc_es : pCard.desc_en;
+        var pName = state.lang === 'zh' ? (pCard.name_zh || pCard.name_en) : (state.lang === 'es' ? pCard.name_es : pCard.name_en);
+        var pDesc = state.lang === 'zh' ? (pCard.desc_zh || pCard.desc_en) : (state.lang === 'es' ? pCard.desc_es : pCard.desc_en);
         var pVisual = pCard.img
           ? '<img class="cardModalImg" src="'+pCard.img+'" alt="'+pName+'" />'
           : '<div class="cardModalIcon">'+pCard.icon+'</div>';
@@ -2459,13 +2560,13 @@
 
         var cardStatusText = '';
         if (isCollected && isVaulted) {
-          cardStatusText = '✓ ' + (state.lang==='es'?'¡En tu Álbum y a salvo en el Cofre! (Copias: x'+(vCard.count||1)+')':'In Current Album & Saved in Vault! (Copies: x'+(vCard.count||1)+')');
+          cardStatusText = '✓ ' + (state.lang==='zh'?'已在当前画册中并已存入保险库！(拥有数量: x'+(vCard.count||1)+')':(state.lang==='es'?'¡En tu Álbum y a salvo en el Cofre! (Copias: x'+(vCard.count||1)+')':'In Current Album & Saved in Vault! (Copies: x'+(vCard.count||1)+')'));
         } else if (isVaulted) {
-          cardStatusText = '🔐 ' + (state.lang==='es'?'¡A salvo en tu Cofre! (Copias: x'+(vCard.count||1)+')':'Safely Stored in Your Vault! (Copies: x'+(vCard.count||1)+')');
+          cardStatusText = '🔐 ' + (state.lang==='zh'?'已安全封存在你的保险库中！(拥有数量: x'+(vCard.count||1)+')':(state.lang==='es'?'¡A salvo en tu Cofre! (Copias: x'+(vCard.count||1)+')':'Safely Stored in Your Vault! (Copies: x'+(vCard.count||1)+')'));
         } else if (isCollected) {
-          cardStatusText = '✓ ' + (state.lang==='es'?'¡En tu Álbum de Colección!':'In Your Collection Album!');
+          cardStatusText = '✓ ' + (state.lang==='zh'?'已收入你的收藏画册！':(state.lang==='es'?'¡En tu Álbum de Colección!':'In Your Collection Album!'));
         } else {
-          cardStatusText = '🔒 ' + (state.lang==='es'?'¡Rasca para Ganar!':'Scratch to Unlock!');
+          cardStatusText = '🔒 ' + (state.lang==='zh'?'刮开卡片即可解锁！':(state.lang==='es'?'¡Rasca para Ganar!':'Scratch to Unlock!'));
         }
 
         var voucherActions = '';
@@ -2473,11 +2574,11 @@
           if (isCollected || isVaulted) {
             if (isRedeemed) {
               voucherActions = '<div class="redeemedBadge" style="margin:10px 0;padding:8px 16px;background:rgba(239,68,68,0.2);border:2px dashed #ef4444;border-radius:10px;color:#fca5a5;font-weight:900;font-size:14px;letter-spacing:1px;text-transform:uppercase;">' +
-                '✅ ' + (state.lang==='es'?'¡CANJEADO CON PADRES!':'REDEEMED WITH PARENT!') +
+                '✅ ' + (state.lang==='zh'?'已与家长兑换！':(state.lang==='es'?'¡CANJEADO CON PADRES!':'REDEEMED WITH PARENT!')) +
               '</div>';
             } else {
               voucherActions = '<button class="bigBtn" id="cardModalClaimBtn" data-cardid="'+pCard.id+'" type="button" style="background:linear-gradient(135deg,#10b981,#059669);font-size:14px;padding:11px 18px;margin:10px 0;box-shadow:0 0 15px rgba(16,185,129,0.4);">' +
-                '🎟️ ' + (state.lang==='es'?'Canjear Pase con Papá / Mamá':'Claim Pass With Parent') +
+                '🎟️ ' + (state.lang==='zh'?'与家长兑换特权券':(state.lang==='es'?'Canjear Pase con Papá / Mamá':'Claim Pass With Parent')) +
               '</button>';
             }
           }
@@ -2498,7 +2599,7 @@
               voucherActions +
               '<div class="cardModalActions">'+
                 '<button class="bigBtn" id="cardModalScratchThisBtn" data-cardid="'+pCard.id+'" type="button" style="background:linear-gradient(135deg,#f59e0b,#d97706);font-size:14px;padding:10px 16px;">'+
-                  '🎁 ' + (state.lang==='es'?'¡Rascar Esta Tarjeta Ahora!':'Scratch This Card Now!') +
+                  '🎁 ' + (state.lang==='zh'?'立即刮开这张卡片！':(state.lang==='es'?'¡Rascar Esta Tarjeta Ahora!':'Scratch This Card Now!')) +
                 '</button>'+
               '</div>'+
             '</div>'+
@@ -2508,7 +2609,7 @@
 
     return renderHomeTabSwitcher(t) +
       langToggleHTML() +
-      '<div class="modeTag">🎁 '+ (state.lang==='es'?'Premios y Colección':'Rewards & Collection') +'</div>'+
+      '<div class="modeTag">🎁 '+ (state.lang==='zh'?'奖励与画册':(state.lang==='es'?'Premios y Colección':'Rewards & Collection')) +'</div>'+
       '<h1 class="title display">'+ t.rewardsTitle +'</h1>'+
       '<p class="sub" style="margin-bottom:12px;">'+ t.rewardsSub +'</p>'+
       topAgeSelectorHtml +
@@ -2558,10 +2659,10 @@
 
       ctx.fillStyle = '#6b21a8';
       ctx.font = 'bold 20px "Baloo 2", sans-serif';
-      ctx.fillText(state.lang === 'es' ? '🎈 ¡RASCA Y MIRA! 🌟' : '🎈 SCRATCH & PEEK! 🌟', width / 2, height / 2 - 4);
+      ctx.fillText(state.lang === 'zh' ? '🎈 刮开看惊喜！🌟' : (state.lang === 'es' ? '🎈 ¡RASCA Y MIRA! 🌟' : '🎈 SCRATCH & PEEK! 🌟'), width / 2, height / 2 - 4);
       ctx.font = 'bold 13px "Quicksand", sans-serif';
       ctx.fillStyle = '#7c3aed';
-      ctx.fillText(state.lang === 'es' ? 'Frota suavemente para descubrir' : 'Gentle rub to reveal prize', width / 2, height / 2 + 20);
+      ctx.fillText(state.lang === 'zh' ? '轻轻涂抹揭晓奖励' : (state.lang === 'es' ? 'Frota suavemente para descubrir' : 'Gentle rub to reveal prize'), width / 2, height / 2 + 20);
 
     } else if (itemAge === 'big') {
       brushRadius = 26;
@@ -2601,10 +2702,10 @@
 
       ctx.fillStyle = '#38bdf8';
       ctx.font = 'bold 19px "Baloo 2", sans-serif';
-      ctx.fillText(state.lang === 'es' ? '⚡ DESBLOQUEAR BOTÍN 🎮' : '⚡ UNLOCK LOOT CRATE 🎮', width / 2, height / 2 - 4);
+      ctx.fillText(state.lang === 'zh' ? '⚡ 解锁战利品箱 🎮' : (state.lang === 'es' ? '⚡ DESBLOQUEAR BOTÍN 🎮' : '⚡ UNLOCK LOOT CRATE 🎮'), width / 2, height / 2 - 4);
       ctx.font = '12px "Quicksand", sans-serif';
       ctx.fillStyle = '#94a3b8';
-      ctx.fillText(state.lang === 'es' ? 'Rasca para desencriptar tu recompensa' : 'Scratch to decrypt reward', width / 2, height / 2 + 20);
+      ctx.fillText(state.lang === 'zh' ? '刮开以解密你的专属奖励' : (state.lang === 'es' ? 'Rasca para desencriptar tu recompensa' : 'Scratch to decrypt reward'), width / 2, height / 2 + 20);
 
     } else {
       // Golden Aztec Treasure Foil for Middle Kids (Ages 5-7)
@@ -2628,10 +2729,10 @@
 
       ctx.fillStyle = '#4a2c00';
       ctx.font = 'bold 20px "Baloo 2", sans-serif';
-      ctx.fillText(state.lang === 'es' ? '🪙 ¡RASCA EL TESORO! ✨' : '🪙 SCRATCH THE TREASURE! ✨', width / 2, height / 2 - 4);
+      ctx.fillText(state.lang === 'zh' ? '🪙 刮开神秘宝藏！✨' : (state.lang === 'es' ? '🪙 ¡RASCA EL TESORO! ✨' : '🪙 SCRATCH THE TREASURE! ✨'), width / 2, height / 2 - 4);
       ctx.font = '13px "Quicksand", sans-serif';
       ctx.fillStyle = '#6b4608';
-      ctx.fillText(state.lang === 'es' ? 'Frota con el dedo para descubrir' : 'Rub to reveal prize', width / 2, height / 2 + 20);
+      ctx.fillText(state.lang === 'zh' ? '用手指滑动揭开宝藏' : (state.lang === 'es' ? 'Frota con el dedo para descubrir' : 'Rub to reveal prize'), width / 2, height / 2 + 20);
     }
 
     var isScratching = false;
@@ -2727,409 +2828,507 @@
     }
   }
 
-function renderDailyTasksSetup(t){
-    var currentInfo = state.taskId ? getTaskInfo() : null;
-    if (!state.taskMinutes) {
-      state.taskMinutes = { teeth: 2, shoes: 3, clothes: 5, tidy: 5, food: 15, bag: 3, custom: 5 };
-    }
+  function renderSteppedSetup(t){
+    var curStep = state.setupStep || 1;
+    if(curStep < 1) curStep = 1;
+    if(curStep > 3) curStep = 3;
 
-    var taskCardsHtml = DAILY_TASKS.map(function(task){
-      var isActive = state.taskId === task.id;
-      var isCustom = task.id === 'custom' && state.taskCustomName && state.taskCustomName.trim();
-      var primaryName = state.lang === 'zh' ? (task.name_zh || task.name_en) : (state.lang === 'es' ? task.name_es : task.name_en);
-      if (isCustom) {
-        primaryName = state.taskCustomName.trim();
+    // Last routine for Quick Start
+    var lastMode = null;
+    var lastTaskId = null;
+    var lastMin = 5;
+    try {
+      if(typeof window !== 'undefined' && window.localStorage){
+        lastMode = localStorage.getItem('calm_last_routine_mode');
+        lastTaskId = localStorage.getItem('calm_last_routine_task');
+        lastMin = parseInt(localStorage.getItem('calm_last_routine_min'), 10) || 5;
       }
-      var m = state.taskMinutes[task.id] != null ? state.taskMinutes[task.id] : task.defaultMin;
+    } catch(e){}
 
-      var badgeHtml = '';
-      if (isActive) {
-        badgeHtml = ''+
-          '<div class="taskCardStepper">'+
-            '<button class="taskMiniStep minus" data-step="-1" type="button" aria-label="Decrease time" title="Less time">−</button>'+
-            '<span class="taskCardBadge active">'+m+' min</span>'+
-            '<button class="taskMiniStep plus" data-step="1" type="button" aria-label="Increase time" title="More time">+</button>'+
-          '</div>';
-      } else {
-        badgeHtml = '<span class="taskCardBadge">'+m+' min</span>';
-      }
-
-      var cardTitle = (isActive ? (t.deselectTaskBtn || 'Deselect') : primaryName).replace(/<[^>]*>/g, '');
-      var subLangsHtml = '';
-      if(!isCustom && task.id !== 'custom'){
-        if(state.lang === 'en'){
-          subLangsHtml = '<div class="taskCardLangs"><span class="taskCardLangPill">ES: '+task.name_es+'</span><span class="taskCardLangPill">中文: '+task.name_zh+'</span></div>';
-        } else if(state.lang === 'es'){
-          subLangsHtml = '<div class="taskCardLangs"><span class="taskCardLangPill">EN: '+task.name_en+'</span><span class="taskCardLangPill">中文: '+task.name_zh+'</span></div>';
-        } else {
-          subLangsHtml = '<div class="taskCardLangs"><span class="taskCardLangPill">EN: '+task.name_en+'</span><span class="taskCardLangPill">ES: '+task.name_es+'</span></div>';
-        }
-      }
-
-      return ''+
-        '<div class="taskCard '+(isActive?'active':'')+'" data-taskid="'+task.id+'" role="button" tabindex="0" title="'+cardTitle+'">'+
-          '<span class="taskCardIcon">'+task.icon+'</span>'+
-          '<span class="taskCardName">'+primaryName+'</span>'+
-          subLangsHtml +
-          badgeHtml +
-        '</div>';
-    }).join('');
-
-    var bannerHtml = '';
-    if (state.taskId && currentInfo) {
-      var currentMin = state.taskMinutes[state.taskId] != null ? state.taskMinutes[state.taskId] : currentInfo.defaultMin;
-      var bannerSubLangs = '';
-      if(state.taskId !== 'custom'){
-        if(state.lang === 'en'){
-          bannerSubLangs = '<div class="taskSelectedSubLangs"><span>ES: ' + currentInfo.name_es + '</span> · <span>中文: ' + currentInfo.name_zh + '</span></div>';
-        } else if(state.lang === 'es'){
-          bannerSubLangs = '<div class="taskSelectedSubLangs"><span>EN: ' + currentInfo.name_en + '</span> · <span>中文: ' + currentInfo.name_zh + '</span></div>';
-        } else {
-          bannerSubLangs = '<div class="taskSelectedSubLangs"><span>EN: ' + currentInfo.name_en + '</span> · <span>ES: ' + currentInfo.name_es + '</span></div>';
-        }
-      }
-      bannerHtml = ''+
-        '<div class="taskSelectedBanner">'+
-          '<div class="taskSelectedInfo">'+
-            '<span class="taskSelectedIcon">'+currentInfo.icon+'</span>'+
-            '<div class="taskSelectedTextWrap">'+
-              '<div class="taskSelectedTag">'+(state.lang === 'zh' ? '已选常规' : (state.lang === 'es' ? 'Rutina seleccionada' : 'Selected routine'))+'</div>'+
-              '<div class="taskSelectedName">'+currentInfo.name+'</div>'+
-              bannerSubLangs +
-            '</div>'+
-          '</div>'+
-          '<div class="taskSelectedControls">'+
-            '<div class="taskBannerStepper">'+
-              '<button class="taskBannerStep minus" data-step="-1" type="button" aria-label="Decrease time">−</button>'+
-              '<span class="taskBannerValue">'+currentMin+' min</span>'+
-              '<button class="taskBannerStep plus" data-step="1" type="button" aria-label="Increase time">+</button>'+
-            '</div>'+
-            '<button type="button" class="taskDeselectBtn" id="taskDeselectBtn" title="'+(state.lang === 'zh' ? '更换常规任务' : (state.lang === 'es' ? 'Cambiar rutina' : 'Change routine'))+'">'+(state.lang === 'zh' ? '✕ 更换' : (state.lang === 'es' ? '✕ Cambiar' : '✕ Change'))+'</button>'+
-          '</div>'+
-        '</div>';
+    var quickStartIcon = '⚡';
+    var quickStartName = '';
+    if (lastTaskId && lastTaskId !== 'null' && lastTaskId !== '') {
+      var tItem = DAILY_TASKS.find(function(tk){ return tk.id === lastTaskId; }) || DAILY_TASKS[0];
+      quickStartIcon = tItem.icon;
+      quickStartName = state.lang === 'zh' ? (tItem.name_zh || tItem.name_en) : (state.lang === 'es' ? tItem.name_es : tItem.name_en);
     } else {
-      bannerHtml = ''+
-        '<div class="taskSelectedBanner empty">'+
-          '<span class="taskSelectedEmptyIcon">👆</span>'+
-          '<span class="taskSelectedEmptyText">'+(t.noTaskSelectedPrompt || (state.lang === 'zh' ? '点击上方常规任务以开始' : (state.lang === 'es' ? 'Pulsa una rutina arriba para comenzar' : 'Tap a routine above to get started')))+'</span>'+
-        '</div>';
+      var mKey = lastMode || state.mode || 'leaving';
+      if (mKey === 'screen') {
+        quickStartIcon = '📱';
+        quickStartName = state.lang === 'zh' ? '关掉屏幕时间' : (state.lang === 'es' ? 'Terminar Pantalla' : 'End Screen Time');
+      } else if (mKey === 'bedtime') {
+        quickStartIcon = '🌙';
+        quickStartName = state.lang === 'zh' ? '睡前就寝' : (state.lang === 'es' ? 'Hora de Dormir' : 'Bedtime Wind-Down');
+      } else {
+        quickStartIcon = '🌳';
+        quickStartName = state.lang === 'zh' ? '结束玩耍' : (state.lang === 'es' ? 'Terminar de Jugar' : 'Leaving Play / Park');
+      }
     }
+    quickStartName = quickStartName.replace(/<[^>]*>/g, '');
 
-    var customInputHtml = (state.taskId === 'custom') ? (
-      '<div class="customTaskRow" style="margin-top:10px;">'+
-        '<input type="text" id="customTaskNameInput" class="customTaskInput" placeholder="'+t.customTaskPlaceholder+'" value="'+(state.taskCustomName||'')+'" maxlength="40" />'+
-      '</div>'
-    ) : '';
-
-    var timerThemeChips = TIMER_THEMES.map(function(theme){
-      var thumb = theme.images[0];
-      var label = state.lang==='es' ? theme.name_es : theme.name_en;
-      var isActive = state.style === theme.id;
-      return ''+
-        '<button class="seg-timerstyle'+(isActive?' active':'')+'" data-timerstyle="'+theme.id+'" type="button">'+
-          '<img src="'+thumb+'" alt="" />'+
-          '<span>'+label+'</span>'+
-        '</button>';
-    }).join('');
-
-    var curThemeObj = getTheme(state.style);
-    var flavorText = state.lang === 'zh' ? (curThemeObj.flavor_zh || curThemeObj.flavor_en) : (state.lang === 'es' ? curThemeObj.flavor_es : curThemeObj.flavor_en);
-    var previewMarkup = ''+
-      '<div class="themePreviewCard" style="margin-top:14px; text-align:center;">'+
-        '<div class="magicCaption" style="margin-top:8px;font-size:14px;color:var(--sand);">'+flavorText+'</div>'+
+    var quickStartBannerHtml = ''+
+      '<div class="quickStartBanner" id="quickStartBanner" role="button" tabindex="0" title="'+(t.quickStartTap || 'Tap to Start ➔')+'">'+
+        '<div class="quickStartIcon">'+quickStartIcon+'</div>'+
+        '<div class="quickStartText">'+
+          '<div class="quickStartTitle">'+(t.quickStartLast || '⚡ Quick Start:')+' '+quickStartName+' ('+lastMin+' min)</div>'+
+          '<div class="quickStartSub">'+(t.quickStartTap || 'Tap to Start ➔')+'</div>'+
+        '</div>'+
+        '<span class="quickStartArrow">➔</span>'+
       '</div>';
 
-    var ctaButton = state.taskId ? (
-      '<button class="bigBtn" id="handOverBtn" type="button" style="margin-top:14px;">'+t.handOverBtn+'</button>'
-    ) : (
-      '<button class="bigBtn" id="handOverBtn" type="button" style="margin-top:14px; opacity:0.65; cursor:pointer;">'+(t.selectTaskFirstBtn || '👆 Tap a routine above to get started')+'</button>'
-    );
+    // Step dots indicator
+    var dotsHtml = [1, 2, 3].map(function(s){
+      var cls = 'wizardStepDot';
+      if(s === curStep) cls += ' active';
+      else if(s < curStep) cls += ' completed';
+      return '<button class="'+cls+'" data-goto-step="'+s+'" type="button" aria-label="Step '+s+'">'+(s < curStep ? '✓' : s)+'</button>';
+    }).join('');
 
-    return ''+
-      '<div class="card">'+
-        renderHomeTabSwitcher(t) +
-        langToggleHTML() +
-        '<div class="modeTag">'+(t.tasksTag || (state.lang==='es'?'Rutinas Diarias':'Daily Routines'))+'</div>'+
-        '<h1 class="title display">'+(t.tasksTitle || (state.lang==='es'?'Rutinas Diarias':'Daily Tasks'))+'</h1>'+
-        '<p class="sub">'+(t.tasksSub || (state.lang==='es'?'Rutinas claras y tranquilas para hábitos diarios.':'Predictable, calm routines for everyday habits.'))+'</p>'+
+    var stepTitle = curStep === 1
+      ? (t.step1Title || '1. Who & Routine')
+      : (curStep === 2 ? (t.step2Title || '2. Time & Style') : (t.step3Title || '3. Hand Over to Child'));
+    var stepOfLabel = (t.stepOf || 'Step {current} of {total}').replace('{current}', curStep).replace('{total}', 3);
 
+    var wizardHeader = ''+
+      '<div class="wizardHeaderBar">'+
+        '<div class="wizardStepDots">'+ dotsHtml +'</div>'+
+        '<div class="wizardStepPill">'+ stepOfLabel +'</div>'+
+        '<h2 class="wizardStepTitle">'+ stepTitle +'</h2>'+
+        '<div class="swipeGestureHint">'+(t.swipeTip || '👈 Swipe or tap dots to change steps 👉')+'</div>'+
+      '</div>';
+
+    // Build Step 1 Content
+    var step1Html = '';
+    if (curStep === 1) {
+      var ageSection = ''+
         '<div class="field">'+
-          '<label>'+(state.lang==='zh' ? '1. 孩子年龄' : (state.lang==='es' ? '1. Edad del peque' : '1. Child\'s age'))+'</label>'+
+          '<label style="font-weight:800;font-size:15.5px;margin-bottom:8px;">'+(state.lang==='zh'?'👶 孩子年龄段':(state.lang==='es'?'👶 Edad del peque':'👶 Child\'s Age'))+'</label>'+
           '<div class="seg">'+
             '<button class="seg-age '+(state.age==='young'?'active':'')+'" data-age="young" type="button">'+t.age24+'</button>'+
             '<button class="seg-age '+(state.age==='mid'?'active':'')+'" data-age="mid" type="button">'+t.age57+'</button>'+
             '<button class="seg-age '+(state.age==='big'?'active':'')+'" data-age="big" type="button">'+t.age8+'</button>'+
           '</div>'+
-        '</div>'+
+        '</div>';
 
-        '<div class="field">'+
-          '<label>'+(state.lang==='zh' ? '2. 选择日常自理任务' : (state.lang==='es' ? '2. Elige una rutina diaria' : '2. Choose a daily routine'))+'</label>'+
-          '<div class="taskGrid">'+
-            taskCardsHtml +
-          '</div>'+
-          customInputHtml +
-          bannerHtml +
-        '</div>'+
+      var routinesSection = '';
+      if (state.homeTab === 'tasks') {
+        if (!state.taskMinutes) {
+          state.taskMinutes = { teeth: 2, shoes: 3, clothes: 5, tidy: 5, food: 15, bag: 3, bath: 15, custom: 5 };
+        }
+        var taskCardsHtml = DAILY_TASKS.map(function(task){
+          var isActive = state.taskId === task.id;
+          var isCustom = task.id === 'custom' && state.taskCustomName && state.taskCustomName.trim();
+          var primaryName = state.lang === 'zh' ? (task.name_zh || task.name_en) : (state.lang === 'es' ? task.name_es : task.name_en);
+          if (isCustom) primaryName = state.taskCustomName.trim();
+          var m = state.taskMinutes[task.id] != null ? state.taskMinutes[task.id] : task.defaultMin;
 
-        '<div class="field">'+
-          '<label>'+(state.lang==='zh' ? '3. 倒计时器样式' : (state.lang==='es' ? '3. Estilo de reloj' : '3. Timer style'))+'</label>'+
-          '<div class="seg" style="margin-bottom:12px;">'+
-            '<button class="seg-timermode '+(state.timerMode==='classic'?'active':'')+'" data-timermode="classic" type="button">'+t.modeClassic+'</button>'+
-            '<button class="seg-timermode '+(state.timerMode==='transformation'?'active':'')+'" data-timermode="transformation" type="button">'+t.modeTransform+'</button>'+
-          '</div>'+
-          (state.timerMode==='transformation' ? (
-            '<div class="timerThemeChips">'+
-              timerThemeChips +
+          var badgeHtml = '';
+          if (isActive) {
+            badgeHtml = ''+
+              '<div class="taskCardStepper">'+
+                '<button class="taskMiniStep minus" data-step="-1" type="button" aria-label="Decrease time" title="Less time">−</button>'+
+                '<span class="taskCardBadge active">'+m+' min</span>'+
+                '<button class="taskMiniStep plus" data-step="1" type="button" aria-label="Increase time" title="More time">+</button>'+
+              '</div>';
+          } else {
+            badgeHtml = '<span class="taskCardBadge">'+m+' min</span>';
+          }
+
+          var cardTitle = (isActive ? (t.deselectTaskBtn || 'Deselect') : primaryName).replace(/<[^>]*>/g, '');
+          var cleanPrimary = cleanSpeechText(primaryName, state.lang);
+          var voiceBtnLabel = t.taskVoiceBtnLabel || (state.lang === 'zh' ? '🔊 语音' : (state.lang === 'es' ? '🔊 Voz' : '🔊 Voice'));
+          var primaryVoiceBtn = '<button type="button" class="taskVoiceBtn notranslate" translate="no" data-speak-lang="'+state.lang+'" data-speak-text="'+cleanPrimary+'" title="'+(state.lang==='zh'?'收听语音':(state.lang==='es'?'Escuchar voz':'Listen to voice'))+'" aria-label="'+voiceBtnLabel.replace(/<[^>]*>/g, '')+'">'+
+            voiceBtnLabel +
+          '</button>';
+
+          var subLangsHtml = '';
+          if (!isCustom && task.id !== 'custom') {
+            var cleanEn = cleanSpeechText(task.name_en, 'en');
+            var cleanEs = cleanSpeechText(task.name_es, 'es');
+            var cleanZh = cleanSpeechText(task.name_zh, 'zh');
+            if (state.lang === 'en') {
+              subLangsHtml = '<div class="taskCardLangs">'+
+                '<button type="button" class="taskLangVoiceBtn notranslate" translate="no" data-speak-lang="es" data-speak-text="'+cleanEs+'" title="Escuchar en español"><span class="taskLangBadge">ES 🔊</span> <span class="taskLangText">'+task.name_es+'</span></button>'+
+                '<button type="button" class="taskLangVoiceBtn notranslate" translate="no" data-speak-lang="zh" data-speak-text="'+cleanZh+'" title="收听中文"><span class="taskLangBadge">中文 🔊</span> <span class="taskLangText">'+task.name_zh+'</span></button>'+
+              '</div>';
+            } else if (state.lang === 'es') {
+              subLangsHtml = '<div class="taskCardLangs">'+
+                '<button type="button" class="taskLangVoiceBtn notranslate" translate="no" data-speak-lang="en" data-speak-text="'+cleanEn+'" title="Listen in English"><span class="taskLangBadge">EN 🔊</span> <span class="taskLangText">'+task.name_en+'</span></button>'+
+                '<button type="button" class="taskLangVoiceBtn notranslate" translate="no" data-speak-lang="zh" data-speak-text="'+cleanZh+'" title="收听中文"><span class="taskLangBadge">中文 🔊</span> <span class="taskLangText">'+task.name_zh+'</span></button>'+
+              '</div>';
+            } else {
+              subLangsHtml = '<div class="taskCardLangs">'+
+                '<button type="button" class="taskLangVoiceBtn notranslate" translate="no" data-speak-lang="en" data-speak-text="'+cleanEn+'" title="Listen in English"><span class="taskLangBadge">EN 🔊</span> <span class="taskLangText">'+task.name_en+'</span></button>'+
+                '<button type="button" class="taskLangVoiceBtn notranslate" translate="no" data-speak-lang="es" data-speak-text="'+cleanEs+'" title="Escuchar en español"><span class="taskLangBadge">ES 🔊</span> <span class="taskLangText">'+task.name_es+'</span></button>'+
+              '</div>';
+            }
+          }
+
+          return ''+
+            '<div class="taskCard wizardCardItem '+(isActive?'active':'')+'" data-taskid="'+task.id+'" role="button" tabindex="0" title="'+cardTitle+'">'+
+              '<div class="taskCardLeft"><span class="taskCardIcon">'+task.icon+'</span></div>'+
+              '<div class="taskCardMain">'+
+                '<div class="taskCardTitleRow">'+
+                  '<span class="taskCardName">'+primaryName+'</span>'+
+                  primaryVoiceBtn +
+                '</div>'+
+                subLangsHtml +
+              '</div>'+
+              '<div class="taskCardRight">'+ badgeHtml +'</div>'+
+            '</div>';
+        }).join('');
+
+        var customInputHtml = (state.taskId === 'custom') ? (
+          '<div class="customTaskRow" style="margin-top:10px;">'+
+            '<input type="text" id="customTaskNameInput" class="customTaskInput" placeholder="'+t.customTaskPlaceholder+'" value="'+(state.taskCustomName||'')+'" maxlength="40" />'+
+          '</div>'
+        ) : '';
+
+        routinesSection = ''+
+          '<div class="field">'+
+            '<div class="taskSectionHeaderRow">'+
+              '<label style="margin:0;font-weight:800;font-size:15.5px;">'+(state.lang==='zh'?'✨ 选择常规任务（点击自动下一步）':(state.lang==='es'?'✨ Elige una rutina (avanza al tocar)':'✨ Choose a routine (tap to advance)'))+'</label>'+
+              '<span class="taskVoiceHintPill">'+(t.taskVoiceHint || '🔊 Tap "Voice" to listen')+'</span>'+
             '</div>'+
-            previewMarkup
-          ) : '')+
+            '<div class="taskGrid">'+ taskCardsHtml +'</div>'+
+            customInputHtml +
+          '</div>';
+
+      } else {
+        // Transition Moments cards (leaving, screen, bedtime)
+        var transitionsData = [
+          {
+            id: 'leaving',
+            icon: '🌳',
+            name_en: 'Leaving Park / Play',
+            name_es: 'Terminar de Jugar / Parque',
+            name_zh: '结束玩耍 / 离开公园',
+            desc_en: 'Smooth exit without tears · Surprise image reveal',
+            desc_es: 'Salida tranquila del parque o juegos · Sorpresa visual',
+            desc_zh: '平静离开不哭闹 · 神奇图片逐渐揭晓'
+          },
+          {
+            id: 'screen',
+            icon: '📱',
+            name_en: 'Ending Screen Time',
+            name_es: 'Fin del Tiempo de Pantalla',
+            name_zh: '关掉屏幕时间',
+            desc_en: 'Gentle handover from tablet or TV · Visual countdown',
+            desc_es: 'Transición suave de tablet o TV · Reloj visual',
+            desc_zh: '温和告别平板与电视 · 趣味视觉倒计时'
+          },
+          {
+            id: 'bedtime',
+            icon: '🌙',
+            name_en: 'Bedtime Wind-Down',
+            name_es: 'Rutina para Dormir',
+            name_zh: '睡前平静就寝',
+            desc_en: 'Cozy wind-down, story, cuddle time · Calming sounds',
+            desc_es: 'Calma nocturna, cuento y descanso · Sonidos relajantes',
+            desc_zh: '静心放松，读故事抱抱 · 轻柔舒缓白噪音'
+          }
+        ];
+
+        var transCardsHtml = transitionsData.map(function(item){
+          var isActive = state.mode === item.id;
+          var curName = state.lang === 'zh' ? item.name_zh : (state.lang === 'es' ? item.name_es : item.name_en);
+          var curDesc = state.lang === 'zh' ? item.desc_zh : (state.lang === 'es' ? item.desc_es : item.desc_en);
+          var cleanName = cleanSpeechText(curName, state.lang);
+
+          var voiceBtnLabel = t.taskVoiceBtnLabel || (state.lang === 'zh' ? '🔊 语音' : (state.lang === 'es' ? '🔊 Voz' : '🔊 Voice'));
+          var primaryVoiceBtn = '<button type="button" class="taskVoiceBtn notranslate" translate="no" data-speak-lang="'+state.lang+'" data-speak-text="'+cleanName+'" title="Listen">'+voiceBtnLabel+'</button>';
+
+          var cleanEn = cleanSpeechText(item.name_en, 'en');
+          var cleanEs = cleanSpeechText(item.name_es, 'es');
+          var cleanZh = cleanSpeechText(item.name_zh, 'zh');
+          var subLangsHtml = '';
+          if (state.lang === 'en') {
+            subLangsHtml = '<div class="taskCardLangs">'+
+              '<button type="button" class="taskLangVoiceBtn notranslate" translate="no" data-speak-lang="es" data-speak-text="'+cleanEs+'" title="Escuchar en español"><span class="taskLangBadge">ES 🔊</span> <span class="taskLangText">'+item.name_es+'</span></button>'+
+              '<button type="button" class="taskLangVoiceBtn notranslate" translate="no" data-speak-lang="zh" data-speak-text="'+cleanZh+'" title="收听中文"><span class="taskLangBadge">中文 🔊</span> <span class="taskLangText">'+item.name_zh+'</span></button>'+
+            '</div>';
+          } else if (state.lang === 'es') {
+            subLangsHtml = '<div class="taskCardLangs">'+
+              '<button type="button" class="taskLangVoiceBtn notranslate" translate="no" data-speak-lang="en" data-speak-text="'+cleanEn+'" title="Listen in English"><span class="taskLangBadge">EN 🔊</span> <span class="taskLangText">'+item.name_en+'</span></button>'+
+              '<button type="button" class="taskLangVoiceBtn notranslate" translate="no" data-speak-lang="zh" data-speak-text="'+cleanZh+'" title="收听中文"><span class="taskLangBadge">中文 🔊</span> <span class="taskLangText">'+item.name_zh+'</span></button>'+
+            '</div>';
+          } else {
+            subLangsHtml = '<div class="taskCardLangs">'+
+              '<button type="button" class="taskLangVoiceBtn notranslate" translate="no" data-speak-lang="en" data-speak-text="'+cleanEn+'" title="Listen in English"><span class="taskLangBadge">EN 🔊</span> <span class="taskLangText">'+item.name_en+'</span></button>'+
+              '<button type="button" class="taskLangVoiceBtn notranslate" translate="no" data-speak-lang="es" data-speak-text="'+cleanEs+'" title="Escuchar en español"><span class="taskLangBadge">ES 🔊</span> <span class="taskLangText">'+item.name_es+'</span></button>'+
+            '</div>';
+          }
+
+          return ''+
+            '<div class="taskCard wizardCardItem '+(isActive?'active':'')+'" data-transition-mode="'+item.id+'" role="button" tabindex="0">'+
+              '<div class="taskCardLeft"><span class="taskCardIcon">'+item.icon+'</span></div>'+
+              '<div class="taskCardMain">'+
+                '<div class="taskCardTitleRow">'+
+                  '<span class="taskCardName">'+curName+'</span>'+
+                  primaryVoiceBtn +
+                '</div>'+
+                '<div style="font-size:12.5px;color:var(--cream);opacity:0.8;margin:2px 0 4px;">'+curDesc+'</div>'+
+                subLangsHtml +
+              '</div>'+
+              '<div class="taskCardRight">'+
+                '<span class="taskCardBadge" style="'+(isActive?'background:var(--sand);color:var(--ink);font-weight:800;':'')+'">'+(isActive ? '✓' : '➔')+'</span>'+
+              '</div>'+
+            '</div>';
+        }).join('');
+
+        routinesSection = ''+
+          '<div class="field">'+
+            '<div class="taskSectionHeaderRow">'+
+              '<label style="margin:0;font-weight:800;font-size:15.5px;">'+(t.chooseMomentLabel || 'Choose a moment (tap to advance)')+'</label>'+
+              '<span class="taskVoiceHintPill">'+(t.taskVoiceHint || '🔊 Tap "Voice" to listen')+'</span>'+
+            '</div>'+
+            '<div class="taskGrid">'+ transCardsHtml +'</div>'+
+          '</div>';
+      }
+
+      step1Html = ''+
+        quickStartBannerHtml +
+        ageSection +
+        routinesSection +
+        '<div class="wizardStepNav">'+
+          '<div></div>'+
+          '<button class="wizardNextBtn" id="wizardNextBtn" type="button">'+(t.stepNextBtn || 'Continue ➔')+'</button>'+
+        '</div>';
+    }
+
+    // Build Step 2 Content
+    var step2Html = '';
+    if (curStep === 2) {
+      var activeIcon = '🌳';
+      var activeTitle = '';
+      if (state.homeTab === 'tasks') {
+        var tInfo = getTaskInfo();
+        activeIcon = tInfo.icon;
+        activeTitle = tInfo.name;
+      } else {
+        if (state.mode === 'screen') {
+          activeIcon = '📱';
+          activeTitle = state.lang==='zh'?'关屏幕时间':(state.lang==='es'?'Fin de Pantalla':'Ending Screen Time');
+        } else if (state.mode === 'bedtime') {
+          activeIcon = '🌙';
+          activeTitle = state.lang==='zh'?'睡前就寝':(state.lang==='es'?'Hora de Dormir':'Bedtime Wind-Down');
+        } else {
+          activeIcon = '🌳';
+          activeTitle = state.lang==='zh'?'结束玩耍':(state.lang==='es'?'Terminar de Jugar':'Leaving Play / Park');
+        }
+      }
+      activeTitle = activeTitle.replace(/<[^>]*>/g, '');
+      var ageLabelShort = state.age === 'young' ? (t.age24 || '2–4y') : (state.age === 'big' ? (t.age8 || '8+y') : (t.age57 || '5–7y'));
+      ageLabelShort = ageLabelShort.replace(/<[^>]*>/g, '');
+
+      var summaryBanner = ''+
+        '<div class="wizardActiveSummaryBar">'+
+          '<div class="wizardActiveSummaryLeft">'+
+            '<span class="wizardActiveSummaryIcon">'+activeIcon+'</span>'+
+            '<div class="wizardActiveSummaryText">'+
+              '<div class="wizardActiveSummaryTag">'+(state.lang==='zh'?'当前选择的常规':'Selected routine')+'</div>'+
+              '<div class="wizardActiveSummaryTitle">'+activeTitle+' · '+ageLabelShort+'</div>'+
+            '</div>'+
+          '</div>'+
+          '<button class="wizardActiveSummaryChange" id="wizardChangeRoutineBtn" type="button">‹ '+(state.lang==='zh'?'更换':'Change')+'</button>'+
+        '</div>';
+
+      // Duration selector
+      var d = (DURATIONS && DURATIONS[state.mode]) || [1,2,3,5,10,15];
+      var durChips = d.map(function(m){
+        return '<button class="seg-min" data-min="'+m+'" type="button" style="'+
+          (state.minutes===m && !state.isCustomMin ? 'background:var(--sand);border-color:var(--sand);color:var(--ink);' : 'background:rgba(255,255,255,0.04);border:2px solid rgba(255,255,255,0.18);color:var(--cream);') +
+          'font-family:\'Baloo 2\',sans-serif;font-weight:700;font-size:17px;padding:12px 14px;border-radius:14px;cursor:pointer;">'+m+' min</button>';
+      }).join('');
+      durChips += '<span style="display:flex;flex-direction:column;align-items:center;gap:3px;">'+
+        '<button class="seg-min" data-min="custom" type="button" style="'+
+          (state.isCustomMin ? 'background:var(--sand);border-color:var(--sand);color:var(--ink);' : 'background:rgba(255,255,255,0.04);border:2px solid rgba(255,255,255,0.18);color:var(--cream);') +
+          'font-family:\'Baloo 2\',sans-serif;font-weight:700;font-size:17px;padding:12px 14px;border-radius:14px;cursor:pointer;">'+t.customBtn+'</button>'+
+        '<small style="font-size:11px;opacity:0.7;line-height:1;">min</small></span>';
+
+      var customInput = state.isCustomMin ? (
+        '<div style="margin-top:10px;">'+
+          '<input type="number" id="customMinInput" min="1" max="120" value="'+state.minutes+'" '+
+          'style="width:100%;padding:12px 14px;border-radius:14px;border:2px solid rgba(255,255,255,0.25);background:rgba(255,255,255,0.06);color:var(--cream);font-family:\'Baloo 2\',sans-serif;font-size:18px;" />'+
+          '<div style="font-size:13px;opacity:0.7;margin-top:4px;">'+t.customMinutesNote+'</div>'+
+        '</div>'
+      ) : '';
+
+      var secChips = SECOND_DURATIONS.map(function(s){
+        var isActive = state.seconds===s && !state.isCustomSec;
+        return '<button class="seg-sec '+(isActive?'active':'')+'" data-sec="'+s+'" type="button" style="'+
+          'font-family:\'Baloo 2\',sans-serif;font-weight:700;font-size:17px;padding:12px 14px;border-radius:14px;cursor:pointer;">'+s+'s</button>';
+      }).join('');
+      secChips += '<span style="display:flex;flex-direction:column;align-items:center;gap:3px;flex:1 1 auto;min-width:80px;">'+
+        '<button class="seg-sec '+(state.isCustomSec?'active':'')+'" data-sec="custom" type="button" style="'+
+          'width:100%;font-family:\'Baloo 2\',sans-serif;font-weight:700;font-size:17px;padding:12px 14px;border-radius:14px;cursor:pointer;">'+t.customBtn+'</button>'+
+        '<small style="font-size:11px;opacity:0.7;line-height:1;">sec</small></span>';
+
+      var customSecInput = state.isCustomSec ? (
+        '<div style="margin-top:10px;">'+
+          '<input type="number" id="customSecInput" min="1" max="300" value="'+state.seconds+'" '+
+          'style="width:100%;padding:12px 14px;border-radius:14px;border:2px solid rgba(255,255,255,0.25);background:rgba(255,255,255,0.06);color:var(--cream);font-family:\'Baloo 2\',sans-serif;font-size:18px;" />'+
+          '<div style="font-size:13px;opacity:0.7;margin-top:4px;">'+t.secondsNote+'</div>'+
+        '</div>'
+      ) : '';
+
+      var unitToggle = ''+
+        '<div class="seg" style="margin-bottom:10px;">'+
+          '<button class="seg-unit '+(state.durationUnit==='minutes'?'active':'')+'" data-unit="minutes" type="button" style="font-family:\'Baloo 2\',sans-serif;font-weight:700;font-size:15px;padding:9px 12px;border-radius:14px;cursor:pointer;">'+t.unitMinutes+'</button>'+
+          '<button class="seg-unit '+(state.durationUnit==='seconds'?'active':'')+'" data-unit="seconds" type="button" style="font-family:\'Baloo 2\',sans-serif;font-weight:700;font-size:15px;padding:9px 12px;border-radius:14px;cursor:pointer;">⚡ '+t.unitSeconds+'</button>'+
+        '</div>';
+
+      // Timer Mode & Theme Section
+      var timerModeChips = ''+
+        '<button class="seg-timermode '+(state.timerMode==='classic'?'active':'')+'" data-timermode="classic" type="button">'+
+          '<span>🎨 '+t.modeClassic+'</span>'+
+        '</button>'+
+        '<button class="seg-timermode '+(state.timerMode==='transformation'?'active':'')+'" data-timermode="transformation" type="button">'+
+          '<span>🦋 '+t.modeTransform+'</span>'+
+        '</button>';
+
+      var classicStyleChips = ''+
+        '<button class="seg-classicstyle '+(state.classicStyle==='clock'?'active':'')+'" data-classicstyle="clock" type="button">'+
+          '<span>'+t.clockBtn+'</span>'+
+        '</button>'+
+        '<button class="seg-classicstyle '+(state.classicStyle==='hourglass'?'active':'')+'" data-classicstyle="hourglass" type="button">'+
+          '<span>'+t.hourglassBtn+'</span>'+
+        '</button>';
+
+      var timerThemeChips = TIMER_THEMES.map(function(theme){
+        var thumb = theme.images[0];
+        var label = state.lang==='zh' ? (theme.name_zh || theme.name_en) : (state.lang==='es' ? theme.name_es : theme.name_en);
+        var isActive = state.style === theme.id;
+        return ''+
+          '<button class="seg-timerstyle'+(isActive?' active':'')+'" data-timerstyle="'+theme.id+'" type="button">'+
+            '<img src="'+thumb+'" alt="" />'+
+            '<span>'+label+'</span>'+
+          '</button>';
+      }).join('');
+
+      var curThemeObj = getTheme(state.style);
+      var flavorText = state.lang === 'zh' ? (curThemeObj.flavor_zh || curThemeObj.flavor_en) : (state.lang === 'es' ? curThemeObj.flavor_es : curThemeObj.flavor_en);
+
+      var msgStyleChips = ['fun','fraction','percent','seconds'].map(function(ms){
+        var label = ms==='fun'?t.msgStyleFun : ms==='fraction'?t.msgStyleFraction : ms==='percent'?t.msgStylePercent : t.msgStyleSeconds;
+        return '<button class="seg-msgstyle '+(state.msgStyle===ms?'active':'')+'" data-msgstyle="'+ms+'" type="button">'+label+'</button>';
+      }).join('');
+
+      step2Html = ''+
+        summaryBanner +
+        '<div class="field">'+
+          '<label style="font-weight:800;font-size:15px;margin-bottom:8px;">⏱️ '+(t.durationUnitLabel || 'Duration')+'</label>'+
+          unitToggle +
+          (state.durationUnit==='seconds' ? ('<div class="seg">'+ secChips +'</div>' + customSecInput) : ('<div class="seg">'+ durChips +'</div>' + customInput)) +
         '</div>'+
 
-        '<div class="field" style="margin-top:10px;">'+
+        '<div class="field">'+
+          '<label style="font-weight:800;font-size:15px;margin-bottom:8px;">🎨 '+(t.timerModeLabel || 'Timer Style')+'</label>'+
+          '<div class="seg" style="margin-bottom:10px;">'+ timerModeChips +'</div>'+
+          (state.timerMode === 'classic' ? (
+            '<div class="seg" style="margin-top:8px;">'+ classicStyleChips +'</div>'
+          ) : (
+            '<div class="timerThemeChips" style="margin-top:8px;">'+ timerThemeChips +'</div>'+
+            '<div class="magicCaption" style="font-size:13.5px;color:var(--sand);text-align:center;margin-top:6px;">'+flavorText+'</div>'
+          )) +
+        '</div>'+
+
+        '<div class="field">'+
+          '<label style="font-weight:800;font-size:15px;margin-bottom:8px;">💬 '+(t.msgStyleLabel || 'Progress Display Style')+'</label>'+
+          '<div class="seg">'+ msgStyleChips +'</div>'+
+        '</div>'+
+
+        '<div class="field" style="margin-top:12px;">'+
           '<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px;">'+
-            '<label style="margin:0;font-size:14px;font-weight:700;">🔊 '+t.audioVolumeLabel+'</label>'+
+            '<label style="margin:0;font-size:14.5px;font-weight:700;">🔊 '+t.audioVolumeLabel+'</label>'+
             '<span style="font-size:13px;font-weight:700;color:var(--sand);" class="appVolumeLabel">'+Math.round(state.appVolume * 100)+'%</span>'+
           '</div>'+
           '<input class="sleepVolume appVolumeSlider" type="range" min="0" max="1" step="0.05" value="'+state.appVolume+'" style="width:100%;cursor:pointer;" aria-label="'+t.audioVolumeLabel+'" />'+
         '</div>'+
 
-        ctaButton +
-        '<button class="ghostBtn" id="skipToCountdownBtn" type="button" style="margin-top:10px;">'+t.skipBtn+'</button>'+
+        '<div class="wizardStepNav">'+
+          '<button class="wizardBackBtn" id="wizardBackBtn" type="button">'+(t.stepBackBtn || '‹ Back')+'</button>'+
+          '<button class="wizardNextBtn" id="wizardNextBtn" type="button">'+(t.stepNextBtn || 'Continue ➔')+'</button>'+
+        '</div>';
+    }
+
+    // Build Step 3 Content
+    var step3Html = '';
+    if (curStep === 3) {
+      var routineNameFinal = '';
+      var routineIconFinal = '🌟';
+      if (state.homeTab === 'tasks') {
+        var tInf = getTaskInfo();
+        routineIconFinal = tInf.icon;
+        routineNameFinal = tInf.name;
+      } else {
+        if (state.mode === 'screen') {
+          routineIconFinal = '📱';
+          routineNameFinal = state.lang==='zh'?'关屏幕时间':(state.lang==='es'?'Terminar Pantalla':'End Screen Time');
+        } else if (state.mode === 'bedtime') {
+          routineIconFinal = '🌙';
+          routineNameFinal = state.lang==='zh'?'睡前就寝':(state.lang==='es'?'Hora de Dormir':'Bedtime Wind-Down');
+        } else {
+          routineIconFinal = '🌳';
+          routineNameFinal = state.lang==='zh'?'结束玩耍':(state.lang==='es'?'Terminar de Jugar':'Leaving Play / Park');
+        }
+      }
+      routineNameFinal = routineNameFinal.replace(/<[^>]*>/g, '');
+      var timeDisplay = state.durationUnit === 'seconds' ? (state.seconds + 's') : (state.minutes + ' min');
+      var styleNameDisplay = state.timerMode === 'transformation'
+        ? (state.lang==='zh'?'蜕变计时器':(state.lang==='es'?'Transformación':'Transformation Timer'))
+        : (state.classicStyle==='hourglass'?(state.lang==='zh'?'沙漏':(state.lang==='es'?'Reloj de Arena':'Hourglass')):(state.lang==='zh'?'彩色时钟':(state.lang==='es'?'Reloj de Colores':'Colour Clock')));
+
+      var handoverPrompt = state.lang === 'zh'
+        ? '把手机交给孩子！当快到时间时，孩子自己按下按钮，看着画面一点点神奇蜕变！'
+        : (state.lang === 'es'
+          ? '¡Pásale el teléfono a tu hijo/a! Cuando esté listo, pulsará el botón y verá la magia poco a poco.'
+          : 'Hand phone to child! When nearly time to finish, they press the button and watch the magic reveal!');
+
+      var immersionQuestion = getKickoffQuestionImmersion();
+
+      step3Html = ''+
+        '<div class="wizardHandoverCard">'+
+          '<div class="wizardHandoverIllustration">'+routineIconFinal+'</div>'+
+          '<div class="wizardHandoverTitle">'+(t.handOverToKidBtn || '📱 Hand Phone to Child')+'</div>'+
+          '<div class="wizardHandoverSub">'+handoverPrompt+'</div>'+
+          immersionQuestion +
+          '<div style="background:rgba(255,255,255,0.06);border:1.5px solid rgba(255,255,255,0.18);border-radius:14px;padding:12px;margin:16px 0;display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap;">'+
+            '<span style="font-weight:700;color:var(--sand);font-size:15px;">'+routineIconFinal+' '+routineNameFinal+'</span>'+
+            '<span style="opacity:0.4;">•</span>'+
+            '<span style="font-weight:700;color:var(--cream);font-size:15px;">⏱️ '+timeDisplay+'</span>'+
+            '<span style="opacity:0.4;">•</span>'+
+            '<span style="font-weight:700;color:#34d399;font-size:15px;">🎨 '+styleNameDisplay+'</span>'+
+          '</div>'+
+          '<button class="bigBtn" id="handOverBtn" type="button" style="width:100%;font-size:18px;font-weight:900;padding:16px;background:linear-gradient(135deg,#10b981,#059669);box-shadow:0 8px 24px rgba(16,185,129,0.4);">'+
+            (t.startCountdownBtn || '🚀 Start Countdown!')+
+          '</button>'+
+          '<button class="ghostBtn" id="skipToCountdownBtn" type="button" style="margin-top:10px;width:100%;font-size:14px;">'+t.skipBtn+'</button>'+
+        '</div>'+
+        '<div class="wizardStepNav">'+
+          '<button class="wizardBackBtn" id="wizardBackBtn" type="button">'+(t.stepBackBtn || '‹ Back')+'</button>'+
+          '<div></div>'+
+        '</div>';
+    }
+
+    var stepContent = curStep === 1 ? step1Html : (curStep === 2 ? step2Html : step3Html);
+    var tabSwitcherHtml = renderHomeTabSwitcher(t);
+
+    return tabSwitcherHtml +
+      '<div class="card setupWizardWrap" id="setupWizardWrap">'+
+        langToggleHTML() +
+        wizardHeader +
+        stepContent +
+        '<p class="footNote" style="margin-top:14px;">'+t.footNote+'</p>'+
       '</div>';
   }
 
   function renderSetup(){
     var t = T();
-    if(state.homeTab === 'tasks'){
-      return renderDailyTasksSetup(t);
-    }
     if(state.homeTab === 'rewards'){
       return renderRewardsSetup(t);
     }
-    var d = DURATIONS[state.mode];
-    var durChips = d.map(function(m){
-      return '<button class="seg-min" data-min="'+m+'" type="button" style="'+
-        (state.minutes===m && !state.isCustomMin ? 'background:var(--sand);border-color:var(--sand);color:var(--ink);' : 'background:rgba(255,255,255,0.04);border:2px solid rgba(255,255,255,0.18);color:var(--cream);') +
-        'font-family:\'Baloo 2\',sans-serif;font-weight:700;font-size:18px;padding:14px 16px;border-radius:16px;cursor:pointer;">'+m+' min</button>';
-    }).join('');
-    durChips += '<span style="display:flex;flex-direction:column;align-items:center;gap:3px;">'+
-      '<button class="seg-min" data-min="custom" type="button" style="'+
-        (state.isCustomMin ? 'background:var(--sand);border-color:var(--sand);color:var(--ink);' : 'background:rgba(255,255,255,0.04);border:2px solid rgba(255,255,255,0.18);color:var(--cream);') +
-        'font-family:\'Baloo 2\',sans-serif;font-weight:700;font-size:18px;padding:14px 16px;border-radius:16px;cursor:pointer;">'+t.customBtn+'</button>'+
-      '<small style="font-size:11px;opacity:0.7;line-height:1;">min</small></span>';
-
-    var customInput = state.isCustomMin ? (
-      '<div style="margin-top:10px;">'+
-        '<input type="number" id="customMinInput" min="1" max="120" value="'+state.minutes+'" '+
-        'style="width:100%;padding:12px 14px;border-radius:14px;border:2px solid rgba(255,255,255,0.25);background:rgba(255,255,255,0.06);color:var(--cream);font-family:\'Baloo 2\',sans-serif;font-size:18px;" />'+
-        '<div style="font-size:13px;opacity:0.7;margin-top:4px;">'+t.customMinutesNote+'</div>'+
-      '</div>'
-    ) : '';
-
-    var secChips = SECOND_DURATIONS.map(function(s){
-      var isActive = state.seconds===s && !state.isCustomSec;
-      return '<button class="seg-sec '+(isActive?'active':'')+'" data-sec="'+s+'" type="button" style="'+
-        'font-family:\'Baloo 2\',sans-serif;font-weight:700;font-size:18px;padding:14px 16px;border-radius:16px;cursor:pointer;">'+s+'s</button>';
-    }).join('');
-    secChips += '<span style="display:flex;flex-direction:column;align-items:center;gap:3px;flex:1 1 auto;min-width:90px;">'+
-      '<button class="seg-sec '+(state.isCustomSec?'active':'')+'" data-sec="custom" type="button" style="'+
-        'width:100%;font-family:\'Baloo 2\',sans-serif;font-weight:700;font-size:18px;padding:14px 16px;border-radius:16px;cursor:pointer;">'+t.customBtn+'</button>'+
-      '<small style="font-size:11px;opacity:0.7;line-height:1;">sec</small></span>';
-
-    var customSecInput = state.isCustomSec ? (
-      '<div style="margin-top:10px;">'+
-        '<input type="number" id="customSecInput" min="1" max="300" value="'+state.seconds+'" '+
-        'style="width:100%;padding:12px 14px;border-radius:14px;border:2px solid rgba(255,255,255,0.25);background:rgba(255,255,255,0.06);color:var(--cream);font-family:\'Baloo 2\',sans-serif;font-size:18px;" />'+
-        '<div style="font-size:13px;opacity:0.7;margin-top:4px;">'+t.secondsNote+'</div>'+
-      '</div>'
-    ) : '';
-
-    var unitToggle = ''+
-      '<div class="seg" style="margin-bottom:10px;">'+
-        '<button class="seg-unit '+(state.durationUnit==='minutes'?'active':'')+'" data-unit="minutes" type="button" style="'+
-          'font-family:\'Baloo 2\',sans-serif;font-weight:700;font-size:15px;padding:10px 12px;border-radius:14px;cursor:pointer;">'+t.unitMinutes+'</button>'+
-        '<button class="seg-unit '+(state.durationUnit==='seconds'?'active':'')+'" data-unit="seconds" type="button" style="'+
-          'font-family:\'Baloo 2\',sans-serif;font-weight:700;font-size:15px;padding:10px 12px;border-radius:14px;cursor:pointer;">⚡ '+t.unitSeconds+'</button>'+
-      '</div>';
-
-    var msgStyleChips = ['fun','fraction','percent','seconds'].map(function(ms){
-      var label = ms==='fun'?t.msgStyleFun : ms==='fraction'?t.msgStyleFraction : ms==='percent'?t.msgStylePercent : t.msgStyleSeconds;
-      return '<button class="seg-msgstyle '+(state.msgStyle===ms?'active':'')+'" data-msgstyle="'+ms+'" type="button">'+label+'</button>';
-    }).join('');
-
-    var timerModeChips = ''+
-      '<button class="seg-timermode '+(state.timerMode==='classic'?'active':'')+'" data-timermode="classic" type="button">'+
-        '<span>🎨 '+t.modeClassic+'</span>'+
-      '</button>'+
-      '<button class="seg-timermode '+(state.timerMode==='transformation'?'active':'')+'" data-timermode="transformation" type="button">'+
-        '<span>🦋 '+t.modeTransform+'</span>'+
-      '</button>';
-
-    var classicStyleChips = ''+
-      '<button class="seg-classicstyle '+(state.classicStyle==='clock'?'active':'')+'" data-classicstyle="clock" type="button">'+
-        '<span>'+t.clockBtn+'</span>'+
-      '</button>'+
-      '<button class="seg-classicstyle '+(state.classicStyle==='hourglass'?'active':'')+'" data-classicstyle="hourglass" type="button">'+
-        '<span>'+t.hourglassBtn+'</span>'+
-      '</button>';
-
-    var timerThemeChips = TIMER_THEMES.map(function(theme){
-      var thumb = theme.images[0];
-      var label = state.lang==='es' ? theme.name_es : theme.name_en;
-      var isActive = state.style === theme.id;
-      return ''+
-        '<button class="seg-timerstyle'+(isActive?' active':'')+'" data-timerstyle="'+theme.id+'" type="button">'+
-          '<img src="'+thumb+'" alt="" />'+
-          '<span>'+label+'</span>'+
-        '</button>';
-    }).join('');
-
-    var lib = (IMAGE_LIBRARY && IMAGE_LIBRARY[state.mode]) || IMAGE_LIBRARY['leaving'];
-    if(state.pickerCategory >= lib.length) state.pickerCategory = 0;
-    var pickerToggleLabel = state.pickerOpen ? t.pickerToggleHide : t.pickerToggleShow;
-    var pickerGrid = '';
-    if(state.timerMode === 'classic' && state.pickerOpen){
-      var catTabs = lib.map(function(cat, ci){
-        var isActive = state.pickerCategory === ci;
-        return '<button class="seg-cat" data-cat-idx="'+ci+'" type="button" style="'+
-          'font-family:\'Baloo 2\',sans-serif;font-weight:700;font-size:13px;padding:8px 12px;border-radius:12px;cursor:pointer;white-space:nowrap;'+
-          (isActive ? 'background:var(--coral);border:2px solid var(--coral);color:#2A0F08;' : 'background:rgba(255,255,255,0.04);border:2px solid rgba(255,255,255,0.18);color:var(--cream);') +
-          '">'+catName(cat)+'</button>';
-      }).join('');
-      var activeItems = lib[state.pickerCategory].items;
-      var tiles = activeItems.map(function(img){
-        var isActive = state.chosenId === img.id;
-        var visual = img.img
-          ? '<img src="'+img.img+'" alt="" style="width:26px;height:26px;object-fit:contain;border-radius:6px;" />'
-          : (img.type === 'svg' ? '<svg viewBox="0 0 120 120" width="26" height="26" style="color:'+(isActive?'var(--ink)':'var(--cream)')+';">'+img.svg+'</svg>' : img.emoji);
-        return '<button class="seg-img" data-img-id="'+img.id+'" type="button" title="'+imgName(img)+'" style="'+
-          'font-size:26px;padding:10px 0;border-radius:14px;cursor:pointer;display:flex;align-items:center;justify-content:center;'+
-          (isActive ? 'background:var(--sand);border:2px solid var(--sand);' : 'background:rgba(255,255,255,0.04);border:2px solid rgba(255,255,255,0.18);') +
-          '">'+visual+'</button>';
-      }).join('');
-      pickerGrid = ''+
-        '<div style="display:flex;gap:6px;overflow-x:auto;padding:10px 0 2px;">'+ catTabs +'</div>'+
-        '<div style="display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:4px;">'+ tiles +'</div>'+
-        '<button class="ghostBtn" id="surpriseMeBtn" type="button" style="margin-top:10px;width:100%;'+
-          (state.chosenId===null ? 'background:rgba(255,255,255,0.1);' : '') +
-          '">'+t.surpriseBtn+(state.chosenId===null ? t.surpriseSelected : '')+'</button>';
-    }
-
-    var groupNeedsUnlock = state.groupMode === 'group' && !state.groupUnlocked;
-
-    var groupChips = ''+
-      '<button class="seg-group '+(state.groupMode==='single'?'active':'')+'" data-group="single" type="button">'+t.groupSingle+'</button>'+ 
-      '<button class="seg-group premiumOption '+(state.groupMode==='group'?'active':'')+'" data-group="group" type="button">'+
-        '<span>'+t.groupSmall+(state.groupUnlocked?'':' '+t.premiumBadge)+'</span>'+ 
-        '<span class="premiumSub">'+t.groupPremiumSub+'</span>'+ 
-      '</button>';
-
-    var licenseBlock = '';
-    if(groupNeedsUnlock){
-      licenseBlock = ''+
-        '<div class="licenseBox">'+
-          '<div style="font-size:15.5px;margin-bottom:8px;">'+t.unlockPrompt+'</div>'+
-          '<input type="text" id="licenseInput" placeholder="'+t.unlockPlaceholder+'" />'+
-          '<button class="ghostBtn" id="unlockBtn" type="button" style="width:100%;">'+ (state.licenseChecking ? t.unlockChecking : t.unlockBtn) +'</button>'+
-          (state.licenseMsg ? '<div class="licenseMsg '+state.licenseMsgType+'">'+state.licenseMsg+'</div>' : '') +
-        '</div>';
-    } else if(state.groupUnlocked){
-      licenseBlock = '<div class="licenseMsg ok" style="margin-top:8px;">'+t.unlockedNote+'</div>';
-    }
-
-    var namesField = '';
-    if(state.groupMode === 'group' && state.groupUnlocked){
-      namesField = ''+
-        '<div style="margin-top:10px;">'+
-          '<label style="display:block;font-family:\'Baloo 2\',sans-serif;font-size:13px;opacity:0.75;margin-bottom:6px;">'+t.namesLabel+'</label>'+
-          '<textarea id="kidNamesInput" rows="3" placeholder="'+t.namesPlaceholder+'" style="width:100%;padding:10px 12px;border-radius:12px;border:2px solid rgba(255,255,255,0.2);background:rgba(255,255,255,0.06);color:var(--cream);font-family:\'Quicksand\',sans-serif;font-size:16.5px;">'+state.kidNames.join("\n")+'</textarea>'+
-        '</div>';
-    }
-
-    var tabSwitcherHtml = renderHomeTabSwitcher(t);
-
-    return tabSwitcherHtml +
-    '<div class="card">'+
-      langToggleHTML() +
-      '<div class="modeTag">'+t.parentSetup+'</div>'+
-      '<h1 class="title display">Calm Countdown</h1>'+
-      '<p class="sub">'+t.tagline+'</p>'+
-
-      '<div class="field">'+
-        '<label>'+t.ageLabel+'</label>'+
-        '<div class="seg">'+
-          '<button class="seg-age '+(state.age==='young'?'active':'')+'" data-age="young" type="button">'+t.age24+'</button>'+
-          '<button class="seg-age '+(state.age==='mid'?'active':'')+'" data-age="mid" type="button">'+t.age57+'</button>'+
-          '<button class="seg-age '+(state.age==='big'?'active':'')+'" data-age="big" type="button">'+t.age8+'</button>'+
-        '</div>'+
-      '</div>'+
-
-      '<div class="field">'+
-        '<label>'+t.groupLabel+'</label>'+
-        '<div class="seg">'+ groupChips +'</div>'+
-        licenseBlock +
-        namesField +
-      '</div>'+
-
-      '<div class="field">'+
-        '<label>'+t.momentLabel+'</label>'+
-        '<div class="seg">'+
-          '<button class="seg-mode '+(state.mode==='leaving'?'active':'')+'" data-mode="leaving" type="button">'+t.leavingModeBtn+'</button>'+
-          '<button class="seg-mode '+(state.mode==='screen'?'active':'')+'" data-mode="screen" type="button">'+t.screenModeBtn+'</button>'+
-          '<button class="seg-mode '+(state.mode==='bedtime'?'active':'')+'" data-mode="bedtime" type="button">'+t.bedtimeModeBtn+'</button>'+
-        '</div>'+
-      '</div>'+
-
-      '<div class="field">'+
-        '<label>'+t.durationUnitLabel+'</label>'+
-        unitToggle +
-        (state.durationUnit==='seconds' ? ('<div class="seg">'+ secChips +'</div>' + customSecInput) : ('<div class="seg">'+ durChips +'</div>' + customInput)) +
-      '</div>'+
-
-      (state.timerMode === 'classic' ? (
-        '<div class="field">'+
-          '<label>'+t.classicStyleLabel+'</label>'+
-          '<div class="seg">'+ classicStyleChips +'</div>'+
-        '</div>'
-      ) : '') +
-
-      '<div class="field">'+
-        '<label>'+t.timerModeLabel+'</label>'+
-        '<div class="seg">'+ timerModeChips +'</div>'+
-      '</div>'+
-
-      (state.timerMode === 'transformation' ? (
-        '<div class="field">'+
-          '<label>'+t.transformThemeLabel+'</label>'+
-          '<div class="timerThemeChips">'+ timerThemeChips +'</div>'+
-        '</div>'
-      ) : '') +
-
-      '<div class="field">'+
-        '<label>'+t.msgStyleLabel+'</label>'+
-        '<div class="seg">'+ msgStyleChips +'</div>'+
-      '</div>'+
-
-      (state.timerMode === 'classic' ? (
-        '<div class="field">'+
-          '<button class="ghostBtn" id="pickerToggle" type="button" style="width:100%;font-size:15.5px;">'+ pickerToggleLabel +'</button>'+
-          pickerGrid +
-        '</div>'+
-        '<p class="flavorLine">✨ '+ (state.chosenId!==null ? t.flavorPicked : (state.mode==='bedtime' ? t.flavorSurpriseBedtime : t.flavorSurpriseLeaving)) +'</p>'
-      ) : (
-        '<p class="flavorLine">✨ '+ (state.lang === 'zh' ? (getTheme(state.style).flavor_zh || getTheme(state.style).flavor_en) : (state.lang === 'es' ? getTheme(state.style).flavor_es : getTheme(state.style).flavor_en)) +'</p>'
-      ))+
-      '<div class="field" style="margin-top:10px;">'+
-        '<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px;">'+
-          '<label style="margin:0;font-size:14px;font-weight:700;">🔊 '+t.audioVolumeLabel+'</label>'+
-          '<span style="font-size:13px;font-weight:700;color:var(--sand);" class="appVolumeLabel">'+Math.round(state.appVolume * 100)+'%</span>'+
-        '</div>'+
-        '<input class="sleepVolume appVolumeSlider" type="range" min="0" max="1" step="0.05" value="'+state.appVolume+'" style="width:100%;cursor:pointer;" aria-label="'+t.audioVolumeLabel+'" />'+
-      '</div>'+
-      '<button class="bigBtn" id="handOverBtn" type="button">'+t.handOverBtn+'</button>'+
-      '<button class="ghostBtn" id="skipToCountdownBtn" type="button" style="margin-top:10px;">'+t.skipBtn+'</button>'+
-      '<p class="footNote">'+t.footNote+'</p>'+
-    '</div>';
+    return renderSteppedSetup(t);
   }
 
   function getTimerChoiceImmersion(){
@@ -3154,17 +3353,45 @@ function renderDailyTasksSetup(t){
       zhText = '你选择了彩色时钟倒计时风格。';
       zhDisplay = '你选择了彩色时钟倒计时风格。<span class="btnPinyin">Nǐ xuǎnzé le cǎisè shízhōng dǎojìshí fēnggé.</span>';
     }
+
+    var centerTitle, leftPill, rightPill;
+    if(state.lang === 'es'){
+      centerTitle = esText;
+      leftPill = '<div class="immersionSide left" data-speak-lang="en" data-speak-text="'+enText+'" role="button" tabindex="0" title="Listen in English">'+
+        '<span class="immersionTag notranslate" translate="no">EN 🔊</span>'+
+        '<span class="immersionText">'+enText+'</span>'+
+      '</div>';
+      rightPill = '<div class="immersionSide right" data-speak-lang="zh" data-speak-text="'+zhText+'" role="button" tabindex="0" title="收听中文">'+
+        '<span class="immersionTag notranslate" translate="no">中文 🔊</span>'+
+        '<span class="immersionText">'+zhDisplay+'</span>'+
+      '</div>';
+    } else if(state.lang === 'zh'){
+      centerTitle = zhDisplay;
+      leftPill = '<div class="immersionSide left" data-speak-lang="en" data-speak-text="'+enText+'" role="button" tabindex="0" title="Listen in English">'+
+        '<span class="immersionTag notranslate" translate="no">EN 🔊</span>'+
+        '<span class="immersionText">'+enText+'</span>'+
+      '</div>';
+      rightPill = '<div class="immersionSide right" data-speak-lang="es" data-speak-text="'+esText+'" role="button" tabindex="0" title="Escuchar en español">'+
+        '<span class="immersionTag notranslate" translate="no">ES 🔊</span>'+
+        '<span class="immersionText">'+esText+'</span>'+
+      '</div>';
+    } else {
+      centerTitle = enText;
+      leftPill = '<div class="immersionSide left" data-speak-lang="es" data-speak-text="'+esText+'" role="button" tabindex="0" title="Escuchar en español">'+
+        '<span class="immersionTag notranslate" translate="no">ES 🔊</span>'+
+        '<span class="immersionText">'+esText+'</span>'+
+      '</div>';
+      rightPill = '<div class="immersionSide right" data-speak-lang="zh" data-speak-text="'+zhText+'" role="button" tabindex="0" title="收听中文">'+
+        '<span class="immersionTag notranslate" translate="no">中文 🔊</span>'+
+        '<span class="immersionText">'+zhDisplay+'</span>'+
+      '</div>';
+    }
+
     return ''+
     '<div class="timerChoiceImmersionBlock">'+
-      '<div class="immersionSide left" data-speak-lang="es" data-speak-text="'+esText+'" role="button" tabindex="0" title="Escuchar en español">'+
-        '<span class="immersionTag">ES 🔊</span>'+
-        '<span class="immersionText">'+esText+'</span>'+
-      '</div>'+
-      '<div class="immersionCenterTitle">'+enText+'</div>'+
-      '<div class="immersionSide right" data-speak-lang="zh" data-speak-text="'+zhText+'" role="button" tabindex="0" title="收听中文">'+
-        '<span class="immersionTag">中文 🔊</span>'+
-        '<span class="immersionText">'+zhDisplay+'</span>'+
-      '</div>'+
+      leftPill +
+      '<div class="immersionCenterTitle">'+centerTitle+'</div>'+
+      rightPill +
     '</div>';
   }
 
@@ -3201,40 +3428,98 @@ function renderDailyTasksSetup(t){
       zhQ = '准备好开始开心玩耍了吗？';
       zhDisplay = '准备好开始开心玩耍了吗？<span class="btnPinyin">Zhǔnbèi hǎo kāishǐ wánshuǎ le ma?</span>';
     }
+
+    var centerQ, leftPill, rightPill;
+    if(state.lang === 'es'){
+      centerQ = esQ;
+      leftPill = '<div class="immersionPill left" data-speak-lang="en" data-speak-text="'+enQ+'" role="button" tabindex="0" title="Listen in English">'+
+        '<span class="immersionTag notranslate" translate="no">EN 🔊</span>'+
+        '<span class="immersionText">'+enQ+'</span>'+
+      '</div>';
+      rightPill = '<div class="immersionPill right" data-speak-lang="zh" data-speak-text="'+zhQ+'" role="button" tabindex="0" title="收听中文">'+
+        '<span class="immersionTag notranslate" translate="no">中文 🔊</span>'+
+        '<span class="immersionText">'+zhDisplay+'</span>'+
+      '</div>';
+    } else if(state.lang === 'zh'){
+      centerQ = zhDisplay;
+      leftPill = '<div class="immersionPill left" data-speak-lang="en" data-speak-text="'+enQ+'" role="button" tabindex="0" title="Listen in English">'+
+        '<span class="immersionTag notranslate" translate="no">EN 🔊</span>'+
+        '<span class="immersionText">'+enQ+'</span>'+
+      '</div>';
+      rightPill = '<div class="immersionPill right" data-speak-lang="es" data-speak-text="'+esQ+'" role="button" tabindex="0" title="Escuchar en español">'+
+        '<span class="immersionTag notranslate" translate="no">ES 🔊</span>'+
+        '<span class="immersionText">'+esQ+'</span>'+
+      '</div>';
+    } else {
+      centerQ = enQ;
+      leftPill = '<div class="immersionPill left" data-speak-lang="es" data-speak-text="'+esQ+'" role="button" tabindex="0" title="Escuchar en español">'+
+        '<span class="immersionTag notranslate" translate="no">ES 🔊</span>'+
+        '<span class="immersionText">'+esQ+'</span>'+
+      '</div>';
+      rightPill = '<div class="immersionPill right" data-speak-lang="zh" data-speak-text="'+zhQ+'" role="button" tabindex="0" title="收听中文">'+
+        '<span class="immersionTag notranslate" translate="no">中文 🔊</span>'+
+        '<span class="immersionText">'+zhDisplay+'</span>'+
+      '</div>';
+    }
+
     return ''+
     '<div class="kidQuestionImmersionRow">'+
-      '<div class="immersionPill left" data-speak-lang="es" data-speak-text="'+esQ+'" role="button" tabindex="0" title="Escuchar en español">'+
-        '<span class="immersionTag">ES 🔊</span>'+
-        '<span class="immersionText">'+esQ+'</span>'+
-      '</div>'+
-      '<div class="kidMsg display immersionMainTitle">'+enQ+'</div>'+
-      '<div class="immersionPill right" data-speak-lang="zh" data-speak-text="'+zhQ+'" role="button" tabindex="0" title="收听中文">'+
-        '<span class="immersionTag">中文 🔊</span>'+
-        '<span class="immersionText">'+zhDisplay+'</span>'+
-      '</div>'+
+      leftPill +
+      '<div class="kidMsg display immersionMainTitle">'+centerQ+'</div>'+
+      rightPill +
     '</div>';
   }
 
   function getKickoffSubImmersion(){
-    var enSub, esSub, zhSub;
+    var enSub, esSub, zhSub, zhDisplay;
     if(COPY[state.mode]){
       enSub = COPY[state.mode].en.kickoffSub;
       esSub = COPY[state.mode].es.kickoffSub;
       zhSub = cleanSpeechText(COPY[state.mode].zh.kickoffSub, 'zh');
+      zhDisplay = COPY[state.mode].zh.kickoffSub;
     } else {
       enSub = 'Press the long rectangular ▶ button below to begin.';
       esSub = 'Pulsa el botón rectangular largo ▶ de abajo para comenzar.';
       zhSub = '点击下方长方形 ▶ 按钮开始。';
+      zhDisplay = zhSub;
     }
+
+    var cleanEn = cleanSpeechText(enSub, 'en');
+    var cleanEs = cleanSpeechText(esSub, 'es');
+    var cleanZh = cleanSpeechText(zhSub, 'zh');
+
+    var centerSub, leftBtn, rightBtn;
+    if(state.lang === 'es'){
+      centerSub = esSub;
+      leftBtn = '<button type="button" class="instructionSideBtn left notranslate" translate="no" data-speak-lang="en" data-speak-text="'+cleanEn+'" title="Listen in English">'+
+        'EN 🔊 Listen'+
+      '</button>';
+      rightBtn = '<button type="button" class="instructionSideBtn right notranslate" translate="no" data-speak-lang="zh" data-speak-text="'+cleanZh+'" title="收听中文">'+
+        '中文 🔊 收听'+
+      '</button>';
+    } else if(state.lang === 'zh'){
+      centerSub = zhDisplay;
+      leftBtn = '<button type="button" class="instructionSideBtn left notranslate" translate="no" data-speak-lang="en" data-speak-text="'+cleanEn+'" title="Listen in English">'+
+        'EN 🔊 Listen'+
+      '</button>';
+      rightBtn = '<button type="button" class="instructionSideBtn right notranslate" translate="no" data-speak-lang="es" data-speak-text="'+cleanEs+'" title="Escuchar en español">'+
+        'ES 🔊 Escuchar'+
+      '</button>';
+    } else {
+      centerSub = enSub;
+      leftBtn = '<button type="button" class="instructionSideBtn left notranslate" translate="no" data-speak-lang="es" data-speak-text="'+cleanEs+'" title="Escuchar en español">'+
+        'ES 🔊 Escuchar'+
+      '</button>';
+      rightBtn = '<button type="button" class="instructionSideBtn right notranslate" translate="no" data-speak-lang="zh" data-speak-text="'+cleanZh+'" title="收听中文">'+
+        '中文 🔊 收听'+
+      '</button>';
+    }
+
     return ''+
     '<div class="instructionImmersionWrap">'+
-      '<button type="button" class="instructionSideBtn left" data-speak-lang="es" data-speak-text="'+esSub+'" title="Escuchar en español">'+
-        'ES 🔊 Escuchar'+
-      '</button>'+
-      '<p class="instructionCenterSub">'+enSub+'</p>'+
-      '<button type="button" class="instructionSideBtn right" data-speak-lang="zh" data-speak-text="'+zhSub+'" title="收听中文">'+
-        '中文 🔊 收听'+
-      '</button>'+
+      leftBtn +
+      '<p class="instructionCenterSub">'+centerSub+'</p>'+
+      rightBtn +
     '</div>';
   }
 
@@ -3245,10 +3530,16 @@ function renderDailyTasksSetup(t){
       ? (state.lang === 'zh' ? ('▶ 开始 ' + taskInfo.name + '！<span class="btnPinyin">▶ Diǎnjī kāishǐ!</span>') : (state.lang === 'es' ? ('▶ ¡Empezar ' + taskInfo.name + '!') : ('▶ Start ' + taskInfo.name + '!')))
       : (COPY[state.mode] ? (state.lang === 'zh' ? COPY[state.mode].zh.kickoffBtn : (state.lang === 'es' ? COPY[state.mode].es.kickoffBtn : COPY[state.mode].en.kickoffBtn)) : '▶ Press to begin!');
 
+    var parentKickoffNote = state.lang === 'zh'
+      ? '<span class="parentNoteBadge">家长提示：</span>请在下方引导孩子阅读并收听。'
+      : (state.lang === 'es'
+          ? '<span class="parentNoteBadge">Padres:</span> Ayude al niño a leer y escuchar abajo.'
+          : '<span class="parentNoteBadge">Parent:</span> Help child read and listen, below.');
+
     return ''+
     '<div class="kidScreen">'+
       (state.groupMode==='class' ? '<div class="classroomBanner">'+t.classroomBanner+'</div>' : '') +
-      '<div class="parentKickoffNote"><span class="parentNoteBadge">Parent:</span> Help child read and listen, below.</div>'+
+      '<div class="parentKickoffNote">' + parentKickoffNote + '</div>'+
       getTimerChoiceImmersion() +
       '<div class="hourglassWrap" style="height:'+wrapHeight()+';">'+ timerVisual(0) +'</div>'+
       getKickoffQuestionImmersion() +
@@ -3300,10 +3591,8 @@ function renderDailyTasksSetup(t){
     var taskInfo = getTaskInfo();
     var introQuestion = state.mode==='task'
       ? (state.lang === 'zh' ? ('准备好进行：' + taskInfo.icon + ' ' + taskInfo.name + ' 了吗？') : (state.lang === 'es' ? ('¿Listo para: ' + taskInfo.icon + ' ' + taskInfo.name + '?') : ('Ready for: ' + taskInfo.icon + ' ' + taskInfo.name + '?')))
-      : (state.mode==='leaving' ? (state.lang === 'zh' ? '由你来启动倒计时。' : (state.lang === 'es' ? 'TÚ inicias la cuenta atrás.' : 'YOU start the countdown.')) : t.readyQuestion);
-    var introSub = state.mode==='leaving'
-      ? (state.timerMode==='transformation' ? (state.lang==='zh' ? "点击下方长方形 ▶ 按钮开始。看着画面在倒计时中神奇蜕变！" : (state.lang==='es' ? "Pulsa el botón rectangular largo ▶ de abajo para comenzar. ¡Mira la transformación mágica en la cuenta atrás!" : "Press the long rectangular ▶ button below to begin. Watch the magic transformation as you count down!")) : (state.lang==='zh' ? "点击下方长方形 ▶ 按钮开始。该由你亲自按下按钮结束玩耍啦！" : (state.lang==='es' ? "Pulsa el botón rectangular largo ▶ de abajo para comenzar. ¡Es hora de terminar la diversión!" : "Press the long rectangular ▶ button below to begin. It's time for YOU to stop the fun!")))
-      : (state.timerMode==='transformation' ? t.readySubTransform : t.readySub);
+      : t.readyQuestion;
+    var introSub = state.timerMode==='transformation' ? t.readySubTransform : t.readySub;
     return ''+
     '<div class="kidScreen">'+
       (state.groupMode==='class' ? '<div class="classroomBanner">'+t.classroomBanner+'</div>' : '') +
@@ -3397,23 +3686,31 @@ function renderDailyTasksSetup(t){
         var ownershipText = c.ownership;
         if(state.mode === 'leaving' && state.age !== 'young'){
           if(state.age === 'big'){
-            ownershipText = state.lang === 'es'
-              ? '¡Excelente trabajo administrando tu tiempo y terminando a tiempo!'
-              : 'Great job managing your time and heading home smoothly!';
+            ownershipText = state.lang === 'zh'
+              ? '非常棒！合理安排时间，顺利按时结束！'
+              : (state.lang === 'es'
+                  ? '¡Excelente trabajo administrando tu tiempo y terminando a tiempo!'
+                  : 'Great job managing your time and heading home smoothly!');
           } else {
-            ownershipText = state.lang === 'es'
-              ? '¡Buen trabajo terminando a tiempo! ¡Disfruta de tu premio!'
-              : 'Great job wrapping up on time — enjoy your reward!';
+            ownershipText = state.lang === 'zh'
+              ? '太棒了，按时结束！尽情享受你的奖励吧！'
+              : (state.lang === 'es'
+                  ? '¡Buen trabajo terminando a tiempo! ¡Disfruta de tu premio!'
+                  : 'Great job wrapping up on time — enjoy your reward!');
           }
         } else if(state.mode === 'screen' && state.age !== 'young'){
           if(state.age === 'big'){
-            ownershipText = state.lang === 'es'
-              ? '¡Excelente trabajo administrando tu tiempo y terminando a tiempo!'
-              : 'Great job managing your screen time and wrapping up on time!';
+            ownershipText = state.lang === 'zh'
+              ? '非常棒！自主管理屏幕时间，按时关掉！'
+              : (state.lang === 'es'
+                  ? '¡Excelente trabajo administrando tu tiempo y terminando a tiempo!'
+                  : 'Great job managing your screen time and wrapping up on time!');
           } else {
-            ownershipText = state.lang === 'es'
-              ? '¡Buen trabajo terminando a tiempo! ¡Espera instrucciones!'
-              : 'Great job wrapping up on time — wait for instructions!';
+            ownershipText = state.lang === 'zh'
+              ? '太棒了，按时关掉屏幕！听从大人的下一步安排！'
+              : (state.lang === 'es'
+                  ? '¡Buen trabajo terminando a tiempo! ¡Espera instrucciones!'
+                  : 'Great job wrapping up on time — wait for instructions!');
           }
         }
         return '<div class="ownershipNote">'+ ownershipText +'</div>';
@@ -3465,8 +3762,8 @@ function renderDailyTasksSetup(t){
       });
     });
 
-    // Page 2 Immersion elements audio triggers (Spanish on Left, Mandarin on Right)
-    app.querySelectorAll('.immersionSide, .immersionPill, .instructionSideBtn, .cardImmersionSide').forEach(function(el){
+    // Page 2 Immersion elements audio triggers (Spanish on Left, Mandarin on Right) + Daily Tasks Voice Buttons
+    app.querySelectorAll('.immersionSide, .immersionPill, .instructionSideBtn, .cardImmersionSide, .taskVoiceBtn, .taskLangVoiceBtn, .taskBannerVoiceBtn').forEach(function(el){
       var lastTouch = 0;
       function handleImmersionSpeak(e){
         var now = Date.now();
@@ -3487,6 +3784,7 @@ function renderDailyTasksSetup(t){
       el.addEventListener('keydown', function(e){
         if(e.key === 'Enter' || e.key === ' '){
           e.preventDefault();
+          e.stopPropagation();
           handleImmersionSpeak(e);
         }
       });
@@ -3496,11 +3794,16 @@ function renderDailyTasksSetup(t){
     app.querySelectorAll('.homeTabBtn').forEach(function(b){
       b.addEventListener('click', function(){
         state.homeTab = b.getAttribute('data-hometab');
+        try {
+          if (typeof window !== 'undefined' && window.localStorage) {
+            localStorage.setItem('calm_home_tab', state.homeTab);
+          }
+        } catch(e){}
         if(state.homeTab === 'tasks'){
           state.mode = 'task';
           state.durationUnit = 'minutes';
           if (!state.taskMinutes) {
-            state.taskMinutes = { teeth: 2, shoes: 3, clothes: 5, tidy: 5, food: 15, bag: 3, custom: 5 };
+            state.taskMinutes = { teeth: 2, shoes: 3, clothes: 5, tidy: 5, food: 15, bag: 3, bath: 15, custom: 5 };
           }
           if(state.taskId){
             state.minutes = state.taskMinutes[state.taskId] != null ? state.taskMinutes[state.taskId] : 5;
@@ -3514,6 +3817,7 @@ function renderDailyTasksSetup(t){
           state.minutes = (d && (d[1] || d[0])) || 5;
           state.isCustomMin = false;
         }
+        state.setupStep = 1;
         render();
       });
     });
@@ -3521,40 +3825,203 @@ function renderDailyTasksSetup(t){
     // Task cards selection & deselection
     app.querySelectorAll('.taskCard').forEach(function(card){
       card.addEventListener('click', function(e){
-        if(e.target.closest('.taskMiniStep')) return;
+        if(e.target.closest('.taskMiniStep') || e.target.closest('.taskVoiceBtn') || e.target.closest('.taskLangVoiceBtn')) return;
         var id = card.getAttribute('data-taskid');
         if(state.taskId === id){
           // Clicking the active card deselects it!
           state.taskId = null;
+          render();
         } else {
           state.taskId = id;
           if (!state.taskMinutes) {
-            state.taskMinutes = { teeth: 2, shoes: 3, clothes: 5, tidy: 5, food: 15, bag: 3, custom: 5 };
+            state.taskMinutes = { teeth: 2, shoes: 3, clothes: 5, tidy: 5, food: 15, bag: 3, bath: 15, custom: 5 };
           }
           state.minutes = state.taskMinutes[id] != null ? state.taskMinutes[id] : 5;
           state.isCustomMin = false;
+          render();
+          if((state.setupStep || 1) === 1){
+            setTimeout(function(){
+              if((state.setupStep || 1) === 1 && state.taskId){
+                state.setupStep = 2;
+                render();
+              }
+            }, 240);
+          }
         }
-        render();
       });
       card.addEventListener('keydown', function(e){
         if(e.key === 'Enter' || e.key === ' '){
-          if(e.target.closest('.taskMiniStep')) return;
+          if(e.target.closest('.taskMiniStep') || e.target.closest('.taskVoiceBtn') || e.target.closest('.taskLangVoiceBtn')) return;
           e.preventDefault();
           var id = card.getAttribute('data-taskid');
           if(state.taskId === id){
             state.taskId = null;
+            render();
           } else {
             state.taskId = id;
             if (!state.taskMinutes) {
-              state.taskMinutes = { teeth: 2, shoes: 3, clothes: 5, tidy: 5, food: 15, bag: 3, custom: 5 };
+              state.taskMinutes = { teeth: 2, shoes: 3, clothes: 5, tidy: 5, food: 15, bag: 3, bath: 15, custom: 5 };
             }
             state.minutes = state.taskMinutes[id] != null ? state.taskMinutes[id] : 5;
             state.isCustomMin = false;
+            render();
+            if((state.setupStep || 1) === 1){
+              setTimeout(function(){
+                if((state.setupStep || 1) === 1 && state.taskId){
+                  state.setupStep = 2;
+                  render();
+                }
+              }, 240);
+            }
           }
+        }
+      });
+    });
+
+    // Transition mode cards selection with auto-advance to Step 2
+    app.querySelectorAll('[data-transition-mode]').forEach(function(card){
+      function handleTransSelect(e){
+        if(e.target.closest('.taskVoiceBtn') || e.target.closest('.taskLangVoiceBtn')) return;
+        var modeVal = card.getAttribute('data-transition-mode');
+        state.mode = modeVal;
+        var d = DURATIONS[state.mode];
+        state.minutes = (d && (d[1] || d[0])) || 5;
+        state.isCustomMin = false;
+        render();
+        if((state.setupStep || 1) === 1){
+          setTimeout(function(){
+            if((state.setupStep || 1) === 1){
+              state.setupStep = 2;
+              render();
+            }
+          }, 240);
+        }
+      }
+      card.addEventListener('click', handleTransSelect);
+      card.addEventListener('keydown', function(e){
+        if(e.key === 'Enter' || e.key === ' '){
+          e.preventDefault();
+          handleTransSelect(e);
+        }
+      });
+    });
+
+    // 1-Tap Quick Start Banner
+    var qsb = document.getElementById('quickStartBanner');
+    if(qsb){
+      qsb.addEventListener('click', function(){
+        var lastMode = null;
+        var lastTaskId = null;
+        var lastMin = 5;
+        try {
+          if(typeof window !== 'undefined' && window.localStorage){
+            lastMode = localStorage.getItem('calm_last_routine_mode');
+            lastTaskId = localStorage.getItem('calm_last_routine_task');
+            lastMin = parseInt(localStorage.getItem('calm_last_routine_min'), 10) || 5;
+          }
+        } catch(e){}
+        if(lastTaskId && lastTaskId !== 'null' && lastTaskId !== ''){
+          state.homeTab = 'tasks';
+          state.mode = 'task';
+          state.taskId = lastTaskId;
+          state.minutes = lastMin;
+        } else if(lastMode){
+          state.homeTab = 'transitions';
+          state.mode = lastMode;
+          state.minutes = lastMin;
+        }
+        state.setupStep = 3;
+        render();
+      });
+    }
+
+    // Step dots navigation
+    app.querySelectorAll('.wizardStepDot').forEach(function(dot){
+      dot.addEventListener('click', function(){
+        var s = parseInt(dot.getAttribute('data-goto-step'), 10);
+        if(s >= 1 && s <= 3){
+          state.setupStep = s;
           render();
         }
       });
     });
+
+    // Wizard Next buttons
+    app.querySelectorAll('#wizardNextBtn, .wizardNextBtn').forEach(function(btn){
+      btn.addEventListener('click', function(){
+        if(state.setupStep === 1){
+          if(state.homeTab === 'tasks' && !state.taskId){
+            state.taskId = DAILY_TASKS[0].id;
+          }
+          state.setupStep = 2;
+        } else if(state.setupStep === 2){
+          state.setupStep = 3;
+        }
+        render();
+      });
+    });
+
+    // Wizard Back buttons
+    app.querySelectorAll('#wizardBackBtn, .wizardBackBtn').forEach(function(btn){
+      btn.addEventListener('click', function(){
+        if(state.setupStep === 3){
+          state.setupStep = 2;
+        } else if(state.setupStep === 2){
+          state.setupStep = 1;
+        }
+        render();
+      });
+    });
+
+    // Change routine button from Step 2 summary bar
+    var changeRoutineBtn = document.getElementById('wizardChangeRoutineBtn');
+    if(changeRoutineBtn){
+      changeRoutineBtn.addEventListener('click', function(){
+        state.setupStep = 1;
+        render();
+      });
+    }
+
+    // Touch swipe gestures on .setupWizardWrap
+    var wizardWrap = document.getElementById('setupWizardWrap');
+    if(wizardWrap){
+      var tStartX = 0;
+      var tStartY = 0;
+      var tStartTime = 0;
+      wizardWrap.addEventListener('touchstart', function(e){
+        if(e.touches && e.touches.length === 1){
+          tStartX = e.touches[0].clientX;
+          tStartY = e.touches[0].clientY;
+          tStartTime = Date.now();
+        }
+      }, { passive: true });
+
+      wizardWrap.addEventListener('touchend', function(e){
+        if(e.changedTouches && e.changedTouches.length === 1){
+          var deltaX = e.changedTouches[0].clientX - tStartX;
+          var deltaY = e.changedTouches[0].clientY - tStartY;
+          var elapsed = Date.now() - tStartTime;
+          if(elapsed < 600 && Math.abs(deltaX) > 48 && Math.abs(deltaX) > Math.abs(deltaY) * 1.5){
+            if(deltaX < 0){
+              // Swipe Left -> Next Step
+              if((state.setupStep || 1) < 3){
+                if(state.setupStep === 1 && state.homeTab === 'tasks' && !state.taskId){
+                  state.taskId = DAILY_TASKS[0].id;
+                }
+                state.setupStep = (state.setupStep || 1) + 1;
+                render();
+              }
+            } else {
+              // Swipe Right -> Previous Step
+              if((state.setupStep || 1) > 1){
+                state.setupStep = (state.setupStep || 1) - 1;
+                render();
+              }
+            }
+          }
+        }
+      }, { passive: true });
+    }
 
     // Deselect button on banner
     var deselectBtn = document.getElementById('taskDeselectBtn');
@@ -3616,6 +4083,9 @@ function renderDailyTasksSetup(t){
         try {
           if (typeof window !== 'undefined' && window.localStorage) {
             localStorage.setItem('calm_lang', state.lang);
+          }
+          if (typeof document !== 'undefined' && document.documentElement) {
+            document.documentElement.lang = state.lang;
           }
         } catch(e){}
         render();
@@ -4127,7 +4597,7 @@ function renderDailyTasksSetup(t){
       vaultVoiceBtn.addEventListener('click', function(){
         var origText = vaultVoiceBtn.textContent;
         vaultVoiceBtn.disabled = true;
-        vaultVoiceBtn.textContent = '🔊 ' + (state.lang === 'es' ? 'Reproduciendo...' : 'Playing...');
+        vaultVoiceBtn.textContent = '🔊 ' + (state.lang === 'zh' ? '正在播放…' : (state.lang === 'es' ? 'Reproduciendo...' : 'Playing...'));
         playCharacterAudio(state.vaultVoice, function(){
           vaultVoiceBtn.textContent = origText;
           vaultVoiceBtn.disabled = false;
@@ -4165,9 +4635,11 @@ function renderDailyTasksSetup(t){
         var unlockedCount = ageCollectibles.filter(function(c){ return collectedIds.indexOf(c.id) !== -1; }).length;
 
         if (unlockedCount >= totalCount) {
-          var confirmMsg = state.lang === 'es'
-            ? '¡Has completado todos los ' + totalCount + ' espacios de este álbum! ¿Deseas guardar tu colección a salvo en el Cofre y empezar un nuevo álbum?'
-            : 'All ' + totalCount + ' slots in this album are full! Would you like to store your collection safely in your Vault and start a fresh album?';
+          var confirmMsg = state.lang === 'zh'
+            ? '本画册的所有 ' + totalCount + ' 个卡槽都已集满！是否将整套画册安全存入保险库并开启新画册？'
+            : (state.lang === 'es'
+              ? '¡Has completado todos los ' + totalCount + ' espacios de este álbum! ¿Deseas guardar tu colección a salvo en el Cofre y empezar un nuevo álbum?'
+              : 'All ' + totalCount + ' slots in this album are full! Would you like to store your collection safely in your Vault and start a fresh album?');
           if (confirm(confirmMsg)) {
             storeCollectionInVault(activeAge);
             playCelebrationFanfare(activeAge);
@@ -4192,15 +4664,17 @@ function renderDailyTasksSetup(t){
         var hasActiveCards = (state.collectedStickers || []).some(function(s){ return ageCardIds.indexOf(s.id) !== -1; });
 
         if (hasActiveCards) {
-          var storeMsg = state.lang === 'es'
-            ? '¿Deseas guardar tus tarjetas conseguidas en el Cofre Permanente antes de reiniciar? (Aceptar = Guardar en Cofre y Reiniciar, Cancelar = Mantener Tarjetas)'
-            : 'Would you like to store your earned cards safely in the permanent Vault before resetting? (OK = Store in Vault & Reset, Cancel = Keep Cards)';
+          var storeMsg = state.lang === 'zh'
+            ? '在重置画册前，是否将已收集的卡片安全存入永久保险库？（确定 = 存入保险库并重置，取消 = 保留卡片）'
+            : (state.lang === 'es'
+              ? '¿Deseas guardar tus tarjetas conseguidas en el Cofre Permanente antes de reiniciar? (Aceptar = Guardar en Cofre y Reiniciar, Cancelar = Mantener Tarjetas)'
+              : 'Would you like to store your earned cards safely in the permanent Vault before resetting? (OK = Store in Vault & Reset, Cancel = Keep Cards)');
           if (confirm(storeMsg)) {
             storeCollectionInVault(activeAge);
             render();
           }
         } else {
-          var confirmMsg = state.lang === 'es' ? STR.es.resetAlbumConfirm : STR.en.resetAlbumConfirm;
+          var confirmMsg = (STR[state.lang] && STR[state.lang].resetAlbumConfirm) ? STR[state.lang].resetAlbumConfirm : STR.en.resetAlbumConfirm;
           if (confirm(confirmMsg)) {
             resetAlbum(activeAge);
             render();
@@ -4229,7 +4703,7 @@ function renderDailyTasksSetup(t){
       testVoiceBtn.addEventListener('click', function(){
         var origText = testVoiceBtn.textContent;
         testVoiceBtn.disabled = true;
-        testVoiceBtn.textContent = '🔊 ' + (state.lang === 'es' ? 'Reproduciendo...' : 'Playing...');
+        testVoiceBtn.textContent = '🔊 ' + (state.lang === 'zh' ? '正在播放…' : (state.lang === 'es' ? 'Reproduciendo...' : 'Playing...'));
         playCharacterAudio(state.vaultVoice, function(){
           testVoiceBtn.textContent = origText;
           testVoiceBtn.disabled = false;
@@ -4494,6 +4968,14 @@ function renderDailyTasksSetup(t){
 
     if(timerHandle) clearInterval(timerHandle);
     timerHandle = setInterval(tick, 200);
+
+    try {
+      if(typeof window !== 'undefined' && window.localStorage){
+        localStorage.setItem('calm_last_routine_mode', state.mode || 'leaving');
+        localStorage.setItem('calm_last_routine_task', state.mode === 'task' ? (state.taskId || 'teeth') : '');
+        localStorage.setItem('calm_last_routine_min', String(state.durationUnit === 'seconds' ? 1 : state.minutes));
+      }
+    } catch(e){}
   }
 
   function togglePause(){

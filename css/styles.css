@@ -1097,6 +1097,249 @@
     border-radius:14px;
     cursor:pointer;
   }
+  /* ---------- Stepped Swipeable Setup Wizard ---------- */
+  .setupWizardWrap{
+    width:100%;
+    position:relative;
+    box-sizing:border-box;
+    user-select:none;
+  }
+  .wizardHeaderBar{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    margin-bottom:12px;
+    gap:10px;
+    flex-wrap:wrap;
+  }
+  .wizardStepDots{
+    display:flex;
+    align-items:center;
+    gap:8px;
+  }
+  .wizardStepDot{
+    width:12px;
+    height:12px;
+    border-radius:50%;
+    background:rgba(255,255,255,0.2);
+    border:2px solid rgba(255,255,255,0.3);
+    padding:0;
+    cursor:pointer;
+    transition:all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .wizardStepDot.active{
+    width:28px;
+    border-radius:999px;
+    background:var(--sand);
+    border-color:var(--sand);
+    box-shadow:0 0 10px rgba(255,200,87,0.55);
+  }
+  .wizardStepDot.completed{
+    background:rgba(255,200,87,0.65);
+    border-color:var(--sand);
+  }
+  .wizardStepPill{
+    font-family:'Baloo 2',sans-serif;
+    font-size:13px;
+    font-weight:700;
+    color:var(--sand);
+    background:rgba(255,200,87,0.14);
+    border:1px solid rgba(255,200,87,0.35);
+    padding:3px 11px;
+    border-radius:999px;
+    white-space:nowrap;
+  }
+  .quickStartBanner{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:10px;
+    background:linear-gradient(135deg, rgba(255,200,87,0.18), rgba(255,107,107,0.14));
+    border:1.5px solid var(--sand);
+    border-radius:16px;
+    padding:10px 14px;
+    margin-bottom:14px;
+    cursor:pointer;
+    transition:all 0.18s ease;
+    text-align:left;
+    width:100%;
+    box-sizing:border-box;
+  }
+  .quickStartBanner:hover{
+    background:linear-gradient(135deg, rgba(255,200,87,0.28), rgba(255,107,107,0.22));
+    transform:translateY(-1px);
+    box-shadow:0 4px 12px rgba(255,200,87,0.3);
+  }
+  .quickStartTitle{
+    font-family:'Baloo 2',sans-serif;
+    font-weight:800;
+    font-size:14.5px;
+    color:var(--cream);
+    line-height:1.2;
+  }
+  .quickStartSub{
+    font-size:12px;
+    color:var(--sand);
+    opacity:0.95;
+    margin-top:2px;
+  }
+  .quickStartBadge{
+    background:var(--sand);
+    color:var(--ink);
+    font-family:'Baloo 2',sans-serif;
+    font-weight:800;
+    font-size:13px;
+    padding:6px 12px;
+    border-radius:12px;
+    flex-shrink:0;
+    box-shadow:0 2px 6px rgba(0,0,0,0.2);
+  }
+  .wizardActiveSummaryBar{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    background:rgba(0,0,0,0.3);
+    border:1.5px solid rgba(255,200,87,0.4);
+    border-radius:16px;
+    padding:8px 14px;
+    margin-bottom:16px;
+    gap:10px;
+  }
+  .wizardSummaryLeft{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    min-width:0;
+  }
+  .wizardSummaryIcon{
+    font-size:24px;
+    line-height:1;
+    flex-shrink:0;
+  }
+  .wizardSummaryTextWrap{
+    min-width:0;
+  }
+  .wizardSummaryTag{
+    font-size:10.5px;
+    font-weight:700;
+    text-transform:uppercase;
+    letter-spacing:0.5px;
+    color:var(--sand);
+    line-height:1;
+  }
+  .wizardSummaryName{
+    font-family:'Baloo 2',sans-serif;
+    font-weight:700;
+    font-size:15px;
+    color:var(--cream);
+    line-height:1.2;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+  }
+  .wizardStepNav{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:10px;
+    margin-top:20px;
+    width:100%;
+    box-sizing:border-box;
+  }
+  .wizardBackBtn{
+    background:rgba(255,255,255,0.08);
+    border:1.5px solid rgba(255,255,255,0.22);
+    color:var(--cream);
+    font-family:'Baloo 2',sans-serif;
+    font-size:15px;
+    font-weight:700;
+    padding:12px 18px;
+    border-radius:14px;
+    cursor:pointer;
+    transition:all 0.15s ease;
+    flex-shrink:0;
+  }
+  .wizardBackBtn:hover{
+    background:rgba(255,255,255,0.16);
+    border-color:var(--cream);
+  }
+  .wizardNextBtn{
+    flex:1;
+    background:var(--sand);
+    border:none;
+    color:var(--ink);
+    font-family:'Baloo 2',sans-serif;
+    font-size:16.5px;
+    font-weight:800;
+    padding:13px 20px;
+    border-radius:15px;
+    cursor:pointer;
+    box-shadow:0 4px 14px rgba(255,200,87,0.35);
+    transition:all 0.18s ease;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:6px;
+  }
+  .wizardNextBtn:hover{
+    transform:translateY(-1px);
+    box-shadow:0 6px 18px rgba(255,200,87,0.5);
+  }
+  .wizardStepSlide{
+    animation:stepSlideIn 0.28s ease;
+  }
+  @keyframes stepSlideIn {
+    from { opacity: 0; transform: translateY(6px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .wizardHandoverCard{
+    background:radial-gradient(ellipse at top, rgba(255,200,87,0.18), rgba(0,0,0,0.35));
+    border:2px solid var(--sand);
+    border-radius:22px;
+    padding:20px 16px;
+    text-align:center;
+    margin:14px 0 16px;
+    box-shadow:0 8px 24px rgba(0,0,0,0.35);
+  }
+  .wizardHandoverIcon{
+    font-size:44px;
+    line-height:1;
+    margin-bottom:8px;
+  }
+  .wizardHandoverTitle{
+    font-family:'Baloo 2',sans-serif;
+    font-size:22px;
+    font-weight:800;
+    color:var(--cream);
+    margin:0 0 4px 0;
+  }
+  .wizardHandoverPrompt{
+    font-family:'Baloo 2',sans-serif;
+    font-size:17px;
+    font-weight:700;
+    color:var(--sand);
+    line-height:1.35;
+    margin:8px auto 14px;
+    max-width:340px;
+  }
+  .wizardHandoverLangs{
+    display:flex;
+    justify-content:center;
+    gap:8px;
+    flex-wrap:wrap;
+    margin-bottom:14px;
+  }
+  .swipeGestureHint{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:6px;
+    font-size:12px;
+    color:rgba(255,255,255,0.6);
+    margin-top:12px;
+    font-weight:600;
+  }
+
   /* ---------- Home Tab Switcher & Daily Tasks ---------- */
   .homeTabSwitcher{
     display:flex;
@@ -1134,28 +1377,52 @@
     opacity:1;
     box-shadow:0 3px 10px rgba(0,0,0,0.25);
   }
+  .taskSectionHeaderRow{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    gap:8px;
+    margin-bottom:8px;
+  }
+  .taskVoiceHintPill{
+    display:inline-flex;
+    align-items:center;
+    gap:5px;
+    background:rgba(255,200,87,0.18);
+    border:1px solid rgba(255,200,87,0.45);
+    color:var(--sand);
+    border-radius:999px;
+    padding:4px 12px;
+    font-size:12px;
+    font-weight:700;
+    font-family:'Baloo 2',sans-serif;
+    letter-spacing:0.2px;
+    box-shadow:0 2px 6px rgba(0,0,0,0.15);
+  }
   .taskGrid{
-    display:grid;
-    grid-template-columns:repeat(2,1fr);
+    display:flex;
+    flex-direction:column;
     gap:10px;
     margin:12px 0 16px;
   }
   .taskCard{
     display:flex;
-    flex-direction:column;
+    flex-direction:row;
     align-items:center;
-    justify-content:center;
-    padding:13px 8px;
+    justify-content:space-between;
+    padding:12px 14px;
     background:rgba(255,255,255,0.05);
     border:2px solid rgba(255,255,255,0.16);
     border-radius:18px;
     color:var(--cream);
     cursor:pointer;
     transition:all 0.18s ease;
-    text-align:center;
-    gap:5px;
+    text-align:left;
+    gap:12px;
     user-select:none;
     box-sizing:border-box;
+    width:100%;
   }
   .taskCard:hover{
     background:rgba(255,255,255,0.08);
@@ -1167,50 +1434,143 @@
     border-color:var(--sand);
     box-shadow:0 0 14px rgba(255,200,87,0.28);
   }
+  .taskCardLeft{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-shrink:0;
+  }
   .taskCardIcon{
-    font-size:30px;
+    font-size:32px;
     line-height:1;
+  }
+  .taskCardMain{
+    flex:1;
+    min-width:0;
+    display:flex;
+    flex-direction:column;
+    gap:4px;
+    text-align:left;
+  }
+  .taskCardTitleRow{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    flex-wrap:wrap;
   }
   .taskCardName{
     font-family:'Baloo 2',sans-serif;
     font-weight:700;
-    font-size:14.5px;
+    font-size:15.5px;
     line-height:1.2;
+    color:var(--cream);
+  }
+  .taskVoiceBtn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:5px;
+    background:rgba(255,200,87,0.22);
+    border:1.5px solid var(--sand);
+    color:var(--sand);
+    border-radius:12px;
+    padding:5px 12px;
+    font-family:'Baloo 2',sans-serif;
+    font-size:13.5px;
+    font-weight:700;
+    cursor:pointer;
+    transition:all 0.18s ease;
+    line-height:1.2;
+    flex-shrink:0;
+    box-shadow:0 2px 6px rgba(0,0,0,0.25);
+  }
+  .taskVoiceBtn:hover{
+    background:var(--sand);
+    color:var(--ink);
+    border-color:var(--sand);
+    transform:scale(1.05);
+    box-shadow:0 4px 12px rgba(255,200,87,0.45);
+  }
+  .taskVoiceBtn:active{
+    transform:scale(0.96);
+  }
+  .taskVoiceBtn.speaking, .taskLangVoiceBtn.speaking, .taskBannerVoiceBtn.speaking{
+    background:var(--sand) !important;
+    color:var(--ink) !important;
+    border-color:var(--sand) !important;
+    animation:pulseSpeaking 1s infinite alternate;
+  }
+  @keyframes pulseSpeaking {
+    from { transform: scale(1); box-shadow: 0 0 6px rgba(255,200,87,0.4); }
+    to { transform: scale(1.06); box-shadow: 0 0 14px rgba(255,200,87,0.8); }
   }
   .taskCardLangs{
     display:flex;
-    flex-direction:column;
     align-items:center;
-    gap:2px;
+    gap:6px;
+    flex-wrap:wrap;
     margin-top:2px;
-    margin-bottom:2px;
-    line-height:1.2;
-    text-align:center;
+    text-align:left;
   }
-  .taskCardLangPill{
-    color:rgba(255,255,255,0.78);
-    font-size:10.5px;
+  .taskLangVoiceBtn{
+    display:inline-flex;
+    align-items:center;
+    gap:4px;
+    background:rgba(0,0,0,0.28);
+    border:1px solid rgba(255,255,255,0.14);
+    border-radius:999px;
+    padding:3px 8px;
+    color:rgba(255,255,255,0.88);
+    font-size:11px;
     font-weight:600;
+    cursor:pointer;
+    transition:all 0.15s ease;
+    line-height:1.2;
+    text-align:left;
+    font-family:'Quicksand',sans-serif;
   }
-  .taskCardLangPill .btnPinyin{
+  .taskLangVoiceBtn:hover{
+    background:rgba(255,255,255,0.16);
+    border-color:var(--sand);
+    color:var(--sand);
+    transform:translateY(-1px);
+  }
+  .taskLangBadge{
+    font-weight:700;
+    font-size:10px;
+    color:var(--sand);
+    white-space:nowrap;
+  }
+  .taskLangText{
+    font-size:11px;
+  }
+  .taskLangText .btnPinyin{
     font-size:9.5px;
     color:var(--sand);
     margin-left:2px;
   }
+  .taskCardRight{
+    display:flex;
+    flex-direction:column;
+    align-items:flex-end;
+    justify-content:center;
+    flex-shrink:0;
+  }
   .taskCardBadge{
-    font-size:11.5px;
-    font-weight:600;
-    opacity:0.85;
-    background:rgba(0,0,0,0.28);
-    padding:2px 8px;
-    border-radius:8px;
+    font-size:12px;
+    font-weight:700;
+    opacity:0.9;
+    background:rgba(0,0,0,0.32);
+    padding:4px 10px;
+    border-radius:10px;
     white-space:nowrap;
+    border:1px solid rgba(255,255,255,0.12);
   }
   .taskCardBadge.active{
-    background:rgba(255,200,87,0.24);
+    background:rgba(255,200,87,0.25);
     color:var(--sand);
     font-weight:700;
-    border:1px solid rgba(255,200,87,0.4);
+    border:1px solid rgba(255,200,87,0.5);
     opacity:1;
   }
   .taskCardStepper{
@@ -1218,7 +1578,6 @@
     align-items:center;
     justify-content:center;
     gap:4px;
-    margin-top:2px;
   }
   .taskMiniStep{
     width:24px;
@@ -1303,6 +1662,12 @@
     color:var(--sand);
     line-height:1.2;
   }
+  .taskSelectedNameRow{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    flex-wrap:wrap;
+  }
   .taskSelectedName{
     font-size:15.5px;
     font-weight:700;
@@ -1313,11 +1678,32 @@
     font-size:11.5px;
     font-weight:600;
     color:rgba(255,255,255,0.85);
-    margin-top:2px;
+    margin-top:4px;
     line-height:1.2;
     display:flex;
     flex-wrap:wrap;
+    gap:6px;
+  }
+  .taskBannerVoiceBtn{
+    display:inline-flex;
+    align-items:center;
     gap:4px;
+    background:rgba(0,0,0,0.32);
+    border:1px solid rgba(255,255,255,0.18);
+    border-radius:999px;
+    padding:3px 8px;
+    color:var(--cream);
+    font-size:11px;
+    font-weight:600;
+    cursor:pointer;
+    transition:all 0.15s ease;
+    font-family:'Quicksand',sans-serif;
+  }
+  .taskBannerVoiceBtn:hover{
+    background:rgba(255,200,87,0.22);
+    border-color:var(--sand);
+    color:var(--sand);
+    transform:translateY(-1px);
   }
   .taskSelectedSubLangs .btnPinyin{
     font-size:10px;
